@@ -345,7 +345,7 @@
                  [:j [:km "open: Ghostty"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
-                 [:semicolon [:km "open: Xcode"]]
+                 [:semicolon [:km "open: Xcode Beta"]]
                  [:quote [:km "open: Simulator"]]
                  [:c [:km "open: Spotify"]]
                  [:slash [:km "open: Instruments"]]

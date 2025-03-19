@@ -1172,3 +1172,26 @@ function c
         claude $argv
     end
 end
+
+function gb --description "create git branch"
+    if test (count $argv) -eq 0
+        echo "Error: Please provide a branch name"
+        return 1
+    end
+
+    # Check if we're in a git repository
+    if not git rev-parse --is-inside-work-tree >/dev/null 2>&1
+        echo "Error: Not in a git repository"
+        return 1
+    end
+
+    # Create and checkout the new branch
+    git checkout -b $argv[1]
+
+    if test $status -eq 0
+        echo "✔ Created and switched to branch '$argv[1]'"
+    else
+        echo "Failed to create branch '$argv[1]'"
+        return 1
+    end
+end

@@ -53,5 +53,5 @@ if test -e "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk"
     test -f "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.fish.inc" && source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.fish.inc"
 end
 
-# TODO: added by orbstack but its breaking https://discord.com/channels/1106380155536035840/1106380156030959648/1351994501886906459
-# source ~/.orbstack/shell/init.fish 2>/dev/null || :
+source ~/.orbstack/shell/init2.fish 2>/dev/null || true
+

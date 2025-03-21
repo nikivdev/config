@@ -928,7 +928,7 @@
                  [:t [:km "cursor: gpton."]]
                  [:u [:km "cursor: kuskus."]]
                  [:k [:km "cursor: sb."]]
-                 [:h [:km "cursor: gridview."]]
+                 [:h [:km "cursor: lora-train."]]
                  [:j [:km "cursor: ts."]]
                  [:a [:km "cursor: data."]]
                  [:s [:km "cursor: xn."]]
@@ -954,6 +954,7 @@
                  [:left_command [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
                  [:spacebar [:km "cursor: try."]]
                  ]}
+                 ;[:h [:km "cursor: gen"]]
                  ;[:p [:km "cursor: api."]]
                  ;[:a [:km "cursor: data."]]
                  ;[:p [:km "cursor: past."]]

@@ -928,7 +928,7 @@
                  [:t [:km "cursor: gpton."]]
                  [:u [:km "cursor: kuskus."]]
                  [:k [:km "cursor: sb."]]
-                 [:h [:km "cursor: gridview."]] ; includes gridchess
+                 [:h [:km "cursor: gridview."]]
                  [:j [:km "cursor: ts."]]
                  [:a [:km "cursor: data."]]
                  [:s [:km "cursor: xn."]]
@@ -945,20 +945,20 @@
                  [:v [:km "cursor: jazz."]]
                  [:i [:km "cursor: ai."]]
                  [:o [:km "cursor: -gh"]]
-                 [:p [:km "cursor: api."]]
+                 [:p [:km "cursor: pp."]]
                  [:open_bracket [:km "cursor: notlost."]]
-                 [:close_bracket [:km "cursor: pp."]]
+                 [:close_bracket [:km "cursor: gridchess."]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: py."]]
                  [:slash [:km "cursor: mojo."]]
                  [:left_command [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
                  [:spacebar [:km "cursor: try."]]
                  ]}
-                 ;[:close_bracket [:km "cursor: gridchess."]]
-                 ;[:slash [:km "cursor: odin."]]
+                 ;[:p [:km "cursor: api."]]
                  ;[:a [:km "cursor: data."]]
                  ;[:p [:km "cursor: past."]]
                  ;[:s [:km "cursor: _new"]]
+                 ;[:slash [:km "cursor: odin."]]
                  ;[:close_bracket [:km "cursor: xd."]]
                  ;[:s [:km "cursor: -test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  ;[:o [:km "cursor: clones/forks"]]

@@ -928,7 +928,7 @@
                  [:t [:km "cursor: gpton."]]
                  [:u [:km "cursor: kuskus."]]
                  [:k [:km "cursor: sb."]]
-                 [:h [:km "cursor: lora-train."]]
+                 [:h [:km "cursor: train."]]
                  [:j [:km "cursor: ts."]]
                  [:a [:km "cursor: data."]]
                  [:s [:km "cursor: xn."]]

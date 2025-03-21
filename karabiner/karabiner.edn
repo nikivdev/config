@@ -1074,11 +1074,12 @@
                  [:d [:km "open: Resend"]]
                  [:v [:km "open: Loops"]]
                  [:n [:km "open: Element"]]
-                 [:m [:km "web: Cal.video"]]
+                 [:m [:km "open: Google Meet"]]
                  [:comma [:km "open: Signal"]]
-                 [:period [:km "web: Google Meet"]]
+                 [:period [:km "open: Cal"]]
                  [:slash [:km "open: Zoom"]]
                  ]}
+                 ;[:period [:km "web: Cal.video"]]
                  ;[:l [:km "open: Beeper"]] ; TODO: move when x embeds start working
                  ; TODO: add google video
                  ;[:l [:km "open: Texts"]]

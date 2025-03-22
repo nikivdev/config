@@ -1451,8 +1451,6 @@
                  [:s :!CTOSF1] ; SuperCut start recording
                  [:d :!CTOSF2] ; SuperCut finish recording TODO: hope supercut adds a way to finish recording from the `start recording` bind itself. this one would be `pause` bind then
                  [:z :!CTOSF3] ; SuperCut cancel recording
-                 ;[:d :!CTOSF5] ; SuperCut pause recording ; TODO: move it to `:s` once supercut adds a way to override the `start recording` bind to finish recording too
-                 ;[:z :!CTOSF4] ; SuperCut restart recording
                  [:v [:km "web: SuperCut workspace"]]
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
@@ -1470,6 +1468,8 @@
                  [:n [:km "new safari tab"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  ]}
+                 ;[:d :!CTOSF5] ; SuperCut pause recording ; TODO: move it to `:s` once supercut adds a way to override the `start recording` bind to finish recording too
+                 ;[:z :!CTOSF4] ; SuperCut restart recording
                  ;[:period [:km "open: X Pro (post)"]] ; TODO: replace with typefully like service for `just post` or `new ..` (rally to X, bluesky, LA etc.)
                  ;[:h [:km "web: GitHub Learn Anything"]]
                  ;[:period [:km "open: Typefully"]]

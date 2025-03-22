@@ -1,6 +1,6 @@
 # Config (macOS / iOS)
 
-> Apps/CLIs/configs I use on macOS/iOS. Fish, Karabiner, Cursor..
+> Apps/CLIs/configs I use on macOS/iOS
 
 ![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-march/mac-dark.png)
 

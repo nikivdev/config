@@ -1067,7 +1067,7 @@
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
-                 [:l [:km "open: Texts"]]
+                 [:l [:km "open: Beeper"]]
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
                  [:t [:km "open: Contacts"]]
@@ -1081,8 +1081,8 @@
                  [:period [:km "open: Cal"]]
                  [:slash [:km "open: Zoom"]]
                  ]}
+                 ;[:l [:km "open: Texts"]]
                  ;[:period [:km "web: Cal.video"]]
-                 ;[:l [:km "open: Beeper"]] ; TODO: move when x embeds start working
                  ; TODO: add google video
                  ;[:l [:km "open: Texts"]]
                  ;[:spacebar :!CSOz] ; X search TODO: check bind
@@ -1455,16 +1455,16 @@
                  [:v [:km "web: SuperCut workspace"]]
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
-                 [:h [:km "Save open tabs in safari"]]
                  [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
-                 [:period [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
                  [:quote [:km "open: Chrome Canary (x.com > account switch)"]]
                  [:i [:km "open: Safari Technology Preview"]]
                  [:o [:km "open: Arc"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
+                 [:period [:km "Save open tabs in safari"]]
+                 [:h [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
-                 [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
+                 [:l [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
                  [:slash [:km "w: GitHub PR"]] ; TODO:
                  [:n [:km "new safari tab"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks

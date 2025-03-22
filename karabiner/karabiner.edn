@@ -613,7 +613,7 @@
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:v [:km "open: Railway"]]
                  [:b [:km "open: Gel Cloud"]]
-                 [:n [:km "open: Supabase"]] ; TODO: replace with neon
+                 [:n [:km "open: Supabase"]]
                  [:m [:km "open: Modal"]]
                  [:k [:km "open: Axiom"]]
                  [:semicolon [:km "open: Sentry"]]

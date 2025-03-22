@@ -923,7 +923,7 @@
                  [:2 [:km "cursor: effect-gh"]]
                  [:3 [:km "cursor: encore-gh"]]
                  [:q [:km "cursor: new."]]
-                 [:w [:km "cursor: other"]]
+                 [:w [:km "cursor: try."]]
                  [:e [:km "cursor: x."]]
                  [:r [:km "cursor: infra."]]
                  [:t [:km "cursor: gpton."]]
@@ -952,8 +952,8 @@
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: py."]]
                  [:slash [:km "cursor: mojo."]]
-                 [:left_command [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
-                 [:spacebar [:km "cursor: try."]]
+                 [:left_command [:km "cursor: other"]]
+                 [:spacebar [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
                  ]}
                  ;[:h [:km "cursor: gen"]]
                  ;[:p [:km "cursor: api."]]

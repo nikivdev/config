@@ -932,7 +932,7 @@
                  [:h [:km "cursor: train."]]
                  [:j [:km "cursor: ts."]]
                  [:a [:km "cursor: data."]]
-                 [:s [:km "cursor: xn."]]
+                 [:s [:km "cursor: test."]]
                  [:d [:km "cursor: docs."]]
                  [:f [:km "cursor: focus!"]]
                  [:g [:km "cursor: games."]]
@@ -942,6 +942,7 @@
                  [:b [:km "cursor: moonbit."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
+                 [:x [:km "cursor: xn."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: jazz."]]
                  [:i [:km "cursor: ai."]]
@@ -952,8 +953,8 @@
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: py."]]
                  [:slash [:km "cursor: mojo."]]
-                 [:left_command [:km "cursor: other"]]
-                 [:spacebar [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
+                 [:left_command [:km "cursor: alfred-raycast."]]
+                 [:spacebar [:km "cursor: other"]]
                  ]}
                  ;[:h [:km "cursor: gen"]]
                  ;[:p [:km "cursor: api."]]

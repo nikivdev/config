@@ -45,6 +45,7 @@
     "license/": true,
     "LICENSE/": true,
     "*.bike": true,
+    ".env": true,
     "scripts/past.ts": true,
     ".ronin": true,
     "bun.lock": true,

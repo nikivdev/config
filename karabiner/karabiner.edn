@@ -919,9 +919,10 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (projects)"
          :rules [:escape-mode
-                 [:1 [:km "cursor: expo-gh"]]
-                 [:2 [:km "cursor: effect-gh"]]
-                 [:3 [:km "cursor: encore-gh"]]
+                 [:1 [:km "cursor: expo-rn-gh"]]
+                 [:2 [:km "cursor: react-gh"]]
+                 [:3 [:km "cursor: encore-hono-ronin-gh"]]
+                 [:4 [:km "cursor: effect-gh"]]
                  [:q [:km "cursor: new."]]
                  [:w [:km "cursor: try."]]
                  [:e [:km "cursor: x."]]

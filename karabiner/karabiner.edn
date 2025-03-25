@@ -596,8 +596,8 @@
                  [:w [:km "open: Cloudflare"]]
                  [:e [:km "open: Repo Prompt"]]
                  [:r [:km "open: Vercel"]]
-                 [:t [:km "open: Vultr"]]
-                 [:u [:km "open: RunPod"]]
+                 [:t [:km "open: Stripe"]]
+                 [:u [:km "open: Vultr"]]
                  [:i [:km "open: Ronin"]]
                  [:j [:km "open: T3 Chat"]]
                  [:a [:km "open: Grok"]]
@@ -622,6 +622,7 @@
                  [:spacebar [:km "open: Claude"]]
                  [:right_command [:km "open: Neon"]]
                  ]}
+                 ;[:u [:km "open: RunPod"]]
                  ; TODO: improve. i passed in `__` to make it filter out for clones only before
                  ;[:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]] ; TODO: bind
                  ;[:x [:alfred "search workflows" "org.jeef.workflowdirectory"]] ; TODO: breaks
@@ -646,7 +647,6 @@
                  ;[:j [:km "open: Honeycomb"]]
                  ;[:escape [:km "open: Google Cloud"]]
                  ;[:z :!TCspacebar] ; macOS Emoji Picker
-                 ;[:i [:km "open: Stripe"]]
                  ;[:i [:km "open: OpenAI Platform"]]
                  ;[:s [:alfred "search files" "nikivi.manage.notes"]] ; TODO: (make it open in obsidian)
                  ;[:semicolon [:km "open: ChatGPT 2"]]

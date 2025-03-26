@@ -795,7 +795,6 @@
                  ;[:spacebar [:km "Google Searchio selected word"]]
                  ;[:spacebar :!CT8] ; Selection -> Dictionary (wiki)
                  ;[:l [:km "Google selected word"]]
-                 ;[:f :!CSspacebar] ; Homerow ; TODO: check if useful
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:1 [:km "View Sip"]]
@@ -828,6 +827,7 @@
                  [:m [:km "Things: Quick Entry (with context) (into Someday)"]]
                  [:spacebar [:km "open: Eagle"]]
                  ]}
+                 ;[:j :!CSspacebar] ; Homerow
                  ;[:q [:km "open: Framer"]]
                  ;[:comma [:km "edit: Flox"]] ; TODO: fix, manifest?
                  ;[:m [:km "Things: new today task at bottom"]]

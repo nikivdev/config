@@ -2,34 +2,34 @@
 
 > Apps/CLIs/configs I use on macOS/iOS
 
-![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-march/mac-dark.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-april/mac-dark.png)
 
 > Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
 
-![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-march/mac-light.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-april/mac-light.png)
 
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-march/ios-lock-screen.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-lock-screen.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-march/ios-screen-1.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-1.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-march/ios-screen-2.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-2.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-march/ios-screen-3.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-3.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-march/ios-screen-4.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-4.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-march/ios-screen-5.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-5.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-march/ios-screen-6.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-6.png"></a>
 
 > iOS screens. All described in detail below.
 
@@ -100,8 +100,6 @@ This include configs for [fish](fish), [karabiner](karabiner) and more.
 
 I minimize push notifications to nearly only messaging apps (Telegram/Discord/..). I also keep it nearly always on Do Not Disturb mode. Especially when I work on my mac and keep the phone on the side so as to not duplicate notifications.
 
-Apps are listed in order they appear in each of the screens.
-
 - [Fantastical](https://apps.apple.com/us/app/fantastical-calendar/id718043190) widget to see today's events, I tap on widget to open app itself to make/search events or see full week/month view of events
 - [Things](https://apps.apple.com/us/app/things-3/id904237743) widget to see today's tasks, I tap on widget to open app itself to make/search todos or see other todos for today
 - [Wikipedia](https://apps.apple.com/us/app/wikipedia/id324715238) to read some articles or see `nearby places` in wikipedia
@@ -122,7 +120,7 @@ Apps are listed in order they appear in each of the screens.
 - [Discord](https://apps.apple.com/us/app/discord-talk-play-hang-out/id985746746) to read messages from servers I am in + private messages
 - [Perplexity](https://apps.apple.com/us/app/perplexity-ask-anything/id1668000334) to make search queries that need some computed answers
 - [ChatGPT](https://apps.apple.com/us/app/chatgpt/id6448311069) to ask questions, prefer Claude for general textual queries and real time voice in ChatGPT + O1 thinking model for bigger questions
-- Safari for all web browsing, keep [top sites](https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/24-nov/safari-new-tab.jpg) in new tab bookmarks for fast access
+- Safari for all web browsing, keep [top sites](https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/safari-new-tab.png) in new tab bookmarks for fast access
 - [Claude](https://apps.apple.com/us/app/claude-by-anthropic/id6473753684) to ask questions (goto AI model for questions)
 - Photos widget with memories cycled, love seeing what Apple decides to surface from the library, often its nice memories
 - [Things](https://apps.apple.com/us/app/things-3/id904237743) Upcoming widget to see upcoming tasks, open it to enter new upcoming task or edit existing ones
@@ -138,7 +136,6 @@ Apps are listed in order they appear in each of the screens.
 - [CapCut](https://apps.apple.com/us/app/capcut-video-editor/id1500855883) to edit videos
 - [Pinterest](https://apps.apple.com/us/app/pinterest/id429047995) to see posts and organise them into collections
 - [YouTube](https://apps.apple.com/us/app/youtube-watch-listen-stream/id544007664) to see/search videos
-- [Airchat](https://apps.apple.com/us/app/airchat-just-talk/id1469462351) to talk with voice on voice only social network
 - [Threads](https://apps.apple.com/us/app/threads/id6446901002) to see/post visual content
 - [TikTok](https://apps.apple.com/us/app/tiktok/id835599320) to see curated feed of videos
 - Settings to check on some settings like WiFi
@@ -167,10 +164,9 @@ Apps are listed in order they appear in each of the screens.
 - [Sui Wallet](https://apps.apple.com/us/app/sui-wallet-mobile/id6476572140) to send or check on Sui transactions or use it to connect to Sui dApps
 - [Solflare](https://apps.apple.com/us/app/solflare-solana-wallet/id1580902717) to send or check on Solana transactions or use it to connect to Solana dApps
 - [Google Meet](https://apps.apple.com/us/app/google-meet/id1096918571) to join/create video meetings
-- [WebSSH](https://apps.apple.com/us/app/webssh-sysadmin-tools/id497714887) to SSH connect to my servers on the go and run some commands
 - [Figma](https://apps.apple.com/us/app/figma/id1152747299) to check on designs on the go
 - [Letterboxd](https://apps.apple.com/us/app/letterboxd/id1054271011) to track movies I saw or want see and check on reviews
-- [Play 2](https://createwithplay.com) to prototype out designs for mobile
+- [Play](https://createwithplay.com) to prototype out designs for mobile
 - [1Password](https://apps.apple.com/us/app/1password-password-manager/id1511601750) to search for all private things (passwords/notes/..)
 - App Store to search for apps and trigger app updates manually
 - [Reader](https://apps.apple.com/us/app/readwise-reader/id1567599761) to read articles from RSS feed mostly
@@ -179,7 +175,7 @@ Apps are listed in order they appear in each of the screens.
 - Files to search for files in my cloud (mostly `~/Documents` or what's in `~/Desktop`)
 - [Anybox](https://apps.apple.com/us/app/anybox-bookmark-read-later/id1593408455) to check on links I added, use it's share sheet to bookmark things a lot (my fast ingest system from across iOS)
 
-Apps that are not on 4 screens but I still use are:
+Other apps not on main screen that I do use are:
 
 - [Wipr 2](https://apps.apple.com/us/app/wipr-2/id1662217862) as my main ad blocker
 - [Svadilfari](https://apps.apple.com/us/app/svadilfari/id1586432379) for [custom gestures](https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/24-nov/svadilfari-gestures.jpg) in Safari
@@ -201,7 +197,7 @@ The 2 action buttons on bottom in lock screen are `create voice recording` and `
 I keep common shortcut actions as widgets on the side (left swipe of lock screen or first home screen):
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-march/ios-widgets.png"></a>
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-april/ios-widgets.png"></a>
 
 ## iOS Shortcuts
 
@@ -213,8 +209,8 @@ I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I
 - [Translate](https://www.icloud.com/shortcuts/38909c417cf34d788205b152b510417e) opens [Google Translate](https://apps.apple.com/us/app/google-translate/id414706506) app (for fast translates of camera or text)
 - [Places](https://www.icloud.com/shortcuts/54bfaffe332542a1947e514d2c16537e) opens list of options like `Parks/Restaurants/Cafes` and on tap opens search for them in [Google Maps](https://apps.apple.com/us/app/google-maps/id585027354)
 - [Phone](https://www.icloud.com/shortcuts/cee3a88e59084520beaeb312bb0897cc) opens Phone app (for searching, making new contacts or entering a phone number)
-- [Focus](https://www.icloud.com/shortcuts/9f152d99f7a74da08c36defcf9de1727) starts focus session for 30 min (blocks X, IG, .. apps) with [Jomo](https://jomo.so)
 - [AI](https://www.icloud.com/shortcuts/7a747e6e284f4b3ca4f3beecb29c65d4) opens [Gemini](https://apps.apple.com/us/app/google-gemini/id6477489729) app (nice to ask questions that needs Google know how)
+- [Apps](https://www.icloud.com/shortcuts/fc5764668bc14baaa35fe6298407a8c0) opens telegram mini apps like [GPTON](https://t.me/gpton_games_bot/?startapp&addToHomeScreen)
 - [Lens](https://www.icloud.com/shortcuts/c0458ec52a1547e4a4cb101dc2905751) opens [Google Lens](https://apps.apple.com/us/app/google/id284815942) (to know what camera is point at or what the image represents)
 - [Record](https://www.icloud.com/shortcuts/8b66fb6027224aa893d35d33582de5b7) starts/stops recording with [Superwhisper](https://superwhisper.com) (use it for recordings with transcription)
 - [Ride/Food](https://www.icloud.com/shortcuts/8e9560d24b0c4087b0c40b989799e9fb) opens [Uber](https://apps.apple.com/us/app/uber-request-a-ride/id368677368) app (to request food or ride)

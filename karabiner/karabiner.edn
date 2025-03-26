@@ -410,7 +410,6 @@
                  ;[:d [:km "open: Music"]]
                  ;[:d [:km "open: Day One"]]
                  ;[:g [:km "Journal"]] ; TODO: complete to use LA
-                 ;[:h [:km "open: Notes"]]
                  ;[:f [:km "open: Learn Anything"]]
                  ;[:d [:km "open: Postico"]]
                  ;[:d [:km "open: Beekeepr Studio Ultimate"]]

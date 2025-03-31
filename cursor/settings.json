@@ -7,7 +7,7 @@
       "editor.lineHighlightBackground": "#ffffff",
       "editorInlayHint.typeBackground": "#f1f9fd",
       "titleBar.activeBackground": "#ffffff",
-      "titleBar.activeForeground": "#0d1116",
+      "titleBar.activeForeground": "#0d1116"
     },
     "[GitHub Dark Default]": {
       "editorLineNumber.foreground": "#0c1118",
@@ -15,7 +15,7 @@
       "editor.lineHighlightBackground": "#0c1118",
       "editorInlayHint.typeBackground": "#0d1116",
       "titleBar.activeBackground": "#02040a",
-      "titleBar.activeForeground": "#7c8590",
+      "titleBar.activeForeground": "#7c8590"
     }
   },
   "errorLens.followCursor": "allLines",

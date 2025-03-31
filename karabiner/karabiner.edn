@@ -1077,10 +1077,11 @@
                  [:u [:km "Create new contact"]]
                  [:d [:km "open: Resend"]]
                  [:v [:km "open: Loops"]]
+                 [:b [:km "open: Cal"]]
                  [:n [:km "open: Element"]]
-                 [:m [:km "open: Google Meet"]]
+                 [:m [:km "open: Zulip"]]
                  [:comma [:km "open: Signal"]]
-                 [:period [:km "open: Cal"]]
+                 [:period [:km "open: Google Meet"]]
                  [:slash [:km "open: Zoom"]]
                  ]}
                  ;[:l [:km "open: Texts"]]

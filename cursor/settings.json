@@ -218,7 +218,7 @@
     }
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.editor.decorations.colors": false,
   "editor.inlineSuggest.enabled": true,
@@ -228,7 +228,7 @@
   },
   "git.openRepositoryInParentFolders": "never",
   "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

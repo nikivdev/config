@@ -281,5 +281,8 @@
   "python.analysis.autoImportCompletions": true,
   "python.terminal.activateEnvironment": false,
   "update.releaseTrack": "prerelease",
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

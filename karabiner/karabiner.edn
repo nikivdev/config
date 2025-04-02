@@ -946,7 +946,7 @@
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: jazz."]]
                  [:i [:km "cursor: gen."]]
-                 [:o [:km "cursor: -gh"]]
+                 [:o [:km "cursor: other"]]
                  [:p [:km "cursor: past."]] ; TODO: bind, use
                  [:open_bracket [:km "cursor: notlost."]]
                  [:close_bracket [:km "cursor: gitedit."]]
@@ -954,7 +954,7 @@
                  [:period [:km "cursor: py."]]
                  [:slash [:km "cursor: mojo."]]
                  [:left_command [:km "cursor: alfred-raycast."]]
-                 [:spacebar [:km "cursor: other"]]
+                 [:spacebar [:km "cursor: -gh"]]
                  ]}
                  ;[:p [:km "cursor: pp."]]
                  ;[:s [:km "cursor: data."]]

@@ -284,5 +284,68 @@
   "workbench.statusBar.visible": false,
   "[mdx]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editorjumper.ideConfigurations": [
+    {
+      "name": "IDEA",
+      "isCustom": false,
+      "hidden": false,
+      "commandPath": null
+    },
+    {
+      "name": "WebStorm",
+      "isCustom": false,
+      "hidden": false,
+      "commandPath": null
+    },
+    {
+      "name": "PyCharm",
+      "isCustom": false,
+      "hidden": false,
+      "commandPath": null
+    },
+    {
+      "name": "GoLand",
+      "isCustom": false,
+      "hidden": false,
+      "commandPath": null
+    },
+    {
+      "name": "CLion",
+      "isCustom": false,
+      "hidden": false,
+      "commandPath": null
+    },
+    {
+      "name": "PhpStorm",
+      "isCustom": false,
+      "hidden": false,
+      "commandPath": null
+    },
+    {
+      "name": "RubyMine",
+      "isCustom": false,
+      "hidden": false,
+      "commandPath": null
+    },
+    {
+      "name": "Rider",
+      "isCustom": false,
+      "hidden": false,
+      "commandPath": null
+    },
+    {
+      "name": "Android Studio",
+      "isCustom": false,
+      "hidden": false,
+      "commandPath": null
+    },
+    {
+      "name": "Xcode",
+      "commandPath": null,
+      "isCustom": false,
+      "hidden": false
+    }
+  ],
+  "editorjumper.selectedIDE": "GoLand"
 }

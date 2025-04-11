@@ -621,11 +621,11 @@
                  [:n [:km "open: Trieve"]]
                  [:m [:km "open: Modal"]]
                  [:semicolon [:km "open: Axiom"]]
-                 [:left_command [:km "open: T3 Chat"]]
                  [:grave_accent_and_tilde [:km "open: RunPod"]]
+                 [:left_command [:km "open: T3 Chat"]]
                  [:spacebar [:km "open: ChatGPT"]]
-                 [:right_command [:km "open: Neon"]]
                  ]}
+                 ;[:right_command [:km "open: Neon"]]
                  ;[:tab [:km "open: AI Studio"]]
                  ;[:tab [:km "open: fal.ai"]]
                  ;[:b [:km "open: Gel Cloud"]]

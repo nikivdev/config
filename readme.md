@@ -232,7 +232,7 @@ I use `Test` shortcut to prototype new actions/ideas quickly. I then duplicate t
 Here is how my control center looks:
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-march/ios-control-center.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-april/ios-control-center.png"></a>
 
 ## Discuss macOS/iOS
 

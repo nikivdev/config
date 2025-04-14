@@ -1316,10 +1316,12 @@
                  [:escape [:km "open: TablePlus"]]
                  [:a [:km "open: Lovable"]]
                  [:s [:km "open: Bolt"]]
-                 [:d [:km "open: SQLiteFlow"]]
+                 [:d [:km "open: Drive"]]
                  [:f [:km "open: OrbStack"]]
+                 [:g [:km "open: Google Maps"]]
                  [:c [:km "open: OBS"]]
                  [:v [:km "open: Kulve"]]
+                 [:left_command [:km "open: SQLiteFlow"]]
                  [:spacebar [:km "open: Dash (with search)"]]
                  ]}
                  ;[:g [:km "open: GitButler"]]

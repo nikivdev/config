@@ -49,6 +49,7 @@
     "scripts/past.ts": true,
     ".ronin": true,
     "bun.lock": true,
+    "pnpm-lock.yaml": true,
     "LICENSE.txt/": true,
     "CODE_OF_CONDUCT.md/": true,
     ".repo_ignore": true,

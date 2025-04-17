@@ -54,3 +54,10 @@ end
 
 source ~/.orbstack/shell/init2.fish 2>/dev/null || true
 
+
+# pnpm
+set -gx PNPM_HOME "/Users/nikiv/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

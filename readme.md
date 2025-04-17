@@ -46,7 +46,7 @@
 
 ## Replicate macOS setup
 
-[This](https://learnany.notion.site/Mac-clean-setup-ee58edc4a991483491333e9e3fc20292) lists all settings I use on macOS.
+[This](https://nikiv.notion.site/Mac-clean-setup-ee58edc4a991483491333e9e3fc20292) lists all settings I use on macOS.
 
 See [.flox](https://github.com/nikitavoloboev/.flox) repo as it lists my global env setup for all executables/daemons I run.
 

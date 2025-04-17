@@ -927,9 +927,9 @@
         {:des "capskey (projects)"
          :rules [:escape-mode
                  [:1 [:km "cursor: expo-rn-gh"]]
-                 [:2 [:km "cursor: react-gh"]]
+                 [:2 [:km "cursor: effect-gh"]]
                  [:3 [:km "cursor: encore-hono-ronin-gh"]]
-                 [:4 [:km "cursor: effect-gh"]]
+                 [:4 [:km "cursor: react-gh"]]
                  [:q [:km "cursor: gitedit."]]
                  [:w [:km "cursor: try."]]
                  [:e [:km "cursor: x."]]
@@ -1070,8 +1070,8 @@
                  [:w [:km "New Spark email"]]
                  [:e [:km "open: Telegram"]]
                  [:f [:km "open: Spark"]]
-                 [:i [:km "open: Tuple"]] ; TODO: doesn't seem to do anything
-                 [:o :!CO7] ; open Tuple menu bar
+                 [:i :!CO7] ; open Tuple menu bar
+                 [:o [:km "open: Telegram Web"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
@@ -1091,6 +1091,7 @@
                  [:period [:km "open: Google Meet"]]
                  [:slash [:km "open: Zulip"]]
                  ]}
+                 ;[:i [:km "open: Tuple"]] ; TODO: doesn't seem to do anything
                  ;[:l [:km "open: Texts"]]
                  ;[:period [:km "web: Cal.video"]]
                  ; TODO: add google video
@@ -1135,8 +1136,8 @@
                  ;[:comma [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]] ; TODO: twitter search
         {:des "ckey (files/code)"
          :rules [:c-mode
-                 [:a [:km "Clone repo to ~/clones and open with Cursor"]]
-                 [:s [:km "Clone repo to ~/clones"]]
+                 [:a [:km "Clone/open repo in ~/gh/ with Cursor"]]
+                 [:s [:km "Clone/open repo in ~/gh/"]]
                  [:h [:km "edit: GitHub Bio"]]
                  [:j [:km "cursor: ts:scripts/run.ts"]]
                  [:i [:km "cursor: config:fish/private.fish"]]
@@ -1324,6 +1325,7 @@
                  [:left_command [:km "open: SQLiteFlow"]]
                  [:spacebar [:km "open: Dash (with search)"]]
                  ]}
+                 ;[:t [:km "open: Attio"]]
                  ;[:g [:km "open: GitButler"]]
                  ;[:a [:km "open: Apple Developer Documentation"]]
                  ;[:w [:km "open: Swift Documentation"]]

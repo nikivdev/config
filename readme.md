@@ -206,21 +206,21 @@ I mapped the action button to run [Quick Note](https://www.icloud.com/shortcuts/
 I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I use with gray color for consistency.
 
 - [Shortcuts](https://www.icloud.com/shortcuts/6dd13bc13cd14a30b2577dbd6816f39a) opens Shortcuts app (so I can fast edit/search shortcuts)
-- [Translate](https://www.icloud.com/shortcuts/38909c417cf34d788205b152b510417e) opens [Google Translate](https://apps.apple.com/us/app/google-translate/id414706506) app (for fast translates of camera or text)
+- [Open](https://www.icloud.com/shortcuts/1748f924bc9d40dc8fc3aba3614191d3) opens telegram mini apps like [GPTON](https://t.me/gpton_games_bot/?startapp&addToHomeScreen)
 - [Places](https://www.icloud.com/shortcuts/54bfaffe332542a1947e514d2c16537e) opens list of options like `Parks/Restaurants/Cafes` and on tap opens search for them in [Google Maps](https://apps.apple.com/us/app/google-maps/id585027354)
 - [Phone](https://www.icloud.com/shortcuts/cee3a88e59084520beaeb312bb0897cc) opens Phone app (for searching, making new contacts or entering a phone number)
-- [Recordings](https://www.icloud.com/shortcuts/562c7ccba3dc44678ac7dcc4c527ac71) opens [Voice Memos](https://apps.apple.com/us/app/voice-memos/id1069512134) (to check on recordings I made)
-- [Record](https://www.icloud.com/shortcuts/8b66fb6027224aa893d35d33582de5b7) starts/stops recording with [Superwhisper](https://superwhisper.com) (use it for recordings with transcription)
-- [Lens](https://www.icloud.com/shortcuts/c0458ec52a1547e4a4cb101dc2905751) opens [Google Lens](https://apps.apple.com/us/app/google/id284815942) (to know what camera is point at or what the image represents)
-- [Apps](https://www.icloud.com/shortcuts/fc5764668bc14baaa35fe6298407a8c0) opens telegram mini apps like [GPTON](https://t.me/gpton_games_bot/?startapp&addToHomeScreen)
+- [Listen](https://www.icloud.com/shortcuts/5de90cfa382149ce87748bf7d628eb4b) opens [ElevenReader](https://apps.apple.com/us/app/reader-by-elevenlabs/id6479373050) to listen to books/texts
+- [Trail](https://www.icloud.com/shortcuts/a0ef4845c51d42828f9e18c07a580e93) opens [AllTrails](https://alltrails.com) app to start navigating
+- [Translate](https://www.icloud.com/shortcuts/38909c417cf34d788205b152b510417e) opens [Google Translate](https://apps.apple.com/us/app/google-translate/id414706506) app (for fast translates of camera or text)
+- [Record](https://www.icloud.com/shortcuts/61fd25796ed9433884641687420e5824) starts recording with [Wispr Flow](https://wisprflow.ai)
 - [Ride/Food](https://www.icloud.com/shortcuts/8e9560d24b0c4087b0c40b989799e9fb) opens [Uber](https://apps.apple.com/us/app/uber-request-a-ride/id368677368) app (to request food or ride)
 - [Todo](https://www.icloud.com/shortcuts/7656a88946074b128cf7a9fa36904e75) opens [Things](https://apps.apple.com/us/app/things-3/id904237743) with quick entry for creating a todo
-- [Overcast](https://www.icloud.com/shortcuts/7224125bae5a49a29598215a465a3d59) - instantly start playing the current podcast on my feed
-- [Tab](https://www.icloud.com/shortcuts/e77dc26750fe4e96a9f37842908df6ef) - opens new tab in Safari
-- [Audible](https://www.icloud.com/shortcuts/76c982768d93441596d563084b0aeb77) opens [Audible](https://apps.apple.com/us/app/audible-audio-entertainment/id379693831) app to listen to audiobooks
-- [AI](https://www.icloud.com/shortcuts/7a747e6e284f4b3ca4f3beecb29c65d4) opens [Gemini](https://apps.apple.com/us/app/google-gemini/id6477489729) app (nice to ask questions that needs Google know how)
-- [Listen](https://www.icloud.com/shortcuts/5de90cfa382149ce87748bf7d628eb4b) opens [ElevenReader](https://apps.apple.com/us/app/reader-by-elevenlabs/id6479373050) to listen to books/texts
 - [Voice](https://www.icloud.com/shortcuts/fe163b06aae54258bb2d6e85fdad5937) starts voice conversation with [ChatGPT](https://apps.apple.com/us/app/chatgpt/id6448311069)
+- [Play](https://www.icloud.com/shortcuts/6b5d89fa80194bd29c1c4bf69fa2b11b) - instantly start playing [Overcast](https://overcast.fm/podcasts) currently playing episode
+- [Track](https://www.icloud.com/shortcuts/6ab7aff137004e38935795ebc08548b5) - opens camera with [FitBee](https://fitbee.app) app to track food/drinks
+- [Lens](https://www.icloud.com/shortcuts/c0458ec52a1547e4a4cb101dc2905751) opens [Google Lens](https://apps.apple.com/us/app/google/id284815942) (to know what camera is pointing at or to search for past photos in library)
+- [Audible](https://www.icloud.com/shortcuts/76c982768d93441596d563084b0aeb77) opens [Audible](https://apps.apple.com/us/app/audible-audio-entertainment/id379693831) app to listen to audiobooks
+- [Tab](https://www.icloud.com/shortcuts/e77dc26750fe4e96a9f37842908df6ef) - opens new tab in Safari
 
 I use `Test` shortcut to prototype new actions/ideas quickly. I then duplicate the working prototype & give it appropriate name. I use the same prototyping idea with [KM macros](https://wiki.nikiv.dev/macOS/apps/keyboard-maestro/km-macros).
 

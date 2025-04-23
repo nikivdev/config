@@ -835,6 +835,8 @@
                  [:m [:km "Things: Quick Entry (with context) (into Someday)"]]
                  [:spacebar [:km "open: Eagle"]]
                  ]}
+                 ;[:d :!TOr] ; Start Wispr Flow push-to-talk transcription (let go on ending of transcription)
+                 ;[:s :!TOSe] ; Start Superwhisper transcription
                  ;[:j :!CSspacebar] ; Homerow
                  ;[:q [:km "open: Framer"]]
                  ;[:comma [:km "edit: Flox"]] ; TODO: fix, manifest?
@@ -853,7 +855,6 @@
                  ;[:n :!Freturn_or_enter]
                  ;[:m :!Sreturn_or_enter]
                  ;[:n [:km "New Linear task"]]
-                 ;[:s :!TOSe] ; Start Superwhisper transcription
                  ;[:j :!CSspacebar]
                  ;[:period [:km "Things task (next in today)"]] ; TODO: make it top Things task. open Things and start writing task that will after `return` be on top
                  ;[:tab [:km "open: Dingboard"]]
@@ -1464,16 +1465,16 @@
                  [:t [:km "w: X (personal)"]]
                  [:escape :!CS8] ; Screenshot -> Eagle ; TODO: use genx, add as metadata url/app it's taken from. do another for video too, mby from cleanshot
                  [:a [:km "open: X Pro (search or post)"]]
-                 [:s :!CTOSF1] ; SuperCut start recording
-                 [:d :!CTOSF2] ; SuperCut finish recording TODO: hope supercut adds a way to finish recording from the `start recording` bind itself. this one would be `pause` bind then
-                 [:z :!CTOSF3] ; SuperCut cancel recording
+                 [:s :!CTOSF1] ; SuperCut start/stop recording
+                 [:d :!CTOSF3] ; SuperCut cancel recording
                  [:v [:km "web: SuperCut workspace"]]
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  [:quote [:km "open: Chrome Canary (x.com > account switch)"]]
-                 [:i [:km "open: Safari Technology Preview"]]
+                 [:i :!TOe] ; Start/Stop Wispr Flow hands-free transcription
                  [:o [:km "open: Arc"]]
+                 [:p [:km "open: Safari Technology Preview"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
                  [:period [:km "Save open tabs in safari"]]
                  [:h [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
@@ -1484,6 +1485,7 @@
                  [:n [:km "new safari tab"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  ]}
+                 ;[:d :!CTOSF2] ; SuperCut finish recording TODO: hope supercut adds a way to finish recording from the `start recording` bind itself. this one would be `pause` bind then
                  ;[:d :!CTOSF5] ; SuperCut pause recording ; TODO: move it to `:s` once supercut adds a way to override the `start recording` bind to finish recording too
                  ;[:z :!CTOSF4] ; SuperCut restart recording
                  ;[:period [:km "open: X Pro (post)"]] ; TODO: replace with typefully like service for `just post` or `new ..` (rally to X, bluesky, LA etc.)

@@ -85,19 +85,29 @@ function r
     end
 end
 
-# function i
-#     if not set -q argv[1]
-#         bun i
-#     else
-#         bun i $argv
-#     end
-# end
-
 function i
+    if not set -q argv[1]
+        bun i
+    else
+        bun i $argv
+    end
+end
+
+function p
     if not set -q argv[1]
         pnpm i
     else
         pnpm add $argv
+    end
+end
+
+# TODO: should not be needed if you do `i` command through fast ai check to auto get what should go into `dev`
+# install dev dependencies
+function idev
+    if not set -q argv[1]
+        pnpm i
+    else
+        pnpm add -d $argv
     end
 end
 

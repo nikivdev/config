@@ -956,7 +956,7 @@
                  [:quote [:km "cursor: swift."]]
                  [:x [:km "cursor: xn."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: deps."]]
+                 [:v [:km "cursor: try."]]
                  [:b [:km "cursor: moonbit."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]

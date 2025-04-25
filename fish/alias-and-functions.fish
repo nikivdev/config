@@ -97,7 +97,7 @@ function i
     if not set -q argv[1]
         pnpm i
     else
-        pnpm i $argv
+        pnpm add $argv
     end
 end
 
@@ -574,14 +574,6 @@ end
 
 function l
     ollama $argv
-end
-
-function p
-    if not set -q argv[1]
-        pnpm i
-    else
-        pnpm add $argv
-    end
 end
 
 # TODO: move

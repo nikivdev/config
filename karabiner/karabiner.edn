@@ -408,7 +408,6 @@
                  ;[:p [:km "open wip.md with Cursor Nightly"]]
                  ;[:r [:km "open: Things"]]
                  ;[:g [:km "open: Keynote"]]
-                 ;[:d [:km "open: Music"]]
                  ;[:d [:km "open: Day One"]]
                  ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:f [:km "open: Learn Anything"]]
@@ -499,10 +498,11 @@
                  [:l [:km "open: Books"]]
                  [:semicolon [:km "open: Notes"]]
                  [:n [:km "open: RustRover"]]
-                 [:m [:km "open: Obsidian"]]
+                 [:m [:km "open: Music"]]
                  [:period [:km "open: PyCharm"]]
                  [:spacebar [:km "Screenshot into Claude"]]
                  ]}
+                 ;[:i [:km "open: Obsidian"]]
                  ;[:m [:km "open: MacUpdater"]]
                  ;[:j [:km "open: Preview"]]
                  ;[:i [:km "open: Feedback Assistant"]]

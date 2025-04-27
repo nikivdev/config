@@ -11,6 +11,7 @@ alias dj="cd ~/src/ts && eza"
 alias ds="cd ~/test && eza"
 alias pip="pip3"
 alias dv="cd ~/src/nikiv.dev && eza"
+alias do="cd ~/doing && eza"
 alias dn="cd ~/src/py && eza"
 alias dm="cd ~/src/go && eza"
 alias dl="cd ~/src/org/la/la && eza"
@@ -30,8 +31,7 @@ alias dk="cd ~/src/org/solbond/solbond && eza"
 alias dt="cd ~/desktop && eza"
 alias df="cd ~/src/org && eza"
 alias dv="cd ~/src/nikiv.dev && eza"
-alias di="cd ~/clones && eza"
-alias do="cd ~/gh && eza"
+alias di="cd ~/i && eza"
 alias aa="eza -la" # list files (with hidden)
 # alias r="ronin"
 alias npm="bun"
@@ -654,7 +654,7 @@ function co
 end
 
 function d:
-    cd ~/src/swift && eza
+    cd ~/gh && eza
 end
 
 function d.

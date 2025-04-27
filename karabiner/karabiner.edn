@@ -944,7 +944,7 @@
                  [:open_bracket [:km "cursor: notlost."]]
                  [:close_bracket [:km "cursor: kotlin."]]
                  [:a [:km "cursor: ai."]]
-                 [:s [:km "cursor: projects!"]]
+                 [:s [:km "cursor: locality."]]
                  [:d [:km "cursor: docs."]]
                  [:f [:km "cursor: focus."]]
                  [:g [:km "cursor: games."]]
@@ -966,6 +966,7 @@
                  [:left_command [:km "cursor: alfred-raycast."]]
                  [:spacebar [:km "cursor: 1f."]]
                  ]}
+                 ;[:s [:km "cursor: projects!"]]
                  ;[:a [:km "cursor: genx."]]
                  ;[:q [:km "cursor: ai."]]
                  ;[:v [:km "cursor: jazz."]]

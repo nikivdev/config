@@ -282,7 +282,6 @@
   "python.analysis.autoImportCompletions": true,
   "python.terminal.activateEnvironment": false,
   "update.releaseTrack": "prerelease",
-  "workbench.statusBar.visible": false,
   "[mdx]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -348,5 +347,6 @@
       "hidden": false
     }
   ],
-  "editorjumper.selectedIDE": "GoLand"
+  "editorjumper.selectedIDE": "GoLand",
+  "workbench.statusBar.visible": false
 }

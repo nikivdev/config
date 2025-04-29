@@ -1480,9 +1480,8 @@
                  [:quote [:km "open: Chrome Canary (x.com > account switch)"]]
                  [:i :!TOe] ; Start/Stop Wispr Flow hands-free transcription
                  [:o [:km "open: Arc"]]
-                 [:p [:km "open: Safari Technology Preview"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
-                 [:period [:km "Save open tabs in safari"]]
+                 [:period [:km "open: Safari Technology Preview"]]
                  [:h [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks

@@ -944,15 +944,15 @@
                  [:open_bracket [:km "cursor: notlost."]]
                  [:close_bracket [:km "cursor: kotlin."]]
                  [:a [:km "cursor: ai."]]
-                 [:s [:km "cursor: locality."]]
-                 [:d [:km "cursor: docs."]]
+                 [:s [:km "cursor: alfred-raycast."]]
+                 [:d [:km "cursor: eventsline."]]
                  [:f [:km "cursor: focus."]]
                  [:g [:km "cursor: games."]]
                  [:h [:km "cursor: gridchess."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: sb."]]
                  [:l [:km "cursor: la."]]
-                 [:semicolon [:km "cursor: -gh"]]
+                 [:semicolon [:km "cursor: -gh"]] ; TODO: technically probably should just be `other` but there is weird thing when many `other` windows are open. can make caps+o be smth else like alfred-raycast?
                  [:quote [:km "cursor: swift."]]
                  [:x [:km "cursor: xn."]]
                  [:c [:km "cursor: config."]]
@@ -963,9 +963,10 @@
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: py."]]
                  [:slash [:km "cursor: mojo."]]
-                 [:left_command [:km "cursor: alfred-raycast."]]
                  [:spacebar [:km "cursor: 1f."]]
                  ]}
+                 ;[:left_command [:km "cursor: docs."]] ; TODO: does it make sense to have docs. ?
+                 ;[:s [:km "cursor: locality."]]
                  ;[:s [:km "cursor: projects!"]]
                  ;[:a [:km "cursor: genx."]]
                  ;[:q [:km "cursor: ai."]]
@@ -1317,7 +1318,7 @@
                  ;[:spacebar [:alfred "search history" "net.deanishe.alfred.safari"]]]}
                  ;[:spacebar [:km "New 2Do task"]]]}
                  ;[:spacebar [:alfred "search websites" "nikivi.web.searches"]]]}
-        {:des "mkey (apps, sites)"
+        {:des "mkey (apps)"
          :rules [:m-mode
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:e [:km "open: Encore (local)"]]
@@ -1331,6 +1332,7 @@
                  [:g [:km "open: Google Maps"]]
                  [:c [:km "open: OBS"]]
                  [:v [:km "open: Kulve"]]
+                 [:grave_accent_and_tilde [:km "open: Transmit"]]
                  [:left_command [:km "open: SQLiteFlow"]]
                  [:spacebar [:km "open: Dash (with search)"]]
                  ]}

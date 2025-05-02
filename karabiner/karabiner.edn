@@ -956,7 +956,7 @@
                  [:quote [:km "cursor: swift."]]
                  [:x [:km "cursor: xn."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: try."]]
+                 [:v [:km "cursor: tmp."]]
                  [:b [:km "cursor: moonbit."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
@@ -965,6 +965,7 @@
                  [:slash [:km "cursor: mojo."]]
                  [:spacebar [:km "cursor: 1f."]]
                  ]}
+                 ;[:v [:km "cursor: try."]]
                  ;[:left_command [:km "cursor: docs."]] ; TODO: does it make sense to have docs. ?
                  ;[:s [:km "cursor: locality."]]
                  ;[:s [:km "cursor: projects!"]]

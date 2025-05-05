@@ -932,14 +932,13 @@
                  [:2 [:km "cursor: effect-gh"]]
                  [:3 [:km "cursor: encore-hono-ronin-gh"]]
                  [:4 [:km "cursor: react-gh"]]
-                 [:q [:km "cursor: 1f."]]
                  [:w [:km "cursor: waffle."]]
                  [:e [:km "cursor: gen."]]
                  [:r [:km "cursor: infra."]]
                  [:t [:km "cursor: gitedit."]]
                  [:u [:km "cursor: kuskus."]]
                  [:i [:km "cursor: i."]]
-                 [:o [:km "cursor: other"]]
+                 [:o [:km "cursor: extensions."]]
                  [:p [:km "cursor: gpton."]]
                  [:open_bracket [:km "cursor: notlost."]]
                  [:close_bracket [:km "cursor: kotlin."]]
@@ -952,7 +951,7 @@
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: sb."]]
                  [:l [:km "cursor: la."]]
-                 [:semicolon [:km "cursor: -gh"]] ; TODO: technically probably should just be `other` but there is weird thing when many `other` windows are open. can make caps+o be smth else like alfred-raycast?
+                 [:semicolon [:km "cursor: other"]]
                  [:quote [:km "cursor: swift."]]
                  [:x [:km "cursor: xn."]]
                  [:c [:km "cursor: config."]]
@@ -963,8 +962,9 @@
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: py."]]
                  [:slash [:km "cursor: mojo."]]
-                 [:spacebar [:km "cursor: alfred-raycast."]]
+                 [:spacebar [:km "cursor: 1f."]]
                  ]}
+                 ;[:o [:km "cursor: -gh"]] ; TODO: technically probably should just be `other` but there is weird thing when many `other` windows are open. can make caps+o be smth else like alfred-raycast?
                  ;[:a [:km "cursor: mojo."]]
                  ;[:v [:km "cursor: try."]]
                  ;[:left_command [:km "cursor: docs."]] ; TODO: does it make sense to have docs. ?

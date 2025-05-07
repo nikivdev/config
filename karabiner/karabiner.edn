@@ -939,7 +939,7 @@
                  [:t [:km "cursor: gitedit."]]
                  [:u [:km "cursor: kuskus."]]
                  [:i [:km "cursor: i."]]
-                 [:o [:km "cursor: extensions."]]
+                 [:o [:km "cursor: ext."]]
                  [:p [:km "cursor: gpton."]]
                  [:open_bracket [:km "cursor: notlost."]]
                  [:close_bracket [:km "cursor: kotlin."]]

@@ -939,7 +939,7 @@
                  [:t [:km "cursor: gitedit."]]
                  [:u [:km "cursor: kuskus."]]
                  [:i [:km "cursor: i."]]
-                 [:o [:km "cursor: ext."]]
+                 [:o [:km "cursor: 1f."]]
                  [:p [:km "cursor: gpton."]]
                  [:open_bracket [:km "cursor: notlost."]]
                  [:close_bracket [:km "cursor: kotlin."]]
@@ -963,7 +963,7 @@
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: py."]]
                  [:slash [:km "cursor: mojo."]]
-                 [:spacebar [:km "cursor: 1f."]]
+                 [:spacebar [:km "cursor: ext."]]
                  ]}
                  ;[:o [:km "cursor: -gh"]] ; TODO: technically probably should just be `other` but there is weird thing when many `other` windows are open. can make caps+o be smth else like alfred-raycast?
                  ;[:a [:km "cursor: mojo."]]

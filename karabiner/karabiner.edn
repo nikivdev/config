@@ -932,6 +932,7 @@
                  [:2 [:km "cursor: effect-gh"]]
                  [:3 [:km "cursor: encore-hono-ronin-gh"]]
                  [:4 [:km "cursor: react-gh"]]
+                 [:q [:km "cursor: flow."]]
                  [:w [:km "cursor: waffle."]]
                  [:e [:km "cursor: gen."]]
                  [:r [:km "cursor: infra."]]

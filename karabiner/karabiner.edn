@@ -956,13 +956,14 @@
                  [:quote [:km "cursor: swift."]]
                  [:x [:km "cursor: xn."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: tmp."]]
+                 [:v [:km "cursor: vscode."]]
                  [:b [:km "cursor: moonbit."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: py."]]
                  [:slash [:km "cursor: mojo."]]
+                 [:left_command [:km "cursor: tmp."]]
                  [:spacebar [:km "cursor: ext."]]
                  ]}
                  ;[:o [:km "cursor: -gh"]] ; TODO: technically probably should just be `other` but there is weird thing when many `other` windows are open. can make caps+o be smth else like alfred-raycast?

@@ -333,6 +333,7 @@
                  ;[:spacebar [:km "Explain selected text"]]]} ; TODO: seems not needed, as there is e+spacebar
         {:des "wkey (apps)"
          :rules [:w-mode
+                 [:q [:km "open: SnippetsLab"]]
                  [:e [:km "open: Linear"]]
                  [:r [:km "open: 1Password"]]
                  [:t [:km "open: Proxyman"]]
@@ -340,13 +341,12 @@
                  [:u [:km "open: GitButler"]]
                  [:i [:km "open: Windsurf"]]
                  [:o [:km "open: Keyboard Maestro"]]
-                 [:p [:km "open: VSCode Insiders"]]
-                 [:v [:km "open: Yaak"]]
+                 [:v [:km "open: VSCode Insiders"]]
                  [:escape [:km "open: Finder"]]
+                 [:d [:km "open: Yaak"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:g [:km "open: n8n"]]
                  [:spacebar [:km "open: Fantastical"]]
-                 [:d [:km "open: SnippetsLab"]]
                  [:h [:km "open: Warp"]]
                  [:j [:km "open: Ghostty"]]
                  [:k [:km "open: Safari"]]

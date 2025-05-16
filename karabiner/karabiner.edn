@@ -43,6 +43,7 @@
              :n-mode {:key :n}
              :m-mode {:key :m}
              :comma-mode {:key :comma}
+             :slash-mode {:key :slash}
              :dot-mode {:key :period}
              :spacebar-mode {:key :spacebar}
              :ts-mode {:key :period :condi ["in-ts" 1]}
@@ -216,15 +217,18 @@
                  [:spacebar :!COSu] ; Selection -> HN
                  ]}
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
-        {:des "3key (open files + projects)"
+        {:des "3key (workspaces & things)"
          :rules [:3-mode
-                 [:semicolon [:km "proj: Wiki"]]
-                 [:quote [:km "wiki: Summary"]]
-                 [:n [:km "proj: Dotfiles"]]
-                 [:m [:km "proj: Home"]]
-                 [:comma [:km "edit: Now"]]
+                 [:k [:km "cursor: kotlin."]]
+                 [:l [:km "cursor: lean."]]
+                 [:period [:km "cursor: ruby."]]
                  [:spacebar :!CSOp] ; Selection -> Reddit
                  ]}
+                 ;[:quote [:km "wiki: Summary"]]
+                 ;[:n [:km "proj: Dotfiles"]]
+                 ;[:m [:km "proj: Home"]]
+                 ;[:comma [:km "edit: Now"]]
+                 ;[:semicolon [:km "proj: Wiki"]]
                  ;[:j [:km "edit: Fish aliases"]]
                  ;[:r [:km "proj: LA"]]
                  ;[:i [:km "edit: Likes"]]
@@ -242,7 +246,7 @@
                  [:k [:km "list: Alfred workflows"]]
                  [:l [:km "list: Command line tools"]]
                  [:n [:km "list: Events"]]]}
-        {:des "tabkey (more projects)"
+        {:des "tabkey (gh workspaces)"
          :rules [:tab-mode
                  [:q [:km "cursor: qdrant-gh"]]
                  [:w [:km "cursor: railway-gh"]]
@@ -926,7 +930,7 @@
                  ;[:j [:km "New open app's macro"]] ; TODO: macro that will start a new macro in currently open app KM group
                  ;[:semicolon :!COSs] ; Move window to right desktop
                  ;[:z :!CO0] ; Show Dropzone dropdown
-        {:des "capskey (projects)"
+        {:des "capskey (workspaces)"
          :rules [:escape-mode
                  ;[:1 [:km "cursor: expo-rn-gh"]]
                  ;[:2 [:km "cursor: effect-gh"]]
@@ -938,7 +942,6 @@
                  [:e [:km "cursor: gen."]]
                  [:r [:km "cursor: ronin."]]
                  [:t [:km "cursor: notlost."]]
-                 [:y [:km "cursor: lean."]]
                  [:u [:km "cursor: unison."]]
                  [:i [:km "cursor: i."]]
                  [:o [:km "cursor: 1f."]]
@@ -1382,10 +1385,16 @@
                  ;[:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
                  ;[:b [:alfred "search alfred" "nikivi.utilities" "bash "]]
                  ;[:spacebar :!OSC1]]} ; Open Dash
-        {:des "commakey (words)"
+        {:des "commakey (complete)"
          :rules [:comma-mode
                  [:w [:n :i :k :i :v]] ; -> nikiv
                  [:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]]]} ; -> nikitavoloboev
+        {:des "slashkey (workspaces)" ; TODO: change as its moved to 3key
+         :rules [:slash-mode
+                 [:t [:km "cursor: kotlin."]]
+                 [:e [:km "cursor: lean."]]
+                 [:r [:km "cursor: ruby."]]
+                 ]}
          {:des "dotkey (1-3, q-u, caps, tab)"
           :rules [:dot-mode
                   [:1 [:c :l :o :s :e :spacebar :!S3]] ; -> close #

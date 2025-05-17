@@ -197,7 +197,8 @@
                  ;[[:l :m] :!TOSt] ; Raycast AI quick chat
                  ;[[:k :n] :!TOSu] ; Raycast AI window
                  ;[[:j :semicolon] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window) (inline info!)
-        {:des "1key (things)"
+        ; TODO: mby use it to search docs of things fast (like raycast)
+        {:des "1key (one of scripts + change language)"
          :rules [:1-mode
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
                  [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
@@ -217,37 +218,8 @@
                  [:spacebar :!COSu] ; Selection -> HN
                  ]}
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
-        {:des "3key (workspaces & things)"
+        {:des "3key (gh workspaces)"
          :rules [:3-mode
-                 [:k [:km "cursor: kotlin."]]
-                 [:l [:km "cursor: lean."]]
-                 [:period [:km "cursor: ruby."]]
-                 [:spacebar :!CSOp] ; Selection -> Reddit
-                 ]}
-                 ;[:quote [:km "wiki: Summary"]]
-                 ;[:n [:km "proj: Dotfiles"]]
-                 ;[:m [:km "proj: Home"]]
-                 ;[:comma [:km "edit: Now"]]
-                 ;[:semicolon [:km "proj: Wiki"]]
-                 ;[:j [:km "edit: Fish aliases"]]
-                 ;[:r [:km "proj: LA"]]
-                 ;[:i [:km "edit: Likes"]]
-                 ;[:o [:km "edit: Projects"]]
-                 ;[:t [:km "edit: Git config"]]
-                 ;[:g [:km "edit: gitignore global"]]
-                 ;[:h [:km "wiki: Used hotkeys"]]
-                 ;[:l [:km "Search current safari url in wiki"]]
-        {:des "4key (open curated lists)"
-         :rules [:4-mode
-                 [:r [:km "edit: Web Searches"]]
-                 [:t [:km "list: Newsletters"]]
-                 [:o [:km "list: Blogs"]]
-                 [:p [:km "list: Podcasts"]]
-                 [:k [:km "list: Alfred workflows"]]
-                 [:l [:km "list: Command line tools"]]
-                 [:n [:km "list: Events"]]]}
-        {:des "tabkey (gh workspaces)"
-         :rules [:tab-mode
                  [:q [:km "cursor: qdrant-gh"]]
                  [:w [:km "cursor: railway-gh"]]
                  [:e [:km "cursor: encore-gh"]]
@@ -279,12 +251,41 @@
                  [:slash [:km "cursor: odin-gh"]]
                  [:left_command [:km "cursor: charm-gh"]]
                  [:spacebar [:km "cursor: gorealeaser-gh"]]
-                 ; TODO: add more
+                 ; TODO: make spacekey search through gh workspaces instead
+                 ]}
+                 ;[:k [:km "cursor: kotlin."]]
+                 ;[:l [:km "cursor: lean."]]
+                 ;[:period [:km "cursor: ruby."]]
+                 ;[:quote [:km "wiki: Summary"]]
+                 ;[:n [:km "proj: Dotfiles"]]
+                 ;[:m [:km "proj: Home"]]
+                 ;[:comma [:km "edit: Now"]]
+                 ;[:semicolon [:km "proj: Wiki"]]
+                 ;[:j [:km "edit: Fish aliases"]]
+                 ;[:r [:km "proj: LA"]]
+                 ;[:i [:km "edit: Likes"]]
+                 ;[:o [:km "edit: Projects"]]
+                 ;[:t [:km "edit: Git config"]]
+                 ;[:g [:km "edit: gitignore global"]]
+                 ;[:h [:km "wiki: Used hotkeys"]]
+                 ;[:l [:km "Search current safari url in wiki"]]
+        {:des "4key ()"
+         :rules [:4-mode
+                 ;[:r [:km "edit: Web Searches"]]
+                 ;[:t [:km "list: Newsletters"]]
+                 ;[:o [:km "list: Blogs"]]
+                 ;[:p [:km "list: Podcasts"]]
+                 ;[:k [:km "list: Alfred workflows"]]
+                 ;[:l [:km "list: Command line tools"]]
+                 ;[:n [:km "list: Events"]]
+                 ]}
+        {:des "tabkey (one of scripts)"
+         :rules [:tab-mode
+                 ;[:f [:km "Get time in SF"]] ; TODO: fix
                  ;[:d [:km "Open Dash and search docsets"]]
                  ;[:hyphen [:km "cursor: vscode."]]
                  ;[:equal_sign [:km "cursor: bluesky."]]
                  ;[:3 [:km "Add/remove explore to focus workspace"]]
-                 ;[:f [:km "Get time in SF"]]
                  ; TODO: should be automated, i should never run these myself
                  ]}
                  ;[:f [:km "Get time in SF"]]
@@ -936,7 +937,9 @@
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: effect."]]
                  [:4 [:km "cursor: encore."]]
-                 [:tab [:km "cursor: gridchess."]]
+                 [:9 [:km "cursor: gridchess."]]
+                 [:0 [:km "cursor: eventsline."]]
+                 [:hyphen [:km "cursor: gitedit."]]
                  [:q [:km "cursor: kuskus."]]
                  [:w [:km "cursor: swift."]]
                  [:e [:km "cursor: gen."]]
@@ -947,7 +950,7 @@
                  [:o [:km "cursor: 1f."]]
                  [:p [:km "cursor: gpton."]]
                  [:open_bracket [:km "cursor: workflow."]]
-                 [:close_bracket [:km "cursor: gitedit."]]
+                 [:close_bracket [:km "cursor: past."]]
                  [:a [:km "cursor: test."]]
                  [:s [:km "cursor: ext."]]
                  [:d [:km "cursor: garden."]]
@@ -959,7 +962,6 @@
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: other"]]
                  [:quote [:km "cursor: c."]]
-                 [:z [:km "cursor: eventsline."]]
                  [:x [:km "cursor: xn."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]
@@ -1169,10 +1171,9 @@
                  [:a [:km "Clone/open repo in ~/gh/ with Cursor"]]
                  [:s [:km "Clone/open repo in ~/gh/"]]
                  [:h [:km "edit: GitHub Bio"]]
-                 [:j [:km "cursor: ts:scripts/run.ts"]]
                  [:i [:km "cursor: config:fish/private.fish"]]
                  [:o [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
-                 ;[:k [:km "cursor: ui"]] ; TODO: do
+                 [:j [:km "cursor: ~/i/ts/scripts/i.ts"]]
                  [:l [:km "cursor: config:fish/config.fish"]]
                  [:semicolon [:km "edit: run.swift"]]
                  [:n [:km "edit: run.py"]]
@@ -1180,9 +1181,10 @@
                  [:comma [:km "edit: run.zig"]]
                  [:period [:km "edit: run.rs"]]
                  [:slash [:km "edit: run.odin"]]
-                 ; TODO: do smth better
-                 ;[:spacebar :!CSOy] ; Selection -> Stack Overflow
+                 [:spacebar :!CSOp] ; Selection -> Reddit
                  ]}
+                 ;[:spacebar :!CSOy] ; Selection -> Stack Overflow
+                 ;[:k [:km "cursor: ui"]]
                  ; TODO: ' bind nice
                  ;[:slash [:km "edit: Fish alias/functions (past)"]]
                  ;[:k [:km "cursor: py:scripts/p-run.ts"]]

@@ -198,7 +198,7 @@
                  ;[[:k :n] :!TOSu] ; Raycast AI window
                  ;[[:j :semicolon] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window) (inline info!)
         ; TODO: mby use it to search docs of things fast (like raycast)
-        {:des "1key (one of scripts + change language)"
+        {:des "1key (scripts + change language)"
          :rules [:1-mode
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
                  [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
@@ -207,7 +207,7 @@
                  [:period [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
                  ]}
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
-        {:des "2key (move + alfred)"
+        {:des "2key (move + scripts + refactor)"
          :rules [:2-mode
                  [:j :!Cdown_arrow]
                  [:k :!Cup_arrow]
@@ -217,6 +217,34 @@
                  [:quote :!Odown_arrow]
                  [:spacebar :!COSu] ; Selection -> HN
                  ]}
+                 ;[:p [:km "cursor: fastapi-gh"]]
+                 ;[:g [:km "cursor: gel-gh"]]
+                 ;[:c [:km "cursor: langchain-gh"]]
+                 ;[:d [:km "cursor: supabase-gh"]]
+                 ;[:w [:km "cursor: railway-gh"]]
+                 ;[:e [:km "cursor: smolagents-gh"]]
+                 ;[:open_bracket [:km "cursor: orama-gh"]]
+                 ;[:left_command [:km "cursor: charm-gh"]]
+                 ;[:t [:km "cursor: nextjs-gh"]]
+                 ;[:v [:km "cursor: garden-gh"]]
+                 ; TODO: make spacekey search through gh workspaces mby or another bind
+                 ;[:slash [:km "cursor: odin-gh"]]
+                 ;[:k [:km "cursor: kotlin."]]
+                 ;[:l [:km "cursor: lean."]]
+                 ;[:period [:km "cursor: ruby."]]
+                 ;[:quote [:km "wiki: Summary"]]
+                 ;[:n [:km "proj: Dotfiles"]]
+                 ;[:m [:km "proj: Home"]]
+                 ;[:comma [:km "edit: Now"]]
+                 ;[:semicolon [:km "proj: Wiki"]]
+                 ;[:j [:km "edit: Fish aliases"]]
+                 ;[:r [:km "proj: LA"]]
+                 ;[:i [:km "edit: Likes"]]
+                 ;[:o [:km "edit: Projects"]]
+                 ;[:t [:km "edit: Git config"]]
+                 ;[:g [:km "edit: gitignore global"]]
+                 ;[:h [:km "wiki: Used hotkeys"]]
+                 ;[:l [:km "Search current safari url in wiki"]]
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
         {:des "3key (gh workspaces)"
          :rules [:3-mode
@@ -253,35 +281,7 @@
                  [:left_command [:km "cursor: mlx-gh"]]
                  [:spacebar [:km "cursor: jax-gh"]]
                  ]}
-                 ;[:p [:km "cursor: fastapi-gh"]]
-                 ;[:g [:km "cursor: gel-gh"]]
-                 ;[:c [:km "cursor: langchain-gh"]]
-                 ;[:d [:km "cursor: supabase-gh"]]
-                 ;[:w [:km "cursor: railway-gh"]]
-                 ;[:e [:km "cursor: smolagents-gh"]]
-                 ;[:open_bracket [:km "cursor: orama-gh"]]
-                 ;[:left_command [:km "cursor: charm-gh"]]
-                 ;[:t [:km "cursor: nextjs-gh"]]
-                 ;[:v [:km "cursor: garden-gh"]]
-                 ; TODO: make spacekey search through gh workspaces mby or another bind
-                 ;[:slash [:km "cursor: odin-gh"]]
-                 ;[:k [:km "cursor: kotlin."]]
-                 ;[:l [:km "cursor: lean."]]
-                 ;[:period [:km "cursor: ruby."]]
-                 ;[:quote [:km "wiki: Summary"]]
-                 ;[:n [:km "proj: Dotfiles"]]
-                 ;[:m [:km "proj: Home"]]
-                 ;[:comma [:km "edit: Now"]]
-                 ;[:semicolon [:km "proj: Wiki"]]
-                 ;[:j [:km "edit: Fish aliases"]]
-                 ;[:r [:km "proj: LA"]]
-                 ;[:i [:km "edit: Likes"]]
-                 ;[:o [:km "edit: Projects"]]
-                 ;[:t [:km "edit: Git config"]]
-                 ;[:g [:km "edit: gitignore global"]]
-                 ;[:h [:km "wiki: Used hotkeys"]]
-                 ;[:l [:km "Search current safari url in wiki"]]
-        {:des "4key ()"
+        {:des "4key (gh workspaces)"
          :rules [:4-mode
                  ;[:r [:km "edit: Web Searches"]]
                  ;[:t [:km "list: Newsletters"]]
@@ -291,15 +291,27 @@
                  ;[:l [:km "list: Command line tools"]]
                  ;[:n [:km "list: Events"]]
                  ]}
-        {:des "tabkey (one of scripts)"
-         :rules [:tab-mode
+        {:des "tabkey (files)"
+         :rules [:tab-mode ; TODO: fix up files/macros
+                 [:h [:km "edit: GitHub Bio"]]
+                 [:i [:km "cursor: config:fish/private.fish"]]
+                 [:o [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
+                 [:j [:km "cursor: ~/i/ts/scripts/i.ts"]]
+                 [:l [:km "cursor: config:fish/config.fish"]]
+                 [:semicolon [:km "edit: run.swift"]]
+                 [:n [:km "edit: run.py"]]
+                 [:m [:km "edit: run.go"]]
+                 [:comma [:km "edit: run.zig"]]
+                 [:period [:km "edit: run.rs"]]
+                 [:slash [:km "edit: run.odin"]]
+                 [:spacebar :!CSOp] ; Selection -> Reddit
+                 ]}
                  ;[:f [:km "Get time in SF"]] ; TODO: fix
                  ;[:d [:km "Open Dash and search docsets"]]
                  ;[:hyphen [:km "cursor: vscode."]]
                  ;[:equal_sign [:km "cursor: bluesky."]]
                  ;[:3 [:km "Add/remove explore to focus workspace"]]
                  ; TODO: should be automated, i should never run these myself
-                 ]}
                  ;[:f [:km "Get time in SF"]]
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
@@ -1078,26 +1090,8 @@
                  ;[:f [:km "w: Cloudflare LA deployments"]]
                  ;[:g [:km "w: Grafbase LA logs"]]
                  ;[:spacebar :!COSn]]} ; Selection -> GitHub ; TODO: move it to another key (on s?)
-        {:des "tilkey (paste)"
+        {:des "tilkey ()" ; TODO: use
          :rules [:tilde-mode
-                  [:w [:km "paste: personal nikita.vo@ email"]]
-                  [:e [:km "paste: personal nikita@ email"]]
-                  [:r [:km "paste: 🙏"]]
-                  [:s [:km "paste: ✨"]]
-                  [:d [:km "paste: delete"]]
-                  [:j [:km "enter: thanks 🖤"]]
-                  [:k [:km "paste: nikiv"]]
-                  [:l [:km "paste: Cal.com (15 min)️"]]
-                  [:c [:km "paste: 😿"]]
-                  [:v [:km "paste: 👋"]]
-                  [:h [:km "paste: 😺"]]
-                  [:semicolon [:km "paste: 🖤"]]
-                  [:g [:km "paste: Telegram (personal)️"]]
-                  [:n [:km "paste: nikitavoloboev"]]
-                  [:u [:km "paste: update"]]
-                  [:p [:km "paste: please"]]
-                  [:left_command [:km "Go to test macro"]]
-                  [:spacebar [:km "Test"]]
                  ]}
                   ;[:l [:km "open: EdgeDB Cloud"]]
                   ;[:k [:km "paste: That worked 🖤"]]
@@ -1178,22 +1172,26 @@
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  ]}
                  ;[:comma [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]] ; TODO: twitter search
-        {:des "ckey (files/code)"
+        {:des "ckey (paste)"
          :rules [:c-mode
-                 [:a [:km "Clone/open repo in ~/gh/ with Cursor"]]
-                 [:s [:km "Clone/open repo in ~/gh/"]]
-                 [:h [:km "edit: GitHub Bio"]]
-                 [:i [:km "cursor: config:fish/private.fish"]]
-                 [:o [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
-                 [:j [:km "cursor: ~/i/ts/scripts/i.ts"]]
-                 [:l [:km "cursor: config:fish/config.fish"]]
-                 [:semicolon [:km "edit: run.swift"]]
-                 [:n [:km "edit: run.py"]]
-                 [:m [:km "edit: run.go"]]
-                 [:comma [:km "edit: run.zig"]]
-                 [:period [:km "edit: run.rs"]]
-                 [:slash [:km "edit: run.odin"]]
-                 [:spacebar :!CSOp] ; Selection -> Reddit
+                  [:w [:km "paste: personal nikita.vo@ email"]]
+                  [:e [:km "paste: personal nikita@ email"]]
+                  [:r [:km "paste: 🙏"]]
+                  [:s [:km "paste: ✨"]]
+                  [:d [:km "paste: delete"]]
+                  [:j [:km "enter: thanks 🖤"]]
+                  [:k [:km "paste: nikiv"]]
+                  [:l [:km "paste: Cal.com (15 min)️"]]
+                  [:v [:km "paste: 👋"]]
+                  [:h [:km "paste: 😺"]]
+                  [:semicolon [:km "paste: 🖤"]]
+                  [:g [:km "paste: Telegram (personal)️"]]
+                  [:n [:km "paste: nikitavoloboev"]]
+                  [:u [:km "paste: update"]]
+                  [:p [:km "paste: please"]]
+                  [:period [:km "paste: 😿"]]
+                  [:left_command [:km "Go to test macro"]]
+                  [:spacebar [:km "Test"]]
                  ]}
                  ;[:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ;[:k [:km "cursor: ui"]]
@@ -1407,7 +1405,7 @@
          :rules [:comma-mode
                  [:w [:n :i :k :i :v]] ; -> nikiv
                  [:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]]]} ; -> nikitavoloboev
-        {:des "slashkey (workspaces)" ; TODO: change as its moved to 3key
+        {:des "slashkey (workspaces)" ; TODO: maybe move to 1
          :rules [:slash-mode
                  [:t [:km "cursor: kotlin."]]
                  [:e [:km "cursor: lean."]]
@@ -1515,23 +1513,25 @@
                  [:a [:km "open: X Pro (search or post)"]]
                  [:s :!CTOSF1] ; SuperCut start/stop recording
                  [:d :!CTOSF3] ; SuperCut cancel recording
-                 [:v [:km "web: SuperCut workspace"]]
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
+                 [:h [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
-                 [:quote [:km "open: Chrome Canary (x.com > account switch)"]]
                  [:i :!TOe] ; Start/Stop Wispr Flow hands-free transcription
                  [:o [:km "open: Arc"]]
+                 [:p [:km "web: SuperCut workspace"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
                  [:period [:km "open: Safari Technology Preview"]]
-                 [:h [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:l [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
-                 [:slash [:km "w: GitHub PR"]] ; TODO:
+                 [:c [:km "Clone/open repo in ~/gh/"]]
+                 [:v [:km "Clone/open repo in ~/gh/ with Cursor"]]
                  [:n [:km "new safari tab"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  ]}
+                 ;[:quote [:km "open: Chrome Canary (x.com > account switch)"]]
+                 ;[:slash [:km "w: GitHub PR"]] ; TODO:
                  ;[:d :!CTOSF2] ; SuperCut finish recording TODO: hope supercut adds a way to finish recording from the `start recording` bind itself. this one would be `pause` bind then
                  ;[:d :!CTOSF5] ; SuperCut pause recording ; TODO: move it to `:s` once supercut adds a way to override the `start recording` bind to finish recording too
                  ;[:z :!CTOSF4] ; SuperCut restart recording

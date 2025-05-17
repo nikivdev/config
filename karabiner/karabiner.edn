@@ -1525,8 +1525,8 @@
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:l [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
-                 [:c [:km "Clone/open repo in ~/gh/"]]
-                 [:v [:km "Clone/open repo in ~/gh/ with Cursor"]]
+                 [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
+                 [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind
                  [:n [:km "new safari tab"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  ]}

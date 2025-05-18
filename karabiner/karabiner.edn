@@ -18,26 +18,30 @@
              :2-mode {:key :2}
              :3-mode {:key :3}
              :4-mode {:key :4}
+             :0-mode {:key :0}
              :tab-mode {:key :tab}
              :q-mode {:key :q}
              :w-mode {:key :w}
              :e-mode {:key :e}
              :r-mode {:key :r}
              :t-mode {:key :t}
+             :u-mode {:key :u}
              :i-mode {:key :i}
              :o-mode {:key :o}
              :p-mode {:key :p}
+             :open-bracket-mode {:key :open_bracket}
              :a-mode {:key :a}
              :s-mode {:key :s}
              :d-mode {:key :d}
              :f-mode {:key :f}
              :g-mode {:key :g}
              :semicolon-mode {:key :semicolon}
+             :quote-mode {:key :quote}
              :escape-mode {:key :escape}
              ;:backslash {:key :backslash} TODO: for future
              :tilde-mode {:key :grave_accent_and_tilde}
              :z-mode {:key :z}
-             ;:x-mode {:key :x}
+             :x-mode {:key :x}
              :c-mode {:key :c}
              :v-mode {:key :v}
              :b-mode {:key :b}
@@ -119,6 +123,26 @@
                  ;[:escape [:km "get last error from ~/log/cmd.log + current file as context"]]
                  ;[:escape [:km "get last error from ~/log/cmd.log + current file as context and paste into claude to fix"]]
                  ;[:escape [:km "get last error from ~/log/cmd.log + current file as context and paste into chatgpt to fix"]]
+        {:des "quotekey (gh workspaces)"
+         :rules [:quote-mode
+                 [:w [:km "cursor: nativewind-gh"]]
+                 [:e [:km "cursor: reanimated-gh"]]
+                 [:r [:km "cursor: nitro-gh"]]
+                 [:t [:km "cursor: mistral-rs-gh"]]
+                 [:u [:km "cursor: automerge-gh"]]
+                 [:o [:km "cursor: loco-gh"]]
+                 [:escape [:km "cursor: ghostty-gh"]]
+                 [:a [:km "cursor: openai-gh"]]
+                 [:s [:km "cursor: unistyles-gh"]]
+                 [:d [:km "cursor: deepseek-gh"]]
+                 [:g [:km "cursor: gemini-gh"]]
+                 [:k [:km "cursor: rn-mmkv-gh"]]
+                 [:g [:km "cursor: tamagui-gh"]]
+                 [:c [:km "cursor: anthropic-gh"]]
+                 [:v [:km "cursor: rn-vision-camera-gh"]]
+                 [:m [:km "cursor: prisma-gh"]]
+                 [:spacebar [:km "cursor: k23-gh"]]
+                 ]}
         {:des "skey (essential)"
          :rules [:s-mode
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
@@ -213,6 +237,7 @@
                  [:d [:km "cursor: docker-gh"]]
                  [:f [:km "cursor: graft-gh"]]
                  [:g [:km "cursor: gluestack-gh"]]
+                 [:h [:km "cursor: charm-gh"]]
                  [:j [:km "cursor: baseui-gh"]]
                  [:k [:km "cursor: shadcn-gh"]]
                  [:l [:km "cursor: react-spectrum-gh"]]
@@ -229,6 +254,7 @@
                  [:r [:km "cursor: react-gh"]]
                  [:t [:km "cursor: vitest-gh"]]
                  [:y [:km "cursor: typedoc-gh"]]
+                 [:u [:km "cursor: rusqlite-gh"]]
                  [:i [:km "cursor: diffusers-gh"]]
                  [:o [:km "cursor: transformers-gh"]]
                  [:p [:km "cursor: peft-gh"]]
@@ -239,8 +265,10 @@
                  [:k [:km "cursor: langchain-gh"]]
                  [:l [:km "cursor: smolagents-gh"]]
                  [:semicolon [:km "cursor: dspy-gh"]]
+                 [:b [:km "cursor: bluesky-gh"]]
                  [:n [:km "cursor: unsloth-gh"]]
                  [:m [:km "cursor: mcp-spec-gh"]]
+                 [:comma [:km "cursor: skip-gh"]]
                  [:period [:km "cursor: pydantic-ai-gh"]]
                  ]}
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
@@ -285,6 +313,7 @@
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
         {:des "3key (gh workspaces)"
          :rules [:3-mode
+                 [:e [:km "cursor: trigger-gh"]]
                  [:r [:km "cursor: restate-gh"]]
                  [:t [:km "cursor: tinygrad-gh"]]
                  [:i [:km "cursor: nix-gh"]]
@@ -293,6 +322,7 @@
                  [:p [:km "cursor: gorealeaser-gh"]]
                  [:open_bracket [:km "cursor: yaak-gh"]]
                  [:escape [:km "cursor: tailwind-gh"]]
+                 [:d [:km "cursor: dicedb-gh"]]
                  [:f [:km "cursor: meilisearch-gh"]]
                  [:g [:km "cursor: telegram-gh"]]
                  [:h [:km "cursor: moonbit-gh"]]
@@ -309,8 +339,12 @@
                  [:left_command [:km "cursor: mlx-gh"]]
                  [:spacebar [:km "cursor: jax-gh"]]
                  ]}
-        {:des "4key ()"
+        {:des "4key (things + gh workspaces)"
          :rules [:4-mode
+                 [:i [:km "cursor: coolify-gh"]]
+                 [:o [:km "cursor: grafbase-gh"]]
+                 [:p [:km "cursor: pnpm-gh"]]
+                 ; TODO: should be automatic based of file extension
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
                  [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
                  [:n [[:open "dash-plugin://query=.pyprofile%3A&prevent_activation=true"] ["in-python" 1] ["in-go" 0] ["in-ts" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
@@ -324,6 +358,15 @@
                  ;[:k [:km "list: Alfred workflows"]]
                  ;[:l [:km "list: Command line tools"]]
                  ;[:n [:km "list: Events"]]
+        {:des "0key (gh workspaces)"
+         :rules [:0-mode
+                 [:r [:km "cursor: orpc-gh"]]
+                 [:t [:km "cursor: trpc-gh"]]
+                 [:s [:km "cursor: resend-gh"]]
+                 [:j [:km "cursor: manypkg-gh"]]
+                 [:c [:km "cursor: lichess-gh"]]
+                 [:b [:km "cursor: microbus-gh"]]
+                 ]}
         {:des "tabkey (gh workspaces)"
          :rules [:tab-mode
                  [:w [:km "cursor: rolldown-gh"]]
@@ -339,11 +382,12 @@
                  [:f [:km "cursor: lefthook-gh"]]
                  [:g [:km "cursor: playwright-gh"]]
                  [:h [:km "cursor: changesets-gh"]]
-                 [:j [:km "cursor: biome-gh"]]
+                 [:j [:km "cursor: raycast-gh"]]
                  [:k [:km "cursor: tanstack-gh"]]
                  [:l [:km "cursor: alchemy-gh"]]
                  [:semicolon [:km "cursor: ai-gh"]]
                  [:v [:km "cursor: livestore-gh"]]
+                 [:b [:km "cursor: biome-gh"]]
                  [:n [:km "cursor: lm-studio-gh"]]
                  [:m [:km "cursor: ollama-gh"]]
                  [:comma [:km "cursor: neverthrow-gh"]]
@@ -593,11 +637,35 @@
                  ;[:i [:km "open: NetNewsWire"]]
                  ;[:escape [:km "open: Preview"]]
                  ;[:spacebar [:km "Copied image into ChatGPT"]]]}
-        {:des "tkey (sites + tests)"
+        {:des "tkey (gh workspaces)"
          :rules [:t-mode
-                 [:semicolon [:km "open: Supernotes"]]
-                 [:spacebar :!CTOSi] ; Loom cancel record
+                 [:w [:km "cursor: langflow-gh"]]
+                 [:e [:km "cursor: pavex-gh"]]
+                 [:u [:km "cursor: unreal-gh"]]
+                 [:i [:km "cursor: firecrawl-gh"]]
+                 [:y [:km "cursor: code-payments-gh"]]
+                 [:o [:km "cursor: outlines-gh"]]
+                 [:p [:km "cursor: makepad-gh"]]
+                 [:open_bracket [:km "cursor: partykit-gh"]]
+                 [:escape [:km "cursor: sui-gh"]]
+                 [:a [:km "cursor: lance-gh"]]
+                 [:s [:km "cursor: helius-gh"]]
+                 [:g [:km "cursor: gleam-gh"]]
+                 [:h [:km "cursor: threejs-gh"]]
+                 [:j [:km "cursor: next-gh"]]
+                 [:k [:km "cursor: cline-gh"]]
+                 [:l [:km "cursor: comfy-gh"]]
+                 [:semicolon [:km "cursor: inngest-gh"]]
+                 [:b [:km "cursor: gitbutler-gh"]]
+                 [:n [:km "cursor: nx-gh"]]
+                 [:m [:km "cursor: milvus-gh"]]
+                 [:comma [:km "cursor: fal-gh"]]
+                 [:period [:km "cursor: stricli-gh"]]
+                 [:slash [:km "cursor: electrobun-gh"]]
+                 [:spacebar [:km "cursor: sst-gh"]]
                  ]}
+                 ;[:semicolon [:km "open: Supernotes"]]
+                 ;[:spacebar :!CTOSi] ; Loom cancel record
                  ;[:l [:km "open: Haptic"]]
                  ;[:0 [:km "w: regex101"]]
                  ;[:e [:km "w: Facebook"]]
@@ -620,6 +688,27 @@
                  ;[:comma [:km "w: Google Drive"]]
                  ;[:period [:km "w: IFTTT"]]
                  ;[:spacebar :!COSr]]} ; Selection -> Google Translate
+        {:des "ukey (gh workspaces)"
+         :rules [:u-mode
+                 [:w [:km "cursor: wasmcloud-gh"]]
+                 [:e [:km "cursor: remix-gh"]]
+                 [:r [:km "cursor: remotion-gh"]]
+                 [:t [:km "cursor: tokio-gh"]]
+                 [:i [:km "cursor: isograph-gh"]]
+                 [:escape [:km "cursor: cap-gh"]]
+                 [:a [:km "cursor: plane-gh"]]
+                 [:s [:km "cursor: swarms-gh"]]
+                 [:d [:km "cursor: shuttle-gh"]]
+                 [:f [:km "cursor: forever-vm-gh"]]
+                 [:g [:km "cursor: sourcegraph-gh"]]
+                 [:x [:km "cursor: xstate-gh"]]
+                 [:c [:km "cursor: chakra-ui-gh"]]
+                 [:v [:km "cursor: svelte-gh"]]
+                 [:d [:km "cursor: obsidian-gh"]]
+                 [:b [:km "cursor: ladybird-gh"]]
+                 [:n [:km "cursor: nativescript-gh"]]
+                 [:spacebar [:km "cursor: knip-gh"]]
+                 ]}
         {:des "ikey (symbols)"
          :rules [:i-mode
                  [:1 :!S1]
@@ -795,6 +884,31 @@
                  ]}
                  ;[:e [:km "cursor: steel-gh"]]
                  ;[:d [:km "paste: delete"]]
+        {:des "bracketkey (gh workspaces)"
+         :rules [:open-bracket-mode
+                 [:w [:km "cursor: tldraw-gh"]]
+                 [:e [:km "cursor: electric-gh"]]
+                 [:r [:km "cursor: rive-gh"]]
+                 [:t [:km "cursor: stripe-gh"]]
+                 [:u [:km "cursor: kunkun-gh"]]
+                 [:i [:km "cursor: vite-gh"]]
+                 [:o [:km "cursor: solid-gh"]]
+                 [:s [:km "cursor: liveblocks-gh"]]
+                 [:d [:km "cursor: tiptap-gh"]]
+                 [:f [:km "cursor: codemirror-gh"]]
+                 [:g [:km "cursor: monaco-gh"]]
+                 [:j [:km "cursor: laminar-gh"]]
+                 [:k [:km "cursor: kunkun-gh"]]
+                 [:g [:km "cursor: pglite-gh"]]
+                 [:z [:km "cursor: zero-gh"]]
+                 [:x [:km "cursor: axiom-gh"]]
+                 [:c [:km "cursor: convex-gh"]]
+                 [:v [:km "cursor: devenv-gh"]]
+                 [:b [:km "cursor: tinybase-gh"]]
+                 [:n [:km "cursor: instantdb-gh"]]
+                 [:m [:km "cursor: automerge-gh"]]
+                 [:spacebar [:km "cursor: lightning-ai-gh"]]
+                 ]}
         ;; TODO: not used, move it to other keys, whatever is useful
         ;{:des ".."
          ;:rules [:caps-mode
@@ -1243,7 +1357,7 @@
                  ;[:o [:km "open: FaceTime"]]
                  ;[:o [:km "open: Around"]]
                  ;[:d [:km "open: Mimestream"]]
-        {:des "xkey (spotify)"
+        {:des "xkey (songs, play)"
          :rules [:x-mode
                  [:o [:km "Paste current Spotify song link"]]
                  [:open_bracket [:alfred "twitter_search_current_track" "com.vdesabou.spotify.mini.player"]]
@@ -1486,23 +1600,33 @@
                  ;[:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
                  ;[:b [:alfred "search alfred" "nikivi.utilities" "bash "]]
                  ;[:spacebar :!OSC1]]} ; Open Dash
-        {:des "commakey ()"
+        {:des "commakey (gh workspaces)"
          :rules [:comma-mode
-                 [:w [:n :i :k :i :v]] ; -> nikiv
-                 [:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]] ; -> nikitavoloboev
+                 [:q [:km "cursor: sqlsync-gh"]]
+                 [:r [:km "cursor: clerk-gh"]]
+                 [:z [:km "cursor: tvl-gh"]]
+                 [:b [:km "cursor: snix-gh"]]
                  ]}
+                 ;[:w [:n :i :k :i :v]] ; -> nikiv
+                 ;[:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]] ; -> nikitavoloboev
         {:des "slashkey (gh workspaces)"
          :rules [:slash-mode
                  [:q [:km "cursor: qdrant-gh"]]
                  [:w [:km "cursor: steel-gh"]]
                  [:e [:km "cursor: helix-gh"]]
                  [:r [:km "cursor: polars-gh"]]
-                 [:t [:km "cursor: legend-photos-gh"]]
-                 [:escape [:km "cursor: ploomber-gh"]]
+                 [:t [:km "cursor: ty-gh"]]
+                 [:escape [:km "cursor: prime-gh"]]
                  [:a [:km "cursor: lightrag-gh"]]
                  [:s [:km "cursor: supabase-gh"]]
-                 [:d [:km "cursor: iceoryx2-gh"]]
-                 [:f [:km "cursor: prefect-gh"]]
+                 [:d [:km "cursor: modal-gh"]]
+                 [:f [:km "cursor: ruff-gh"]]
+                 [:g [:km "cursor: legend-photos-gh"]]
+                 [:z [:km "cursor: iceoryx2-gh"]]
+                 [:x [:km "cursor: cachix-gh"]]
+                 [:c [:km "cursor: prefect-gh"]]
+                 [:v [:km "cursor: uv-gh"]]
+                 [:b [:km "cursor: ploomber-gh"]]
                  [:spacebar [:km "cursor: neon-gh"]]
                  ]}
                  ; TODO: add ibis

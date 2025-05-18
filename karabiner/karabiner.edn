@@ -138,8 +138,10 @@
                  [:g [:km "cursor: gemini-gh"]]
                  [:k [:km "cursor: rn-mmkv-gh"]]
                  [:g [:km "cursor: tamagui-gh"]]
+                 [:x [:km "cursor: mdx-gh"]]
                  [:c [:km "cursor: anthropic-gh"]]
                  [:v [:km "cursor: rn-vision-camera-gh"]]
+                 [:b [:km "cursor: rn-bottom-sheet-gh"]]
                  [:m [:km "cursor: prisma-gh"]]
                  [:spacebar [:km "cursor: k23-gh"]]
                  ]}
@@ -226,8 +228,10 @@
         {:des "backkey (gh workspaces)"
          :rules [:backslash-mode
                  [:q [:km "cursor: sqlite-gh"]]
+                 [:w [:km "cursor: swc-gh"]]
                  [:e [:km "cursor: dagger-gh"]]
                  [:r [:km "cursor: dagster-gh"]]
+                 [:t [:km "cursor: pothos-gh"]]
                  [:y [:km "cursor: kysely-gh"]]
                  [:t [:km "cursor: postgres-gh"]]
                  [:u [:km "cursor: duckdb-gh"]]
@@ -272,14 +276,24 @@
                  [:period [:km "cursor: pydantic-ai-gh"]]
                  ]}
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
-        {:des "2key (move + scripts + refactor)"
+        {:des "2key (move + scripts + refactor + gh workspaces)"
          :rules [:2-mode
+                 [:e [:km "cursor: rsbuild-gh"]]
+                 [:r [:km "cursor: rspack-gh"]]
+                 [:t [:km "cursor: eslint-gh"]]
+                 [:y [:km "cursor: voby-gh"]]
+                 [:i [:km "cursor: react-scan-gh"]]
+                 [:o [:km "cursor: midscene-gh"]]
+                 [:f [:km "cursor: urvafe-cli-gh"]]
                  [:j :!Cdown_arrow]
                  [:k :!Cup_arrow]
                  [:l :!Cright_arrow]
                  [:h :!Cleft_arrow]
                  [:semicolon :!Oup_arrow]
                  [:quote :!Odown_arrow]
+                 [:b [:km "cursor: cobra-gh"]]
+                 [:n [:km "cursor: ts-pattern-gh"]] ; with github.com/aidenybai/pattycake
+                 [:m [:km "cursor: million-gh"]]
                  [:spacebar :!COSu] ; Selection -> HN
                  ]}
                  ;[:p [:km "cursor: fastapi-gh"]]
@@ -341,16 +355,24 @@
                  ]}
         {:des "4key (things + gh workspaces)"
          :rules [:4-mode
+                 [:t [:km "cursor: terminal-gh"]]
                  [:u [:km "cursor: openauth-gh"]]
                  [:i [:km "cursor: coolify-gh"]]
                  [:o [:km "cursor: grafbase-gh"]]
                  [:p [:km "cursor: pnpm-gh"]]
+                 [:open_bracket [:km "cursor: graphql-yoga-gh"]]
+                 [:a [:km "cursor: opencontrol-gh"]]
+                 [:f [:km "cursor: opentofu-gh"]]
                  ; TODO: should be automatic based of file extension
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
+                 [:k [:km "cursor: console-gh"]]
+                 [:l [:km "cursor: genql-gh"]]
                  [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
+                 [:b [:km "cursor: fbtree-gh"]]
                  [:n [[:open "dash-plugin://query=.pyprofile%3A&prevent_activation=true"] ["in-python" 1] ["in-go" 0] ["in-ts" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:m [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
                  [:period [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
+                 [:spacebar [:km "cursor: opencode-gh"]]
                  ]}
                  ;[:r [:km "edit: Web Searches"]]
                  ;[:t [:km "list: Newsletters"]]
@@ -369,6 +391,7 @@
                  [:c [:km "cursor: lichess-gh"]]
                  [:v [:km "cursor: avelin-gh"]]
                  [:b [:km "cursor: microbus-gh"]]
+                 [:m [:km "cursor: modern-js-gh"]]
                  ]}
         {:des "tabkey (gh workspaces)"
          :rules [:tab-mode
@@ -885,10 +908,11 @@
                  [:c [:km "cursor: connnect-gh"]]
                  [:v [:km "cursor: void-gh"]]
                  [:b [:km "cursor: webkit-gh"]]
-                 [:n [:km "cursor: legend-gh"]] ; legend-state, legend-list
+                 [:n [:km "cursor: legend-list-gh"]]
                  [:m [:km "cursor: scira-mcp-chat-gh"]]
                  [:spacebar [:km "cursor: mlx-eco-gh"]] ; mlx-vlm, mlx-audio, mlx-embeddings, mlx-lm
                  ]}
+                 ;[:n [:km "cursor: legend-state-gh"]] ; TODO: add
                  ;[:e [:km "cursor: steel-gh"]]
                  ;[:d [:km "paste: delete"]]
         {:des "bracketkey (gh workspaces)"

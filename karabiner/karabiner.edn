@@ -294,6 +294,7 @@
                  [:open_bracket [:km "cursor: yaak-gh"]]
                  [:escape [:km "cursor: tailwind-gh"]]
                  [:f [:km "cursor: meilisearch-gh"]]
+                 [:g [:km "cursor: telegram-gh"]]
                  [:h [:km "cursor: moonbit-gh"]]
                  [:j [:km "cursor: ts-gh"]]
                  [:k [:km "cursor: polar-gh"]]

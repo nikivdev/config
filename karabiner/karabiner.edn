@@ -392,6 +392,7 @@
                  [:u [:km "cursor: cuml-gh"]]
                  [:s [:km "cursor: scipy-gh"]]
                  [:d [:km "cursor: pandas-gh"]]
+                 [:spacebar [:km "cursor: keel-gh"]]
                  ]}
         {:des "0key (gh workspaces)"
          :rules [:0-mode
@@ -407,6 +408,7 @@
                  [:v [:km "cursor: avelin-gh"]]
                  [:b [:km "cursor: microbus-gh"]]
                  [:m [:km "cursor: modern-js-gh"]]
+                 [:spacebar [:km "cursor: convex-gh"]]
                  ]}
         {:des "tabkey (gh workspaces)"
          :rules [:tab-mode
@@ -427,7 +429,7 @@
                  [:k [:km "cursor: tanstack-gh"]]
                  [:l [:km "cursor: alchemy-gh"]]
                  [:semicolon [:km "cursor: ai-gh"]]
-                 [:c [:km "cursor: convex-gh"]]
+                 [:c [:km "cursor: msgpackr-gh"]]
                  [:v [:km "cursor: livestore-gh"]]
                  [:b [:km "cursor: biome-gh"]]
                  [:n [:km "cursor: lm-studio-gh"]]
@@ -636,7 +638,7 @@
                  [:0 :!C0]
                  [:spacebar :!CT7] ; google search selected text
                  ]}
-                 ;[:spacebar :!COequal_sign] ; 1Focus. TODO: get it workingt
+                 ;[:spacebar :!COequal_sign] ; 1Focus. TODO: get it working
                  ;[:spacebar :!TO2] ; TODO: 1Focus explain selected text (if text is selected, otherwise do area selection)
                  ;[:spacebar [:km "Selected text to Claude (run instantly)"]] ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to 1focus explain)
                 ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
@@ -755,8 +757,8 @@
                  ]}
         {:des "ykey (gh workspaces)"
          :rules [:y-mode
-                 [:i [:km "cursor: neovim-gh"]]
-                 [:o [:km "cursor: vscode-vim-gh"]]
+                 ;[:i [:km "cursor: neovim-gh"]]
+                 ;[:o [:km "cursor: vscode-vim-gh"]]
                  ]}
         {:des "ikey (symbols)"
          :rules [:i-mode

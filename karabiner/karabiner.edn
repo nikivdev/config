@@ -13,6 +13,7 @@
              :shell "%s"
              }
  :simlayers {
+             :backslash-mode {:key :non_us_backslash}
              :1-mode {:key :1}
              :2-mode {:key :2}
              :3-mode {:key :3}
@@ -198,13 +199,49 @@
                  ;[[:k :n] :!TOSu] ; Raycast AI window
                  ;[[:j :semicolon] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window) (inline info!)
         ; TODO: mby use it to search docs of things fast (like raycast)
-        {:des "1key (scripts + change language)"
+        {:des "backkey (gh workspaces)"
+         :rules [:backslash-mode
+                 [:q [:km "cursor: sqlite-gh"]]
+                 [:e [:km "cursor: dagger-gh"]]
+                 [:r [:km "cursor: dagster-gh"]]
+                 [:y [:km "cursor: kysely-gh"]]
+                 [:t [:km "cursor: postgres-gh"]]
+                 [:u [:km "cursor: duckdb-gh"]]
+                 [:i [:km "cursor: cloudflare-gh"]]
+                 [:o [:km "cursor: redwood-gh"]]
+                 [:p [:km "cursor: fastapi-gh"]]
+                 [:d [:km "cursor: docker-gh"]]
+                 [:f [:km "cursor: graft-gh"]]
+                 [:g [:km "cursor: gluestack-gh"]]
+                 [:j [:km "cursor: baseui-gh"]]
+                 [:k [:km "cursor: shadcn-gh"]]
+                 [:l [:km "cursor: react-spectrum-gh"]]
+                 [:b [:km "cursor: limbo-gh"]]
+                 [:n [:km "cursor: deno-gh"]]
+                 [:m [:km "cursor: drizzle-gh"]]
+                 [:semicolon [:km "cursor: wails-gh"]]
+                 [:comma [:km "cursor: node-gh"]]
+                 [:period [:km "cursor: task-gh"]]
+                 ]}
+        {:des "1key (gh workspaces)"
          :rules [:1-mode
-                 [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
-                 [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
-                 [:n [[:open "dash-plugin://query=.pyprofile%3A&prevent_activation=true"] ["in-python" 1] ["in-go" 0] ["in-ts" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
-                 [:m [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
-                 [:period [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
+                 [:e [:km "cursor: react-native-gh"]]
+                 [:r [:km "cursor: react-gh"]]
+                 [:t [:km "cursor: vitest-gh"]]
+                 [:y [:km "cursor: typedoc-gh"]]
+                 [:i [:km "cursor: diffusers-gh"]]
+                 [:o [:km "cursor: transformers-gh"]]
+                 [:p [:km "cursor: peft-gh"]]
+                 [:open_bracket [:km "cursor: pkg-pr-new-gh"]]
+                 [:d [:km "cursor: datasets-gh"]]
+                 [:f [:km "cursor: flox-gh"]]
+                 [:j [:km "cursor: gensx-gh"]]
+                 [:k [:km "cursor: langchain-gh"]]
+                 [:l [:km "cursor: smolagents-gh"]]
+                 [:semicolon [:km "cursor: dspy-gh"]]
+                 [:n [:km "cursor: unsloth-gh"]]
+                 [:m [:km "cursor: mcp-spec-gh"]]
+                 [:period [:km "cursor: pydantic-ai-gh"]]
                  ]}
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
         {:des "2key (move + scripts + refactor)"
@@ -248,30 +285,20 @@
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
         {:des "3key (gh workspaces)"
          :rules [:3-mode
-                 [:2 [:km "cursor: trieve-gh"]]
-                 [:q [:km "cursor: qdrant-gh"]]
-                 [:e [:km "cursor: helix-gh"]]
                  [:r [:km "cursor: restate-gh"]]
-                 [:t [:km "cursor: tanstack-gh"]]
-                 [:y [:km "cursor: elysia-gh"]]
-                 [:u [:km "cursor: better-auth-gh"]]
+                 [:t [:km "cursor: tinygrad-gh"]]
                  [:i [:km "cursor: nix-gh"]]
+                 [:u [:km "cursor: better-auth-gh"]]
                  [:o [:km "cursor: pytorch-gh"]]
-                 [:p [:km "cursor: ollama-gh"]]
-                 [:open_bracket [:km "cursor: gorealeaser-gh"]]
-                 [:close_bracket [:km "cursor: yaak-gh"]]
-                 [:tab [:km "cursor: hono-gh"]]
+                 [:p [:km "cursor: gorealeaser-gh"]]
+                 [:open_bracket [:km "cursor: yaak-gh"]]
                  [:escape [:km "cursor: tailwind-gh"]]
-                 [:d [:km "cursor: rolldown-gh"]]
                  [:f [:km "cursor: meilisearch-gh"]]
-                 [:g [:km "cursor: agno-gh"]]
                  [:h [:km "cursor: moonbit-gh"]]
                  [:j [:km "cursor: ts-gh"]]
                  [:k [:km "cursor: polar-gh"]]
                  [:l [:km "cursor: electron-gh"]]
                  [:semicolon [:km "cursor: tauri-gh"]]
-                 [:quote [:km "cursor: wails-gh"]]
-                 [:v [:km "cursor: livestore-gh"]]
                  [:b [:km "cursor: bolt-gh"]]
                  [:n [:km "cursor: py-gh"]]
                  [:m [:km "cursor: go-gh"]]
@@ -281,8 +308,14 @@
                  [:left_command [:km "cursor: mlx-gh"]]
                  [:spacebar [:km "cursor: jax-gh"]]
                  ]}
-        {:des "4key (gh workspaces)"
+        {:des "4key ()"
          :rules [:4-mode
+                 [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
+                 [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
+                 [:n [[:open "dash-plugin://query=.pyprofile%3A&prevent_activation=true"] ["in-python" 1] ["in-go" 0] ["in-ts" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
+                 [:m [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
+                 [:period [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
+                 ]}
                  ;[:r [:km "edit: Web Searches"]]
                  ;[:t [:km "list: Newsletters"]]
                  ;[:o [:km "list: Blogs"]]
@@ -290,23 +323,32 @@
                  ;[:k [:km "list: Alfred workflows"]]
                  ;[:l [:km "list: Command line tools"]]
                  ;[:n [:km "list: Events"]]
+        {:des "tabkey (gh workspaces)"
+         :rules [:tab-mode
+                 [:w [:km "cursor: rolldown-gh"]]
+                 [:e [:km "cursor: elysia-gh"]]
+                 [:r [:km "cursor: encore."]]
+                 [:t [:km "cursor: arktype-gh"]]
+                 [:y [:km "cursor: happy-dom-gh"]]
+                 [:u [:km "cursor: turbo-gh"]]
+                 [:i [:km "cursor: trieve-gh"]]
+                 [:o [:km "cursor: hono-gh"]]
+                 [:p [:km "cursor: pulumi-gh"]]
+                 [:d [:km "cursor: zod-gh"]]
+                 [:f [:km "cursor: lefthook-gh"]]
+                 [:g [:km "cursor: playwright-gh"]]
+                 [:h [:km "cursor: changesets-gh"]]
+                 [:j [:km "cursor: biome-gh"]]
+                 [:k [:km "cursor: tanstack-gh"]]
+                 [:l [:km "cursor: alchemy-gh"]]
+                 [:semicolon [:km "cursor: ai-gh"]]
+                 [:v [:km "cursor: livestore-gh"]]
+                 [:n [:km "cursor: lm-studio-gh"]]
+                 [:m [:km "cursor: ollama-gh"]]
+                 [:comma [:km "cursor: neverthrow-gh"]]
+                 [:period [:km "cursor: agno-gh"]]
                  ]}
-        {:des "tabkey (files)"
-         :rules [:tab-mode ; TODO: fix up files/macros
-                 [:h [:km "edit: GitHub Bio"]]
-                 [:i [:km "cursor: config:fish/private.fish"]]
-                 [:o [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
-                 [:j [:km "cursor: ~/i/ts/scripts/i.ts"]]
-                 [:l [:km "cursor: config:fish/config.fish"]]
-                 [:semicolon [:km "edit: run.swift"]]
-                 [:n [:km "edit: run.py"]]
-                 [:m [:km "edit: run.go"]]
-                 [:comma [:km "edit: run.zig"]]
-                 [:period [:km "edit: run.rs"]]
-                 [:slash [:km "edit: run.odin"]]
-                 [:spacebar :!CSOp] ; Selection -> Reddit
-                 ]}
-                 ;[:f [:km "Get time in SF"]] ; TODO: fix
+                 ;[:f [:km "Get time in SF"]]
                  ;[:d [:km "Open Dash and search docsets"]]
                  ;[:hyphen [:km "cursor: vscode."]]
                  ;[:equal_sign [:km "cursor: bluesky."]]
@@ -720,10 +762,38 @@
                  ;[:e [:km "open: ChatGPT GPTs"]]
                  ;[:q [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  ;[:spacebar [:km "open: Ask"]]]}
-        {:des "pkey (paste)"
+        {:des "pkey (gh workspaces)"
          :rules [:p-mode
-                 [:d [:km "paste: delete"]]
+                 [:1 [:km "cursor: r-gh"]]
+                 [:2 [:km "cursor: l-gh"]]
+                 [:3 [:km "cursor: campsite-gh"]]
+                 [:w [:km "cursor: railway-gh"]]
+                 [:e [:km "cursor: telegram-sdk-gh"]]
+                 [:r [:km "cursor: opral-gh"]]
+                 [:t [:km "cursor: tuist-gh"]]
+                 [:u [:km "cursor: atuin-gh"]]
+                 [:i [:km "cursor: mail-0-gh"]]
+                 [:o [:km "cursor: motion-gh"]]
+                 [:escape [:km "cursor: posthog-gh"]]
+                 [:a [:km "cursor: tca-gh"]]
+                 [:s [:km "cursor: sentry-gh"]]
+                 [:d [:km "cursor: midday-gh"]]
+                 [:f [:km "cursor: fly-gh"]]
+                 [:g [:km "cursor: gel-gh"]]
+                 [:h [:km "cursor: anchor-gh"]]
+                 [:j [:km "cursor: anime-gh"]]
+                 [:k [:km "cursor: leader-key-gh"]]
+                 [:z [:km "cursor: zed-gh"]]
+                 [:x [:km "cursor: extism-gh"]]
+                 [:c [:km "cursor: connnect-gh"]]
+                 [:v [:km "cursor: void-gh"]]
+                 [:b [:km "cursor: webkit-gh"]]
+                 [:n [:km "cursor: legend-gh"]] ; legend-state, legend-list
+                 [:m [:km "cursor: scira-mcp-chat-gh"]]
+                 [:spacebar [:km "cursor: mlx-eco-gh"]] ; mlx-vlm, mlx-audio, mlx-embeddings, mlx-lm
                  ]}
+                 ;[:e [:km "cursor: steel-gh"]]
+                 ;[:d [:km "paste: delete"]]
         ;; TODO: not used, move it to other keys, whatever is useful
         ;{:des ".."
          ;:rules [:caps-mode
@@ -960,7 +1030,7 @@
                  [:1 [:km "cursor: ronin."]]
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: effect."]]
-                 [:4 [:km "cursor: encore."]]
+                 [:4 [:km "cursor: reatom."]]
                  [:9 [:km "cursor: gridchess."]]
                  [:0 [:km "cursor: gitedit."]]
                  [:hyphen [:km "cursor: xs."]]
@@ -1091,8 +1161,23 @@
                  ;[:f [:km "w: Cloudflare LA deployments"]]
                  ;[:g [:km "w: Grafbase LA logs"]]
                  ;[:spacebar :!COSn]]} ; Selection -> GitHub ; TODO: move it to another key (on s?)
-        {:des "tilkey ()" ; TODO: use
+        {:des "tilkey (files)"
          :rules [:tilde-mode
+                 ; TODO: mby open more specific macros/scripts?
+                 [:w [:km "Go to test macro"]]
+                 [:e [:km "Test"]]
+                 [:h [:km "edit: GitHub Bio"]]
+                 [:i [:km "cursor: config:fish/private.fish"]]
+                 [:o [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
+                 [:j [:km "cursor: ~/i/ts/scripts/i.ts"]]
+                 [:l [:km "cursor: config:fish/config.fish"]]
+                 [:semicolon [:km "edit: run.swift"]]
+                 [:n [:km "edit: run.py"]]
+                 [:m [:km "edit: run.go"]]
+                 [:comma [:km "edit: run.zig"]]
+                 [:period [:km "edit: run.rs"]]
+                 [:slash [:km "edit: run.odin"]]
+                 [:spacebar :!CSOp] ; Selection -> Reddit
                  ]}
                   ;[:l [:km "open: EdgeDB Cloud"]]
                   ;[:k [:km "paste: That worked 🖤"]]
@@ -1175,24 +1260,22 @@
                  ;[:comma [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]] ; TODO: twitter search
         {:des "ckey (paste)"
          :rules [:c-mode
+                  [:q [:km "paste: Telegram (personal)️"]]
                   [:w [:km "paste: personal nikita.vo@ email"]]
                   [:e [:km "paste: personal nikita@ email"]]
-                  [:r [:km "paste: 🙏"]]
-                  [:s [:km "paste: ✨"]]
+                  [:o [:km "paste: 🙏"]]
+                  [:p [:km "paste: ✨"]]
+                  [:a [:km "paste: 😺"]]
+                  [:s [:km "paste: 😿"]]
                   [:d [:km "paste: delete"]]
-                  [:j [:km "enter: thanks 🖤"]]
+                  [:h [:km "paste: 👋"]]
+                  [:j [:km "enter: thx"]]
                   [:k [:km "paste: nikiv"]]
                   [:l [:km "paste: Cal.com (15 min)️"]]
-                  [:v [:km "paste: 👋"]]
-                  [:h [:km "paste: 😺"]]
                   [:semicolon [:km "paste: 🖤"]]
-                  [:g [:km "paste: Telegram (personal)️"]]
                   [:n [:km "paste: nikitavoloboev"]]
                   [:u [:km "paste: update"]]
-                  [:p [:km "paste: please"]]
-                  [:period [:km "paste: 😿"]]
-                  [:left_command [:km "Go to test macro"]]
-                  [:spacebar [:km "Test"]]
+                  [:period [:km "paste: pls "]]
                  ]}
                  ;[:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ;[:k [:km "cursor: ui"]]
@@ -1402,16 +1485,29 @@
                  ;[:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
                  ;[:b [:alfred "search alfred" "nikivi.utilities" "bash "]]
                  ;[:spacebar :!OSC1]]} ; Open Dash
-        {:des "commakey (complete)"
+        {:des "commakey ()"
          :rules [:comma-mode
                  [:w [:n :i :k :i :v]] ; -> nikiv
-                 [:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]]]} ; -> nikitavoloboev
-        {:des "slashkey (workspaces)" ; TODO: maybe move to 1
-         :rules [:slash-mode
-                 [:t [:km "cursor: kotlin."]]
-                 [:e [:km "cursor: lean."]]
-                 [:r [:km "cursor: ruby."]]
+                 [:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]] ; -> nikitavoloboev
                  ]}
+        {:des "slashkey (gh workspaces)"
+         :rules [:slash-mode
+                 [:q [:km "cursor: qdrant-gh"]]
+                 [:w [:km "cursor: steel-gh"]]
+                 [:e [:km "cursor: helix-gh"]]
+                 [:r [:km "cursor: polars-gh"]]
+                 [:t [:km "cursor: legend-photos-gh"]]
+                 [:escape [:km "cursor: ploomber-gh"]]
+                 [:a [:km "cursor: lightrag-gh"]]
+                 [:s [:km "cursor: supabase-gh"]]
+                 [:d [:km "cursor: iceoryx2-gh"]]
+                 [:f [:km "cursor: prefect-gh"]]
+                 [:spacebar [:km "cursor: neon-gh"]]
+                 ]}
+                 ; TODO: add ibis
+                 ;[:t [:km "cursor: kotlin."]]
+                 ;[:e [:km "cursor: lean."]]
+                 ;[:r [:km "cursor: ruby."]]
          {:des "dotkey (1-3, q-u, caps, tab)"
           :rules [:dot-mode
                   [:1 [:c :l :o :s :e :spacebar :!S3]] ; -> close #

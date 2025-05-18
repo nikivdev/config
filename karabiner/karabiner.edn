@@ -294,7 +294,8 @@
                  [:b [:km "cursor: cobra-gh"]]
                  [:n [:km "cursor: ts-pattern-gh"]] ; with github.com/aidenybai/pattycake
                  [:m [:km "cursor: million-gh"]]
-                 [:spacebar :!COSu] ; Selection -> HN
+                 [:period [:km "cursor: a2a-gh"]] ; with github.com/google/adk-python
+                 [:spacebar [:km "cursor: tailscale-gh"]]
                  ]}
                  ;[:p [:km "cursor: fastapi-gh"]]
                  ;[:g [:km "cursor: gel-gh"]]
@@ -383,11 +384,14 @@
                  ;[:n [:km "list: Events"]]
         {:des "0key (gh workspaces)"
          :rules [:0-mode
+                 [:e [:km "cursor: vue-gh"]]
                  [:r [:km "cursor: orpc-gh"]]
                  [:t [:km "cursor: trpc-gh"]]
                  [:a [:km "cursor: hanko-gh"]]
                  [:s [:km "cursor: resend-gh"]]
+                 [:h [:km "cursor: hookas-gh"]]
                  [:j [:km "cursor: manypkg-gh"]]
+                 [:x [:km "cursor: nuxt-gh"]]
                  [:c [:km "cursor: lichess-gh"]]
                  [:v [:km "cursor: avelin-gh"]]
                  [:b [:km "cursor: microbus-gh"]]
@@ -419,6 +423,7 @@
                  [:m [:km "cursor: ollama-gh"]]
                  [:comma [:km "cursor: neverthrow-gh"]]
                  [:period [:km "cursor: agno-gh"]]
+                 [:spacebar :!COSu] ; Selection -> HN
                  ]}
                  ;[:f [:km "Get time in SF"]]
                  ;[:d [:km "Open Dash and search docsets"]]
@@ -644,7 +649,7 @@
                  [:n [:km "open: RustRover"]]
                  [:m [:km "open: Music"]]
                  [:period [:km "open: PyCharm"]]
-                 [:spacebar [:km "Screenshot into Claude"]]
+                 [:spacebar [:km "Screenshot into Claude"]] ; TODO: use openai
                  ]}
                  ;[:i [:km "open: Obsidian"]]
                  ;[:m [:km "open: MacUpdater"]]
@@ -908,11 +913,11 @@
                  [:c [:km "cursor: connnect-gh"]]
                  [:v [:km "cursor: void-gh"]]
                  [:b [:km "cursor: webkit-gh"]]
-                 [:n [:km "cursor: legend-list-gh"]]
-                 [:m [:km "cursor: scira-mcp-chat-gh"]]
+                 [:n [:km "cursor: scira-mcp-chat-gh"]]
+                 [:m [:km "cursor: legend-list-gh"]]
+                 [:period [:km "cursor: legend-state-gh"]]
                  [:spacebar [:km "cursor: mlx-eco-gh"]] ; mlx-vlm, mlx-audio, mlx-embeddings, mlx-lm
                  ]}
-                 ;[:n [:km "cursor: legend-state-gh"]] ; TODO: add
                  ;[:e [:km "cursor: steel-gh"]]
                  ;[:d [:km "paste: delete"]]
         {:des "bracketkey (gh workspaces)"
@@ -1044,7 +1049,7 @@
                  [:m [:km "Google Lucky selected word"]]
                  [:comma :!TOS1] ; Show Launchpad (system settings > keyboard > launchpad & dock)
                  [:period :!TOS2] ; Mission Control (system settings > keyboard > mission control)
-                 [:spacebar [:km "Selected text into Claude"]]
+                 [:spacebar [:km "Selected text into Claude"]] ; TODO: use openai
                  ]}
                  ;[:spacebar [:km "Google Searchio selected word"]]
                  ;[:spacebar :!CT8] ; Selection -> Dictionary (wiki)

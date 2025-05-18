@@ -18,6 +18,7 @@
              :2-mode {:key :2}
              :3-mode {:key :3}
              :4-mode {:key :4}
+             :9-mode {:key :9}
              :0-mode {:key :0}
              :tab-mode {:key :tab}
              :q-mode {:key :q}
@@ -26,6 +27,7 @@
              :r-mode {:key :r}
              :t-mode {:key :t}
              :u-mode {:key :u}
+             :y-mode {:key :y}
              :i-mode {:key :i}
              :o-mode {:key :o}
              :p-mode {:key :p}
@@ -131,7 +133,6 @@
                  [:t [:km "cursor: mistral-rs-gh"]]
                  [:u [:km "cursor: automerge-gh"]]
                  [:o [:km "cursor: loco-gh"]]
-                 [:escape [:km "cursor: ghostty-gh"]]
                  [:a [:km "cursor: openai-gh"]]
                  [:s [:km "cursor: unistyles-gh"]]
                  [:d [:km "cursor: deepseek-gh"]]
@@ -274,6 +275,7 @@
                  [:m [:km "cursor: mcp-spec-gh"]]
                  [:comma [:km "cursor: skip-gh"]]
                  [:period [:km "cursor: pydantic-ai-gh"]]
+                 [:spacebar [:km "cursor: ghostty-gh"]]
                  ]}
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
         {:des "2key (move + scripts + refactor + gh workspaces)"
@@ -328,6 +330,7 @@
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
         {:des "3key (gh workspaces)"
          :rules [:3-mode
+                 [:w [:km "cursor: serwist-gh"]]
                  [:e [:km "cursor: trigger-gh"]]
                  [:r [:km "cursor: restate-gh"]]
                  [:t [:km "cursor: tinygrad-gh"]]
@@ -382,6 +385,14 @@
                  ;[:k [:km "list: Alfred workflows"]]
                  ;[:l [:km "list: Command line tools"]]
                  ;[:n [:km "list: Events"]]
+        {:des "9key (gh workspaces)"
+         :rules [:9-mode
+                 [:w [:km "cursor: vscode-vim-gh"]]
+                 [:e [:km "cursor: neovim-gh"]]
+                 [:u [:km "cursor: cuml-gh"]]
+                 [:s [:km "cursor: scipy-gh"]]
+                 [:d [:km "cursor: pandas-gh"]]
+                 ]}
         {:des "0key (gh workspaces)"
          :rules [:0-mode
                  [:e [:km "cursor: vue-gh"]]
@@ -625,7 +636,7 @@
                  [:0 :!C0]
                  [:spacebar :!CT7] ; google search selected text
                  ]}
-                 ;[:spacebar :!COequal_sign] ; 1Focus. TODO: get it working
+                 ;[:spacebar :!COequal_sign] ; 1Focus. TODO: get it workingt
                  ;[:spacebar :!TO2] ; TODO: 1Focus explain selected text (if text is selected, otherwise do area selection)
                  ;[:spacebar [:km "Selected text to Claude (run instantly)"]] ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to 1focus explain)
                 ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
@@ -741,6 +752,11 @@
                  [:b [:km "cursor: ladybird-gh"]]
                  [:n [:km "cursor: nativescript-gh"]]
                  [:spacebar [:km "cursor: knip-gh"]]
+                 ]}
+        {:des "ykey (gh workspaces)"
+         :rules [:y-mode
+                 [:i [:km "cursor: neovim-gh"]]
+                 [:o [:km "cursor: vscode-vim-gh"]]
                  ]}
         {:des "ikey (symbols)"
          :rules [:i-mode

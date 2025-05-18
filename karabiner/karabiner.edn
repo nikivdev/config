@@ -1034,7 +1034,7 @@
                  [:tab [:km "open: tldraw"]]
                  [:escape [:km "open: Excalidraw"]]
                  [:a [:km "open: Chrome Canary"]]
-                 [:s [:km "open: v0"]]
+                 [:s [:km "open: Electron"]]
                  [:d [:km "open: Rive"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:k [:km "New Linear task"]]
@@ -1556,14 +1556,15 @@
                  ;[:spacebar [:alfred "search websites" "nikivi.web.searches"]]]}
         {:des "mkey (apps)"
          :rules [:m-mode
+                 [:q [:km "open: Drive"]]
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:e [:km "open: Encore (local)"]]
-                 [:r [:km "open: Drive"]]
+                 [:r [:km "open: Docker Desktop"]]
                  [:t [:km "open: DigitalOcean"]]
                  [:escape [:km "open: TablePlus"]]
                  [:a [:km "open: Lovable"]]
-                 [:s [:km "open: Bolt"]]
-                 [:d [:km "open: Docker Desktop"]]
+                 [:s [:km "open: v0"]]
+                 [:d [:km "open: Bolt"]]
                  [:f [:km "open: OrbStack"]]
                  [:g [:km "open: Google Maps"]]
                  [:c [:km "open: OBS"]]

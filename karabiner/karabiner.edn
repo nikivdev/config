@@ -20,6 +20,7 @@
              :4-mode {:key :4}
              :9-mode {:key :9}
              :0-mode {:key :0}
+             :hyphen-mode {:key :hyphen}
              :tab-mode {:key :tab}
              :q-mode {:key :q}
              :w-mode {:key :w}
@@ -32,6 +33,7 @@
              :o-mode {:key :o}
              :p-mode {:key :p}
              :open-bracket-mode {:key :open_bracket}
+             :close-bracket-mode {:key :close_bracket}
              :a-mode {:key :a}
              :s-mode {:key :s}
              :d-mode {:key :d}
@@ -296,7 +298,8 @@
                  [:b [:km "cursor: cobra-gh"]]
                  [:n [:km "cursor: ts-pattern-gh"]] ; with github.com/aidenybai/pattycake
                  [:m [:km "cursor: million-gh"]]
-                 [:period [:km "cursor: a2a-gh"]] ; with github.com/google/adk-python
+                 [:comma [:km "cursor: a2a-gh"]] ; with github.com/google/adk-python
+                 [:period [:km "cursor: agents-gh"]]
                  [:spacebar [:km "cursor: tailscale-gh"]]
                  ]}
                  ;[:p [:km "cursor: fastapi-gh"]]
@@ -392,6 +395,7 @@
                  [:u [:km "cursor: cuml-gh"]]
                  [:s [:km "cursor: scipy-gh"]]
                  [:d [:km "cursor: pandas-gh"]]
+                 [:v [:km "cursor: v8-gh"]]
                  [:spacebar [:km "cursor: keel-gh"]]
                  ]}
         {:des "0key (gh workspaces)"
@@ -399,6 +403,7 @@
                  [:e [:km "cursor: vue-gh"]]
                  [:r [:km "cursor: orpc-gh"]]
                  [:t [:km "cursor: trpc-gh"]]
+                 [:i [:km "cursor: radix-gh"]]
                  [:a [:km "cursor: hanko-gh"]]
                  [:s [:km "cursor: resend-gh"]]
                  [:h [:km "cursor: hookas-gh"]]
@@ -409,6 +414,20 @@
                  [:b [:km "cursor: microbus-gh"]]
                  [:m [:km "cursor: modern-js-gh"]]
                  [:spacebar [:km "cursor: convex-gh"]]
+                 ]}
+        {:des "hyphenkey (gh workspaces)"
+         :rules [:hyphen-mode
+                 [:e [:km "cursor: phoenix-gh"]]
+                 [:r [:km "cursor: elixir-gh"]]
+                 [:t [:km "cursor: upstash-gh"]]
+                 [:a [:km "cursor: astro-gh"]]
+                 [:s [:km "cursor: scalar-gh"]]
+                 [:d [:km "cursor: caddy-gh"]]
+                 [:f [:km "cursor: traefik-gh"]]
+                 [:g [:km "cursor: godot-gh"]]
+                 [:b [:km "cursor: ladybird-gh"]]
+                 [:x [:km "cursor: xata-gh"]]
+                 [:spacebar [:km "cursor: morphic-gh"]]
                  ]}
         {:des "tabkey (gh workspaces)"
          :rules [:tab-mode
@@ -747,18 +766,23 @@
                  [:f [:km "cursor: forever-vm-gh"]]
                  [:h [:km "cursor: shuttle-gh"]]
                  [:g [:km "cursor: sourcegraph-gh"]]
+                 [:z [:km "cursor: sveltekit-gh"]]
                  [:x [:km "cursor: xstate-gh"]]
                  [:c [:km "cursor: chakra-ui-gh"]]
                  [:v [:km "cursor: svelte-gh"]]
-                 [:d [:km "cursor: obsidian-gh"]]
-                 [:b [:km "cursor: ladybird-gh"]]
+                 [:b [:km "cursor: obsidian-gh"]]
                  [:n [:km "cursor: nativescript-gh"]]
                  [:spacebar [:km "cursor: knip-gh"]]
                  ]}
         {:des "ykey (gh workspaces)"
          :rules [:y-mode
-                 ;[:i [:km "cursor: neovim-gh"]]
-                 ;[:o [:km "cursor: vscode-vim-gh"]]
+                 [:w [:km "cursor: workos-gh"]]
+                 [:i [:km "cursor: builder-gh"]]
+                 [:o [:km "cursor: leptos-gh"]]
+                 [:h [:km "cursor: authkit-gh"]]
+                 [:semicolon [:km "cursor: markdoc-gh"]]
+                 [:n [:km "cursor: ferron-gh"]]
+                 [:m [:km "cursor: axum-gh"]]
                  ]}
         {:des "ikey (symbols)"
          :rules [:i-mode
@@ -938,7 +962,7 @@
                  ]}
                  ;[:e [:km "cursor: steel-gh"]]
                  ;[:d [:km "paste: delete"]]
-        {:des "bracketkey (gh workspaces)"
+        {:des "openBracketKey (gh workspaces)"
          :rules [:open-bracket-mode
                  [:w [:km "cursor: tldraw-gh"]]
                  [:e [:km "cursor: electric-gh"]]
@@ -961,6 +985,9 @@
                  [:n [:km "cursor: instantdb-gh"]]
                  [:m [:km "cursor: automerge-gh"]]
                  [:spacebar [:km "cursor: lightning-ai-gh"]]
+                 ]}
+        {:des "closeBracketKey (gh workspaces)"
+         :rules [:close-bracket-mode
                  ]}
         ;; TODO: not used, move it to other keys, whatever is useful
         ;{:des ".."

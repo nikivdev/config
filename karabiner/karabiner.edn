@@ -18,9 +18,12 @@
              :2-mode {:key :2}
              :3-mode {:key :3}
              :4-mode {:key :4}
+             :7-mode {:key :7}
+             :8-mode {:key :8}
              :9-mode {:key :9}
              :0-mode {:key :0}
              :hyphen-mode {:key :hyphen}
+             :equal-sign-mode {:key :equal_sign}
              :tab-mode {:key :tab}
              :q-mode {:key :q}
              :w-mode {:key :w}
@@ -42,7 +45,6 @@
              :semicolon-mode {:key :semicolon}
              :quote-mode {:key :quote}
              :escape-mode {:key :escape}
-             ;:backslash {:key :backslash} TODO: for future
              :tilde-mode {:key :grave_accent_and_tilde}
              :z-mode {:key :z}
              :x-mode {:key :x}
@@ -54,7 +56,10 @@
              :comma-mode {:key :comma}
              :slash-mode {:key :slash}
              :dot-mode {:key :period}
+             ;:left-shift-mode {:key :left_shift} ; TODO: does not work in practice
+             :left-control-mode {:key :left_control}
              :spacebar-mode {:key :spacebar}
+             :right-command-mode {:key :right_command}
              :ts-mode {:key :period :condi ["in-ts" 1]}
              :rust-mode {:key :period :condi ["in-rust" 1]}
              :swift-mode {:key :period :condi ["in-swift" 1]}
@@ -285,6 +290,7 @@
                  [:e [:km "cursor: rsbuild-gh"]]
                  [:r [:km "cursor: rspack-gh"]]
                  [:t [:km "cursor: eslint-gh"]]
+                 [:u [:km "cursor: cutlass-gh"]]
                  [:y [:km "cursor: voby-gh"]]
                  [:i [:km "cursor: react-scan-gh"]]
                  [:o [:km "cursor: midscene-gh"]]
@@ -295,6 +301,7 @@
                  [:h :!Cleft_arrow]
                  [:semicolon :!Oup_arrow]
                  [:quote :!Odown_arrow]
+                 [:c [:km "cursor: farcaster-gh"]]
                  [:b [:km "cursor: cobra-gh"]]
                  [:n [:km "cursor: ts-pattern-gh"]] ; with github.com/aidenybai/pattycake
                  [:m [:km "cursor: million-gh"]]
@@ -388,13 +395,47 @@
                  ;[:k [:km "list: Alfred workflows"]]
                  ;[:l [:km "list: Command line tools"]]
                  ;[:n [:km "list: Events"]]
+        {:des "5key (gh workspaces)"
+         :rules [:5-mode
+                 [:u [:km "cursor: cuda-gh"]]
+                 [:i [:km "cursor: figma-gh"]]
+                 [:o [:km "cursor: tensorrt-llm-gh"]]
+                 [:semicolon [:km "cursor: aistore-gh"]]
+                 [:k [:km "cursor: kraken-gh"]]
+                 [:l [:km "cursor: causalml-gh"]]
+                 [:b [:km "cursor: baseweb-gh"]]
+                 [:n [:km "cursor: notion-gh"]]
+                 [:m [:km "cursor: youtube-music-gh"]]
+                 [:period [:km "cursor: yt-dlp-gh"]]
+                 [:spacebar [:km "cursor: jax-eco-gh"]] ; https://github.com/NVIDIA/JAX-Toolbox, ..
+                 ]}
+        {:des "7key (gh workspaces)"
+         :rules [:7-mode
+                 [:r [:km "cursor: brush-gh"]]
+                 [:f [:km "cursor: folo-rs-gh"]]
+                 [:c [:km "cursor: calloop-rs-gh"]]
+                 [:spacebar [:km "cursor: model2vec-rs-gh"]]
+                 ]}
+        {:des "8key (gh workspaces)"
+         :rules [:8-mode
+                 [:q [:km "cursor: quic-go-gh"]]
+                 [:e [:km "cursor: elevenlabs-gh"]]
+                 [:r [:km "cursor: rig-gh"]]
+                 [:s [:km "cursor: goose-gh"]]
+                 [:g [:km "cursor: g3-gh"]]
+                 [:k [:km "cursor: anki-gh"]]
+                 [:c [:km "cursor: quiche-gh"]]
+                 [:spacebar [:km "cursor: fumadocs-gh"]]
+                 ]}
         {:des "9key (gh workspaces)"
          :rules [:9-mode
                  [:w [:km "cursor: vscode-vim-gh"]]
+                 [:t [:km "cursor: typst-gh"]]
                  [:e [:km "cursor: neovim-gh"]]
                  [:u [:km "cursor: cuml-gh"]]
                  [:s [:km "cursor: scipy-gh"]]
                  [:d [:km "cursor: pandas-gh"]]
+                 [:f [:km "cursor: snafu-gh"]]
                  [:v [:km "cursor: v8-gh"]]
                  [:spacebar [:km "cursor: keel-gh"]]
                  ]}
@@ -429,6 +470,20 @@
                  [:x [:km "cursor: xata-gh"]]
                  [:spacebar [:km "cursor: morphic-gh"]]
                  ]}
+        {:des "equalSignKey (gh workspaces)"
+         :rules [:hyphen-mode
+                 [:q [:km "cursor: sqlight-gh"]]
+                 [:w [:km "cursor: swift-async-algorithms-gh"]]
+                 [:e [:km "cursor: lean-gh"]] ; with https://github.com/GasStationManager/LeanTool
+                 [:t [:km "cursor: yugabyte-db-gh"]]
+                 [:s [:km "cursor: bolt-ts-gh"]]
+                 [:f [:km "cursor: fets-gh"]]
+                 [:g [:km "cursor: gptqmodel-gh"]]
+                 [:c [:km "cursor: curlie-gh"]]
+                 [:t [:km "cursor: streamlit-gh"]] ; with https://github.com/whitphx/stlite
+                 [:b [:km "cursor: browser-bee-gh"]]
+                 [:spacebar [:km "cursor: n8n-gh"]]
+                 ]}
         {:des "tabkey (gh workspaces)"
          :rules [:tab-mode
                  [:w [:km "cursor: rolldown-gh"]]
@@ -455,7 +510,7 @@
                  [:m [:km "cursor: ollama-gh"]]
                  [:comma [:km "cursor: neverthrow-gh"]]
                  [:period [:km "cursor: agno-gh"]]
-                 [:spacebar :!COSu] ; Selection -> HN
+                 [:spacebar [:km "cursor: temporal-gh"]]
                  ]}
                  ;[:f [:km "Get time in SF"]]
                  ;[:d [:km "Open Dash and search docsets"]]
@@ -778,11 +833,17 @@
          :rules [:y-mode
                  [:w [:km "cursor: workos-gh"]]
                  [:i [:km "cursor: builder-gh"]]
+                 [:u [:km "cursor: mycloudkit-gh"]]
                  [:o [:km "cursor: leptos-gh"]]
+                 [:p [:km "cursor: spark-gh"]]
                  [:h [:km "cursor: authkit-gh"]]
+                 [:f [:km "cursor: ffmpeg-gh"]]
+                 [:k [:km "cursor: kanidm-gh"]]
                  [:semicolon [:km "cursor: markdoc-gh"]]
+                 [:b [:km "cursor: obs-studio-gh"]]
                  [:n [:km "cursor: ferron-gh"]]
                  [:m [:km "cursor: axum-gh"]]
+                 [:period [:km "cursor: solidis-gh"]]
                  ]}
         {:des "ikey (symbols)"
          :rules [:i-mode
@@ -988,6 +1049,14 @@
                  ]}
         {:des "closeBracketKey (gh workspaces)"
          :rules [:close-bracket-mode
+                 [:w [:km "cursor: wrpc-gh"]]
+                 [:e [:km "cursor: muscle-mem-gh"]]
+                 [:r [:km "cursor: stack-error-rs-gh"]]
+                 [:a [:km "cursor: nats-gh"]]
+                 [:s [:km "cursor: timescale-gh"]]
+                 [:d [:km "cursor: wit-deps-gh"]]
+                 [:f [:km "cursor: kafka-gh"]]
+                 [:spacebar [:km "cursor: river-gh"]]
                  ]}
         ;; TODO: not used, move it to other keys, whatever is useful
         ;{:des ".."
@@ -1213,6 +1282,7 @@
                  [:m :!TOS3] ; Show Notification Centre (system settings > keyboard > mission control)
                  [:comma :!TOS5] ; Show Desktop (system settings > keyboard > mission control)
                  [:quote :!COS6] ; Toggle Night Shift on/off.
+                 [:spacebar :!COSu] ; Selection -> HN
                  ]}
                  ;[:q :!CT3] ; Search bartender menu items
                  ;[:j [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (maybe, don't use `Test` any more as much)
@@ -1684,17 +1754,28 @@
         {:des "commakey (gh workspaces)"
          :rules [:comma-mode
                  [:q [:km "cursor: sqlsync-gh"]]
+                 [:e [:km "cursor: element-x-gh"]]
                  [:r [:km "cursor: clerk-gh"]]
+                 [:t [:km "cursor: statshouse-gh"]]
+                 [:a [:km "cursor: near-gh"]]
+                 [:s [:km "cursor: sonic-go-gh"]]
+                 [:d [:km "cursor: ui-tars-desktop-gh"]]
+                 [:d [:km "cursor: deerflow-gh"]]
                  [:z [:km "cursor: tvl-gh"]]
+                 [:x [:km "cursor: perplexica-gh"]]
+                 [:c [:km "cursor: clickhouse-gh"]]
+                 [:v [:km "cursor: vkui-gh"]]
                  [:b [:km "cursor: snix-gh"]]
+                 [:spacebar [:km "cursor: alien-signals-gh"]]
                  ]}
                  ;[:w [:n :i :k :i :v]] ; -> nikiv
                  ;[:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]] ; -> nikitavoloboev
         {:des "slashkey (gh workspaces)"
          :rules [:slash-mode
+                 [:1 [:km "cursor: 1password-gh"]]
                  [:q [:km "cursor: qdrant-gh"]]
                  [:w [:km "cursor: steel-gh"]]
-                 [:e [:km "cursor: helix-gh"]]
+                 [:e [:km "cursor: helix-db-gh"]]
                  [:r [:km "cursor: polars-gh"]]
                  [:t [:km "cursor: ty-gh"]]
                  [:escape [:km "cursor: prime-gh"]]
@@ -1801,6 +1882,32 @@
                  ]}
                  ;[:f [:l :o :g :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow]] ; -> log!();
                  ;[:a [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{}", )
+        {:des "leftControlKey (gh workspaces)"
+         :rules [:left-control-mode
+                 [:e [:km "cursor: openai-evals-gh."]]
+                 [:r [:km "cursor: swift-subprocess-gh."]]
+                 [:t [:km "cursor: tiktoken-gh."]]
+                 [:y [:km "cursor: yt-dlp-gh."]]
+                 [:u [:km "cursor: just-gh."]]
+                 [:i [:km "cursor: sqlite-utils-gh."]]
+                 [:o [:km "cursor: codex-gh."]]
+                 [:a [:km "cursor: optax-gh."]]
+                 [:s [:km "cursor: datasette-gh."]]
+                 [:d [:km "cursor: claude-coder-gh."]]
+                 [:f [:km "cursor: fish-gh."]]
+                 [:h [:km "cursor: helix-gh."]]
+                 [:j [:km "cursor: jj-gh."]]
+                 [:k [:km "cursor: scrapling-gh."]]
+                 [:l [:km "cursor: simonw-llm-gh."]]
+                 [:semicolon [:km "cursor: roo-code-gh."]]
+                 [:c [:km "cursor: claude-code-gh."]]
+                 [:v [:km "cursor: llvm-gh."]]
+                 [:b [:km "cursor: blender-gh."]]
+                 [:n [:km "cursor: tapnet-gh."]]
+                 [:m [:km "cursor: mujoco-warp-gh."]]
+                 [:period [:km "cursor: crawl4ai-gh."]]
+                 [:spacebar [:km "cursor: openai-realtime-agents-gh."]]
+                 ]}
         {:des "spacekey"
          :rules [:spacebar-mode
                  [:1 :!TOSq] ; Screenshot and recording options (system settings > keyboard > screenshots)
@@ -1902,6 +2009,15 @@
                  ;[:k :!COS9] ; Raycast
                  ;[:k [:open "raycast://extensions/loris/safari/cloud-tabs"]] ; TODO: improve on it, slow
                  ;[:m [:km "New Mastodon post"]]
+        {:des "rightCommandKey (gh workspaces)"
+         :rules [:right-command-mode
+                 [:r [:km "cursor: orama-gh"]]
+                 [:s [:km "cursor: semhash-gh"]]
+                 [:f [:km "cursor: skift-gh"]] ; https://github.com/skift-org/skift
+                 [:v [:km "cursor: vaev-gh"]] ; https://github.com/skift-org/vaev
+                 [:b [:km "cursor: browser-ui-gh"]] ; https://github.com/DanielSRS/BrowserUI
+                 ]}
+        ; TODO: did not work well..
         ;{:des "left cmd -> cmd+tab"
          ;:rules [[:left_command :left_command nil {:alone :!Ctab}]]}
 ]}

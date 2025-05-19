@@ -731,10 +731,11 @@
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:j [:km "open: Preview"]]
                  [:k [:km "open: Reader"]]
-                 [:l [:km "open: Books"]]
+                 [:l [:km "open: YouTube Music"]]
                  [:semicolon [:km "open: Notes"]]
                  [:n [:km "open: RustRover"]]
                  [:m [:km "open: Music"]]
+                 [:comma [:km "open: Books"]]
                  [:period [:km "open: PyCharm"]]
                  [:spacebar [:km "Screenshot into Claude"]] ; TODO: use openai
                  ]}

@@ -397,6 +397,7 @@
                  ;[:n [:km "list: Events"]]
         {:des "5key (gh workspaces)"
          :rules [:5-mode
+                 [:t [:km "cursor: entropix-gh"]]
                  [:y [:km "cursor: yek-gh"]]
                  [:u [:km "cursor: cuda-gh"]]
                  [:i [:km "cursor: figma-gh"]]
@@ -2012,9 +2013,13 @@
                  ;[:m [:km "New Mastodon post"]]
         {:des "rightCommandKey (gh workspaces)"
          :rules [:right-command-mode
+                 [:e [:km "cursor: repomix-gh"]]
                  [:r [:km "cursor: orama-gh"]]
+                 [:t [:km "cursor: nativelink-gh"]]
+                 [:a [:km "cursor: karabiner-elements-gh"]]
                  [:s [:km "cursor: semhash-gh"]]
                  [:f [:km "cursor: skift-gh"]] ; https://github.com/skift-org/skift
+                 [:c [:km "cursor: act-gh"]]
                  [:v [:km "cursor: vaev-gh"]] ; https://github.com/skift-org/vaev
                  [:b [:km "cursor: browser-ui-gh"]] ; https://github.com/DanielSRS/BrowserUI
                  ]}

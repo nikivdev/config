@@ -397,6 +397,7 @@
                  ;[:n [:km "list: Events"]]
         {:des "5key (gh workspaces)"
          :rules [:5-mode
+                 [:y [:km "cursor: yek-gh"]]
                  [:u [:km "cursor: cuda-gh"]]
                  [:i [:km "cursor: figma-gh"]]
                  [:o [:km "cursor: tensorrt-llm-gh"]]
@@ -498,7 +499,7 @@
                  [:d [:km "cursor: zod-gh"]]
                  [:f [:km "cursor: lefthook-gh"]]
                  [:g [:km "cursor: playwright-gh"]]
-                 [:h [:km "cursor: changesets-gh"]]
+                 [:h [:km "cursor: helix-db-gh"]]
                  [:j [:km "cursor: raycast-gh"]]
                  [:k [:km "cursor: tanstack-gh"]]
                  [:l [:km "cursor: alchemy-gh"]]
@@ -1022,8 +1023,6 @@
                  [:period [:km "cursor: legend-state-gh"]]
                  [:spacebar [:km "cursor: mlx-eco-gh"]] ; mlx-vlm, mlx-audio, mlx-embeddings, mlx-lm
                  ]}
-                 ;[:e [:km "cursor: steel-gh"]]
-                 ;[:d [:km "paste: delete"]]
         {:des "openBracketKey (gh workspaces)"
          :rules [:open-bracket-mode
                  [:w [:km "cursor: tldraw-gh"]]
@@ -1311,9 +1310,9 @@
                  [:p [:km "cursor: gpton."]]
                  [:open_bracket [:km "cursor: workflow."]]
                  [:close_bracket [:km "cursor: past."]]
-                 [:a [:km "cursor: eventsline."]]
+                 [:a [:km "cursor: garden."]]
                  [:s [:km "cursor: ext."]]
-                 [:d [:km "cursor: garden."]]
+                 [:d [:km "cursor: test."]]
                  [:f [:km "cursor: ui."]]
                  [:g [:km "cursor: games."]]
                  [:h [:km "cursor: moonbit."]]
@@ -1331,7 +1330,7 @@
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: mojo."]]
-                 [:left_command [:km "cursor: test."]]
+                 [:left_command [:km "cursor: eventsline."]]
                  [:spacebar [:km "cursor: wip."]]
                  ]}
                  ;[:left_command [:km "cursor: generated."]]
@@ -1776,7 +1775,7 @@
                  [:1 [:km "cursor: 1password-gh"]]
                  [:q [:km "cursor: qdrant-gh"]]
                  [:w [:km "cursor: steel-gh"]]
-                 [:e [:km "cursor: helix-db-gh"]]
+                 [:e [:km "cursor: changesets-gh"]]
                  [:r [:km "cursor: polars-gh"]]
                  [:t [:km "cursor: ty-gh"]]
                  [:escape [:km "cursor: prime-gh"]]

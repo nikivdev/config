@@ -841,6 +841,7 @@
                  [:h [:km "cursor: authkit-gh"]]
                  [:f [:km "cursor: ffmpeg-gh"]]
                  [:k [:km "cursor: kanidm-gh"]]
+                 [:l [:km "cursor: litellm-gh"]]
                  [:semicolon [:km "cursor: markdoc-gh"]]
                  [:b [:km "cursor: obs-studio-gh"]]
                  [:n [:km "cursor: ferron-gh"]]

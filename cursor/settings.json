@@ -117,41 +117,52 @@
   "vim.leader": " ",
   "vim.cursorStylePerMode.normal": "underline",
   "vim.useSystemClipboard": true,
-  "vim.normalModeKeyBindings": [
+  "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "w"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.files.save",
-          "args": []
-        }
-      ]
+      "after": ["c", "i", "("]
     },
     {
-      "before": ["<leader>", "q"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.closeActiveEditor",
-          "args": []
-        }
-      ]
+      // TODO: make it generic, `change inside some symbols` (be it () or [] or "" or '')
+      "before": ["<leader>", ":"],
+      "after": ["c", "i", "'"]
     },
-    {
-      "before": ["<leader>", "a"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.files.save",
-          "args": []
-        },
-        {
-          "command": "workbench.action.closeActiveEditor",
-          "args": []
-        }
-      ]
-    },
+  ],
+  "vim.normalModeKeyBindings": [
+    // {
+    //   "before": ["<leader>", "w"],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "workbench.action.files.save",
+    //       "args": []
+    //     }
+    //   ]
+    // },
+    // {
+    //   "before": ["<leader>", "q"],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "workbench.action.closeActiveEditor",
+    //       "args": []
+    //     }
+    //   ]
+    // },
+    // {
+    //   "before": ["<leader>", "a"],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "workbench.action.files.save",
+    //       "args": []
+    //     },
+    //     {
+    //       "command": "workbench.action.closeActiveEditor",
+    //       "args": []
+    //     }
+    //   ]
+    // },
     {
       "before": ["K"],
       "after": ["leader", "leader", "k"]

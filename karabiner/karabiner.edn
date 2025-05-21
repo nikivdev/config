@@ -1330,10 +1330,10 @@
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:comma [:km "cursor: zig."]]
-                 [:period [:km "cursor: rust."]]
+                 [:period [:km "cursor: mojo."]]
+                 [:spacebar [:km "cursor: rust."]]
                  [:slash [:km "cursor: kotlin."]]
                  [:left_command [:km "cursor: eventsline."]]
-                 [:spacebar [:km "cursor: mojo."]]
                  ]}
                  ;[:spacebar [:km "cursor: wip."]]
                  ;[:left_command [:km "cursor: generated."]]

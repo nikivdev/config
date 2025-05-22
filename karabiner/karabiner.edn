@@ -604,7 +604,6 @@
                  ;[:comma [:km "open: GitButler"]]
                  ; TODO: add somewhere
                  ;[:comma [:km "open: Replit"]] ; TODO: bind nicer
-                 ;[:n [:km "open: RustRover"]]
                  ;[:y [:km "open: PyCharm"]]
                  ;[:b [:km "open: IntelliJ IDEA"]]
                  ;[:i [:km "open: Zen Browser"]]
@@ -735,11 +734,10 @@
                  [:k [:km "open: Reader"]]
                  [:l [:km "open: YouTube Music"]]
                  [:semicolon [:km "open: Notes"]]
-                 [:n [:km "open: RustRover"]]
                  [:m [:km "open: Music"]]
                  [:comma [:km "open: Books"]]
-                 [:period [:km "open: PyCharm"]]
-                 [:spacebar [:km "Screenshot into Claude"]] ; TODO: use openai
+                 [:period [:km "open: RustRover"]]
+                 [:spacebar [:km "open: PyCharm"]]
                  ]}
                  ;[:i [:km "open: Obsidian"]]
                  ;[:m [:km "open: MacUpdater"]]
@@ -1317,7 +1315,7 @@
                  [:d [:km "cursor: test."]]
                  [:f [:km "cursor: ui."]]
                  [:g [:km "cursor: games."]]
-                 [:h [:km "cursor: moonbit."]]
+                 [:h [:km "cursor: mojo."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: sb."]]
                  [:l [:km "cursor: la."]]
@@ -1328,14 +1326,15 @@
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]
                  [:b [:km "cursor: bun."]]
-                 [:n [:km "cursor: py."]]
+                 [:n [:km "cursor: moonbit."]]
                  [:m [:km "cursor: go."]]
                  [:comma [:km "cursor: c."]]
-                 [:period [:km "cursor: mojo."]]
+                 [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: zig."]]
                  [:left_command [:km "cursor: eventsline."]]
-                 [:spacebar [:km "cursor: rust."]]
+                 [:spacebar [:km "cursor: py."]]
                  ]}
+                 ;[:quote [:km "cursor: kotlin."]]
                  ;[:quote [:km "cursor: lean."]]
                  ;[:spacebar [:km "cursor: wip."]]
                  ;[:left_command [:km "cursor: generated."]]
@@ -1924,6 +1923,7 @@
                  [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots) TODO: got moved to e+space, is it ok?
                  [:r :!CS7] ; TRex get text from screenshot (bind to k)
                  [:t [:km "w: X (personal)"]]
+                 [:tab [:km "Screenshot into Claude"]] ; TODO: use openai
                  [:escape :!CS8] ; Screenshot -> Eagle ; TODO: use genx, add as metadata url/app it's taken from. do another for video too, mby from cleanshot
                  [:a [:km "open: X Pro (search or post)"]]
                  [:s :!CTOSF1] ; SuperCut start/stop recording

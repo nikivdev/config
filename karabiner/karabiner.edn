@@ -897,6 +897,7 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
+                 [:non_us_backslash [:km "open: Azure"]]
                  [:q [:km "open: Expo"]]
                  [:w [:km "open: Cloudflare"]]
                  [:e [:km "open: Repo Prompt"]]

@@ -928,7 +928,6 @@
                  [:right_command [:km "open: RunPod"]]
                  [:spacebar [:km "open: ChatGPT"]]
                  ]}
-                 ;[:n [:km "open: Trieve"]]
                  ;[:escape [:km "open: Perplexity"]]
                  ;[:d [:km "open: Gemini"]]
                  ;[:right_command [:km "open: Neon"]]
@@ -1709,6 +1708,7 @@
          :rules [:m-mode
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:e [:km "open: Encore (local)"]]
+                 [:r [:km "open: Trieve"]]
                  [:escape [:km "open: TablePlus"]]
                  [:a [:km "open: Lovable"]]
                  [:s [:km "open: v0"]]

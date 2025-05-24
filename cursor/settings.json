@@ -126,7 +126,7 @@
       // TODO: make it generic, `change inside some symbols` (be it () or [] or "" or '')
       "before": ["<leader>", ":"],
       "after": ["c", "i", "'"]
-    },
+    }
   ],
   "vim.normalModeKeyBindings": [
     // {

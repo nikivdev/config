@@ -514,10 +514,6 @@
     "command": "aichat.insertselectionintochat",
   },
   {
-    "key": "ctrl+.",
-    "command": "composer.startComposerPrompt",
-  },
-  {
     "key": "cmd+i",
     "command": "-composer.startComposerPrompt",
     "when": "composerIsEnabled"
@@ -545,5 +541,9 @@
   {
     "key": "ctrl+o",
     "command": "composerMode.agent"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "amp.sidebarView.focus"
   }
 ]

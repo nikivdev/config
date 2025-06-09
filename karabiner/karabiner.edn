@@ -585,15 +585,15 @@
                  [:d [:km "open: Fantastical"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:g [:km "open: Granola"]]
-                 [:h [:km "open: Yaak"]]
+                 [:h [:km "open: PyCharm"]]
                  [:j [:km "open: Ghostty"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
                  [:semicolon [:km "open: Xcode Beta"]]
                  [:c [:km "open: Spotify"]]
                  [:b [:km "open: Colab"]]
-                 [:n [:km "open: Zed"]]
-                 [:m [:km "open: GoLand"]]
+                 [:n [:km "open: Yaak"]]
+                 [:m [:km "open: Zed"]]
                  [:comma [:km "open: JuxtaCode"]] ; TODO: replace with gitedit (better)
                  [:period [:km "open: Sublime Merge"]]
                  [:slash [:km "open: PyCharm"]]
@@ -605,7 +605,6 @@
                  ;[:t [:km "open: Craft"]]
                  ; TODO: add somewhere
                  ;[:comma [:km "open: Replit"]] ; TODO: bind nicer
-                 ;[:y [:km "open: PyCharm"]]
                  ;[:b [:km "open: IntelliJ IDEA"]]
                  ;[:i [:km "open: Zen Browser"]]
                  ;[:d [:km "open: dbx"]] ; TODO: bind key #now
@@ -738,7 +737,6 @@
                  [:n [:km "open: Dictionary"]]
                  [:m [:km "open: Music"]]
                  [:comma [:km "open: Books"]]
-                 [:period [:km "open: RustRover"]]
                  [:slash [:km "open: WebStorm"]]
                  [:spacebar [:km "open: OBS"]]
                  ]}
@@ -1304,7 +1302,7 @@
                  [:0 [:km "cursor: ui."]]
                  [:q [:km "cursor: infra."]]
                  [:w [:km "cursor: wip."]]
-                 [:e [:km "cursor: deps."]]
+                 [:e [:km "cursor: go."]]
                  [:r [:km "cursor: workflow."]]
                  [:t [:km "cursor: eventsline."]]
                  [:u [:km "cursor: kuskus."]]
@@ -1329,13 +1327,13 @@
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]
                  [:b [:km "cursor: bun."]]
-                 [:n [:km "cursor: rust."]]
-                 [:m [:km "cursor: go."]]
+                 [:n [:km "cursor: moonbit."]]
+                 [:m [:km "cursor: rust."]]
                  [:comma [:km "cursor: kotlin."]]
                  [:period [:km "cursor: swift."]]
                  [:slash [:km "cursor: zig."]]
                  [:left_command [:km "cursor: mojo."]]
-                 [:spacebar [:km "cursor: py."]]
+                 [:spacebar [:km "cursor: py."]] ; TODO: replace with mojo, or add mojo on top
                  ]}
                  ;[:t [:km "cursor: notlost."]]
                  ;[:d [:km "cursor: data."]]
@@ -1711,9 +1709,10 @@
                  ;[:spacebar [:alfred "search websites" "nikivi.web.searches"]]]}
         {:des "mkey (apps)"
          :rules [:m-mode
-                 [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:e [:km "open: Encore (local)"]]
-                 [:r [:km "open: Trieve"]]
+                 [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
+                 [:w [:km "open: RustRover"]]
+                 [:e [:km "open: GoLand"]]
+                 [:r [:km "open: Encore (local)"]]
                  [:escape [:km "open: TablePlus"]]
                  [:a [:km "open: Lovable"]]
                  [:s [:km "open: v0"]]
@@ -1727,6 +1726,7 @@
                  [:left_command [:km "open: SQLiteFlow"]]
                  [:spacebar [:km "open: Dash (with search)"]]
                  ]}
+                 ;[:r [:km "open: Trieve"]]
                  ;[:t [:km "open: DigitalOcean"]]
                  ;[:t [:km "open: Attio"]]
                  ;[:g [:km "open: GitButler"]]

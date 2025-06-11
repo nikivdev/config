@@ -1299,7 +1299,6 @@
                  [:3 [:km "cursor: effect."]]
                  [:4 [:km "cursor: reatom."]]
                  [:9 [:km "cursor: xs."]]
-                 [:0 [:km "cursor: ui."]]
                  [:q [:km "cursor: infra."]]
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: go."]]

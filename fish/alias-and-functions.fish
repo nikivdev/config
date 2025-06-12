@@ -340,15 +340,15 @@ function g
 end
 
 # run `cargo run` when rust files change | <query> - run with query
-# function i
-#     if not set -q argv[1]
-#         cargo watch -q -- sh -c "tput reset && cargo run -q"
-#     else
-#         cargo watch -q -- sh -c "tput reset && cargo run -q -- $argv"
-#         # TODO: test below, supposedly it's better and safer (per https://matrix.to/#/!YLTeaulxSDauOOxBoR:matrix.org/$mM0QC4VSo5BmI1o3qfKg5vjDs6sok1FwBtKy2UlI4Xs?via=gitter.im&via=matrix.org&via=tchncs.de)
-#         # cargo watch -q -- sh -c 'tput reset && cargo run -q -- "$@"' watchscript $argv
-#     end
-# end
+function i
+    if not set -q argv[1]
+        cargo watch -q -- sh -c "tput reset && cargo run -q"
+    else
+        cargo watch -q -- sh -c "tput reset && cargo run -q -- $argv"
+        # TODO: test below, supposedly it's better and safer (per https://matrix.to/#/!YLTeaulxSDauOOxBoR:matrix.org/$mM0QC4VSo5BmI1o3qfKg5vjDs6sok1FwBtKy2UlI4Xs?via=gitter.im&via=matrix.org&via=tchncs.de)
+        # cargo watch -q -- sh -c 'tput reset && cargo run -q -- "$@"' watchscript $argv
+    end
+end
 
 # R - run tests with cargo and watch
 function R

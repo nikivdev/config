@@ -1469,7 +1469,7 @@
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
-                 [:l [:km "open: Beeper"]]
+                 [:l [:km "open X messages (in Dia)"]]
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
                  [:i [:km "w: Reddit submit"]]
@@ -1485,6 +1485,8 @@
                  [:slash [:km "open: Zulip"]]
                  [:spacebar [:km "open: Contacts"]] ; TODO: replace with notlost
                  ]}
+                 ;[:l [:km "open: Beeper"]]
+                 ;[:l [:km "open: Texts"]]
                  ;[:i [:km "open: Tuple"]] ; TODO: doesn't seem to do anything
                  ;[:l [:km "open: Texts"]]
                  ;[:period [:km "web: Cal.video"]]
@@ -1935,17 +1937,19 @@
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
-                 [:i :!TOe] ; Start/Stop Wispr Flow hands-free transcription
+                 [:i [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
                  [:o [:km "open: Arc"]]
                  [:p [:km "web: SuperCut workspace"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
                  [:period [:km "open: Safari Technology Preview"]]
                  [:j :!CTO0] ; Search Alfred Snippets
-                 [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
-                 [:l [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
+                 [:k [:km "open: Dia"]]
+                 [:l :!TOe] ; Start/Stop Wispr Flow hands-free transcription
+                 [:period [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
                  [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind
-                 [:n [:km "new safari tab"]]
+                 [:b [:km "new safari tab"]]
+                 [:n [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  ]}
                  ;[:quote [:km "open: Chrome Canary (x.com > account switch)"]]

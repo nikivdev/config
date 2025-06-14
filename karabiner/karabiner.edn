@@ -1182,12 +1182,12 @@
                  [:escape [:km "open: Excalidraw"]]
                  [:a [:km "open: Chrome Canary"]]
                  [:s [:km "open: Electron"]]
-                 [:d [:km "open: Simulator"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:k [:km "New Linear task"]]
-                 [:l [:alfred "active todo" "nikiv"]]
-                 [:j :!TOCspacebar] ; Things Quick Entry (without context)
-                 [:i [:km "clear active todo"]]
+                 [:l [:km "open: Simulator"]]
+                 [:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
+                 [:u [:km "clear active todo"]]
+                 [:i [:alfred "active todo" "nikiv"]]
                  [:o [:km "Things: new top task"]]
                  [:p [:km "Things: new 2nd from top task"]]
                  [:left_command [:km "open: Photos"]]
@@ -1198,10 +1198,12 @@
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:b [:km "Things: Quick Entry (into Someday)"]]
-                 [:n :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
-                 [:m [:km "Things: Quick Entry (with context) (into Someday)"]]
+                 [:n [:km "Things: Quick Entry (with context) (into Someday)"]]
+                 [:m [:km "open: Tauri Web"]]
                  [:spacebar [:km "open: Eagle"]]
                  ]}
+                 ;[:j :!TOCspacebar] ; Things Quick Entry (without context)
+                 ;[:n :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  ;[:d :!TOr] ; Start Wispr Flow push-to-talk transcription (let go on ending of transcription)
                  ;[:s :!TOSe] ; Start Superwhisper transcription
                  ;[:j :!CSspacebar] ; Homerow

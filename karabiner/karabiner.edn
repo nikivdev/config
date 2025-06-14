@@ -577,10 +577,11 @@
                  [:i [:km "open: Windsurf"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Proxyman"]]
-                 [:grave_accent_and_tilde [:km "open: Color Picker"]]
+                 [:grave_accent_and_tilde [:km "open: Bike"]]
+                 ;[:grave_accent_and_tilde [:km "open: Color Picker"]]
                  [:v [:km "open: VSCode Insiders"]]
                  [:escape [:km "open: Finder"]]
-                 [:a [:km "open: Bike"]]
+                 [:a [:km "open: Zed"]]
                  [:d [:km "open: Fantastical"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:g [:km "open: Granola"]]
@@ -593,7 +594,7 @@
                  [:c [:km "open: Spotify"]]
                  [:b [:km "open: Colab"]]
                  [:n [:km "open: n8n"]]
-                 [:m [:km "open: Zed"]]
+                 [:m [:km "open: RustRover"]]
                  [:comma [:km "open: JuxtaCode"]] ; TODO: replace with gitedit (better)
                  [:period [:km "open: Sublime Merge"]]
                  [:slash [:km "open: PyCharm"]]
@@ -1709,7 +1710,6 @@
         {:des "mkey (apps)"
          :rules [:m-mode
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:w [:km "open: RustRover"]]
                  [:e [:km "open: GoLand"]]
                  [:r [:km "open: Encore (local)"]]
                  [:escape [:km "open: TablePlus"]]

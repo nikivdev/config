@@ -2,34 +2,34 @@
 
 > Apps/CLIs/configs I use on macOS/iOS
 
-![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-april/mac-dark.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-june/mac-dark.png)
 
 > Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
 
-![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-april/mac-light.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-june/mac-light.png)
 
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-lock-screen.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-lock-screen.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-1.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-1.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-2.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-2.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-3.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-3.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-4.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-4.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-5.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-5.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/ios-screen-6.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-6.png"></a>
 
 > iOS screens. All described in detail below.
 
@@ -120,7 +120,7 @@ I minimize push notifications to nearly only messaging apps (Telegram/Discord/..
 - [Discord](https://apps.apple.com/us/app/discord-talk-play-hang-out/id985746746) to read messages from servers I am in + private messages
 - [Perplexity](https://apps.apple.com/us/app/perplexity-ask-anything/id1668000334) to make search queries that need some computed answers
 - [ChatGPT](https://apps.apple.com/us/app/chatgpt/id6448311069) to ask questions, prefer Claude for general textual queries and real time voice in ChatGPT + O1 thinking model for bigger questions
-- Safari for all web browsing, keep [top sites](https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-april/safari-new-tab.png) in new tab bookmarks for fast access
+- Safari for all web browsing, keep [top sites](https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/safari-new-tab.png) in new tab bookmarks for fast access
 - [Claude](https://apps.apple.com/us/app/claude-by-anthropic/id6473753684) to ask questions (goto AI model for questions)
 - Photos widget with memories cycled, love seeing what Apple decides to surface from the library, often its nice memories
 - [Things](https://apps.apple.com/us/app/things-3/id904237743) Upcoming widget to see upcoming tasks, open it to enter new upcoming task or edit existing ones
@@ -197,7 +197,7 @@ The 2 action buttons on bottom in lock screen are `create voice recording` and `
 I keep common shortcut actions as widgets on the side (left swipe of lock screen or first home screen):
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-april/ios-widgets.png"></a>
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-june/ios-widgets.png"></a>
 
 ## iOS Shortcuts
 
@@ -232,7 +232,7 @@ I use `Test` shortcut to prototype new actions/ideas quickly. I then duplicate t
 Here is how my control center looks:
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-april/ios-control-center.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-june/ios-control-center.png"></a>
 
 ## Discuss macOS/iOS
 

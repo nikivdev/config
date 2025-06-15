@@ -10,6 +10,9 @@
 
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
+<a align="center" href="https://github.com/nikitavoloboev/my-ios">
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-june/ios-widgets.png"></a>
+
 <a align="center" href="https://github.com/nikitavoloboev/config">
     <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-lock-screen.png"></a>
 

@@ -1185,6 +1185,14 @@ function c
     end
 end
 
+function C
+    if test -z "$argv[1]"
+        claude --dangerously-skip-permissions
+    else
+        claude --dangerously-skip-permissions $argv
+    end
+end
+
 function gb --description "create git branch"
     if test (count $argv) -eq 0
         echo "Error: Please provide a branch name"

@@ -1327,6 +1327,7 @@
                  [:n [:km "cursor: swift."]]
                  [:m [:km "cursor: moonbit."]]
                  [:comma [:km "cursor: kotlin."]]
+                 [:period [:km "cursor: elixir."]]
                  [:slash [:km "cursor: zig."]]
                  [:spacebar [:km "cursor: mojo-py."]]
                  ]}
@@ -1334,7 +1335,6 @@
                  ;[:i [:km "cursor: gen."]]
                  ;[:n [:km "cursor: py."]]
                  ;[:spacebar [:km "cursor: mojo."]]
-                 ;[:r [:km "cursor: elixir."]]
                  ;[:i [:km "cursor: i."]]
                  ;[:t [:km "cursor: notlost."]]
                  ;[:d [:km "cursor: data."]]

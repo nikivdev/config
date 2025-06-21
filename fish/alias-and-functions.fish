@@ -1177,7 +1177,7 @@ function fn --description "Find directories matching a pattern and exclude node_
     fd -td $argv[1] -E node_modules
 end
 
-function c
+function C
     if test -z "$argv[1]"
         claude
     else
@@ -1185,7 +1185,7 @@ function c
     end
 end
 
-function C
+function c
     if test -z "$argv[1]"
         claude --dangerously-skip-permissions
     else

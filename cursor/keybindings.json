@@ -545,5 +545,13 @@
   {
     "key": "ctrl+.",
     "command": "amp.sidebarView.focus"
-  }
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\r\n"
+    },
+    "when": "terminalFocus"
+}
 ]

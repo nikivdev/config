@@ -909,7 +909,7 @@
                  [:k [:km "open: Sentry"]]
                  [:escape [:km "open: AI Studio"]]
                  [:a [:km "open: Grok"]]
-                 [:s [:km "open: T3 Chat"]]
+                 [:s [:km "open: Ronin"]]
                  [:d [:km "open: ClaudeWeb"]]
                  [:f [:km "open: Claude"]]
                  [:g [:km "open: Google Cloud"]]
@@ -920,7 +920,7 @@
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:v [:km "open: Codex"]]
                  [:b [:km "open: Supabase"]]
-                 [:n [:km "open: Ronin"]] ; TODO: switch after
+                 [:n [:km "open: T3 Chat"]]
                  [:m [:km "open: Modal"]]
                  [:semicolon [:km "open: Axiom"]]
                  [:left_command [:km "open: ChatGPTWeb"]]

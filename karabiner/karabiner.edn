@@ -1438,7 +1438,7 @@
                  [:e [:km "Test"]]
                  [:h [:km "edit: GitHub Bio"]]
                  [:i [:km "cursor: config:fish/private.fish"]]
-                 [:o [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
+                 [:o [:km "cursor: ~/src/config/fish/binds.fish"]] ; TODO: bind to run.swift, move fish alias to something nice too
                  [:j [:km "cursor: ~/i/ts/scripts/i.ts"]]
                  [:l [:km "cursor: config:fish/config.fish"]]
                  [:semicolon [:km "edit: run.swift"]]

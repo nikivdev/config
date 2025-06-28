@@ -1,4 +1,4 @@
-source ~/src/config/fish/alias-and-functions.fish
+source ~/src/config/fish/fn.fish
 source ~/src/config/fish/i.fish
 
 source ~/.local/state/nix/profiles/profile/etc/profile.d/nix.fish # use latest version of nix

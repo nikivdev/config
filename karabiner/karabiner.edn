@@ -1177,7 +1177,7 @@
                  [:r [:km "Centre mouse to active app"]]
                  [:tab [:km "open: tldraw"]]
                  [:escape [:km "open: Excalidraw"]]
-                 [:a [:km "open: Chrome"]] ; TODO: move to canary once it unbugs
+                 [:a [:km "open: Chrome Canary"]]
                  [:s [:km "open: Electron"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:k [:km "New Linear task"]]

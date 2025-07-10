@@ -1307,8 +1307,8 @@
                  [:i [:km "cursor: cli."]] ; TODO: includes api. too
                  [:o [:km "cursor: other"]]
                  [:p [:km "cursor: gpton."]]
-                 [:open_bracket [:km "cursor: gridchess."]]
-                 [:close_bracket [:km "cursor: past."]]
+                 [:open_bracket [:km "cursor: past."]]
+                 [:close_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: garden."]]
                  [:s [:km "cursor: eventsline."]]
                  [:d [:km "cursor: deps."]]

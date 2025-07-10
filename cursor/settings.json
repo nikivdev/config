@@ -1,4 +1,5 @@
 {
+  "workbench.activityBar.orientation": "vertical",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "workbench.colorCustomizations": {
     "[GitHub Light]": {
@@ -45,6 +46,7 @@
     "LICENSE/": true,
     "*.bike": true,
     ".env": true,
+    ".gitignore": true,
     "scripts/past.ts": true,
     ".ronin": true,
     "bun.lock": true,
@@ -247,6 +249,7 @@
   "window.title": "${activeEditorShort}${separator}${rootNameShort}${separator}${profileName}",
   "workbench.layoutControl.enabled": false,
   "window.commandCenter": false,
+
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },

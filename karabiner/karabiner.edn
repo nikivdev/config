@@ -1304,7 +1304,7 @@
                  [:r [:km "cursor: workflow."]]
                  [:t [:km "cursor: gitedit."]]
                  [:u [:km "cursor: kuskus."]]
-                 [:i [:km "cursor: api."]]
+                 [:i [:km "cursor: cli."]] ; TODO: includes api. too
                  [:o [:km "cursor: other"]]
                  [:p [:km "cursor: gpton."]]
                  [:open_bracket [:km "cursor: gridchess."]]

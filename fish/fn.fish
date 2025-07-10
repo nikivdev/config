@@ -104,6 +104,14 @@ function p
     end
 end
 
+function pd
+    if not set -q argv[1]
+        pnpm dev
+    else
+        # pnpm add $argv
+    end
+end
+
 # TODO: should not be needed if you do `i` command through fast ai check to auto get what should go into `dev`
 # install dev dependencies
 function idev

@@ -509,10 +509,10 @@
     "key": "shift+cmd+8",
     "command": "workbench.explorer.fileView.focus"
   },
-  {
-    "key": "ctrl+;",
-    "command": "aichat.insertselectionintochat",
-  },
+  // {
+  //   "key": "ctrl+;",
+  //   "command": "aichat.insertselectionintochat",
+  // },
   {
     "key": "cmd+i",
     "command": "-composer.startComposerPrompt",
@@ -539,7 +539,7 @@
     "when": "!activeEditorIsPinned"
   },
   {
-    "key": "ctrl+o",
+    "key": "ctrl+;",
     "command": "composerMode.agent"
   },
   {

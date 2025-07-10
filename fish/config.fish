@@ -1,5 +1,5 @@
 source ~/src/config/fish/fn.fish
-source ~/src/config/fish/i.fish
+source ~/src/config/i/fish/config.fish
 
 source ~/.local/state/nix/profiles/profile/etc/profile.d/nix.fish # use latest version of nix
 set -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt # needed for flox/nix (some ssl bug or something) TODO: still needed?

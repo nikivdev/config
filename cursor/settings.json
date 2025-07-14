@@ -361,5 +361,8 @@
     }
   ],
   "editorjumper.selectedIDE": "GoLand",
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  "amp.commands.allowlist": [
+    "pnpm"
+  ]
 }

@@ -536,12 +536,16 @@
   },
   {
     "key": "ctrl+;",
-    "command": "composerMode.agent"
+    "command": "aichat.insertselectionintochat"
   },
   {
     "key": "ctrl+.",
+    "command": "composerMode.agent"
+  },
+  {
+    "key": "ctrl+o",
     "command": "amp.sidebarView.focus"
-},
+  },
 {
     "key": "shift+enter",
     "command": "workbench.action.terminal.sendSequence",

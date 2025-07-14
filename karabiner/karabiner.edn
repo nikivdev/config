@@ -923,7 +923,8 @@
                  [:n [:km "open: Ronin"]]
                  [:m [:km "open: Modal"]]
                  [:left_command [:km "open: Axiom"]]
-                 [:spacebar [:km "open: 1Focus"]]
+                 ;[:spacebar [:km "open: 1Focus"]]
+                 [:spacebar [:km "open: 1Focus (dev)"]]
                  ]}
                  ;[:left_command [:km "open: ChatGPTWeb"]]
                  ;[:right_command [:km "open: RunPod"]]

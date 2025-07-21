@@ -1721,7 +1721,7 @@
         {:des "mkey (apps)"
          :rules [:m-mode
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:w [:km "open: Rivet"]]
+                 [:w [:km "open: Google Docs"]]
                  [:e [:km "open: PyCharm"]]
                  [:r [:km "open: Encore (local)"]]
                  [:t [:km "open: Stripe"]]
@@ -1739,6 +1739,7 @@
                  [:left_command [:km "open: TablePlus"]]
                  [:spacebar [:km "open: GoLand"]]
                  ]}
+                 ;[:w [:km "open: Rivet"]]
                  ;[:left_command [:km "open: SQLiteFlow"]]
                  ;[:a [:km "open: Lovable"]]
                  ;[:f [:km "open: Drive"]]

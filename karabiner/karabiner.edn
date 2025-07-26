@@ -1299,8 +1299,8 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (workspaces)"
          :rules [:escape-mode
-                 [:1 [:km "cursor: ronin."]]
-                 [:2 [:km "cursor: expo."]]
+                 [:1 [:km "cursor: expo."]]
+                 [:2 [:km "cursor: ronin."]]
                  [:3 [:km "cursor: effect."]]
                  [:q [:km "cursor: learn."]]
                  [:w [:km "cursor: wip."]]

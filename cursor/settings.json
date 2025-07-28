@@ -363,6 +363,8 @@
   "editorjumper.selectedIDE": "GoLand",
   "workbench.statusBar.visible": false,
   "amp.commands.allowlist": [
-    "pnpm"
+    "pnpm",
+    "cd",
+    "bun"
   ]
 }

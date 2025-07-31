@@ -1223,3 +1223,30 @@ function gb --description "create git branch"
         return 1
     end
 end
+
+function gRebaseMain \
+    --description "Replay current branch on top of origin/main"
+
+    # Detect current branch (abort if detached HEAD)
+    set -l branch (git symbolic-ref --quiet --short HEAD)
+    if test -z "$branch"
+        echo "❌ Not on a branch (detached HEAD?)"
+        return 1
+    end
+
+    # 1. Get the latest origin/main (and prune deleted refs)
+    git fetch --prune origin main; or begin
+        echo "❌ Failed to fetch origin/main"
+        return 1
+    end
+
+    # 2. Re-apply your commits on top of it
+    git rebase --autostash origin/main; or begin
+        echo "❌ Rebase failed — fix conflicts or run 'git rebase --abort'"
+        return 1
+    end
+
+    echo "✔ '$branch' now contains everything from origin/main."
+    echo "   Verify things work, then push with:"
+    echo "     git push --force-with-lease origin $branch"
+end

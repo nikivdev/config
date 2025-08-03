@@ -370,7 +370,9 @@
     "pkill",
     "true",
     "git",
-    "rm"
+    "rm",
+    "stripe",
+    "timeout"
   ],
   "workbench.layoutControl.enabled": false
 }

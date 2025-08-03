@@ -247,8 +247,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.title": "${activeEditorShort}${separator}${rootNameShort}${separator}${profileName}",
-  "workbench.layoutControl.enabled": false,
-  "window.commandCenter": false,
 
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
@@ -373,5 +371,6 @@
     "true",
     "git",
     "rm"
-  ]
+  ],
+  "workbench.layoutControl.enabled": false
 }

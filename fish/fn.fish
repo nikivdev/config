@@ -1,4 +1,5 @@
-alias cwd='pwd | pbcopy'
+alias cwd="pwd | pbcopy"
+alias pi="pnpm i"
 alias js="just s" # TODO: do with watch like bun --watch
 alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
@@ -73,6 +74,14 @@ function :
         bun dev --port $full_port
     else
         bun $argv
+    end
+end
+
+function j
+    if not set -q argv[1]
+        just dev
+    else
+        just $argv
     end
 end
 

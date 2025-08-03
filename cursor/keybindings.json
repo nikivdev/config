@@ -543,7 +543,7 @@
     "command": "composerMode.agent"
   },
   {
-    "key": "ctrl+o",
+    "key": "cmd+.",
     "command": "amp.sidebarView.focus"
   },
 {

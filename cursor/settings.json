@@ -365,6 +365,13 @@
   "amp.commands.allowlist": [
     "pnpm",
     "cd",
-    "bun"
+    "bun",
+    "chmod",
+    "xargs",
+    "sleep",
+    "pkill",
+    "true",
+    "git",
+    "rm"
   ]
 }

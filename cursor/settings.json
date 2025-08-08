@@ -374,5 +374,91 @@
     "stripe",
     "timeout"
   ],
-  "workbench.layoutControl.enabled": false
+  "workbench.layoutControl.enabled": false,
+  "amp.permissions": [
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "pnpm"
+      },
+      "action": "allow"
+    },
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "cd"
+      },
+      "action": "allow"
+    },
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "bun"
+      },
+      "action": "allow"
+    },
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "chmod"
+      },
+      "action": "allow"
+    },
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "xargs"
+      },
+      "action": "allow"
+    },
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "sleep"
+      },
+      "action": "allow"
+    },
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "pkill"
+      },
+      "action": "allow"
+    },
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "true"
+      },
+      "action": "allow"
+    },
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "git"
+      },
+      "action": "allow"
+    },
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "rm"
+      },
+      "action": "allow"
+    },
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "stripe"
+      },
+      "action": "allow"
+    },
+    {
+      "tool": "Bash",
+      "matches": {
+        "cmd": "timeout"
+      },
+      "action": "allow"
+    }
+  ]
 }

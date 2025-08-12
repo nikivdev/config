@@ -378,6 +378,13 @@
   "amp.permissions": [
     {
       "tool": "Bash",
+      "action": "allow",
+      "matches": {
+        "cmd": "pnpm dev"
+      }
+    },
+    {
+      "tool": "Bash",
       "matches": {
         "cmd": "pnpm"
       },

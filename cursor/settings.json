@@ -380,6 +380,55 @@
       "tool": "Bash",
       "action": "allow",
       "matches": {
+        "cmd": "npx biome format --write src/server/rpc/index.ts"
+      }
+    },
+    {
+      "tool": "Bash",
+      "action": "allow",
+      "matches": {
+        "cmd": "pnpm biome check src/server/rpc/index.ts --apply"
+      }
+    },
+    {
+      "tool": "Bash",
+      "action": "allow",
+      "matches": {
+        "cmd": "pnpm biome check --apply src/server/rpc/index.ts"
+      }
+    },
+    {
+      "tool": "Bash",
+      "action": "allow",
+      "matches": {
+        "cmd": "rm /Users/nikiv/src/org/*"
+      }
+    },
+    {
+      "tool": "Bash",
+      "action": "allow",
+      "matches": {
+        "cmd": "npx tsc --noEmit --skipLibCheck src/app/api/new-game/route.ts"
+      }
+    },
+    {
+      "tool": "Bash",
+      "action": "allow",
+      "matches": {
+        "cmd": "npx biome check src/app/api/play/route.ts"
+      }
+    },
+    {
+      "tool": "Bash",
+      "action": "allow",
+      "matches": {
+        "cmd": "find /Users/nikiv/src/* -name \"*.ts\" -exec grep -l \"co\\.array\\|co\\.list\" {} \\;"
+      }
+    },
+    {
+      "tool": "Bash",
+      "action": "allow",
+      "matches": {
         "cmd": "pnpm dev"
       }
     },

@@ -1309,7 +1309,7 @@
                  [:r [:km "cursor: workflow."]]
                  [:i [:km "cursor: infra."]] ; TODO: includes api. & cli. too
                  [:o [:km "cursor: other"]]
-                 [:s [:km "cursor: deps."]]
+                 [:s [:km "cursor: kuskus."]]
                  [:d [:km "cursor: garden."]]
                  [:f [:km "cursor: py."]]
                  [:g [:km "cursor: gitedit."]]
@@ -1330,6 +1330,7 @@
                  [:slash [:km "cursor: mojo."]]
                  [:spacebar [:km "cursor: rust."]]
                  ]}
+                 ;[:s [:km "cursor: deps."]]
                  ;[:k [:km "cursor: sb."]]
                  ;[:open_bracket [:km "cursor: past."]]
                  ;[:close_bracket [:km "cursor: gridchess."]]

@@ -392,7 +392,7 @@
     "when": "!editorFocus"
   },
   {
-    "key": "shift+alt+cmd+c",
+    "key": "ctrl+d",
     "command": "copyRelativeFilePath"
   },
   {
@@ -493,17 +493,9 @@
     "when": "textCompareEditorVisible"
   },
   {
-    "key": "ctrl+d",
-    "command": "workbench.action.compareEditor.nextChange"
-  },
-  {
     "key": "alt+f5",
     "command": "-workbench.action.editor.nextChange",
     "when": "editorTextFocus && !textCompareEditorActive"
-  },
-  {
-    "key": "ctrl+d",
-    "command": "workbench.action.editor.nextChange"
   },
   {
     "key": "shift+cmd+8",
@@ -557,5 +549,9 @@
 {
   "key": "cmd+e",
   "command": "composerMode.background"
+},
+{
+  "key": "cmd+i",
+  "command": "composerMode.agent"
 }
 ]

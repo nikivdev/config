@@ -260,7 +260,11 @@
     "editor.defaultFormatter": "biomejs.biome"
   },
   "window.zoomLevel": -1,
-  "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
+  "cursor.cpp.disabledLanguages": [
+    "plaintext",
+    "markdown",
+    "scminput"
+  ],
   "editor.accessibilitySupport": "off",
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
@@ -359,7 +363,6 @@
     }
   ],
   "editorjumper.selectedIDE": "GoLand",
-  "workbench.statusBar.visible": false,
   "amp.commands.allowlist": [
     "pnpm",
     "cd",
@@ -374,7 +377,6 @@
     "stripe",
     "timeout"
   ],
-  "workbench.layoutControl.enabled": false,
   "amp.permissions": [
     {
       "tool": "Bash",
@@ -516,5 +518,7 @@
       },
       "action": "allow"
     }
-  ]
+  ],
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false
 }

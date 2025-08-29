@@ -1311,6 +1311,7 @@
                  [:t [:km "cursor: anysynth."]]
                  [:i [:km "cursor: infra."]] ; TODO: includes api. & cli. too
                  [:o [:km "cursor: other"]]
+                 [:p [:km "cursor: gridchess."]]
                  [:a [:km "cursor: eventsline."]]
                  [:s [:km "cursor: sb."]]
                  [:d [:km "cursor: deps."]]

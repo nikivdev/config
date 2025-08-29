@@ -1321,7 +1321,7 @@
                  [:k [:km "cursor: kuskus."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: gridchess."]]
+                 [:quote [:km "cursor: opencode."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]

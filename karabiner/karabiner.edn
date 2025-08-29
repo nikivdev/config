@@ -1311,7 +1311,6 @@
                  [:t [:km "cursor: anysynth."]]
                  [:i [:km "cursor: infra."]] ; TODO: includes api. & cli. too
                  [:o [:km "cursor: other"]]
-                 [:p [:km "cursor: gridchess."]]
                  [:a [:km "cursor: eventsline."]]
                  [:s [:km "cursor: sb."]]
                  [:d [:km "cursor: deps."]]
@@ -1322,7 +1321,7 @@
                  [:k [:km "cursor: kuskus."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: kotlin."]]
+                 [:quote [:km "cursor: gridchess."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]
@@ -1334,6 +1333,7 @@
                  [:slash [:km "cursor: mojo."]]
                  [:spacebar [:km "cursor: rust."]]
                  ]}
+                 ;[:quote [:km "cursor: kotlin."]]
                  ;[:d [:km "cursor: garden."]]
                  ;[:h [:km "cursor: ext."]]
                  ;[:s [:km "cursor: deps."]]

@@ -1301,8 +1301,9 @@
         {:des "capskey (workspaces)"
          :rules [:escape-mode
                  [:1 [:km "cursor: expo."]]
-                 [:2 [:km "cursor: ronin."]]
+                 [:2 [:km "cursor: garden."]]
                  [:3 [:km "cursor: effect."]]
+                 [:4 [:km "cursor: blade."]]
                  [:q [:km "cursor: learn."]]
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: go."]]
@@ -1310,9 +1311,10 @@
                  [:t [:km "cursor: anysynth."]]
                  [:i [:km "cursor: infra."]] ; TODO: includes api. & cli. too
                  [:o [:km "cursor: other"]]
-                 [:a [:km "cursor: gridchess."]]
+                 [:p [:km "cursor: gridchess."]]
+                 [:a [:km "cursor: eventsline."]]
                  [:s [:km "cursor: sb."]]
-                 [:d [:km "cursor: garden."]]
+                 [:d [:km "cursor: deps."]]
                  [:f [:km "cursor: py."]]
                  [:g [:km "cursor: gitedit."]]
                  [:h [:km "cursor: gen."]]
@@ -1332,6 +1334,7 @@
                  [:slash [:km "cursor: mojo."]]
                  [:spacebar [:km "cursor: rust."]]
                  ]}
+                 ;[:d [:km "cursor: garden."]]
                  ;[:h [:km "cursor: ext."]]
                  ;[:s [:km "cursor: deps."]]
                  ;[:open_bracket [:km "cursor: past."]]

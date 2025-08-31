@@ -910,10 +910,9 @@
                  [:k [:km "open: Sentry"]]
                  [:semicolon [:km "open: Lovable"]]
                  [:tab [:km "open: ClaudeWeb"]]
-                 [:escape [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard
                  [:a [:km "open: Grok"]]
                  [:s [:km "open: AlexSideBar"]]
-                 [:d [:km "open: Conductor"]]
+                 [:d [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard
                  [:f [:km "open: Claude"]]
                  [:g [:km "open: Google Cloud"]]
                  [:h [:km "open: PostHog"]]
@@ -927,10 +926,10 @@
                  [:n [:km "open: Ronin"]]
                  [:m [:km "open: Modal"]]
                  [:left_command [:km "open: 1Focus (dev)"]]
-                 ;[:spacebar [:km "open: 1Focus"]]
                  [:spacebar [:km "open: Conductor"]]
                  ]}
                  ;[:spacebar [:km "open: 1Focus"]]
+                 ;[:d [:km "open: Conductor"]]
                  ;[:left_command [:km "open: ChatGPTWeb"]]
                  ;[:right_command [:km "open: RunPod"]]
                  ;[:escape [:km "open: Perplexity"]]

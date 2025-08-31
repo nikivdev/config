@@ -382,6 +382,13 @@
       "tool": "Bash",
       "action": "allow",
       "matches": {
+        "cmd": "pnpm tauri dev"
+      }
+    },
+    {
+      "tool": "Bash",
+      "action": "allow",
+      "matches": {
         "cmd": "npx biome format --write src/server/rpc/index.ts"
       }
     },

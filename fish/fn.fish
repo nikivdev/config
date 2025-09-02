@@ -603,8 +603,16 @@ function ..
     eza
 end
 
+# function l
+#     ollama $argv
+# end
+
 function l
-    ollama $argv
+    if not set -q argv[1]
+        pnpm dev
+    else
+        pnpm i $argv
+    end
 end
 
 # TODO: move

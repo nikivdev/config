@@ -1317,7 +1317,7 @@
                  [:a [:km "cursor: blade."]]
                  [:s [:km "cursor: garden."]]
                  [:d [:km "cursor: deps."]]
-                 [:f [:km "cursor: py."]]
+                 [:f [:km "cursor: mojo."]]
                  [:g [:km "cursor: gitedit."]]
                  [:h [:km "cursor: sb."]]
                  [:j [:km "cursor: ts."]]
@@ -1334,7 +1334,7 @@
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: swift."]]
                  [:slash [:km "cursor: moonbit."]]
-                 [:left_command [:km "cursor: mojo."]]
+                 [:left_command [:km "cursor: py."]]
                  [:spacebar [:km "cursor: rust."]]
                  ]}
                  ;[:quote [:km "cursor: kotlin."]]

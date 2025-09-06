@@ -1301,24 +1301,23 @@
          :rules [:escape-mode
                  [:1 [:km "cursor: elysia."]]
                  [:2 [:km "cursor: expo."]]
-                 [:3 [:km "cursor: effect."]]
+                 [:3 [:km "cursor: blade."]]
                  [:4 [:km "cursor: ark."]] ; TODO: include panda too? tailwind too or diff bind
                  [:q [:km "cursor: learn."]] ; jax/pytorch/mlx/tinygrad/mojo-max (mostly ai now)
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: workflow."]]
                  [:t [:km "cursor: eventsline."]]
-                 [:y [:km "cursor: anysynth."]]
                  [:u [:km "cursor: unison."]]
-                 [:i [:km "cursor: infra."]] ; TODO: includes api. & cli. too
+                 [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: other"]]
                  [:p [:km "cursor: pal."]]
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: blade."]]
-                 [:s [:km "cursor: garden."]]
+                 [:a [:km "cursor: effect."]]
+                 [:s [:km "cursor: anysynth."]]
                  [:d [:km "cursor: deps."]]
                  [:f [:km "cursor: mojo."]]
-                 [:g [:km "cursor: gitedit."]]
+                 [:g [:km "cursor: garden."]]
                  [:h [:km "cursor: sb."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: kuskus."]]
@@ -1337,6 +1336,7 @@
                  [:left_command [:km "cursor: py."]]
                  [:spacebar [:km "cursor: rust."]]
                  ]}
+                 ;[:i [:km "cursor: infra."]] ; TODO: includes api. & cli. too | add it to caps + left_cmd
                  ;[:quote [:km "cursor: kotlin."]]
                  ;[:d [:km "cursor: garden."]]
                  ;[:h [:km "cursor: ext."]]

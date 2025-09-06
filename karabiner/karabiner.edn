@@ -1303,7 +1303,7 @@
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: effect."]]
                  [:4 [:km "cursor: ark."]] ; TODO: include panda too? tailwind too or diff bind
-                 [:q [:km "cursor: learn."]]
+                 [:q [:km "cursor: learn."]] ; jax/pytorch/mlx/tinygrad/mojo-max (mostly ai now)
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: workflow."]]
@@ -1312,14 +1312,14 @@
                  [:u [:km "cursor: unison."]]
                  [:i [:km "cursor: infra."]] ; TODO: includes api. & cli. too
                  [:o [:km "cursor: other"]]
-                 [:p [:km "cursor: ai."]] ; jax/pytorch/mlx/tinygrad/mojo-max
+                 [:p [:km "cursor: pal."]]
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: blade."]]
                  [:s [:km "cursor: garden."]]
                  [:d [:km "cursor: deps."]]
                  [:f [:km "cursor: py."]]
                  [:g [:km "cursor: gitedit."]]
-                 [:h [:km "cursor: gen."]]
+                 [:h [:km "cursor: sb."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: kuskus."]]
                  [:l [:km "cursor: la."]]
@@ -1329,7 +1329,7 @@
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]
                  [:b [:km "cursor: bun."]]
-                 [:n [:km "cursor: sb."]]
+                 [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: gpton."]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: swift."]]

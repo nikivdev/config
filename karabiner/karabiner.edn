@@ -1323,7 +1323,7 @@
                  [:k [:km "cursor: kuskus."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: mojo."]]
+                 [:quote [:km "cursor: moonbit."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]
@@ -1333,7 +1333,7 @@
                  [:comma [:km "cursor: elixir."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: swift."]]
-                 [:left_command [:km "cursor: moonbit."]]
+                 [:left_command [:km "cursor: mojo."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
                  ;[:d [:km "cursor: deps."]]

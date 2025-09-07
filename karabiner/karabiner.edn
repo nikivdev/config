@@ -1316,7 +1316,7 @@
                  [:a [:km "cursor: effect."]]
                  [:s [:km "cursor: anysynth."]]
                  [:d [:km "cursor: deps."]]
-                 [:f [:km "cursor: mojo."]]
+                 [:f [:km "cursor: py."]]
                  [:g [:km "cursor: garden."]]
                  [:h [:km "cursor: sb."]]
                  [:j [:km "cursor: ts."]]
@@ -1333,7 +1333,7 @@
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: swift."]]
                  [:slash [:km "cursor: moonbit."]]
-                 [:left_command [:km "cursor: py."]]
+                 [:left_command [:km "cursor: mojo."]]
                  [:spacebar [:km "cursor: rust."]]
                  ]}
                  ;[:i [:km "cursor: infra."]] ; TODO: includes api. & cli. too | add it to caps + left_cmd

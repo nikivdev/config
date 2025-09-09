@@ -1312,14 +1312,13 @@
                  [:u [:km "cursor: bun."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
-                 [:p [:km "cursor: pal."]]
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: effect."]]
+                 [:a [:km "cursor: pal."]]
                  [:s [:km "cursor: anysynth."]]
                  [:d [:km "cursor: garden."]]
                  [:f [:km "cursor: py."]]
                  [:g [:km "cursor: zig."]]
-                 [:h [:km "cursor: deps."]] ; ai-sdk, ..
+                 [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: swift."]]
                  [:l [:km "cursor: la."]]
@@ -1337,6 +1336,7 @@
                  [:left_command [:km "cursor: mojo."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:h [:km "cursor: deps."]] ; ai-sdk, ..
                  ;[:comma [:km "cursor: elixir."]]
                  ;[:u [:km "cursor: unison."]]
                  ;[:slash [:km "cursor: swift."]]

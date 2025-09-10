@@ -1304,36 +1304,42 @@
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: encore."]]
                  [:4 [:km "cursor: ark."]] ; TODO: include panda too? tailwind too or diff bind
-                 [:q [:km "cursor: learn."]] ; jax/pytorch/mlx/tinygrad/mojo-max (mostly ai now)
+                 [:9 [:km "cursor: react."]] ; includes rn
+                 [:0 [:km "cursor: ml."]] ; jax/pytorch/mlx/tinygrad/mojo-max..
+                 [:hyphen [:km "cursor: solid."]]
+                 [:q [:km "cursor: learn."]] ; repos connected with wiki for note taking/learning
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: workflow."]]
                  [:t [:km "cursor: eventsline."]]
                  [:u [:km "cursor: bun."]]
-                 [:i [:km "cursor: gitedit."]]
+                 [:i [:km "cursor: swift."]]
                  [:o [:km "cursor: sb."]]
+                 [:p [:km "cursor: client."]]
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: pal."]]
+                 [:a [:km "cursor: ai."]] ; mlx, pytorch, jax, training, rl
                  [:s [:km "cursor: kus."]]
                  [:d [:km "cursor: garden."]]
                  [:f [:km "cursor: py."]]
-                 [:g [:km "cursor: zig."]]
+                 [:g [:km "cursor: gitedit."]]
                  [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: anysynth."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: swift."]]
+                 [:quote [:km "cursor: pal."]]
+                 [:z [:km "cursor: moonbit."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: gpton."]]
-                 [:comma [:km "cursor: kotlin."]]
+                 [:comma [:km "cursor: moonbit."]]
                  [:period [:km "cursor: rust."]]
-                 [:slash [:km "cursor: moonbit."]]
+                 [:slash [:km "cursor: zig."]] ; includes c++
                  [:left_command [:km "cursor: mojo."]]
+                 [:right_command [:km "cursor: kotlin."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
                  ;[:h [:km "cursor: deps."]] ; ai-sdk, ..

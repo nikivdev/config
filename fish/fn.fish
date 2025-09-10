@@ -603,6 +603,10 @@ function ..
     eza
 end
 
+function ts
+    bunx tsgo
+end
+
 # function l
 #     ollama $argv
 # end

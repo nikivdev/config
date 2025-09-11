@@ -1315,9 +1315,9 @@
                  [:u [:km "cursor: bun."]]
                  [:i [:km "cursor: swift."]]
                  [:o [:km "cursor: sb."]]
-                 [:p [:km "cursor: ai."]] ; mlx, pytorch, jax, training, rl
+                 [:p [:km "cursor: pal."]]
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: client."]]
+                 [:a [:km "cursor: ai."]] ; mlx, pytorch, jax, training, rl
                  [:s [:km "cursor: kus."]]
                  [:d [:km "cursor: garden."]]
                  [:f [:km "cursor: py."]]
@@ -1327,7 +1327,7 @@
                  [:k [:km "cursor: anysynth."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: pal."]]
+                 [:quote [:km "cursor: client."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]

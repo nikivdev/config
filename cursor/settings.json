@@ -247,10 +247,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.title": "${activeEditorShort}${separator}${rootNameShort}${separator}${profileName}",
-
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
   "errorLens.enabled": true,
   "errorLens.enabledDiagnosticLevels": ["error", "info"],
   "terminal.integrated.tabs.enabled": false,

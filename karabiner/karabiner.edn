@@ -1302,8 +1302,9 @@
          :rules [:escape-mode
                  [:1 [:km "cursor: elysia."]]
                  [:2 [:km "cursor: expo."]]
-                 [:3 [:km "cursor: encore."]]
-                 [:4 [:km "cursor: ark."]] ; TODO: include panda too? tailwind too or diff bind
+                 [:3 [:km "cursor: effect."]]
+                 [:4 [:km "cursor: encore."]]
+                 [:8 [:km "cursor: ark."]] ; TODO: include panda too? tailwind too or diff bind
                  [:9 [:km "cursor: react."]] ; includes rn
                  [:0 [:km "cursor: ml."]] ; jax/pytorch/mlx/tinygrad/mojo-max..
                  [:hyphen [:km "cursor: solid."]]
@@ -1311,24 +1312,23 @@
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: workflow."]]
-                 [:t [:km "cursor: gitedit."]]
+                 [:t [:km "cursor: tauri."]]
                  [:u [:km "cursor: bun."]]
                  [:i [:km "cursor: swift."]]
                  [:o [:km "cursor: sb."]]
-                 [:p [:km "cursor: deps."]] ; ai-sdk, opentui, ..
+                 [:p [:km "cursor: proxy."]] ; client. etc.
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:close_bracket [:km "cursor: ghostty."]]
-                 [:a [:km "cursor: learn."]] ; repos connected with wiki for note taking/learning
                  [:s [:km "cursor: kus."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: py."]]
                  [:g [:km "cursor: garden."]]
-                 [:h [:km "cursor: effect."]]
+                 [:h [:km "cursor: deps."]] ; ai-sdk, opentui, ..
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: anysynth."]] ; includes reatom
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: client."]]
+                 [:quote [:km "cursor: gitedit."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]
@@ -1342,6 +1342,8 @@
                  [:right_command [:km "cursor: kotlin."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:p [:km "cursor: past."]]
+                 ;[:a [:km "cursor: learn."]] ; repos connected with wiki for note taking/learning (deps. is used for it now)
                  ;[:h [:km "cursor: effect."]]
                  ;[:p [:km "cursor: deps."]] ; opentui, ai-sdk, ..
                  ;[:t [:km "cursor: eventsline."]]

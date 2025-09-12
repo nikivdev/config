@@ -1307,24 +1307,25 @@
                  [:9 [:km "cursor: react."]] ; includes rn
                  [:0 [:km "cursor: ml."]] ; jax/pytorch/mlx/tinygrad/mojo-max..
                  [:hyphen [:km "cursor: solid."]]
-                 [:q [:km "cursor: learn."]] ; repos connected with wiki for note taking/learning
+                 [:q [:km "cursor: ai."]] ; mlx, pytorch, jax, training, rl
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: workflow."]]
-                 [:t [:km "cursor: eventsline."]]
+                 [:t [:km "cursor: gitedit."]]
                  [:u [:km "cursor: bun."]]
                  [:i [:km "cursor: swift."]]
                  [:o [:km "cursor: sb."]]
-                 [:p [:km "cursor: pal."]]
+                 [:p [:km "cursor: deps."]] ; effect, ai-sdk, opentui, ..
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: ai."]] ; mlx, pytorch, jax, training, rl
+                 [:close_bracket [:km "cursor: ghostty."]]
+                 [:a [:km "cursor: learn."]] ; repos connected with wiki for note taking/learning
                  [:s [:km "cursor: kus."]]
-                 [:d [:km "cursor: garden."]]
+                 [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: py."]]
-                 [:g [:km "cursor: gitedit."]]
+                 [:g [:km "cursor: garden."]]
                  [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]
-                 [:k [:km "cursor: anysynth."]]
+                 [:k [:km "cursor: anysynth."]] ; includes reatom
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
                  [:quote [:km "cursor: client."]]
@@ -1341,7 +1342,10 @@
                  [:right_command [:km "cursor: kotlin."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
-                 ;[:h [:km "cursor: deps."]] ; ai-sdk, ..
+                 ;[:h [:km "cursor: effect."]]
+                 ;[:p [:km "cursor: deps."]] ; opentui, ai-sdk, ..
+                 ;[:t [:km "cursor: eventsline."]]
+                 ;[:h [:km "cursor: deps."]] ;
                  ;[:comma [:km "cursor: elixir."]]
                  ;[:u [:km "cursor: unison."]]
                  ;[:slash [:km "cursor: swift."]]

@@ -1305,10 +1305,10 @@
                  [:3 [:km "cursor: effect."]]
                  [:4 [:km "cursor: encore."]]
                  [:8 [:km "cursor: react."]] ; includes rn
-                 [:9 [:km "cursor: ml."]] ; jax/pytorch/mlx/tinygrad/mojo-max..
-                 [:0 [:km "cursor: panda."]] ; includes ark
-                 [:hyphen [:km "cursor: tailwind."]]
-                 [:equal_sign [:km "cursor: solid."]]
+                 [:9 [:km "cursor: panda."]] ; includes ark
+                 [:0 [:km "cursor: ml."]] ; jax/pytorch/mlx/tinygrad/mojo-max..
+                 [:hyphen [:km "cursor: opentui."]]
+                 [:equal_sign [:km "cursor: tailwind."]]
                  [:q [:km "cursor: ai."]] ; mlx, pytorch, jax, training, rl
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: go."]]
@@ -1343,6 +1343,7 @@
                  [:right_command [:km "cursor: kotlin."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:equal_sign [:km "cursor: solid."]]
                  ;[:p [:km "cursor: past."]]
                  ;[:a [:km "cursor: learn."]] ; repos connected with wiki for note taking/learning (deps. is used for it now)
                  ;[:h [:km "cursor: effect."]]

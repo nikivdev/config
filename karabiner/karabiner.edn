@@ -1315,7 +1315,7 @@
                  [:u [:km "cursor: bun."]]
                  [:i [:km "cursor: swift."]]
                  [:o [:km "cursor: sb."]]
-                 [:p [:km "cursor: deps."]] ; effect, ai-sdk, opentui, ..
+                 [:p [:km "cursor: deps."]] ; ai-sdk, opentui, ..
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:close_bracket [:km "cursor: ghostty."]]
                  [:a [:km "cursor: learn."]] ; repos connected with wiki for note taking/learning

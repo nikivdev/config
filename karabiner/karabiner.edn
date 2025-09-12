@@ -262,9 +262,30 @@
                  ]}
         {:des "1key (gh workspaces)"
          :rules [:1-mode
-                 ;[:w [:km "cursor: rolldown-gh"]]
-                 ;[:e [:km "cursor: elysia-gh"]]
-                 ;[:r [:km "cursor: encore."]]
+                 [:2 [:km "cursor: optique-gh"]] ; https://github.com/dahlia/optique
+                 [:3 [:km "cursor: opentui-gh"]]
+                 [:e [:km "cursor: go-gh"]]
+                 [:r [:km "cursor: react-gh"]] ; includes rn
+                 [:r [:km "cursor: tinygrad-gh"]]
+                 [:i [:km "cursor: swift-gh"]]
+                 [:o [:km "cursor: zod-gh"]]
+                 [:p [:km "cursor: pytorch-gh"]]
+                 [:d [:km "cursor: panda-gh"]] ; includes ark
+                 [:f [:km "cursor: cpython-gh"]]
+                 [:h [:km "cursor: hono-gh"]]
+                 [:j [:km "cursor: ts-go-gh"]]
+                 [:k [:km "cursor: tailwind-gh"]]
+                 [:l [:km "cursor: mlx-gh"]]
+                 [:semicolon [:km "cursor: codex-gh"]]
+                 [:n [:km "cursor: codanna-gh"]]
+                 [:m [:km "cursor: jax-gh"]]
+                 [:comma [:km "cursor: moonbit-gh"]]
+                 [:period [:km "cursor: rust-gh"]]
+                 [:slash [:km "cursor: zig-gh"]]
+                 [:left_command [:km "cursor: mojo-gh"]]
+                 [:spacebar [:km "cursor: alchemy-gh"]]
+
+                 ;[:m [:km "cursor: ml-gh"]] ; jax/pytorch/tinygrad/mojo-max..
                  ;[:t [:km "cursor: arktype-gh"]]
                  ;[:y [:km "cursor: happy-dom-gh"]]
                  ;[:u [:km "cursor: turbo-gh"]]
@@ -1303,12 +1324,7 @@
                  [:1 [:km "cursor: elysia."]]
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: effect."]]
-                 [:4 [:km "cursor: encore."]]
-                 [:8 [:km "cursor: react."]] ; includes rn
-                 [:9 [:km "cursor: panda."]] ; includes ark
-                 [:0 [:km "cursor: ml."]] ; jax/pytorch/mlx/tinygrad/mojo-max..
-                 [:hyphen [:km "cursor: opentui."]]
-                 [:equal_sign [:km "cursor: tailwind."]]
+                 [:tab [:km "cursor: encore."]]
                  [:q [:km "cursor: ai."]] ; mlx, pytorch, jax, training, rl
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: go."]]

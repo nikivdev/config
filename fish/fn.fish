@@ -156,6 +156,27 @@ function w
     if not set -q argv[1]
         open -a /Applications/Cursor.app .
     else
+        # Check if any of the arguments are files that don't exist
+        set -l missing_files
+        for arg in $argv
+            # Skip if it's a directory or a flag/option (starts with -)
+            if not string match -q -- "-*" $arg; and not test -d $arg; and not test -e $arg
+                set -a missing_files $arg
+            end
+        end
+
+        if test (count $missing_files) -gt 0
+            echo "Creating missing files: $missing_files"
+            for file in $missing_files
+                # Create parent directories if they don't exist
+                set -l dir (dirname $file)
+                if test "$dir" != "."
+                    mkdir -p $dir
+                end
+                touch $file
+            end
+        end
+
         open -a /Applications/Cursor.app $argv
     end
 end

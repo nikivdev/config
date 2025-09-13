@@ -144,11 +144,19 @@ function :se
     bun seed $argv
 end
 
-function w
+function u
     if not set -q argv[1]
         cursor .
     else
         cursor $argv
+    end
+end
+
+function w
+    if not set -q argv[1]
+        open -a /Applications/Cursor.app .
+    else
+        open -a /Applications/Cursor.app $argv
     end
 end
 

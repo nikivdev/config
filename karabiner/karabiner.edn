@@ -262,32 +262,9 @@
                  ]}
         {:des "1key (gh workspaces)"
          :rules [:1-mode
-                 [:2 [:km "cursor: optique-gh"]] ; https://github.com/dahlia/optique
-                 [:3 [:km "cursor: opentui-gh"]]
-                 [:e [:km "cursor: go-gh"]]
-                 [:r [:km "cursor: react-gh"]] ; includes rn
-                 [:r [:km "cursor: tinygrad-gh"]]
-                 [:u [:km "cursor: tauri."]]
-                 [:i [:km "cursor: swift-gh"]]
-                 [:o [:km "cursor: zod-gh"]]
-                 [:p [:km "cursor: pytorch-gh"]]
-                 [:d [:km "cursor: panda-gh"]] ; includes ark
-                 [:f [:km "cursor: cpython-gh"]]
-                 [:h [:km "cursor: hono-gh"]]
-                 [:j [:km "cursor: ts-go-gh"]]
-                 [:k [:km "cursor: tailwind-gh"]]
-                 [:l [:km "cursor: mlx-gh"]]
-                 [:semicolon [:km "cursor: codex-gh"]]
-                 [:m [:km "cursor: jax-gh"]]
-                 [:comma [:km "cursor: moonbit-gh"]]
-                 [:period [:km "cursor: rust-gh"]]
-                 [:slash [:km "cursor: zig-gh"]]
-                 [:left_command [:km "cursor: mojo-gh"]]
-                 [:spacebar [:km "cursor: alchemy-gh"]]
                  ;[:tab [:km "cursor: encore."]]
                  ;[:equal_sign [:km "cursor: solid."]]
                  ;[:n [:km "cursor: codanna-gh"]]
-
                  ;[:m [:km "cursor: ml-gh"]] ; jax/pytorch/tinygrad/mojo-max..
                  ;[:t [:km "cursor: arktype-gh"]]
                  ;[:y [:km "cursor: happy-dom-gh"]]
@@ -336,28 +313,53 @@
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
         {:des "2key (move + scripts + refactor + gh workspaces)"
          :rules [:2-mode
-                 [:e [:km "cursor: rsbuild-gh"]]
-                 [:r [:km "cursor: rspack-gh"]]
-                 [:t [:km "cursor: eslint-gh"]]
-                 [:u [:km "cursor: cutlass-gh"]]
-                 [:y [:km "cursor: voby-gh"]]
-                 [:i [:km "cursor: react-scan-gh"]]
-                 [:o [:km "cursor: midscene-gh"]]
-                 [:f [:km "cursor: urvafe-cli-gh"]]
-                 [:j :!Cdown_arrow]
-                 [:k :!Cup_arrow]
-                 [:l :!Cright_arrow]
-                 [:h :!Cleft_arrow]
-                 [:semicolon :!Oup_arrow]
-                 [:quote :!Odown_arrow]
-                 [:c [:km "cursor: farcaster-gh"]]
-                 [:b [:km "cursor: cobra-gh"]]
-                 [:n [:km "cursor: ts-pattern-gh"]] ; with github.com/aidenybai/pattycake
-                 [:m [:km "cursor: million-gh"]]
-                 [:comma [:km "cursor: a2a-gh"]] ; with github.com/google/adk-python
-                 [:period [:km "cursor: agents-gh"]]
-                 [:spacebar [:km "cursor: tailscale-gh"]]
+                 [:3 [:km "cursor: optique-gh"]] ; https://github.com/dahlia/optique
+                 [:e [:km "cursor: go-gh"]]
+                 [:r [:km "cursor: react-gh"]] ; includes rn
+                 [:u [:km "cursor: tauri."]]
+                 [:i [:km "cursor: swift-gh"]]
+                 [:o [:km "cursor: pytorch-gh"]]
+                 [:d [:km "cursor: zod-gh"]]
+                 [:f [:km "cursor: cpython-gh"]]
+                 [:g [:km "cursor: tinygrad-gh"]]
+                 [:h [:km "cursor: hono-gh"]]
+                 [:j [:km "cursor: ts-go-gh"]]
+                 [:k [:km "cursor: jax-gh"]]
+                 [:l [:km "cursor: mlx-gh"]]
+                 [:semicolon [:km "cursor: codex-gh"]]
+                 [:n [:km "cursor: mbt-gh"]]
+                 [:m [:km "cursor: opentui-gh"]]
+                 [:comma [:km "cursor: rust-gh"]]
+                 [:period [:km "cursor: rust-gh"]]
+                 [:slash [:km "cursor: zig-gh"]]
+                 [:left_command [:km "cursor: mojo-gh"]]
+                 [:spacebar [:km "cursor: alchemy-gh"]]
                  ]}
+                 ;[:p [:km "cursor: panda-gh"]] ; includes ark
+                 ;[:k [:km "cursor: tailwind-gh"]]
+
+                 ;[:e [:km "cursor: rsbuild-gh"]]
+                 ;[:r [:km "cursor: rspack-gh"]]
+                 ;[:t [:km "cursor: eslint-gh"]]
+                 ;[:u [:km "cursor: cutlass-gh"]]
+                 ;[:y [:km "cursor: voby-gh"]]
+                 ;[:i [:km "cursor: react-scan-gh"]]
+                 ;[:o [:km "cursor: midscene-gh"]]
+                 ;[:f [:km "cursor: urvafe-cli-gh"]]
+                 ;[:j :!Cdown_arrow]
+                 ;[:k :!Cup_arrow]
+                 ;[:l :!Cright_arrow]
+                 ;[:h :!Cleft_arrow]
+                 ;[:semicolon :!Oup_arrow]
+                 ;[:quote :!Odown_arrow]
+                 ;[:c [:km "cursor: farcaster-gh"]]
+                 ;[:b [:km "cursor: cobra-gh"]]
+                 ;[:n [:km "cursor: ts-pattern-gh"]] ; with github.com/aidenybai/pattycake
+                 ;[:m [:km "cursor: million-gh"]]
+                 ;[:comma [:km "cursor: a2a-gh"]] ; with github.com/google/adk-python
+                 ;[:period [:km "cursor: agents-gh"]]
+                 ;[:spacebar [:km "cursor: tailscale-gh"]]
+
                  ;[:p [:km "cursor: fastapi-gh"]]
                  ;[:g [:km "cursor: gel-gh"]]
                  ;[:c [:km "cursor: langchain-gh"]]

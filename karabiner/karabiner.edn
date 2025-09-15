@@ -323,10 +323,12 @@
                  [:f [:km "cursor: cpython-gh"]]
                  [:g [:km "cursor: tinygrad-gh"]]
                  [:h [:km "cursor: hono-gh"]]
-                 [:j [:km "cursor: ts-go-gh"]]
-                 [:k [:km "cursor: jax-gh"]]
-                 [:l [:km "cursor: mlx-gh"]]
-                 [:semicolon [:km "cursor: codex-gh"]]
+                 [:j :!Cdown_arrow]
+                 [:k :!Cup_arrow]
+                 [:l :!Cright_arrow]
+                 [:h :!Cleft_arrow]
+                 [:semicolon :!Oup_arrow]
+                 [:quote :!Odown_arrow]
                  [:n [:km "cursor: mbt-gh"]]
                  [:m [:km "cursor: opentui-gh"]]
                  [:comma [:km "cursor: rust-gh"]]
@@ -346,12 +348,6 @@
                  ;[:i [:km "cursor: react-scan-gh"]]
                  ;[:o [:km "cursor: midscene-gh"]]
                  ;[:f [:km "cursor: urvafe-cli-gh"]]
-                 ;[:j :!Cdown_arrow]
-                 ;[:k :!Cup_arrow]
-                 ;[:l :!Cright_arrow]
-                 ;[:h :!Cleft_arrow]
-                 ;[:semicolon :!Oup_arrow]
-                 ;[:quote :!Odown_arrow]
                  ;[:c [:km "cursor: farcaster-gh"]]
                  ;[:b [:km "cursor: cobra-gh"]]
                  ;[:n [:km "cursor: ts-pattern-gh"]] ; with github.com/aidenybai/pattycake
@@ -539,6 +535,10 @@
                  ]}
         {:des "tabkey (zed)"
          :rules [:tab-mode
+                 [:j [:km "cursor: ts-go-gh"]]
+                 [:k [:km "cursor: jax-gh"]]
+                 [:l [:km "cursor: mlx-gh"]]
+                 [:semicolon [:km "cursor: codex-gh"]]
                  ]}
                  ;[:f [:km "Get time in SF"]]
                  ;[:d [:km "Open Dash and search docsets"]]

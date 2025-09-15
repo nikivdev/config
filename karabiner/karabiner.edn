@@ -1330,7 +1330,7 @@
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: elysia."]]
                  [:q [:km "cursor: effect."]]
-                 [:w [:km "cursor: wip."]]
+                 [:w [:km "cursor: wip."]] ; ai-sdk, opentui, .. (or specific issues)
                  [:e [:km "cursor: 1f-cli."]]
                  [:r [:km "cursor: garden."]]
                  [:t [:km "cursor: workflow."]]
@@ -1342,9 +1342,9 @@
                  [:a [:km "cursor: client."]]
                  [:s [:km "cursor: kus."]]
                  [:d [:km "cursor: friendik."]]
-                 [:f [:km "cursor: py."]]
+                 [:f [:km "cursor: py."]] ; includes training/evals
                  [:g [:km "cursor: gen."]]
-                 [:h [:km "cursor: deps."]] ; ai-sdk, opentui, ..
+                 [:h [:km "cursor: go."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: as."]]
                  [:l [:km "cursor: la."]]
@@ -1356,14 +1356,14 @@
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: mbt."]]
                  [:m [:km "cursor: gpton."]]
-                 [:comma [:km "cursor: zig."]] ; includes c++
+                 [:comma [:km "cursor: kotlin."]]
                  [:period [:km "cursor: rust."]]
-                 [:slash [:km "cursor: go."]]
+                 [:slash [:km "cursor: zig."]] ; includes c++
                  [:right_command [:km "cursor: kotlin."]]
                  [:left_command [:km "cursor: mojo."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
-                 ;[:comma [:km "cursor: kotlin."]]
+                 ;[:h [:km "cursor: deps."]]
                  ;[:p [:km "cursor: past."]]
                  ;[:a [:km "cursor: learn."]] ; repos connected with wiki for note taking/learning (deps. is used for it now)
                  ;[:h [:km "cursor: effect."]]

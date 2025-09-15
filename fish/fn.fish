@@ -364,6 +364,10 @@ function cpp
     watchexec --no-vcs-ignore --restart --exts cpp --clear --project-origin . "tput reset && make -C build && src/main"
 end
 
+function m
+    watchexec --no-vcs-ignore --restart --exts mbt --clear --project-origin . -q "tput reset && moon run $argv"
+end
+
 function nv
     if not set -q argv[1]
         nvim .
@@ -496,13 +500,13 @@ function find.DS_Store
 end
 
 
-function m
-    if not set -q argv[1]
-        watchexec --no-vcs-ignore --restart --quiet --exts go --clear --project-origin . "go run ."
-    else
-        go $argv
-    end
-end
+# function m
+#     if not set -q argv[1]
+#         watchexec --no-vcs-ignore --restart --quiet --exts go --clear --project-origin . "go run ."
+#     else
+#         go $argv
+#     end
+# end
 
 
 # oi = go install ..

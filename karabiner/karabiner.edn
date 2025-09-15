@@ -267,6 +267,7 @@
                  [:e [:km "cursor: go-gh"]]
                  [:r [:km "cursor: react-gh"]] ; includes rn
                  [:r [:km "cursor: tinygrad-gh"]]
+                 [:u [:km "cursor: tauri."]]
                  [:i [:km "cursor: swift-gh"]]
                  [:o [:km "cursor: zod-gh"]]
                  [:p [:km "cursor: pytorch-gh"]]
@@ -277,13 +278,15 @@
                  [:k [:km "cursor: tailwind-gh"]]
                  [:l [:km "cursor: mlx-gh"]]
                  [:semicolon [:km "cursor: codex-gh"]]
-                 [:n [:km "cursor: codanna-gh"]]
                  [:m [:km "cursor: jax-gh"]]
                  [:comma [:km "cursor: moonbit-gh"]]
                  [:period [:km "cursor: rust-gh"]]
                  [:slash [:km "cursor: zig-gh"]]
                  [:left_command [:km "cursor: mojo-gh"]]
                  [:spacebar [:km "cursor: alchemy-gh"]]
+                 ;[:tab [:km "cursor: encore."]]
+                 ;[:equal_sign [:km "cursor: solid."]]
+                 ;[:n [:km "cursor: codanna-gh"]]
 
                  ;[:m [:km "cursor: ml-gh"]] ; jax/pytorch/tinygrad/mojo-max..
                  ;[:t [:km "cursor: arktype-gh"]]
@@ -602,6 +605,7 @@
                  [:a [:km "open: Zed"]]
                  [:d [:km "open: Fantastical"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
+                 [:g [:km "open: JuxtaCode"]] ; TODO: replace with gitedit (better)
                  [:h [:km "open: Yaak"]]
                  [:j [:km "open: Ghostty"]]
                  [:k [:km "open: Safari"]]
@@ -612,7 +616,6 @@
                  [:v [:km "open: n8n"]]
                  [:n [:km "open: Modal Notebooks"]]
                  [:m [:km "open: Notion"]]
-                 [:comma [:km "open: JuxtaCode"]] ; TODO: replace with gitedit (better)
                  [:period [:km "open: Sublime Merge"]]
                  [:spacebar [:km "open: Warp"]]
                  ]}
@@ -1323,24 +1326,21 @@
          :rules [:escape-mode
                  [:1 [:km "cursor: elysia."]]
                  [:2 [:km "cursor: expo."]]
-                 [:3 [:km "cursor: effect."]]
-                 [:q [:km "cursor: ai."]] ; mlx, pytorch, jax, training, rl
+                 [:q [:km "cursor: effect."]]
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: workflow."]]
-                 ;[:tab [:km "cursor: encore."]]
-                 ;[:p [:km "cursor: opencode."]]
-                 ;[:t [:km "cursor: tauri."]]
-                 ;[:u [:km "cursor: bun."]]
-                 [:u [:km "cursor: kus."]]
+                 [:r [:km "cursor: garden."]]
+                 [:t [:km "cursor: workflow."]]
+                 [:u [:km "cursor: bun."]]
                  [:i [:km "cursor: swift."]]
                  [:o [:km "cursor: sb."]]
-                 [:p [:km "cursor: projects."]] ; client, other projects
+                 [:p [:km "cursor: opencode."]]
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:s [:km "cursor: moonbit."]]
+                 [:a [:km "cursor: client."]]
+                 [:s [:km "cursor: kus."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: py."]]
-                 [:g [:km "cursor: garden."]]
+                 [:g [:km "cursor: gen."]]
                  [:h [:km "cursor: deps."]] ; ai-sdk, opentui, ..
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: as."]]
@@ -1351,17 +1351,15 @@
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]
                  [:b [:km "cursor: blade."]]
-                 [:n [:km "cursor: gen."]]
+                 [:n [:km "cursor: mbt."]]
                  [:m [:km "cursor: gpton."]]
                  [:comma [:km "cursor: kotlin."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: zig."]] ; includes c++
-                 [:left_command [:km "cursor: mojo."]]
                  [:right_command [:km "cursor: kotlin."]]
+                 [:left_command [:km "cursor: mojo."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
-                 ;[:comma [:km "cursor: kotlin."]]
-                 ;[:equal_sign [:km "cursor: solid."]]
                  ;[:p [:km "cursor: past."]]
                  ;[:a [:km "cursor: learn."]] ; repos connected with wiki for note taking/learning (deps. is used for it now)
                  ;[:h [:km "cursor: effect."]]

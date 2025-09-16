@@ -314,7 +314,7 @@
         {:des "2key (move + scripts + refactor + gh workspaces)"
          :rules [:2-mode
                  [:3 [:km "cursor: optique-gh"]] ; https://github.com/dahlia/optique
-                 [:e [:km "cursor: go-gh"]]
+                 [:h [:km "cursor: go-gh"]]
                  [:r [:km "cursor: react-gh"]] ; includes rn
                  [:u [:km "cursor: tauri."]]
                  [:i [:km "cursor: swift-gh"]]
@@ -322,11 +322,10 @@
                  [:d [:km "cursor: zod-gh"]]
                  [:f [:km "cursor: cpython-gh"]]
                  [:g [:km "cursor: tinygrad-gh"]]
-                 [:h [:km "cursor: hono-gh"]]
+                 [:h :!Cleft_arrow]
                  [:j :!Cdown_arrow]
                  [:k :!Cup_arrow]
                  [:l :!Cright_arrow]
-                 [:h :!Cleft_arrow]
                  [:semicolon :!Oup_arrow]
                  [:quote :!Odown_arrow]
                  [:n [:km "cursor: mbt-gh"]]
@@ -339,6 +338,8 @@
                  ]}
                  ;[:p [:km "cursor: panda-gh"]] ; includes ark
                  ;[:k [:km "cursor: tailwind-gh"]]
+                 ;[:h [:km "cursor: hono-gh"]]
+                 ; ai-sdk, opentui
 
                  ;[:e [:km "cursor: rsbuild-gh"]]
                  ;[:r [:km "cursor: rspack-gh"]]
@@ -1220,7 +1221,7 @@
                  [:o [:km "Things: new top task"]]
                  [:p [:km "Things: new 2nd from top task"]]
                  [:left_command [:km "open: Photos"]]
-                 [:semicolon :!Tspacebar] ; contexts window search (only cursor) TODO: make generic, good
+                 [:semicolon :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik)
                  [:quote :!CT5] ; Sleep display
                  [:comma [:km "cursor: .flox:env/manifest.toml"]]
                  [:period [:km "edit: Karabiner"]]
@@ -1231,6 +1232,7 @@
                  [:m [:km "open: Tauri Web"]]
                  [:spacebar [:km "open: Eagle"]]
                  ]}
+                 ;[:semicolon :!Tspacebar] ; contexts window search (only cursor) TODO: make generic, good
                  ;[:j :!TOCspacebar] ; Things Quick Entry (without context)
                  ;[:n :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  ;[:d :!TOr] ; Start Wispr Flow push-to-talk transcription (let go on ending of transcription)
@@ -1330,16 +1332,16 @@
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: elysia."]]
                  [:q [:km "cursor: effect."]]
-                 [:w [:km "cursor: wip."]] ; ai-sdk, opentui, .. (or specific issues)
+                 [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: 1f-cli."]]
                  [:r [:km "cursor: garden."]]
-                 [:t [:km "cursor: workflow."]]
+                 [:t [:km "cursor: client."]]
                  [:u [:km "cursor: bun."]]
                  [:i [:km "cursor: swift."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: opencode."]]
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: client."]]
+                 [:a [:km "cursor: workflow."]]
                  [:s [:km "cursor: kus."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: py."]] ; includes training/evals

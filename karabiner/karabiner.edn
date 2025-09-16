@@ -263,11 +263,11 @@
         {:des "1key (gh workspaces)"
          :rules [:1-mode
                  [:e [:km "cursor: gorealeaser-gh"]]
-                 [:r [:km "cursor: connar-gh"]]
+                 [:r [:km "cursor: jsr-gh"]]
                  [:t [:km "cursor: tvix-gh"]]
                  [:u [:km "cursor: supabase-gh"]]
-                 [:i [:km "cursor: jsr-gh"]]
                  [:y [:km "cursor: yaak-gh"]]
+                 [:i [:km "cursor: nixpkgs-gh"]]
                  [:o [:km "cursor: flox-gh"]]
                  [:p [:km "cursor: pydantic-ai-gh"]]
                  [:d [:km "cursor: codanna-gh"]]
@@ -276,7 +276,8 @@
                  [:j [:km "cursor: deno-std-gh"]]
                  [:k [:km "cursor: dspy-gh"]]
                  [:l [:km "cursor: gel-gh"]]
-                 [:n [:km "cursor: nixpkgs-gh"]]
+                 [:r [:km "cursor: connar-gh"]]
+                 [:n [:km "cursor: inngest-gh"]]
                  [:m [:km "cursor: victoria-metrics-gh"]]
                  [:period [:km "cursor: deno-gh"]]
                  [:semicolon [:km "cursor: qdrant-gh"]]

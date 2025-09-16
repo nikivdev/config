@@ -1330,7 +1330,8 @@
          :rules [:escape-mode
                  [:1 [:km "cursor: encore."]]
                  [:2 [:km "cursor: expo."]]
-                 [:3 [:km "cursor: elysia."]]
+                 [:3 [:km "cursor: hono."]]
+                 [:4 [:km "cursor: elysia."]] ; TODO: move this to 3 once it deploys on cloudflare (https://discord.com/channels/1044804142461362206/1044804143455420539/1417294098548785242)
                  [:q [:km "cursor: effect."]]
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: 1f-cli."]]

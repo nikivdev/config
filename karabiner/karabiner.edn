@@ -402,7 +402,6 @@
                  [:o [:km "cursor: zod-gh"]]
                  [:p [:km "cursor: polar-gh"]]
                  [:g [:km "cursor: trigger-gh"]]
-                 [:h [:km "cursor: hono."]]
                  [:j [:km "cursor: go-ts-gh"]]
                  [:k [:km "cursor: ax-gh"]]
                  [:l [:km "cursor: elysia."]]
@@ -1322,9 +1321,10 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (workspaces)"
          :rules [:escape-mode
-                 [:1 [:km "cursor: encore."]]
+                 [:1 [:km "cursor: hono."]]
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: mastra-gh"]]
+                 [:4 [:km "cursor: encore."]]
                  [:q [:km "cursor: opencode."]]
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: 1f-cli."]]

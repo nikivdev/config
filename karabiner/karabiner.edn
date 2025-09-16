@@ -272,6 +272,7 @@
                  [:p [:km "cursor: pydantic-ai-gh"]]
                  [:d [:km "cursor: codanna-gh"]]
                  [:h [:km "cursor: ghostty-gh"]]
+                 [:f [:km "cursor: grafbase-gh"]]
                  [:g [:km "cursor: gensx-gh"]]
                  [:j [:km "cursor: deno-std-gh"]]
                  [:k [:km "cursor: dspy-gh"]]

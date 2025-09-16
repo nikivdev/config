@@ -1325,24 +1325,24 @@
                  [:1 [:km "cursor: encore."]]
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: mastra-gh"]]
-                 [:q [:km "cursor: effect."]]
+                 [:q [:km "cursor: opencode."]]
                  [:w [:km "cursor: wip."]]
                  [:e [:km "cursor: 1f-cli."]]
                  [:r [:km "cursor: garden."]]
                  [:t [:km "cursor: client."]]
                  [:u [:km "cursor: bun."]]
                  [:i [:km "cursor: swift."]]
-                 [:o [:km "cursor: sb."]]
-                 [:p [:km "cursor: opencode."]]
+                 ;[:o [:km "cursor: sb."]]
+                 [:o [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: workflow."]]
                  [:s [:km "cursor: kus."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: py."]] ; includes training/evals
-                 [:g [:km "cursor: gen."]]
-                 [:h [:km "cursor: go."]]
+                 [:g [:km "cursor: reatom."]]
+                 [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]
-                 [:k [:km "cursor: as."]]
+                 [:k [:km "cursor: as."]] ; includes api
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
                  [:quote [:km "cursor: gitedit."]]
@@ -1350,19 +1350,20 @@
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: vscode."]]
                  [:b [:km "cursor: blade."]]
-                 [:n [:km "cursor: mbt."]]
-                 [:m [:km "cursor: gpton."]]
-                 [:comma [:km "cursor: kotlin."]]
+                 [:n [:km "cursor: gen."]]
+                 [:m [:km "cursor: mbt."]]
+                 [:comma [:km "cursor: zig."]] ; includes c++
                  [:period [:km "cursor: rust."]]
-                 [:slash [:km "cursor: zig."]] ; includes c++
-                 [:right_command [:km "cursor: kotlin."]]
+                 [:slash [:km "cursor: go."]]
                  [:left_command [:km "cursor: mojo."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:right_command [:km "cursor: kotlin."]]
+                 ;[:comma [:km "cursor: kotlin."]]
+                 ;[:s [:km "cursor: sb."]]
                  ;[:h [:km "cursor: deps."]]
                  ;[:p [:km "cursor: past."]]
                  ;[:a [:km "cursor: learn."]] ; repos connected with wiki for note taking/learning (deps. is used for it now)
-                 ;[:h [:km "cursor: effect."]]
                  ;[:p [:km "cursor: deps."]] ; opentui, ai-sdk, ..
                  ;[:t [:km "cursor: eventsline."]]
                  ;[:h [:km "cursor: deps."]] ;

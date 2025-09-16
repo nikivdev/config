@@ -374,7 +374,7 @@
                  [:t [:km "cursor: react-gh"]] ; includes rn
                  [:u [:km "cursor: pulumi-gh"]]
                  [:i [:km "cursor: swift-gh"]]
-                 [:o [:km "cursor: go-gh"]]
+                 [:o [:km "cursor: polar-gh"]]
                  [:f [:km "cursor: cpython-gh"]]
                  [:g [:km "cursor: tinygrad-gh"]]
                  [:h :!Cleft_arrow]
@@ -384,11 +384,11 @@
                  [:semicolon :!Oup_arrow]
                  [:quote :!Odown_arrow]
                  [:b [:km "cursor: better-auth-gh"]]
-                 [:n [:km "cursor: mbt-gh"]]
-                 [:m [:km "cursor: alchemy-gh"]]
-                 [:comma [:km "cursor: kotlin-gh"]]
+                 [:n [:km "cursor: alchemy-gh"]]
+                 [:m [:km "cursor: mbt-gh"]]
+                 [:comma [:km "cursor: zig-gh"]]
                  [:period [:km "cursor: rust-gh"]]
-                 [:slash [:km "cursor: zig-gh"]]
+                 [:slash [:km "cursor: go-gh"]]
                  [:left_command [:km "cursor: mojo-gh"]]
                  [:spacebar [:km "cursor: codex-gh"]]
                  ]}
@@ -400,7 +400,6 @@
                  [:u [:km "cursor: unsloth-gh"]]
                  [:i [:km "cursor: tailwind-gh"]]
                  [:o [:km "cursor: zod-gh"]]
-                 [:p [:km "cursor: polar-gh"]]
                  [:g [:km "cursor: trigger-gh"]]
                  [:j [:km "cursor: go-ts-gh"]]
                  [:k [:km "cursor: ax-gh"]]
@@ -412,6 +411,7 @@
                  [:period [:km "cursor: tauri."]]
                  [:spacebar [:km "cursor: jax-gh"]]
                  ]}
+                 ;[:comma [:km "cursor: kotlin-gh"]]
         {:des "4key (swapping languages for now)"
          :rules [:4-mode
                  ; TODO: should be automatic based of file extension

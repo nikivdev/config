@@ -2009,9 +2009,9 @@
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
                  [:period [:km "open: Safari Technology Preview"]]
                  [:j :!CTO0] ; Search Alfred Snippets
-                 [:k [:km "open: Dia"]]
-                 [:l :!TOe] ; Start/Stop Wispr Flow hands-free transcription
-                 [:semicolon :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik)
+                 ;[:k :!TOe] ; Start/Stop Wispr Flow hands-free transcription (TODO: move to own solution)
+                 [:l :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik)
+                 [:semicolon [:km "open: Dia"]]
                  [:period [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
                  [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind

@@ -1333,7 +1333,7 @@
                  [:t [:km "cursor: client."]]
                  [:u [:km "cursor: bun."]]
                  [:i [:km "cursor: swift."]]
-                 [:o [:km "cursor: sb."]]
+                 ;[:o [:km "cursor: sb."]]
                  [:o [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: workflow."]]

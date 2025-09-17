@@ -1215,7 +1215,7 @@
                  [:o [:km "Things: new top task"]]
                  [:p [:km "Things: new 2nd from top task"]]
                  [:left_command [:km "open: Photos"]]
-                 [:semicolon :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik)
+                 [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  [:quote :!CT5] ; Sleep display
                  [:comma [:km "cursor: .flox:env/manifest.toml"]]
                  [:period [:km "edit: Karabiner"]]
@@ -2003,7 +2003,6 @@
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
-                 [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  [:i [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
                  [:o [:km "open: Arc"]]
                  [:p [:km "web: SuperCut workspace"]]
@@ -2012,6 +2011,7 @@
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k [:km "open: Dia"]]
                  [:l :!TOe] ; Start/Stop Wispr Flow hands-free transcription
+                 [:semicolon :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik)
                  [:period [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
                  [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind

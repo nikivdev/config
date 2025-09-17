@@ -607,13 +607,13 @@
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
                  [:semicolon [:km "open: Xcode Beta"]]
-                 [:quote [:km "open: GitButler"]]
                  [:c [:km "open: Spotify"]]
                  [:v [:km "open: Music"]]
                  [:b [:km "open: n8n"]]
                  [:n [:km "open: Modal Notebooks"]]
                  [:m [:km "open: Notion"]]
                  [:period [:km "open: Sublime Merge"]]
+                 [:slash [:km "open: GitButler"]]
                  [:left_command [:km "open: Preview"]]
                  [:spacebar [:km "open: Warp"]]
                  ]}
@@ -1333,13 +1333,13 @@
                  [:t [:km "cursor: client."]]
                  [:u [:km "cursor: bun."]]
                  [:i [:km "cursor: swift."]]
-                 ;[:o [:km "cursor: sb."]]
+                 [:o [:km "cursor: sb."]]
                  [:o [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: workflow."]]
                  [:s [:km "cursor: kus."]]
                  [:d [:km "cursor: friendik."]]
-                 [:f [:km "cursor: py."]] ; includes training/evals
+                 [:f [:km "cursor: mbt."]]
                  [:g [:km "cursor: reatom."]]
                  [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]
@@ -1352,11 +1352,11 @@
                  [:v [:km "cursor: vscode."]]
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
-                 [:m [:km "cursor: mbt."]]
+                 [:m [:km "cursor: mojo."]]
                  [:comma [:km "cursor: zig."]] ; includes c++
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: go."]]
-                 [:left_command [:km "cursor: mojo."]]
+                 [:left_command [:km "cursor: py."]] ; includes training/evals
                  [:spacebar [:km "cursor: other"]]
                  ]}
                  ;[:right_command [:km "cursor: kotlin."]]
@@ -2009,8 +2009,8 @@
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
                  [:period [:km "open: Safari Technology Preview"]]
                  [:j :!CTO0] ; Search Alfred Snippets
-                 ;[:k :!TOe] ; Start/Stop Wispr Flow hands-free transcription (TODO: move to own solution)
-                 [:l :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik)
+                 [:k [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
+                 [:l :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)
                  [:semicolon [:km "open: Dia"]]
                  [:period [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
@@ -2019,6 +2019,7 @@
                  [:n [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  ]}
+                 ;[:k :!TOe] ; Start/Stop Wispr Flow hands-free transcription (TODO: move to own solution)
                  ;[:quote [:km "open: Chrome Canary (x.com > account switch)"]]
                  ;[:slash [:km "w: GitHub PR"]] ; TODO:
                  ;[:d :!CTOSF2] ; SuperCut finish recording TODO: hope supercut adds a way to finish recording from the `start recording` bind itself. this one would be `pause` bind then

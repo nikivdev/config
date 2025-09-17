@@ -2007,18 +2007,18 @@
                  [:o [:km "open: Arc"]]
                  [:p [:km "web: SuperCut workspace"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
-                 [:period [:km "open: Safari Technology Preview"]]
                  [:j :!CTO0] ; Search Alfred Snippets
+                 [:l [:km "open: Safari Technology Preview"]]
                  [:k [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
-                 [:l :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)
                  [:semicolon [:km "open: Dia"]]
-                 [:period [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
                  [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind
                  [:b [:km "new safari tab"]]
                  [:n [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
+                 [:period :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)
                  ]}
+                 ;[:period [:km "open: Safari Technology Preview"]]
                  ;[:k :!TOe] ; Start/Stop Wispr Flow hands-free transcription (TODO: move to own solution)
                  ;[:quote [:km "open: Chrome Canary (x.com > account switch)"]]
                  ;[:slash [:km "w: GitHub PR"]] ; TODO:

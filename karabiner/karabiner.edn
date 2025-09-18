@@ -1332,6 +1332,7 @@
                  [:w [:km "cursor: swift."]]
                  [:e [:km "cursor: rust."]]
                  [:r [:km "cursor: core."]] ; garden + reatom
+                 [:t [:km "cursor: kotlin."]]
                  [:u [:km "cursor: elixir."]]
                  [:i [:km "cursor: gitedit."]]
                  ;[:o [:km "cursor: sb."]]
@@ -1363,7 +1364,6 @@
                  ;[:r [:km "cursor: garden."]]
                  ;[:q [:km "cursor: wip."]]
                  ;[:right_command [:km "cursor: kotlin."]]
-                 ;[:comma [:km "cursor: kotlin."]]
                  ;[:s [:km "cursor: sb."]]
                  ;[:h [:km "cursor: deps."]]
                  ;[:p [:km "cursor: past."]]

@@ -1785,8 +1785,8 @@
         {:des "mkey (apps)"
          :rules [:m-mode
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:w [:km "open: v0"]]
-                 [:e [:km "open: GoLand"]]
+                 [:w [:km "open: PyCharm"]]
+                 [:e [:km "open: RustRover"]]
                  [:r [:km "open: Encore (local)"]]
                  [:t [:km "open: Stripe"]]
                  [:tab [:km "open: NotePlus"]]
@@ -1794,14 +1794,14 @@
                  [:a [:km "open: Leap"]]
                  [:s [:km "open: Lottie"]]
                  [:d [:km "open: Bolt"]]
-                 [:f [:km "open: PyCharm"]]
+                 [:f [:km "open: v0"]]
                  [:g [:km "open: Google Maps"]]
                  [:z [:km "open: T3 Chat"]]
                  [:c [:km "open: Conar"]]
                  [:v [:km "open: Rive"]]
                  [:grave_accent_and_tilde [:km "open: Transmit"]]
                  [:left_command [:km "open: TablePlus"]]
-                 [:spacebar [:km "open: RustRover"]]
+                 [:spacebar [:km "open: GoLand"]]
                  ]}
                  ;[:a [:km "open: Windsurf"]]
                  ;[:w [:km "open: Google Docs"]]

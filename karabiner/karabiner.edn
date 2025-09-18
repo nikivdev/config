@@ -405,6 +405,7 @@
                  [:o [:km "cursor: zod-gh"]]
                  [:p [:km "cursor: temporal-gh"]]
                  [:g [:km "cursor: trigger-gh"]]
+                 [:f [:km "cursor: chef."]]
                  [:h [:km "cursor: hono."]]
                  [:j [:km "cursor: go-ts-gh"]]
                  [:k [:km "cursor: ax-gh"]]

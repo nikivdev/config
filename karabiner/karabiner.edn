@@ -1544,8 +1544,8 @@
                  [:o [:km "open: Loops"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "Search Discord"]]
-                 [:k [:km "Search Telegram"]]
-                 [:l [:km "New Spark email"]]
+                 ;[:k [:km "New Spark email"]] ; TODO: add back when old habits die off
+                 [:l [:km "Search Telegram"]]
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
                  [:i [:km "w: Reddit submit"]]
@@ -2027,8 +2027,8 @@
                  [:p [:km "open: Arc"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
                  [:j [:km "open: Discord"]]
-                 [:k [:km "open: Telegram"]]
-                 [:l [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
+                 [:k [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
+                 [:l [:km "open: Telegram"]]
                  [:semicolon [:km "open: Dia"]]
                  [:quote [:km "open: Safari Technology Preview"]]
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind

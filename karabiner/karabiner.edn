@@ -1538,29 +1538,29 @@
                   ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
-                 [:w [:km "New Spark email"]]
                  [:e [:km "open: Telegram"]]
                  [:f [:km "open: Spark"]]
                  [:i :!CO7] ; open Tuple menu bar
-                 [:o [:km "open: Zoom"]]
+                 [:o [:km "open: Loops"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
-                 [:j [:km "open: Discord"]]
-                 [:k [:km "open: Telegram"]]
-                 [:l [:km "open: Loops"]]
-                 ;[:l [:km "open: Typefully"]] ; TODO: get working, replace
+                 [:j [:km "Search Discord"]]
+                 [:k [:km "New Spark email"]]
+                 [:l [:km "Search Telegram"]]
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
                  [:i [:km "w: Reddit submit"]]
                  [:u [:km "Create new contact"]]
-                 [:v [:km "open: WhatsApp"]]
+                 [:c [:km "open: WhatsApp"]]
+                 [:v [:km "open: Resend"]]
                  [:b [:km "open: Cal"]]
                  [:n [:km "open: Element"]]
-                 [:m [:km "open: Resend"]]
+                 [:m [:km "open: Zoom"]]
                  [:comma [:km "open: Signal"]]
                  [:period [:km "open: Google Meet"]]
                  [:slash [:km "open: Zulip"]]
                  [:spacebar [:km "open: Contacts"]] ; TODO: replace with LA
                  ]}
+                 ;[:l [:km "open: Typefully"]] ; TODO: get working, replace
                  ;[:l [:km "w: Typefully"]]
                  ;[:l [:km "open X messages (in Dia)"]]
                  ;[:l [:km "open: GPTON"]] ; TODO: kuskus
@@ -2012,31 +2012,35 @@
                  [:q [:km "open: CleanShot"]]
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots) TODO: got moved to e+space, is it ok?
-                 [:r :!CS7] ; TRex get text from screenshot (bind to k)
+                 [:r :!CS7] ; TRex get text from screenshot
                  [:t [:km "w: X (personal)"]]
                  [:tab [:km "Screenshot into Claude"]] ; TODO: use openai
                  [:escape :!CS8] ; Screenshot -> Eagle ; TODO: use genx, add as metadata url/app it's taken from. do another for video too, mby from cleanshot
-                 [:a [:km "open: X Pro (search or post)"]]
+                 [:a :!CTO0] ; Search Alfred Snippets
                  [:s :!CTOSF1] ; SuperCut start/stop recording
                  [:d :!CTOSF3] ; SuperCut cancel recording
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:i [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
-                 [:o [:km "open: Arc"]]
-                 [:p [:km "web: SuperCut workspace"]]
+                 [:o [:km "open: X Feed (in Arc)"]]
+                 [:p [:km "open: Arc"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
-                 [:j :!CTO0] ; Search Alfred Snippets
+                 [:j [:km "open: Discord"]]
                  [:k [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
-                 [:l [:km "open: Safari Technology Preview"]]
+                 [:l [:km "open: Telegram"]]
                  [:semicolon [:km "open: Dia"]]
+                 [:quote [:km "open: Safari Technology Preview"]]
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
                  [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind
                  [:b [:km "new safari tab"]]
-                 [:n [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
+                 [:n [:km "open: X Messages (in Arc)"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:period :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)
                  ]}
+                 ;[:p [:km "web: SuperCut workspace"]]
+                 ;[:a [:km "open: X Pro (search or post)"]]
+                 ;[:n [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  ;[:period [:km "open: Safari Technology Preview"]]
                  ;[:k :!TOe] ; Start/Stop Wispr Flow hands-free transcription (TODO: move to own solution)
                  ;[:quote [:km "open: Chrome Canary (x.com > account switch)"]]

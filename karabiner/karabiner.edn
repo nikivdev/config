@@ -1331,12 +1331,12 @@
                  [:q [:km "cursor: py."]] ; includes training/evals
                  [:w [:km "cursor: swift."]]
                  [:e [:km "cursor: rust."]]
-                 [:r [:km "cursor: core."]] ; garden + reatom
+                 [:r [:km "cursor: code."]] ; vscode / zed
                  [:t [:km "cursor: kotlin."]]
                  [:u [:km "cursor: elixir."]]
                  [:i [:km "cursor: gitedit."]]
-                 ;[:o [:km "cursor: sb."]]
-                 [:o [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
+                 [:o [:km "cursor: sb."]]
+                 [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: client."]]
                  [:s [:km "cursor: kus."]]
@@ -1351,7 +1351,7 @@
                  [:quote [:km "cursor: opencode."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: vscode."]]
+                 [:v [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times)
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
@@ -1361,6 +1361,9 @@
                  [:left_command [:km "cursor: workflow."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:v [:km "cursor: vscode."]]
+                 ;[:v [:km "cursor: convex."]]
+                 ;[:v [:km "cursor: reatom."]]
                  ;[:r [:km "cursor: garden."]]
                  ;[:q [:km "cursor: wip."]]
                  ;[:right_command [:km "cursor: kotlin."]]

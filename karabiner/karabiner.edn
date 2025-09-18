@@ -2007,8 +2007,8 @@
                  [:p [:km "web: SuperCut workspace"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
                  [:j :!CTO0] ; Search Alfred Snippets
-                 [:l [:km "open: Safari Technology Preview"]]
                  [:k [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
+                 [:l [:km "open: Safari Technology Preview"]]
                  [:semicolon [:km "open: Dia"]]
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
                  [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind

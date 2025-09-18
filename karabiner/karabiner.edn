@@ -1339,15 +1339,15 @@
                  [:q [:km "cursor: py."]] ; includes training/evals
                  [:w [:km "cursor: swift."]]
                  [:e [:km "cursor: rust."]]
-                 [:r [:km "cursor: raycast."]]
+                 [:r [:km "cursor: research."]]
                  [:t [:km "cursor: client."]]
-                 [:u [:km "cursor: elixir."]]
+                 [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: code."]] ; vscode / zed
-                 [:s [:km "cursor: kus."]]
+                 [:a [:km "cursor: editor."]] ; vscode / zed
+                 [:s [:km "cursor: search."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: mbt."]]
                  [:g [:km "cursor: zig."]]
@@ -1369,6 +1369,7 @@
                  [:left_command [:km "cursor: workflow."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:u [:km "cursor: elixir."]]
                  ;[:t [:km "cursor: kotlin."]]
                  ;[:v [:km "cursor: vscode."]]
                  ;[:v [:km "cursor: convex."]]

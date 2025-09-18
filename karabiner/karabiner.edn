@@ -1338,7 +1338,7 @@
                  [:4 [:km "cursor: encore."]]
                  [:q [:km "cursor: py."]] ; includes training/evals
                  [:w [:km "cursor: swift."]]
-                 [:e [:km "cursor: rust."]]
+                 [:e [:km "cursor: go."]]
                  [:r [:km "cursor: research."]]
                  [:t [:km "cursor: client."]]
                  [:u [:km "cursor: kus."]]
@@ -1364,7 +1364,7 @@
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
                  [:comma [:km "cursor: unison."]]
-                 [:period [:km "cursor: go."]]
+                 [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: bun."]]
                  [:left_command [:km "cursor: workflow."]]
                  [:spacebar [:km "cursor: other"]]
@@ -1544,7 +1544,7 @@
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
-                 [:l [:km "open X messages (in Dia)"]]
+                 [:l [:km "w: Typefully"]]
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
                  [:i [:km "w: Reddit submit"]]
@@ -1557,8 +1557,9 @@
                  [:comma [:km "open: Signal"]]
                  [:period [:km "open: Google Meet"]]
                  [:slash [:km "open: Zulip"]]
-                 [:spacebar [:km "open: Contacts"]] ; TODO: replace with notlost
+                 [:spacebar [:km "open: Contacts"]] ; TODO: replace with LA
                  ]}
+                 ;[:l [:km "open X messages (in Dia)"]]
                  ;[:l [:km "open: GPTON"]] ; TODO: kuskus
                  ;[:o [:km "open: Telegram Web"]]
                  ;[:l [:km "open: Beeper"]]
@@ -1583,7 +1584,6 @@
                  ; TODO: add generic `LA Post` function later maybe or have another bind for `LA Post`
                  ;[:period [:km "w: Twitter Search"]]
                  ;[:b [:km "w: Twitter"]]
-                 ;[:n [:km "w: Typefully"]]
                  ;[:n [:km "w: Twitter Compose"]]
                  ;[:m [:km "w: Twitter Compose with current URL pasted"]]
                  ;[:v [:km "open: Mimestream"]]
@@ -1786,7 +1786,7 @@
          :rules [:m-mode
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:w [:km "open: PyCharm"]]
-                 [:e [:km "open: RustRover"]]
+                 [:e [:km "open: GoLand"]]
                  [:r [:km "open: Encore (local)"]]
                  [:t [:km "open: Stripe"]]
                  [:tab [:km "open: NotePlus"]]
@@ -1801,7 +1801,7 @@
                  [:v [:km "open: Rive"]]
                  [:grave_accent_and_tilde [:km "open: Transmit"]]
                  [:left_command [:km "open: TablePlus"]]
-                 [:spacebar [:km "open: GoLand"]]
+                 [:spacebar [:km "open: RustRover"]]
                  ]}
                  ;[:a [:km "open: Windsurf"]]
                  ;[:w [:km "open: Google Docs"]]

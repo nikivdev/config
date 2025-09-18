@@ -755,27 +755,28 @@
                  [:q [:km "open: System Settings: Network"]]
                  [:w [:km "open: IINA"]]
                  [:e [:km "open: System Settings"]]
-                 [:i [:km "open: Obsidian"]]
-                 [:o [:km "open: Docker Desktop"]]
+                 [:i [:km "open: Docker Desktop"]]
+                 [:o [:km "open: Notes"]]
                  [:escape [:km "open: Final Cut Pro"]]
                  [:a [:km "open: Alfred Preferences"]]
-                 [:s [:km "open: Notes"]]
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:j [:km "open: Music"]]
                  [:k [:km "open: Reader"]]
-                 [:l [:km "open: YouTube Music"]]
+                 [:l [:km "open: Obsidian"]]
                  [:semicolon [:km "open: OrbStack"]]
+                 [:b [:km "open: Feedback Assistant"]]
                  [:n [:km "open: Dictionary"]]
                  [:m [:km "open: Books"]]
-                 [:period [:km "open: Voice Memos"]]
-                 [:slash [:km "open: WebStorm"]]
+                 [:period [:km "open: YouTube Music"]]
+                 [:slash [:km "open: Voice Memos"]]
                  [:spacebar [:km "open: OBS"]]
                  ]}
+                 ;[:i [:km "open: Obsidian"]]
+                 ;[:slash [:km "open: WebStorm"]]
                  ;[:j [:km "open: Preview"]]
                  ;[:i [:km "open: PDF Expert"]]
                  ;[:m [:km "open: MacUpdater"]]
                  ;[:j [:km "open: Preview"]]
-                 ;[:i [:km "open: Feedback Assistant"]]
                  ;[:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
                  ;[:comma [:km "open: Arq"]]
                  ;[:semicolon [:km "open: Day One"]]
@@ -1217,17 +1218,17 @@
                  [:tab [:km "open: tldraw"]]
                  [:escape [:km "open: Excalidraw"]]
                  [:a [:km "open: Chrome Canary"]]
-                 [:s [:km "open: Electron"]]
+                 [:s [:km "open: Simulator"]]
+                 [:d [:km "open: Electron"]] ; TODO: replace with tauri web or wails (if its better, settle on one)
                  [:h [:km "Make markdown link from selection {link}"]]
-                 [:k [:km "New Linear task"]]
-                 [:l [:km "open: Simulator"]]
                  [:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
+                 [:k [:km "New Linear task"]]
+                 [:l [:km "new X post (in Arc)"]]
+                 [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  [:u [:km "clear active todo"]]
                  [:i [:alfred "active todo" "nikiv"]]
-                 [:o [:km "Things: new top task"]]
-                 [:p [:km "Things: new 2nd from top task"]]
+                 [:o [:km "Things: new task at bottom (Today)"]] ; TODO: make sure to switch to window with `Today`
                  [:left_command [:km "open: Photos"]]
-                 [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  [:quote :!CT5] ; Sleep display
                  [:comma [:km "cursor: .flox:env/manifest.toml"]]
                  [:period [:km "edit: Karabiner"]]
@@ -1235,9 +1236,12 @@
                  [:z :!TOCbackslash] ; Switch language (Russian <-> English)
                  [:b [:km "Things: Quick Entry (into Someday)"]]
                  [:n [:km "Things: Quick Entry (with context) (into Someday)"]]
-                 [:m [:km "open: Tauri Web"]]
+                 [:m [:km "new Reddit post (in Arc)"]]
                  [:spacebar [:km "open: Eagle"]]
                  ]}
+                 ;[:o [:km "Things: new top task (Today)"]] ; TODO: make sure to switch to window with `Today`
+                 ;[:p [:km "Things: new 2nd from top task"]]
+                 ;[:m [:km "open: Tauri Web"]]
                  ;[:semicolon :!Tspacebar] ; contexts window search (only cursor) TODO: make generic, good
                  ;[:j :!TOCspacebar] ; Things Quick Entry (without context)
                  ;[:n :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
@@ -1517,8 +1521,7 @@
                  [:i [:km "cursor: config:fish/private.fish"]]
                  [:o [:km "cursor: ~/src/config/fish/fn.fish"]] ; TODO: bind to run.swift, move fish alias to something nice too
                  [:j [:km "cursor: ~/i/ts/scripts/i.ts"]]
-                 [:l [:km "cursor: config:fish/config.fish"]]
-                 [:semicolon [:km "edit: run.swift"]]
+                 [:k [:km "cursor: config:fish/config.fish"]]
                  [:n [:km "edit: run.py"]]
                  [:m [:km "edit: run.go"]]
                  [:comma [:km "edit: run.zig"]]
@@ -1526,6 +1529,7 @@
                  [:slash [:km "edit: run.odin"]]
                  [:spacebar :!CSOp] ; Selection -> Reddit
                  ]}
+                 ;[:semicolon [:km "edit: run.swift"]]
                   ;[:l [:km "open: EdgeDB Cloud"]]
                   ;[:k [:km "paste: That worked 🖤"]]
                   ;[:m [:km "paste: Cal.com (30 min)️"]]
@@ -1540,24 +1544,26 @@
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
                  [:f [:km "open: Spark"]]
+                 [:u [:km "open: Zulip"]]
                  [:i :!CO7] ; open Tuple menu bar
                  [:o [:km "open: Loops"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "Search Discord"]]
-                 ;[:k [:km "New Spark email"]] ; TODO: add back when old habits die off
+                 [:k [:km "open: Telegram"]] ; TODO: should be replaced as its on space + l too
+                 ;[:k [:km "new X post (in Arc)"]]
                  [:l [:km "Search Telegram"]]
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
-                 [:i [:km "w: Reddit submit"]]
                  [:u [:km "Create new contact"]]
                  [:c [:km "open: WhatsApp"]]
                  [:v [:km "open: Resend"]]
                  [:b [:km "open: Cal"]]
-                 [:n [:km "open: Element"]]
-                 [:m [:km "open: Zoom"]]
+                 ;[:n [:km "New Spark email"]] ; TODO: add back when old habits die off
+                 ;[:m [:km "open: Element"]]
+                 [:m [:km "new Reddit post (in Arc)"]]
                  [:comma [:km "open: Signal"]]
-                 [:period [:km "open: Google Meet"]]
-                 [:slash [:km "open: Zulip"]]
+                 [:period [:km "open: Zoom"]]
+                 [:slash [:km "open: Google Meet"]]
                  [:spacebar [:km "open: Contacts"]] ; TODO: replace with LA
                  ]}
                  ;[:l [:km "open: Typefully"]] ; TODO: get working, replace

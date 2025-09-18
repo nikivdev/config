@@ -1341,7 +1341,7 @@
                  [:q [:km "cursor: py."]] ; includes training/evals
                  [:w [:km "cursor: swift."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: wiki."]]
+                 [:r [:km "cursor: friendik."]]
                  [:t [:km "cursor: editor."]] ; vscode / zed
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
@@ -1350,7 +1350,7 @@
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: client."]]
                  [:s [:km "cursor: search."]]
-                 [:d [:km "cursor: friendik."]]
+                 [:d [:km "cursor: docs."]]
                  [:f [:km "cursor: mbt."]]
                  [:g [:km "cursor: zig."]]
                  [:h [:km "cursor: effect."]]

@@ -929,11 +929,12 @@
                  [:u [:km "open: Azure"]]
                  [:i [:km "open: Railway"]]
                  [:j [:km "open: ChatGPT"]]
-                 [:k [:km "open: Sentry"]]
+                 ;[:k [:km "open: Sentry"]] ; TODO: setup, use
                  [:semicolon [:km "open: Lovable"]]
                  [:tab [:km "open: ClaudeWeb"]]
                  [:a [:km "open: Grok"]]
-                 [:s [:km "open: AlexSideBar"]]
+                 ;[:s [:km "open: AlexSideBar"]] ; TODO: moved to codex, test it
+                 [:s [:km "open: T3 Chat"]]
                  [:d [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard
                  [:f [:km "open: Claude"]]
                  [:g [:km "open: Google Cloud"]]
@@ -947,9 +948,10 @@
                  [:b [:km "open: Supabase"]]
                  [:n [:km "open: Ronin"]]
                  [:m [:km "open: Modal"]]
-                 [:left_command [:km "open: 1Focus (dev)"]]
+                 ;[:left_command [:km "open: 1Focus (dev)"]]
                  [:spacebar [:km "open: Conductor"]]
                  ]}
+                 ;[:k [:km "open: Sentry"]]
                  ;[:spacebar [:km "open: 1Focus"]]
                  ;[:d [:km "open: Conductor"]]
                  ;[:left_command [:km "open: ChatGPTWeb"]]

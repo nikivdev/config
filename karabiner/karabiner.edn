@@ -1545,7 +1545,7 @@
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
-                 [:l [:km "w: Typefully"]]
+                 ;[:l [:km "open: Typefully"]] ; TODO: get working, replace
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
                  [:i [:km "w: Reddit submit"]]
@@ -1560,6 +1560,7 @@
                  [:slash [:km "open: Zulip"]]
                  [:spacebar [:km "open: Contacts"]] ; TODO: replace with LA
                  ]}
+                 ;[:l [:km "w: Typefully"]]
                  ;[:l [:km "open X messages (in Dia)"]]
                  ;[:l [:km "open: GPTON"]] ; TODO: kuskus
                  ;[:o [:km "open: Telegram Web"]]

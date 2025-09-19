@@ -1517,11 +1517,11 @@
         {:des "tilkey (files)" ; TODO: move this to tab. this becomes 1f -> switch projects/focus
          :rules [:tilde-mode
                  ; TODO: mby open more specific macros/scripts?
-                 [:w [:km "Go to test macro"]]
-                 [:e [:km "Test"]       ]
-                 [:h [:km "edit: GitHub Bio"]]
+                 [:e [:km "Go to test macro"]]
                  [:i [:km "cursor: config:fish/private.fish"]]
                  [:o [:km "cursor: ~/src/config/fish/fn.fish"]] ; TODO: bind to run.swift, move fish alias to something nice too
+                 [:f [:km "Test"]       ]
+                 [:h [:km "edit: GitHub Bio"]]
                  [:j [:km "cursor: ~/i/ts/scripts/i.ts"]]
                  [:k [:km "cursor: config:fish/config.fish"]]
                  [:n [:km "edit: run.py"]]

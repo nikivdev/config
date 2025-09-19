@@ -1343,12 +1343,12 @@
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: mastra-gh"]]
                  [:4 [:km "cursor: encore."]]
-                 [:q [:km "cursor: py."]] ; includes training/evals
-                 [:w [:km "cursor: swift."]]
+                 [:q [:km "cursor: kus."]]
+                 [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: workflow."]]
                  [:t [:km "cursor: editor."]] ; vscode / zed
-                 [:i [:km "cursor: kus."]]
+                 [:i [:km "cursor: swift."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
@@ -1801,7 +1801,6 @@
                  [:r [:km "open: Encore (local)"]]
                  [:t [:km "open: Stripe"]]
                  [:tab [:km "open: NotePlus"]]
-                 [:escape [:km "open: T3 Chat"]]
                  [:a [:km "open: Leap"]]
                  [:s [:km "open: Lottie"]]
                  [:d [:km "open: Bolt"]]
@@ -1813,6 +1812,7 @@
                  [:left_command [:km "open: TablePlus"]]
                  [:spacebar [:km "open: RustRover"]]
                  ]}
+                 ;[:escape [:km "open: T3 Chat"]]
                  ;[:z [:km "open: T3 Chat"]]
                  ;[:a [:km "open: Windsurf"]]
                  ;[:w [:km "open: Google Docs"]]

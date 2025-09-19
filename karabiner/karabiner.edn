@@ -1227,7 +1227,8 @@
                  [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  [:u [:km "clear active todo"]]
                  [:i [:alfred "active todo" "nikiv"]]
-                 [:o [:km "Things: new task at bottom (Today)"]] ; TODO: make sure to switch to window with `Today`
+                 [:o [:km "Things: new top task (Today)"]] ; TODO: make sure to switch to window with `Today`
+                 [:p [:km "Things: new task at bottom (Today)"]] ; TODO: make sure to switch to window with `Today`
                  [:left_command [:km "open: Photos"]]
                  [:quote :!CT5] ; Sleep display
                  [:comma [:km "cursor: .flox:env/manifest.toml"]]
@@ -1351,8 +1352,8 @@
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: client."]]
-                 [:s [:km "cursor: search."]]
+                 [:a [:km "cursor: search."]]
+                 [:s [:km "cursor: ext."]] ; client. & more
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: mbt."]]
                  [:g [:km "cursor: gitedit."]]

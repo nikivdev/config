@@ -1345,10 +1345,9 @@
                  [:q [:km "cursor: py."]] ; includes training/evals
                  [:w [:km "cursor: swift."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: i."]] ; internal
+                 [:r [:km "cursor: workflow."]]
                  [:t [:km "cursor: editor."]] ; vscode / zed
-                 [:u [:km "cursor: kus."]]
-                 [:i [:km "cursor: gitedit."]]
+                 [:i [:km "cursor: kus."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
@@ -1356,7 +1355,7 @@
                  [:s [:km "cursor: search."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: mbt."]]
-                 [:g [:km "cursor: zig."]]
+                 [:g [:km "cursor: gitedit."]]
                  [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: as."]] ; includes api
@@ -1369,12 +1368,13 @@
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
-                 [:comma [:km "cursor: unison."]]
+                 [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: bun."]]
-                 [:left_command [:km "cursor: workflow."]]
+                 [:left_command [:km "cursor: docs."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:comma [:km "cursor: unison."]]
                  ;[:d [:km "cursor: docs."]]
                  ;[:u [:km "cursor: odin."]]
                  ;[:u [:km "cursor: elixir."]]

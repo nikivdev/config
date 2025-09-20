@@ -617,9 +617,9 @@
                  [:semicolon [:km "open: Xcode Beta"]]
                  [:quote [:km "open: Conar"]]
                  [:c [:km "open: Spotify"]]
-                 [:v [:km "open: Preview"]]
+                 [:v [:km "open: Modal Notebooks"]]
                  [:b [:km "open: n8n"]]
-                 [:n [:km "open: Modal Notebooks"]]
+                 [:n [:km "open: Remnote"]]
                  [:m [:km "open: Notion"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:slash [:km "open: GitButler"]]
@@ -756,8 +756,9 @@
                  [:q [:km "open: System Settings: Network"]]
                  [:w [:km "open: IINA"]]
                  [:e [:km "open: System Settings"]]
+                 [:t [:km "open: Feedback Assistant"]]
                  [:i [:km "open: YouTube Music"]]
-                 [:o [:km "open: Books"]]
+                 [:o [:km "open: Notes"]]
                  [:escape [:km "open: Final Cut Pro"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:b [:km "Edit keyboard shortcuts"]]
@@ -765,8 +766,8 @@
                  [:k [:km "open: Dictionary"]]
                  [:l [:km "open: Obsidian"]]
                  [:semicolon [:km "open: OrbStack"]]
-                 [:b [:km "open: Feedback Assistant"]]
-                 [:n [:km "open: Notes"]]
+                 [:b [:km "open: Books"]]
+                 [:n [:km "open: Preview"]]
                  [:m [:km "open: Voice Memos"]]
                  [:period [:km "open: Docker Desktop"]]
                  [:slash [:km "open: Developer"]]
@@ -1238,7 +1239,7 @@
                  [:z :!TOCbackslash] ; Switch language (Russian <-> English)
                  [:b [:km "Things: Quick Entry (into Someday)"]]
                  [:n [:km "Things: Quick Entry (with context) (into Someday)"]]
-                 [:m [:km "new Reddit post (in Arc)"]]
+                 ;[:m [:km "new Reddit post (in Arc)"]]
                  [:spacebar [:km "open: Eagle"]]
                  ]}
                  ;[:o [:km "Things: new top task (Today)"]] ; TODO: make sure to switch to window with `Today`
@@ -1349,6 +1350,7 @@
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: workflow."]]
                  [:t [:km "cursor: editor."]] ; vscode / zed
+                 [:u [:km "cursor: bun."]]
                  [:i [:km "cursor: swift."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
@@ -1370,9 +1372,9 @@
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
-                 [:comma [:km "cursor: zig."]]
+                 [:comma [:km "cursor: elixir."]]
                  [:period [:km "cursor: rust."]]
-                 [:slash [:km "cursor: bun."]]
+                 [:slash [:km "cursor: zig."]]
                  [:left_command [:km "cursor: docs."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}

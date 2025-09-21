@@ -2,40 +2,40 @@
 
 > Apps/CLIs/configs I use on macOS/iOS
 
-![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-june/mac-dark.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/mac-dark.png)
 
 > Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
 
-![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-june/mac-light.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/mac-light.png)
 
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-june/ios-widgets.png"></a>
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-widgets.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-lock-screen.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/ios-lock-screen.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-1.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/ios-screen-1.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
     <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-2.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-3.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/ios-screen-3.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-4.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/ios-screen-4.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-5.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/ios-screen-5.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-6.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/ios-screen-6.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/ios-screen-7.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/ios-screen-7.png"></a>
 
 > iOS screens. All described in detail below.
 
@@ -85,12 +85,14 @@ There is currently no automated way to replicate below setup so you would have t
 - [Reflect](https://reflect.app) to write/search notes and my daily journal + tasks
 - [Linear](https://linear.app) to make/check on issues across different teams (I power all GitHub issues of mine through Linear, all in one workspace)
 - [SnippetsLab](https://www.renfei.org/snippets-lab/) for snippets
-- [Bike](https://www.hogbaysoftware.com/bike/) for thinking through tasks (outlining subtasks fast)
 - [Yaak](https://yaak.app) for testing out HTTP requests
 - [GoLand](https://www.jetbrains.com/go/) preferred editor for Go code together with Cursor
 - [Safari](https://wiki.nikiv.dev/web/browsers/safari) as main browser for everything.
-- [Google Chrome Canary](https://wiki.nikiv.dev/web/browsers/google-chrome) for web development as its [dev tools](https://wiki.nikiv.dev/web/browsers/google-chrome/chrome-dev-tools) are superior to Safari.
-- [Safari Technology Preview](https://developer.apple.com/safari/technology-preview/) as browser for my [X](https://wiki.nikiv.dev/tools/twitter)/[Bluesky](https://bsky.app) feeds and sometimes dev.
+- [Google Chrome Canary](https://wiki.nikiv.dev/web/browsers/google-chrome) for web development as its [dev tools](https://wiki.nikiv.dev/web/browsers/google-chrome/chrome-dev-tools) are superior to Safari
+- [Arc](https://arc.net) for social feeds (X, Reddit, Bluesky, ..)
+- [Safari Technology Preview](https://developer.apple.com/safari/technology-preview/) to test some new WebKit features
+
+<!-- - [Bike](https://www.hogbaysoftware.com/bike/) for thinking through tasks (outlining subtasks fast) -->
 
 ## macOS CLIs
 
@@ -108,7 +110,6 @@ I minimize push notifications to nearly only messaging apps (Telegram/Discord/..
 
 - [Fantastical](https://apps.apple.com/us/app/fantastical-calendar/id718043190) widget to see today's events, I tap on widget to open app itself to make/search events or see full week/month view of events
 - [Things](https://apps.apple.com/us/app/things-3/id904237743) widget to see today's tasks, I tap on widget to open app itself to make/search todos or see other todos for today
-- [Wikipedia](https://apps.apple.com/us/app/wikipedia/id324715238) to read some articles or see `nearby places` in wikipedia
 - [Google Maps](https://apps.apple.com/us/app/google-maps/id585027354) for navigating/searching the world, saving [lists of places I want to visit and places I loved seeing](https://wiki.nikiv.dev/travel/visited)
 - [Bluesky](https://apps.apple.com/us/app/bluesky-social/id6444370199) to read/write posts
 - [Spark](https://apps.apple.com/us/app/spark-mail-ai-email-inbox/id997102246) to check on email, don't have notifications set for emails
@@ -126,7 +127,7 @@ I minimize push notifications to nearly only messaging apps (Telegram/Discord/..
 - [Discord](https://apps.apple.com/us/app/discord-talk-play-hang-out/id985746746) to read messages from servers I am in + private messages
 - [Perplexity](https://apps.apple.com/us/app/perplexity-ask-anything/id1668000334) to make search queries that need some computed answers
 - [ChatGPT](https://apps.apple.com/us/app/chatgpt/id6448311069) to ask questions, prefer Claude for general textual queries and real time voice in ChatGPT + O1 thinking model for bigger questions
-- Safari for all web browsing, keep [top sites](https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-june/safari-new-tab.png) in new tab bookmarks for fast access
+- Safari for all web browsing, keep [top sites](https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/ios-safari-new-tab.png) in new tab bookmarks for fast access
 - [Claude](https://apps.apple.com/us/app/claude-by-anthropic/id6473753684) to ask questions (goto AI model for questions)
 - Photos widget with memories cycled, love seeing what Apple decides to surface from the library, often its nice memories
 - [Things](https://apps.apple.com/us/app/things-3/id904237743) Upcoming widget to see upcoming tasks, open it to enter new upcoming task or edit existing ones
@@ -134,6 +135,7 @@ I minimize push notifications to nearly only messaging apps (Telegram/Discord/..
 - [Booking](https://apps.apple.com/us/app/booking-com-hotels-travel/id367003839) to search for hotels to stay in
 - [Airbnb](https://apps.apple.com/us/app/airbnb/id401626263) to search for rooms/places to stay in, sometimes use its experiences curation too
 - [Glass](https://apps.apple.com/us/app/glass-photography-community/id1528446339) to see photos from some dedicated photographers without ads
+- [Wikipedia](https://apps.apple.com/us/app/wikipedia/id324715238) to read some articles or see `nearby places` in wikipedia
 - [Warpcast](https://apps.apple.com/us/app/warpcast/id1600555445) too see/make posts in Farcaster
 - [Mastodon](https://apps.apple.com/us/app/mastodon/id1571998974) to read/make posts
 - [Wise](https://apps.apple.com/us/app/wise-ex-transferwise/id612261027) to transfer money from my main personal EU bank
@@ -203,7 +205,7 @@ The 2 action buttons on bottom in lock screen are `create voice recording` and `
 I keep common shortcut actions as widgets on the side (left swipe of lock screen or first home screen):
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-june/ios-widgets.png"></a>
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-widgets.png"></a>
 
 ## iOS Shortcuts
 
@@ -224,21 +226,51 @@ I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I
 - [Voice](https://www.icloud.com/shortcuts/fe163b06aae54258bb2d6e85fdad5937) starts voice conversation with [ChatGPT](https://apps.apple.com/us/app/chatgpt/id6448311069)
 - [Play](https://www.icloud.com/shortcuts/6b5d89fa80194bd29c1c4bf69fa2b11b) - instantly start playing [Overcast](https://overcast.fm/podcasts) currently playing episode
 - [Lens](https://www.icloud.com/shortcuts/c0458ec52a1547e4a4cb101dc2905751) opens [Google Lens](https://apps.apple.com/us/app/google/id284815942) (to know what camera is pointing at or to search for past photos in library)
-- [Ray](https://www.icloud.com/shortcuts/8890038a764948ed957d48b5b4bdff2f) opens [Raycast](https://www.raycast.com/ios)
-- [Track](https://www.icloud.com/shortcuts/6ab7aff137004e38935795ebc08548b5) - opens camera with [FitBee](https://fitbee.app) app to track food/drinks
+- [Edits](https://www.icloud.com/shortcuts/8890038a764948ed957d48b5b4bdff2f) opens [Edits](https://apps.apple.com/us/app/edits-an-instagram-app/id6738967378) app to do nice video record quickly
+- [Track](https://www.icloud.com/shortcuts/6ab7aff137004e38935795ebc08548b5) - opens camera with [FitBee](https://fitbee.app) app to track food/drinks (will be replaced with [KusKus](https://kuskus.app) soon)
 - [Tab](https://www.icloud.com/shortcuts/e77dc26750fe4e96a9f37842908df6ef) - opens new tab in Safari
 
 I use `Test` shortcut to prototype new actions/ideas quickly. I then duplicate the working prototype & give it appropriate name. I use the same prototyping idea with [KM macros](https://wiki.nikiv.dev/macOS/apps/keyboard-maestro/km-macros).
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-aug/test-shortcut.jpg"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-sept/test-shortcut.png"></a>
 
 ## iOS Control Center
 
 Here is how my control center looks:
 
+<a align="center" href="https://github.com/nikitavoloboev/my-ios">
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-control-center.png"></a>
+
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-june/ios-control-center.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-control-center-2.png"></a>
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-control-center-3.png"></a>
+
+## All Library
+
+Will map all apps I have installed as a list in future but for now here are some screens from App Library.
+
+<a align="center" href="https://github.com/nikitavoloboev/my-ios">
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-apps.png"></a>
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-apps-2.png"></a>
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-apps-3.png"></a>
+
+## Share sheet
+
+<a align="center" href="https://github.com/nikitavoloboev/my-ios">
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-share-sheet-apps.png"></a>
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-share-sheet-apps-2.png"></a>
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-share-sheet-actions.png"></a>
 
 ## Discuss macOS/iOS
 

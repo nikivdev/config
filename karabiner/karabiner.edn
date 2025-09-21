@@ -538,8 +538,32 @@
                  [:b [:km "cursor: browser-bee-gh"]]
                  [:spacebar [:km "cursor: n8n-gh"]]
                  ]}
-        {:des "tabkey (1f switch into projects)" ; TODO: move this to ~ & move opening files to tab
+        ; TODO: move this to ~ & move opening files to tab
+        ; TODO: 1f switch into projects. bind that to nother key
+        {:des "tabkey (pages)"
          :rules [:tab-mode
+                 [:e [:km "reflect: Posts"]]
+                 [:r [:km "reflect: Hire"]]
+                 [:t [:km "reflect: Visit"]]
+                 [:y [:km "reflect: Funny"]]
+                 [:u [:km "reflect: Buy"]]
+                 [:i [:km "reflect: Ideas"]]
+                 [:o [:km "reflect: Flow"]]
+                 [:p [:km "reflect: Photos"]]
+                 [:s [:km "reflect: Events"]]
+                 [:f [:km "reflect: Focus"]]
+                 [:h [:km "reflect: Health"]]
+                 [:j [:km "reflect: Journal"]]
+                 [:k [:km "Search Reflect"]]
+                 [:l [:km "reflect: Learn"]]
+                 [:semicolon [:km "reflect: Changes"]]
+                 [:quote [:km "reflect: Love"]]
+                 [:v [:km "reflect: Videos"]]
+                 [:b [:km "reflect: Books"]]
+                 [:n [:km "reflect: Invest"]]
+                 [:m [:km "reflect: Meet"]]
+                 [:period [:km "reflect: Spend"]]
+                 [:spacebar [:km "reflect: Notes"]]
                  ]}
                  ;[:f [:km "Get time in SF"]]
                  ;[:d [:km "Open Dash and search docsets"]]
@@ -1032,7 +1056,7 @@
                  ;[:e [:km "open: ChatGPT GPTs"]]
                  ;[:q [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  ;[:spacebar [:km "open: Ask"]]]}
-        {:des "pkey (gh workspaces)"
+        {:des "pkey (pages)"
          :rules [:p-mode
                  ;[:e [:km "cursor: r-gh"]]
                  ]}
@@ -1205,7 +1229,8 @@
                  [:m [:km "Google Lucky selected word"]]
                  [:comma :!TOS1] ; Show Launchpad (system settings > keyboard > launchpad & dock)
                  [:period :!TOS2] ; Mission Control (system settings > keyboard > mission control)
-                 [:spacebar [:km "Selected text into Claude"]] ; TODO: use openai
+                 ; TODO: add slash (selected line -> chatgpt or claude or similar)
+                 [:spacebar [:km "Selected text into Claude"]] ; TODO: use openai!
                  ]}
                  ;[:spacebar [:km "Google Searchio selected word"]]
                  ;[:spacebar :!CT8] ; Selection -> Dictionary (wiki)
@@ -1225,8 +1250,9 @@
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  [:k [:km "New Linear task"]]
-                 [:l [:km "new X post (in Arc)"]]
+                 [:l [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
+                 [:quote [:km "new Reddit post (in Arc)"]]
                  [:u [:km "clear active todo"]]
                  [:i [:alfred "active todo" "nikiv"]]
                  [:o [:km "Things: new top task (Today)"]] ; TODO: make sure to switch to window with `Today`
@@ -1239,7 +1265,7 @@
                  [:z :!TOCbackslash] ; Switch language (Russian <-> English)
                  [:b [:km "Things: Quick Entry (into Someday)"]]
                  [:n [:km "Things: Quick Entry (with context) (into Someday)"]]
-                 ;[:m [:km "new Reddit post (in Arc)"]]
+                 [:m [:km "new X post (in Arc)"]]
                  [:spacebar [:km "open: Eagle"]]
                  ]}
                  ;[:o [:km "Things: new top task (Today)"]] ; TODO: make sure to switch to window with `Today`
@@ -1355,6 +1381,7 @@
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
+                 [:a [:km "cursor: gleam."]] ; + elixir
                  [:s [:km "cursor: kus."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: mbt."]]
@@ -1371,10 +1398,10 @@
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
-                 [:comma [:km "cursor: elixir."]]
+                 [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
-                 [:slash [:km "cursor: zig."]]
-                 [:left_command [:km "cursor: as."]] ; client, dash (to be moved to sb.)
+                 [:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)
+                 [:left_command [:km "cursor: ext."]] ; ext, client, AS dash (move it into 1F/SB later)
                  [:spacebar [:km "cursor: other"]]
                  ]}
                  ;[:s [:km "cursor: search."]]
@@ -1519,9 +1546,8 @@
                  ;[:f [:km "w: Cloudflare LA deployments"]]
                  ;[:g [:km "w: Grafbase LA logs"]]
                  ;[:spacebar :!COSn]]} ; Selection -> GitHub ; TODO: move it to another key (on s?)
-        {:des "tilkey (files)" ; TODO: move this to tab. this becomes 1f -> switch projects/focus
+        {:des "tilkey (actions)"
          :rules [:tilde-mode
-                 ; TODO: mby open more specific macros/scripts?
                  [:e [:km "Go to test macro"]]
                  [:i [:km "cursor: config:fish/private.fish"]]
                  [:o [:km "cursor: ~/src/config/fish/fn.fish"]] ; TODO: bind to run.swift, move fish alias to something nice too
@@ -1765,23 +1791,26 @@
                  ;[:n [:km "w: Inoreader"]]
                  ;[:m [:km "w: Mastodon"]]
                  ;[:period [:km "w: YouTube (subs)"]]
-        {:des "nkey (alfred)"
+        ; TODO: deeplink open certain chats/spaces/projects in 1f
+        {:des "nkey (1f project switcher)"
          :rules [:n-mode
+                 ; TODO: not used, check if useful
                  [:1 :!O1]
                  [:2 :!O2]
                  [:3 :!O3]
                  [:4 :!O4]
                  [:5 :!O5]
                  [:6 :!O6]
-                 [:a [:alfred "search websites" "nikivi.web.searches"]]
-                 [:s [:alfred "search github" "nikiv.search.the.web"]]
-                 [:d [:alfred "search hn" "nikiv.search.the.web"]]
-                 [:e [:alfred "search repos" "me.lachlan.githubjump"]]
-                 [:f [:raycast "anybox/anybox/search"]]
-                 [:r [:alfred "search reddit" "nikivi.search.the.web"]]
-                 [:grave_accent_and_tilde [:alfred "search learn anything" "nikivi.learn.anything"]]
-                 [:spacebar [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  ]}
+                 ; TODO: was used before, fix. move to good place
+                 ;[:a [:alfred "search websites" "nikivi.web.searches"]]
+                 ;[:s [:alfred "search github" "nikiv.search.the.web"]]
+                 ;[:d [:alfred "search hn" "nikiv.search.the.web"]]
+                 ;[:e [:alfred "search repos" "me.lachlan.githubjump"]]
+                 ;[:f [:raycast "anybox/anybox/search"]]
+                 ;[:r [:alfred "search reddit" "nikivi.search.the.web"]]
+                 ;[:grave_accent_and_tilde [:alfred "search learn anything" "nikivi.learn.anything"]]
+
                  ;[:w [:alfred "search lobsters" "nikivi.search.the.web"]]
                  ; TODO: bind good things to e, w, s, d, r, escape
                  ;[:c [:alfred "search wiki" "nikivi.mind"]]

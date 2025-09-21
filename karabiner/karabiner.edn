@@ -538,32 +538,8 @@
                  [:b [:km "cursor: browser-bee-gh"]]
                  [:spacebar [:km "cursor: n8n-gh"]]
                  ]}
-        ; TODO: move this to ~ & move opening files to tab
-        ; TODO: 1f switch into projects. bind that to nother key
-        {:des "tabkey (pages)"
+        {:des "tabkey (1f project switcher)"
          :rules [:tab-mode
-                 [:e [:km "reflect: Posts"]]
-                 [:r [:km "reflect: Hire"]]
-                 [:t [:km "reflect: Visit"]]
-                 [:y [:km "reflect: Funny"]]
-                 [:u [:km "reflect: Buy"]]
-                 [:i [:km "reflect: Ideas"]]
-                 [:o [:km "reflect: Flow"]]
-                 [:p [:km "reflect: Photos"]]
-                 [:s [:km "reflect: Events"]]
-                 [:f [:km "reflect: Focus"]]
-                 [:h [:km "reflect: Health"]]
-                 [:j [:km "reflect: Journal"]]
-                 [:k [:km "Search Reflect"]]
-                 [:l [:km "reflect: Learn"]]
-                 [:semicolon [:km "reflect: Changes"]]
-                 [:quote [:km "reflect: Love"]]
-                 [:v [:km "reflect: Videos"]]
-                 [:b [:km "reflect: Books"]]
-                 [:n [:km "reflect: Invest"]]
-                 [:m [:km "reflect: Meet"]]
-                 [:period [:km "reflect: Spend"]]
-                 [:spacebar [:km "reflect: Notes"]]
                  ]}
                  ;[:f [:km "Get time in SF"]]
                  ;[:d [:km "Open Dash and search docsets"]]
@@ -1792,7 +1768,7 @@
                  ;[:m [:km "w: Mastodon"]]
                  ;[:period [:km "w: YouTube (subs)"]]
         ; TODO: deeplink open certain chats/spaces/projects in 1f
-        {:des "nkey (1f project switcher)"
+        {:des "nkey (pages)"
          :rules [:n-mode
                  ; TODO: not used, check if useful
                  [:1 :!O1]
@@ -1801,7 +1777,29 @@
                  [:4 :!O4]
                  [:5 :!O5]
                  [:6 :!O6]
+                 [:tab [:km "reflect: Events"]]
+                 [:q [:km "reflect: Health"]]
+                 [:w [:km "reflect: Flow"]]
+                 [:e [:km "reflect: Learn"]]
+                 [:r [:km "reflect: Hire"]]
+                 [:t [:km "reflect: Visit"]]
+                 [:y [:km "reflect: Buy"]]
+                 [:escape [:km "reflect: Notes"]]
+                 [:a [:km "reflect: Journal"]]
+                 [:s [:km "reflect: Posts"]]
+                 [:d [:km "reflect: Spend"]]
+                 [:f [:km "Search Reflect"]]
+                 [:g [:km "reflect: Meet"]]
+                 [:h [:km "reflect: Photos"]]
+                 [:c [:km "reflect: Focus"]] ; TODO: move to la & hove each bullet have live top data from each of the pages there
+                 [:v [:km "reflect: Videos"]]
+                 [:b [:km "reflect: Books"]]
+                 [:grave_accent_and_tilde [:km "reflect: Ideas"]]
+                 [:left_command [:km "reflect: Invest"]]
+                 [:spacebar [:km "reflect: Changes"]]
                  ]}
+                 ;[:quote [:km "reflect: Love"]]
+                 ;[:tab [:km "reflect: Funny"]]
                  ; TODO: was used before, fix. move to good place
                  ;[:a [:alfred "search websites" "nikivi.web.searches"]]
                  ;[:s [:alfred "search github" "nikiv.search.the.web"]]

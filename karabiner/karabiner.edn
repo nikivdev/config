@@ -77,9 +77,9 @@
                  [:6 :!T6]
                  [:7 :!T7]
                  [:tab [:km "open: GitHub search (in Arc)"]]
-                 [:escape [:km "open: Grep"]]
+                 [:escape [:km "cursor: nikiv."]] ; + wiki, i
                  [:grave_accent_and_tilde [:km "open: Sourcegraph"]]
-                 [:left_command [:km "cursor: nikiv."]] ; + ui
+                 [:left_command [:km "open: Grep"]]
                  [:q :!Sq]
                  [:w :!Sw]
                  [:e :!Se]
@@ -1345,7 +1345,7 @@
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: mastra-gh"]]
                  [:4 [:km "cursor: encore."]]
-                 [:q [:km "cursor: kus."]]
+                 [:q [:km "cursor: ui."]]
                  [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: workflow."]]
@@ -1355,29 +1355,31 @@
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: search."]]
-                 [:s [:km "cursor: ext."]] ; client. & more
+                 [:s [:km "cursor: kus."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: mbt."]]
                  [:g [:km "cursor: gitedit."]]
                  [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]
-                 [:k [:km "cursor: as."]] ; includes api
+                 [:k [:km "cursor: docs."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
                  [:quote [:km "cursor: opencode."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times)
+                 [:v [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too)
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
                  [:comma [:km "cursor: elixir."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: zig."]]
-                 [:left_command [:km "cursor: docs."]]
+                 [:left_command [:km "cursor: as."]] ; client, dash (to be moved to sb.)
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:s [:km "cursor: search."]]
+                 ;[:left_command [:km "cursor: as."]] ; TODO: will be moved
+                 ;[:k [:km "cursor: as."]] ; includes api
                  ;[:comma [:km "cursor: unison."]]
                  ;[:d [:km "cursor: docs."]]
                  ;[:u [:km "cursor: odin."]]

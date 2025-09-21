@@ -272,6 +272,31 @@ Will map all apps I have installed as a list in future but for now here are some
 <a align="center" href="https://github.com/nikitavoloboev/config">
     <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/ios-share-sheet-actions.png"></a>
 
+## Blocked apps
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/ios-screen-2-with-blocked.png"></a>
+
+Often times I have TikTok & some other apps blocked on schedule using [Jomo](https://jomo.so). I can still open the app where I would see this:
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/jomo-blocked-app.png"></a>
+
+My rules in Jomo are:
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/always-jomo-block.png"></a>
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/passive-jomo-block.png"></a>
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-sept/focus-jomo-block.png"></a>
+
+Where I rarely use the `Focus` one as it is supposed to be opt in and its cumbersome to activate a Focus session. But Always one is great in that it adds friction to using TikTok nearly always.
+
+And Passive session forces me not to open IG/TikTok in morning too which is great.
+
 ## Discuss macOS/iOS
 
 I made a [Telegram group](https://t.me/joinchat/BBKnQU4_rty6_942PFbPbw) to discuss all things macOS/iOS. Karabiner related questions can be asked [here](https://t.me/+UDlL5H7VIwAVK0_7).

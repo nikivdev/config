@@ -947,7 +947,7 @@
                  ;[:tab [:km "open: ClaudeWeb"]]
                  [:a [:km "open: Grok"]]
                  ;[:s [:km "open: AlexSideBar"]] ; TODO: moved to codex, test it
-                 [:s [:km "open: T3 Chat"]]
+                 [:s [:km "open: Convex"]]
                  [:d [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard
                  [:f [:km "open: Claude"]]
                  [:g [:km "open: Google Cloud"]]
@@ -957,14 +957,14 @@
                  [:x [:km "open: Mistral Chat"]]
                  [:x [:km "open: Qwen"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
-                 [:v [:km "open: Codex"]]
                  [:b [:km "open: Supabase"]]
-                 [:n [:km "open: Convex"]]
-                 ;[:n [:km "open: Ronin"]]
+                 ;[:n [:km "open: Ronin"]] ; TODO: when its out again
                  [:m [:km "open: Modal"]]
-                 ;[:left_command [:km "open: 1Focus (dev)"]]
                  [:spacebar [:km "open: Conductor"]]
                  ]}
+                 ;[:left_command [:km "open: 1Focus (dev)"]]
+                 ;[:s [:km "open: T3 Chat"]]
+                 ;[:v [:km "open: Codex"]]
                  ;[:k [:km "open: Sentry"]]
                  ;[:spacebar [:km "open: 1Focus"]]
                  ;[:d [:km "open: Conductor"]]

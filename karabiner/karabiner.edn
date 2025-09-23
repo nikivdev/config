@@ -1356,16 +1356,15 @@
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: workflow."]]
                  [:t [:km "cursor: editor."]] ; vscode / zed
-                 [:u [:km "cursor: bun."]]
-                 [:i [:km "cursor: swift."]]
+                 [:u [:km "cursor: kus."]]
+                 [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: kus."]]
+                 [:s [:km "cursor: swift."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: mbt."]]
-                 [:g [:km "cursor: gitedit."]]
+                 [:g [:km "cursor: gleam."]] ; + elixir
                  [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
@@ -1384,6 +1383,7 @@
                  [:left_command [:km "cursor: ext."]] ; ext, client, AS dash (move it into 1F/SB later)
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:u [:km "cursor: bun."]] ; TODO: move to nice key
                  ;[:s [:km "cursor: search."]]
                  ;[:left_command [:km "cursor: as."]] ; TODO: will be moved
                  ;[:k [:km "cursor: as."]] ; includes api

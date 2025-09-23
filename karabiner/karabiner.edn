@@ -1361,10 +1361,11 @@
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
+                 [:a [:km "cursor: gleam."]] ; + elixir
                  [:s [:km "cursor: swift."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: mbt."]]
-                 [:g [:km "cursor: gleam."]] ; + elixir
+                 [:g [:km "cursor: zig."]]
                  [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.

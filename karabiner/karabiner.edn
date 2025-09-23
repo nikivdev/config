@@ -944,7 +944,7 @@
                  [:j [:km "open: ChatGPT"]]
                  ;[:k [:km "open: Sentry"]] ; TODO: setup, use
                  [:semicolon [:km "open: Lovable"]]
-                 [:tab [:km "open: ClaudeWeb"]]
+                 ;[:tab [:km "open: ClaudeWeb"]]
                  [:a [:km "open: Grok"]]
                  ;[:s [:km "open: AlexSideBar"]] ; TODO: moved to codex, test it
                  [:s [:km "open: T3 Chat"]]

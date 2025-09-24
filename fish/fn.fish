@@ -1307,3 +1307,8 @@ function gRebaseMain \
     echo "   Verify things work, then push with:"
     echo "     git push --force-with-lease origin $branch"
 end
+
+# from https://x.com/_xjdr/status/1970694098454798338
+function oo
+    codex --search --model=gpt-5-codex -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
+end

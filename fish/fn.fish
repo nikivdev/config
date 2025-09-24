@@ -660,7 +660,7 @@ end
 #     end
 # end
 
-function b
+function .
     bunx $argv
 end
 
@@ -1082,44 +1082,45 @@ end
 #     end
 # end
 
+# TODO: this should be automatic. paste all command outputs to some sqlite file
 # copy last command output to clipboard (including the command that was executed)
-function .
-    # Get the last command from history
-    set -l last_cmd (history --max=1)
-    # For display purposes, try to get a clean name
-    set -l cmd_name (string split ' ' $last_cmd)[1]
-    set -l display_cmd $last_cmd
-    # If the command is an alias or function, try to display a nicer version
-    if functions -q $cmd_name
-        # Look for the first line with actual command execution
-        set -l actual_cmd (functions $cmd_name | grep -E '^\s+\w+' | head -n1 | string trim)
-        if test -n "$actual_cmd"
-            # Get just the command without the $argv
-            set display_cmd (string replace -r '\s+\$argv.*$' '' $actual_cmd)
-            # Add any arguments
-            set -l args (string split ' ' $last_cmd | tail -n +2 | string join ' ')
-            if test -n "$args"
-                set display_cmd "$display_cmd $args"
-            end
-        end
-    end
+# function .
+#     # Get the last command from history
+#     set -l last_cmd (history --max=1)
+#     # For display purposes, try to get a clean name
+#     set -l cmd_name (string split ' ' $last_cmd)[1]
+#     set -l display_cmd $last_cmd
+#     # If the command is an alias or function, try to display a nicer version
+#     if functions -q $cmd_name
+#         # Look for the first line with actual command execution
+#         set -l actual_cmd (functions $cmd_name | grep -E '^\s+\w+' | head -n1 | string trim)
+#         if test -n "$actual_cmd"
+#             # Get just the command without the $argv
+#             set display_cmd (string replace -r '\s+\$argv.*$' '' $actual_cmd)
+#             # Add any arguments
+#             set -l args (string split ' ' $last_cmd | tail -n +2 | string join ' ')
+#             if test -n "$args"
+#                 set display_cmd "$display_cmd $args"
+#             end
+#         end
+#     end
 
-    # useful addition my personal use (not to confuse llms)
-    # hard-code replacement of eza -I 'license' with ls
-    set display_cmd (string replace "eza -I 'license'" "ls" $display_cmd)
-    set display_cmd (string replace "eza -la" "ls -la" $display_cmd)
+#     # useful addition my personal use (not to confuse llms)
+#     # hard-code replacement of eza -I 'license' with ls
+#     set display_cmd (string replace "eza -I 'license'" "ls" $display_cmd)
+#     set display_cmd (string replace "eza -la" "ls -la" $display_cmd)
 
-    # Create a temporary file to store command output
-    set -l temp_file (mktemp)
-    # Add the command line with $ prefix
-    echo "\$ $display_cmd" >$temp_file
-    # Re-run the last command and capture output
-    eval $last_cmd >>$temp_file 2>&1
-    # Copy to clipboard
-    cat $temp_file | pbcopy
-    # Clean up
-    rm $temp_file
-end
+#     # Create a temporary file to store command output
+#     set -l temp_file (mktemp)
+#     # Add the command line with $ prefix
+#     echo "\$ $display_cmd" >$temp_file
+#     # Re-run the last command and capture output
+#     eval $last_cmd >>$temp_file 2>&1
+#     # Copy to clipboard
+#     cat $temp_file | pbcopy
+#     # Clean up
+#     rm $temp_file
+# end
 
 # TODO: bind & use this
 # symlink a file to ~/bin with a specified name

@@ -1791,7 +1791,7 @@
                  [:o [:km "reflect: Books"]]
                  [:escape [:km "reflect: Health"]]
                  [:a [:km "reflect: Flow"]]
-                 [:s [:km "reflect: Posts"]]
+                 [:s [:km "reflect: Use"]]
                  [:d [:km "reflect: Spend"]]
                  [:f [:km "Search Reflect"]]
                  [:g [:km "reflect: Funding"]]
@@ -1806,6 +1806,7 @@
                  [:left_command [:km "reflect: Invest"]]
                  [:spacebar [:km "reflect: Journal"]]
                  ]}
+                 ;[:s [:km "reflect: Posts"]]
                  ;[:semicolon [:km "reflect: Move"]]
                  ;[:spacebar [:km "reflect: Changes"]]
                  ;[:quote [:km "reflect: Love"]]

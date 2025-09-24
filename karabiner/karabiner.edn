@@ -936,17 +936,14 @@
                  [:q [:km "open: Expo"]]
                  [:w [:km "open: Cloudflare"]]
                  [:e [:km "open: Repo Prompt"]]
-                 [:r [:km "open: Vercel"]]
+                 [:r [:km "open: Sentry"]]
                  [:t [:km "open: Vultr"]]
                  [:y [:km "open: Yandex Cloud"]]
                  [:u [:km "open: Azure"]]
                  [:i [:km "open: Railway"]]
                  [:j [:km "open: ChatGPT"]]
-                 ;[:k [:km "open: Sentry"]] ; TODO: setup, use
                  [:semicolon [:km "open: Lovable"]]
-                 ;[:tab [:km "open: ClaudeWeb"]]
                  [:a [:km "open: Grok"]]
-                 ;[:s [:km "open: AlexSideBar"]] ; TODO: moved to codex, test it
                  [:s [:km "open: Convex"]]
                  [:d [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard
                  [:f [:km "open: Claude"]]
@@ -954,14 +951,17 @@
                  [:h [:km "open: PostHog"]]
                  [:grave_accent_and_tilde [:km "open: AI Studio"]]
                  [:z [:km "open: DeepSeek"]]
-                 [:x [:km "open: Mistral Chat"]]
-                 [:x [:km "open: Qwen"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
+                 [:v [:km "open: Vercel"]]
                  [:b [:km "open: Supabase"]]
                  ;[:n [:km "open: Ronin"]] ; TODO: when its out again
                  [:m [:km "open: Modal"]]
                  [:spacebar [:km "open: Conductor"]]
                  ]}
+                 ;[:tab [:km "open: ClaudeWeb"]]
+                 ;[:s [:km "open: AlexSideBar"]] ; TODO: moved to codex, test it
+                 ;[:x [:km "open: Mistral Chat"]]
+                 ;[:x [:km "open: Qwen"]]
                  ;[:left_command [:km "open: 1Focus (dev)"]]
                  ;[:s [:km "open: T3 Chat"]]
                  ;[:v [:km "open: Codex"]]

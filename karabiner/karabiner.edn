@@ -1353,7 +1353,7 @@
                  [:4 [:km "cursor: encore."]]
                  [:q [:km "cursor: ui."]]
                  [:w [:km "cursor: py."]] ; includes training/evals
-                 [:e [:km "cursor: go."]]
+                 [:e [:km "cursor: rust."]]
                  [:r [:km "cursor: workflow."]]
                  [:t [:km "cursor: editor."]] ; vscode / zed
                  [:u [:km "cursor: kus."]]
@@ -1379,7 +1379,7 @@
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
                  [:comma [:km "cursor: zig."]]
-                 [:period [:km "cursor: rust."]]
+                 [:period [:km "cursor: go."]]
                  [:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)
                  [:left_command [:km "cursor: ext."]] ; ext, client, AS dash (move it into 1F/SB later)
                  [:spacebar [:km "cursor: other"]]

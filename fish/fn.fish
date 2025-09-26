@@ -636,7 +636,7 @@ function ..
     eza
 end
 
-function ts
+function tsgo
     bunx tsgo
 end
 

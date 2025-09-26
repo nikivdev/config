@@ -14,7 +14,7 @@ alias dw="cd ~/try/wip && eza"
 alias dv="cd ~/try/src && eza"
 alias ds="cd ~/test && eza"
 alias pip="pip3"
-alias o="codex"
+alias oo="codex"
 # alias dv="cd ~/src/nikiv.dev && eza"
 alias do="cd ~/doing && eza"
 alias dn="cd ~/src/py && eza"
@@ -1309,6 +1309,6 @@ function gRebaseMain \
 end
 
 # from https://x.com/_xjdr/status/1970694098454798338
-function oo
+function o
     codex --search --model=gpt-5-codex -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
 end

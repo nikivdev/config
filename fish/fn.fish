@@ -292,13 +292,13 @@ function e.
     bat .env
 end
 
-function n
-    if not set -q argv[1]
-        python3
-    else
-        uv run -m $argv
-    end
-end
+# function n
+#     if not set -q argv[1]
+#         python3
+#     else
+#         uv run -m $argv
+#     end
+# end
 
 
 function nw
@@ -1311,4 +1311,8 @@ end
 # from https://x.com/_xjdr/status/1970694098454798338
 function o
     codex --search --model=gpt-5-codex -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
+end
+
+function n
+    bunx convex $argv
 end

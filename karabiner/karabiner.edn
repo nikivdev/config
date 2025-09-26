@@ -1350,10 +1350,10 @@
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: mastra-gh"]]
                  [:4 [:km "cursor: encore."]]
-                 [:q [:km "cursor: ui."]]
+                 [:q [:km "cursor: flow."]]
                  [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: rust."]]
-                 [:r [:km "cursor: workflow."]]
+                 ;[:r [:km "cursor: ui."]] ; TODO: do it as part of flow. mby
                  [:t [:km "cursor: editor."]] ; vscode / zed
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]

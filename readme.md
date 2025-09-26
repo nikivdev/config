@@ -1,6 +1,6 @@
 # Config (macOS / iOS)
 
-> Apps/CLIs/configs I use on macOS/iOS
+> Apps/CLIs/configs I use
 
 ![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-sept/mac-dark.png)
 

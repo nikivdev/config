@@ -1352,7 +1352,7 @@
                  [:4 [:km "cursor: encore."]]
                  [:q [:km "cursor: flow."]]
                  [:w [:km "cursor: py."]] ; includes training/evals
-                 [:e [:km "cursor: mojo."]]
+                 [:e [:km "cursor: go."]]
                  ;[:r [:km "cursor: ui."]] ; TODO: do it as part of flow. mby
                  [:t [:km "cursor: editor."]] ; vscode / zed
                  [:u [:km "cursor: kus."]]
@@ -1361,7 +1361,7 @@
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: rust."]]
+                 [:s [:km "cursor: swift."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: mbt."]]
                  [:g [:km "cursor: zig."]]
@@ -1376,9 +1376,9 @@
                  [:v [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too)
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
-                 [:m [:km "cursor: swift."]]
+                 [:m [:km "cursor: mojo."]]
                  [:comma [:km "cursor: zig."]]
-                 [:period [:km "cursor: go."]]
+                 [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)
                  [:left_command [:km "cursor: ext."]] ; ext, client, AS dash (move it into 1F/SB later)
                  [:spacebar [:km "cursor: other"]]

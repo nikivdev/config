@@ -1352,7 +1352,7 @@
                  [:4 [:km "cursor: encore."]]
                  [:q [:km "cursor: flow."]]
                  [:w [:km "cursor: py."]] ; includes training/evals
-                 [:e [:km "cursor: rust."]]
+                 [:e [:km "cursor: mojo."]]
                  ;[:r [:km "cursor: ui."]] ; TODO: do it as part of flow. mby
                  [:t [:km "cursor: editor."]] ; vscode / zed
                  [:u [:km "cursor: kus."]]
@@ -1376,7 +1376,7 @@
                  [:v [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too)
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
-                 [:m [:km "cursor: mojo."]]
+                 [:m [:km "cursor: rust."]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: go."]]
                  [:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)

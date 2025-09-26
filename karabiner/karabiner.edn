@@ -1361,7 +1361,7 @@
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: swift."]]
+                 [:s [:km "cursor: rust."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: mbt."]]
                  [:g [:km "cursor: zig."]]
@@ -1376,7 +1376,7 @@
                  [:v [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too)
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
-                 [:m [:km "cursor: rust."]]
+                 [:m [:km "cursor: swift."]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: go."]]
                  [:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)

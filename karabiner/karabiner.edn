@@ -1376,7 +1376,8 @@
                  [:v [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too)
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
-                 [:m [:km "cursor: mojo."]]
+                 ;[:m [:km "cursor: mojo."]]
+                 [:m [:km "cursor: 1f-ios."]] ; TODO: briefly. then move to just 1f. (& bring mojo. here)
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)
@@ -1571,14 +1572,14 @@
                  [:c [:km "open: WhatsApp"]]
                  [:v [:km "open: Resend"]]
                  [:b [:km "open: Cal"]]
-                 ;[:n [:km "New Spark email"]] ; TODO: add back when old habits die off
-                 ;[:m [:km "open: Element"]]
-                 [:m [:km "new Reddit post (in Arc)"]]
+                 [:n [:km "New Spark email"]] ; TODO: add back when old habits die off
+                 [:m [:km "open: Zoom"]]
                  [:comma [:km "open: Signal"]]
-                 [:period [:km "open: Zoom"]]
-                 [:slash [:km "open: Google Meet"]]
+                 [:period [:km "open: Google Meet"]]
                  [:spacebar [:km "open: Contacts"]] ; TODO: replace with LA
                  ]}
+                 ;[:n [:km "new Reddit post (in Arc)"]]
+                 ;[:m [:km "open: Element"]]
                  ;[:l [:km "open: Typefully"]] ; TODO: get working, replace
                  ;[:l [:km "w: Typefully"]]
                  ;[:l [:km "open X messages (in Dia)"]]

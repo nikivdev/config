@@ -524,5 +524,6 @@
   "workbench.statusBar.visible": false,
   "workbench.layoutControl.enabled": false,
   "cursorpyright.analysis.autoImportCompletions": true,
-  "cursorpyright.analysis.typeCheckingMode": "basic"
+  "cursorpyright.analysis.typeCheckingMode": "basic",
+  "security.workspace.trust.untrustedFiles": "open"
 }

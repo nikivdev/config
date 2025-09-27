@@ -78,8 +78,6 @@
                  [:7 :!T7]
                  [:tab [:km "open: GitHub search (in Arc)"]]
                  [:escape [:km "open: Grep"]]
-                 [:left_command [:km "cursor: docs."]]
-                 ;[:left_command [:km "cursor: nikiv."]] ; + wiki, i. (?)
                  [:grave_accent_and_tilde [:km "open: Sourcegraph"]]
                  [:q :!Sq]
                  [:w :!Sw]
@@ -106,9 +104,11 @@
                  [:v :!Sv]
                  [:b :!Sb]
                  [:n :!Sn]
+                 [:left_command [:km "cursor: docs."]]
                  [:spacebar [:km "open: Reflect"]]
                  [:m :!Sm]
                  ]}
+                 ;[:left_command [:km "cursor: nikiv."]] ; + wiki, i. (?)
                  ;[:tab [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]] ; TODO: rebind
                  ;[:escape [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]] ; TODO: rebind
                  ;[:grave_accent_and_tilde [:km "open docs of current project"]] ; TODO: make work and bind
@@ -607,7 +607,7 @@
                  [:p [:km "open: Proxyman"]]
                  [:grave_accent_and_tilde [:km "open: Color Picker"]]
                  [:escape [:km "open: Finder"]]
-                 [:a [:km "open: Zed"]]
+                 [:a [:km "open: Repo Prompt"]]
                  [:d [:km "open: Fantastical"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:g [:km "open: JuxtaCode"]] ; TODO: replace with gitedit (better)
@@ -940,18 +940,19 @@
                  [:t [:km "open: Vultr"]]
                  [:y [:km "open: Yandex Cloud"]]
                  [:u [:km "open: Azure"]]
-                 [:i [:km "open: Railway"]]
+                 [:i [:km "open: Axiom"]]
                  [:j [:km "open: ChatGPT"]]
                  [:semicolon [:km "open: Lovable"]]
                  [:a [:km "open: Grok"]]
                  [:s [:km "open: Convex"]]
                  [:d [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard
                  [:f [:km "open: Claude"]]
-                 [:g [:km "open: PostHog"]]
+                 [:g [:km "open: Google Cloud"]]
+                 [:h [:km "open: PostHog"]]
                  [:grave_accent_and_tilde [:km "open: AI Studio"]]
                  [:z [:km "open: DeepSeek"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
-                 [:v [:km "open: Google Cloud"]]
+                 [:v [:km "open: Railway"]]
                  [:b [:km "open: Supabase"]]
                  [:n [:km "open: Ronin"]] ; TODO: when its out again
                  [:m [:km "open: Modal"]]
@@ -1840,11 +1841,12 @@
          :rules [:m-mode
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:w [:km "open: PyCharm"]]
-                 [:e [:km "open: RustRover"]]
+                 [:e [:km "open: GoLand"]]
                  [:r [:km "open: Encore (local)"]]
                  [:t [:km "open: Stripe"]]
                  [:tab [:km "open: NotePlus"]]
-                 [:a [:km "open: Leap"]]
+                 [:escape [:km "open: Leap"]]
+                 [:a [:km "open: RustRover"]]
                  [:s [:km "open: Lottie"]]
                  [:d [:km "open: Bolt"]]
                  [:f [:km "open: v0"]]
@@ -1852,7 +1854,7 @@
                  [:c [:km "open: Conar"]]
                  [:v [:km "open: Rive"]]
                  [:grave_accent_and_tilde [:km "open: Transmit"]]
-                 [:period [:km "open: GoLand"]]
+                 [:spacebar [:km "open: Zed"]]
                  [:left_command [:km "open: TablePlus"]]
                  ]}
                  ;[:escape [:km "open: T3 Chat"]]

@@ -104,7 +104,6 @@
                  [:v :!Sv]
                  [:b :!Sb]
                  [:n :!Sn]
-                 [:left_command [:km "cursor: docs."]]
                  [:spacebar [:km "open: Reflect"]]
                  [:m :!Sm]
                  ]}
@@ -1355,7 +1354,7 @@
                  [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: elixir."]] ; + gleam
-                 [:t [:km "cursor: editor."]] ; vscode / zed
+                 [:t [:km "cursor: ext."]] ; ext, client, AS dash (move it into 1F/SB later)
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
@@ -1379,12 +1378,13 @@
                  [:n [:km "cursor: gen."]]
                  ;[:m [:km "cursor: mojo."]]
                  [:m [:km "cursor: 1f-ios."]] ; TODO: briefly. then move to just 1f. (& bring mojo. here)
-                 [:comma [:km "cursor: zig."]]
+                 [:comma [:km "cursor: editor."]] ; vscode / zed
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)
-                 [:left_command [:km "cursor: ext."]] ; ext, client, AS dash (move it into 1F/SB later)
+                 [:left_command [:km "cursor: docs."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:comma [:km "cursor: zig."]]
                  ;[:u [:km "cursor: bun."]] ; TODO: move to nice key
                  ;[:s [:km "cursor: search."]]
                  ;[:left_command [:km "cursor: as."]] ; TODO: will be moved

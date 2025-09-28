@@ -1540,6 +1540,7 @@
         {:des "tilkey (actions + open files)"
          :rules [:tilde-mode
                   [:p [:km "ghostty: gpton"]]
+                  [:semicolon [:km "ghostty: home"]] ; TODO: make work
                  ]}
                  ; TODO: move run .. to separate key
                   ;[:l [:km "open: EdgeDB Cloud"]]

@@ -309,7 +309,7 @@ function nw
     watchexec --no-vcs-ignore --restart --exts py --clear --project-origin . "tput reset && uv run -m scripts.$argv"
 end
 
-function f
+function n
     if not set -q argv[1]
         open .
     else
@@ -1313,6 +1313,6 @@ function o
     codex --search --model=gpt-5-codex -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
 end
 
-function n
+function ve
     bunx convex $argv
 end

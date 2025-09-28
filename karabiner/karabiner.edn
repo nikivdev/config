@@ -1353,6 +1353,7 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (workspaces)"
          :rules [:escape-mode
+                 ;[:1 [:km "cursor: hono."]] ; + openapi gen
                  [:1 [:km "cursor: elysia."]]
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: mastra-gh"]]
@@ -1368,9 +1369,9 @@
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: ui."]] ; TODO: moved to flow. too
-                 [:s [:km "cursor: swift."]]
+                 [:s [:km "cursor: mbt."]]
                  [:d [:km "cursor: friendik."]]
-                 [:f [:km "cursor: mbt."]]
+                 [:f [:km "cursor: swift."]]
                  [:g [:km "cursor: zig."]]
                  [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]

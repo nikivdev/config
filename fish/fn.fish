@@ -661,7 +661,7 @@ end
 #     end
 # end
 
-function .
+function k
     bunx $argv
 end
 
@@ -728,15 +728,16 @@ function d.
     cd ~/rust && eza
 end
 
-function k
-    if not set -q argv[1]
-        # TODO: what is equivalent to `bun dev` in uv
-        # uv run main.py
-        watchexec --no-vcs-ignore --restart --exts py --clear --project-origin . "tput reset && uv run main.py"
-    else
-        uv $argv
-    end
-end
+# TODO: moved to :
+# function k
+#     if not set -q argv[1]
+#         # TODO: what is equivalent to `bun dev` in uv
+#         # uv run main.py
+#         watchexec --no-vcs-ignore --restart --exts py --clear --project-origin . "tput reset && uv run main.py"
+#     else
+#         uv $argv
+#     end
+# end
 
 
 # function dk
@@ -1316,4 +1317,8 @@ end
 
 function ve
     bunx convex $argv
+end
+
+function .
+    f deploy
 end

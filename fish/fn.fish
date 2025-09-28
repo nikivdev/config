@@ -562,11 +562,12 @@ end
 #     end
 # end
 
-function e
-    if not set -q argv[1]
-        pwd | pbcopy $argv
+function l
+    if test (count $argv) -eq 0
+        pwd | pbcopy
     else
-        bat $argv
+        bat --paging=never -- $argv
+        cat -- $argv | pbcopy
     end
 end
 
@@ -644,13 +645,13 @@ end
 #     ollama $argv
 # end
 
-function l
-    if not set -q argv[1]
-        pnpm dev
-    else
-        pnpm i $argv
-    end
-end
+# function l
+#     if not set -q argv[1]
+#         pnpm dev
+#     else
+#         pnpm i $argv
+#     end
+# end
 
 # TODO: move
 # function s

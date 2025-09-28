@@ -1541,6 +1541,7 @@
         ; TODO: move to 1f sessions (with ghostty embedded)
         {:des "tilkey (actions + open files)"
          :rules [:tilde-mode
+                  [:n [:km "ghostty: new"]]
                   [:p [:km "ghostty: gpton"]]
                   [:semicolon [:km "ghostty: home"]] ; TODO: make work
                  ]}

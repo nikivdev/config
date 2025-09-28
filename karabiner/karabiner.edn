@@ -1371,7 +1371,7 @@
                  [:a [:km "cursor: ui."]] ; TODO: moved to flow. too
                  [:s [:km "cursor: mbt."]]
                  [:d [:km "cursor: friendik."]]
-                 [:f [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too)
+                 [:f [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too) 1f-ios for now
                  [:g [:km "cursor: zig."]]
                  [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]
@@ -1384,14 +1384,14 @@
                  [:v [:km "cursor: swift."]]
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
-                 ;[:m [:km "cursor: mojo."]]
-                 [:m [:km "cursor: 1f-ios."]] ; TODO: briefly. then move to just 1f. (& bring mojo. here)
+                 [:m [:km "cursor: mojo."]]
                  [:comma [:km "cursor: editor."]] ; vscode / zed
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)
                  [:left_command [:km "cursor: docs."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:m [:km "cursor: 1f-ios."]] ; TODO: briefly. then move to just 1f. (& bring mojo. here)
                  ;[:comma [:km "cursor: zig."]]
                  ;[:u [:km "cursor: bun."]] ; TODO: move to nice key
                  ;[:s [:km "cursor: search."]]

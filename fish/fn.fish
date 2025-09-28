@@ -1325,5 +1325,5 @@ function .
 end
 
 function j
-    f commit
+    f commitPush
 end

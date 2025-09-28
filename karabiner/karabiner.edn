@@ -1362,13 +1362,13 @@
                  [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: mbt."]]
-                 [:t [:km "cursor: elixir."]] ; + gleam
+                 [:t [:km "cursor: client."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: client."]]
+                 [:a [:km "cursor: gleam."]] ; + elixir
                  [:s [:km "cursor: docs."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too) 1f-ios for now

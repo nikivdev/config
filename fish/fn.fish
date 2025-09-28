@@ -78,13 +78,14 @@ function :
     end
 end
 
-function j
-    if not set -q argv[1]
-        just dev
-    else
-        just $argv
-    end
-end
+# TODO: move to another key
+# function j
+#     if not set -q argv[1]
+#         just dev
+#     else
+#         just $argv
+#     end
+# end
 
 function :p
     bun dev --port $argv
@@ -1321,4 +1322,8 @@ end
 
 function .
     f deploy
+end
+
+function j
+    f commit
 end

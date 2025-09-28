@@ -1371,7 +1371,7 @@
                  [:a [:km "cursor: ui."]] ; TODO: moved to flow. too
                  [:s [:km "cursor: mbt."]]
                  [:d [:km "cursor: friendik."]]
-                 [:f [:km "cursor: swift."]]
+                 [:f [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too)
                  [:g [:km "cursor: zig."]]
                  [:h [:km "cursor: effect."]]
                  [:j [:km "cursor: ts."]]
@@ -1381,7 +1381,7 @@
                  [:quote [:km "cursor: opencode."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too)
+                 [:v [:km "cursor: swift."]]
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
                  ;[:m [:km "cursor: mojo."]]

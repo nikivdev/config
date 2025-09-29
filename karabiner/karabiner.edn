@@ -1566,7 +1566,6 @@
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "Search Discord"]]
                  [:k [:km "open: Telegram"]] ; TODO: should be replaced as its on space + l too
-                 ;[:k [:km "new X post (in Arc)"]]
                  [:l [:km "Search Telegram"]]
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
@@ -1577,9 +1576,11 @@
                  [:n [:km "New Spark email"]] ; TODO: add back when old habits die off
                  [:m [:km "open: Zoom"]]
                  [:comma [:km "open: Signal"]]
-                 [:period [:km "open: Google Meet"]]
+                 [:period [:km "open: Discord (in Arc)"]]
+                 [:slash [:km "open: Google Meet"]]
                  [:spacebar [:km "open: Contacts"]] ; TODO: replace with LA
                  ]}
+                 ;[:k [:km "new X post (in Arc)"]]
                  ;[:n [:km "new Reddit post (in Arc)"]]
                  ;[:m [:km "open: Element"]]
                  ;[:l [:km "open: Typefully"]] ; TODO: get working, replace

@@ -1353,8 +1353,8 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (workspaces)"
          :rules [:escape-mode
-                 ;[:1 [:km "cursor: hono."]] ; + openapi gen
-                 [:1 [:km "cursor: elysia."]]
+                 ;[:1 [:km "cursor: elysia."]]
+                 [:1 [:km "cursor: hono."]] ; + openapi gen
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: mastra-gh"]]
                  [:4 [:km "cursor: encore."]]
@@ -1363,13 +1363,13 @@
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: mbt."]]
                  [:t [:km "cursor: client."]]
-                 [:u [:km "cursor: kus."]]
+                 ;[:s [:km "cursor: docs."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: docs."]]
+                 [:s [:km "cursor: kus."]]
                  [:d [:km "cursor: friendik."]]
                  [:f [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too) 1f-ios for now
                  [:g [:km "cursor: zig."]]

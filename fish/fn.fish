@@ -91,13 +91,14 @@ function :p
     bun dev --port $argv
 end
 
-function r
-    if not set -q argv[1]
-        encore run
-    else
-        encore $argv
-    end
-end
+# TODO: move
+# function r
+#     if not set -q argv[1]
+#         encore run
+#     else
+#         encore $argv
+#     end
+# end
 
 function i
     if not set -q argv[1]

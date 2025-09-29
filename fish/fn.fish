@@ -366,9 +366,9 @@ function cpp
     watchexec --no-vcs-ignore --restart --exts cpp --clear --project-origin . "tput reset && make -C build && src/main"
 end
 
-function m
-    watchexec --no-vcs-ignore --restart --exts mbt --clear --project-origin . -q "tput reset && moon run $argv"
-end
+# function m
+#     watchexec --no-vcs-ignore --restart --exts mbt --clear --project-origin . -q "tput reset && moon run $argv"
+# end
 
 function nv
     if not set -q argv[1]
@@ -1327,4 +1327,12 @@ end
 
 function j
     f commitPush
+end
+
+function ma
+    git checkout main
+end
+
+function m
+    git checkout -
 end

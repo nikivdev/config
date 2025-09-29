@@ -1240,8 +1240,8 @@
                  [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  [:quote [:km "new Reddit post (in Arc)"]]
                  [:u [:km "clear active todo"]]
-                 [:i [:alfred "active todo" "nikiv"]]
-                 [:o [:km "Things: new top task (Today)"]] ; TODO: make sure to switch to window with `Today`
+                 [:i [:alfred "active todo" "nikiv"]] ; TODO: add somewhere
+                 [:o [:km "new X post (in Arc)"]]
                  [:p [:km "Things: new task at bottom (Today)"]] ; TODO: make sure to switch to window with `Today`
                  [:left_command [:km "open: Photos"]]
                  [:quote :!CT5] ; Sleep display
@@ -1251,7 +1251,7 @@
                  [:z :!TOCbackslash] ; Switch language (Russian <-> English)
                  [:b [:km "Things: Quick Entry (into Someday)"]]
                  [:n [:km "Things: Quick Entry (with context) (into Someday)"]]
-                 [:m [:km "new X post (in Arc)"]]
+                 [:m [:km "Things: new top task (Today)"]] ; TODO: make sure to switch to window with `Today`
                  [:spacebar [:km "open: Eagle"]]
                  ]}
                  ;[:o [:km "Things: new top task (Today)"]] ; TODO: make sure to switch to window with `Today`
@@ -1565,6 +1565,7 @@
                  [:o [:km "open: Loops"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "Search Discord"]]
+                 ;[:k [:km "Search Monologue messages"]]
                  [:k [:km "open: Telegram"]] ; TODO: should be replaced as its on space + l too
                  [:l [:km "Search Telegram"]]
                  [:semicolon [:km "open: Slack"]]
@@ -1576,8 +1577,7 @@
                  [:n [:km "New Spark email"]] ; TODO: add back when old habits die off
                  [:m [:km "open: Zoom"]]
                  [:comma [:km "open: Signal"]]
-                 [:period [:km "open: Discord (in Arc)"]]
-                 [:slash [:km "open: Google Meet"]]
+                 [:period [:km "open: Google Meet"]]
                  [:spacebar [:km "open: Contacts"]] ; TODO: replace with LA
                  ]}
                  ;[:k [:km "new X post (in Arc)"]]
@@ -2084,9 +2084,10 @@
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
+                 [:u [:km "open: Arc"]]
                  [:i [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
                  [:o [:km "open: X Feed (in Arc)"]]
-                 [:p [:km "open: Arc"]]
+                 [:p [:km "open: X profile (in Arc)"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
                  [:j [:km "open: Discord"]]
                  [:k [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
@@ -2099,6 +2100,7 @@
                  [:n [:km "open: X Messages (in Arc)"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:period :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)
+                 [:slash [:km "open: Discord (in Arc)"]]
                  ]}
                  ;[:p [:km "web: SuperCut workspace"]]
                  ;[:a [:km "open: X Pro (search or post)"]]

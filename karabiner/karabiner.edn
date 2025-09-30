@@ -1541,12 +1541,17 @@
                  ;[:g [:km "w: Grafbase LA logs"]]
                  ;[:spacebar :!COSn]]} ; Selection -> GitHub ; TODO: move it to another key (on s?)
         ; TODO: move to 1f sessions (with ghostty embedded)
-        {:des "tilkey (actions + open files)"
+        {:des "tilkey (agents)"
          :rules [:tilde-mode
-                  [:n [:km "ghostty: new"]]
-                  [:p [:km "ghostty: gpton"]]
-                  [:semicolon [:km "ghostty: home"]] ; TODO: make work
+                  ;[:w [:km "warp: flow-py"]] ; TODO: setup
+                  [:d [:km "warp: gpton"]]
+                  [:j [:km "warp: flow-ts"]]
+                  [:l [:km "warp: gpton"]]
+                  [:semicolon [:km "warp: 1f"]]
+                  [:n [:km "warp: new"]]
+                  [:spacebar [:km "warp: flow"]]
                  ]}
+                 ;[:semicolon [:km "ghostty: home"]] ; TODO: make work. or move to another key
                  ; TODO: move run .. to separate key
                   ;[:l [:km "open: EdgeDB Cloud"]]
                   ;[:k [:km "paste: That worked 🖤"]]

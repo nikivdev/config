@@ -214,15 +214,18 @@
         ; :rules [[:non_us_backslash [:km "Karabiner on/off"]]]}
         {:des "sim"
          :rules [
-                 [[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
+                 [[:j :k] [:km "open Safari new tab"]]
                  [[:j :l] :!CTOSspacebar] ; Alfred
                  [[:k :l] :!COS9] ; Raycast
-                 [[:l :n] [:alfred "run" "iansinnott.keyboardmaestro"]]
-                 [[:l :m] [:raycast "renfei_song/snippetslab/index"]] ; TODO: move to own tool + a way to preview snippets inline
-                 [[:j :semicolon] [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]] ; TODO: improve
-                 [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
-                 [[:k :n] [:km "open: Dash (with search)"]]
+                 [[:j :semicolon] [:alfred "run" "iansinnott.keyboardmaestro"]]
+                 [[:l :m] [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]] ; TODO: improve. use my own ver.
+                 [[:k :m] [:km "open YouTube search"]]
                  ]}
+                 ;[[:k :n] [:km "open: Dash (with search)"]]
+                 ;[:m [:km "open: Safari Technology Preview"]]
+                 ;[[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
+                 ;[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]] ; TODO: fix
+                 ;[[:l :m] [:raycast "renfei_song/snippetslab/index"]] ; TODO: move to own tool + a way to preview snippets inline (move to better solution)
                  ;[[:j :semicolon] :!CSspacebar] ; Kunkun
                  ;[[:j :semicolon] [:alfred "run" "iansinnott.keyboardmaestro"]]
                  ;[[:l :n] :!TOSr] ; ScriptKit
@@ -291,6 +294,8 @@
                  [:slash [:km "cursor: deno-gh"]]
                  [:spacebar [:km "cursor: swift-gh"]]
                  ]}
+                 ;[:1 [:km "cursor: encore."]]
+                 ;[:4 [:km "cursor: hono."]] ; + openapi gen
                  ;[:semicolon [:km "cursor: qdrant-gh"]]
                 ;;  [:w [:km "cursor: serwist-gh"]]
                 ;;  [:escape [:km "cursor: tailwind-gh"]]
@@ -547,6 +552,7 @@
                  [:h [:km "edit: GitHub Bio"]]
                  [:j [:km "cursor: ~/i/ts/scripts/i.ts"]]
                  [:k [:km "cursor: config:fish/config.fish"]]
+                 [:spacebar [:km "New KM global macro"]]
                  ]}
                  ;[:f [:km "Get time in SF"]]
                  ;[:d [:km "Open Dash and search docsets"]]
@@ -629,10 +635,11 @@
                  [:n [:km "open: Modal Notebooks"]]
                  [:m [:km "open: Notion"]]
                  [:period [:km "open: Sublime Merge"]]
-                 [:slash [:km "open: GitButler"]]
+                 [:slash [:km "open: Safari Technology Preview"]]
                  [:left_command [:km "open: Reader"]]
                  [:spacebar [:km "open: Warp"]]
                  ]}
+                 ;[:slash [:km "open: GitButler"]]
                  ;[:b [:km "open: Colab"]]
                  ;[:v [:km "open: VSCode Insiders"]]
                  ;[:quote [:km "open: Bike"]]
@@ -1229,7 +1236,6 @@
                  [:tab [:km "open: tldraw"]]
                  [:escape [:km "open: Excalidraw"]]
                  [:a [:km "open: Chrome Canary"]]
-                 ;[:s [:km "open: Safari Technology Preview"]]
                  [:s [:km "open: Safari Technology Preview (search GitHub)"]]
                  [:d [:km "open: Simulator"]]
                  ;[:d [:km "open: Electron"]] ; TODO: replace with tauri web or wails (if its better, settle on one)
@@ -1330,7 +1336,6 @@
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:caps_lock [:km "Go to KM group of current app from picklist"]]
                  [:a [:km "Go to KM group of current app"]]
-                 [:s [:km "New KM global macro"]]
                  [:d [:km "Dismiss notifications"]]
                  [:h :!CSOa] ; Move window left
                  [:k :!COSf] ; Maximize window
@@ -1353,23 +1358,19 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (workspaces)"
          :rules [:escape-mode
-                 ;[:1 [:km "cursor: elysia."]]
-                 [:1 [:km "cursor: hono."]] ; + openapi gen
+                 [:1 [:km "cursor: elysia."]]
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: mastra-gh"]]
-                 [:4 [:km "cursor: encore."]]
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: rust."]]
-                 [:t [:km "cursor: client."]]
+                 [:r [:km "cursor: friendik."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
-                 [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: kus."]]
-                 [:d [:km "cursor: friendik."]]
+                 [:s [:km "cursor: rust."]]
+                 [:d [:km "cursor: gpton."]]
                  [:f [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too) 1f-ios for now
                  [:g [:km "cursor: zig."]]
                  [:h [:km "cursor: effect."]]
@@ -1381,7 +1382,6 @@
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: swift."]]
-                 [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
                  [:comma [:km "cursor: editor."]] ; vscode / zed
@@ -1390,6 +1390,8 @@
                  [:left_command [:km "cursor: ui."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:1 [:km "cursor: elysia."]]
+                 ;[:s [:km "cursor: kus."]]
                  ;[:s [:km "cursor: docs."]]
                  ;[:a [:km "cursor: ui."]] ; TODO: moved to flow. too
                  ;[:t [:km "cursor: ext."]] ; ext, client, AS dash (move it into 1F/SB later)

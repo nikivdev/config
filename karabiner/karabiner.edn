@@ -1361,9 +1361,8 @@
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: mbt."]]
+                 [:r [:km "cursor: rust."]]
                  [:t [:km "cursor: client."]]
-                 ;[:s [:km "cursor: docs."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; TODO: move this to p later, & sb is o
@@ -1386,11 +1385,12 @@
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
                  [:comma [:km "cursor: editor."]] ; vscode / zed
-                 [:period [:km "cursor: rust."]]
+                 [:period [:km "cursor: mbt."]]
                  [:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)
                  [:left_command [:km "cursor: ui."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:s [:km "cursor: docs."]]
                  ;[:a [:km "cursor: ui."]] ; TODO: moved to flow. too
                  ;[:t [:km "cursor: ext."]] ; ext, client, AS dash (move it into 1F/SB later)
                  ;[:m [:km "cursor: 1f-ios."]] ; TODO: briefly. then move to just 1f. (& bring mojo. here)

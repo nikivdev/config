@@ -1,6 +1,6 @@
 alias cwd="pwd | pbcopy"
 alias pi="pnpm i"
-alias js="just s" # TODO: do with watch like bun --watch
+# alias js="just s" # TODO: do with watch like bun --watch
 alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
 alias dF="cd ~/src/pause && eza"
@@ -65,18 +65,18 @@ end
 # _functions
 # TODO: make completions for `: ` so it gets the scripts found in package.json
 # below is maybe hacky way to do it but it has to by dynamic
-function :
-    if not set -q argv[1]
-        bun dev
-    # if ` <port-number>`, run `bun dev --port 300<port-number>`
-    else if string match -qr '^[0-9]+$' $argv[1]
-        set -l port_suffix $argv[1]
-        set -l full_port "300$port_suffix"
-        bun dev --port $full_port
-    else
-        bun $argv
-    end
-end
+# function :
+#     if not set -q argv[1]
+#         bun dev
+#     # if ` <port-number>`, run `bun dev --port 300<port-number>`
+#     else if string match -qr '^[0-9]+$' $argv[1]
+#         set -l port_suffix $argv[1]
+#         set -l full_port "300$port_suffix"
+#         bun dev --port $full_port
+#     else
+#         bun $argv
+#     end
+# end
 
 # TODO: move to another key
 # function j
@@ -1335,13 +1335,25 @@ function j
     end
 end
 
+function jd
+   task dev
+end
+
+function je
+   task deploy
+end
+
+function js
+   task setup
+end
+
 function jf
    task flow -- $argv
 end
 
 
 # TODO: improve, snapshot, allow to pass command to do `j <command>`
-function k
+function :
     f commitPush
 end
 
@@ -1352,3 +1364,11 @@ end
 # function m
 #     git checkout -
 # end
+
+function gitOverwrite
+    rm -rf .git
+    git add .
+    git commit -m "."
+    gitSetSshOrigin
+    git push --force
+end

@@ -1369,7 +1369,7 @@
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: gleam."]] ; + elixir
+                 [:s [:km "cursor: gleam."]] ; + elixir
                  [:d [:km "cursor: gpton."]]
                  [:f [:km "cursor: wip."]]
                  [:g [:km "cursor: zig."]]

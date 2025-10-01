@@ -1358,14 +1358,13 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (workspaces)"
          :rules [:escape-mode
-                 [:1 [:km "cursor: elysia."]]
+                 [:1 [:km "cursor: hono."]] ; + cap & web, openapi
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: mastra-gh"]]
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: friendik."]]
-                 [:t [:km "cursor: editor."]] ; vscode/zed (includes ext.)
+                 [:r [:km "cursor: editor."]] ; vscode + ext.
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
@@ -1381,6 +1380,7 @@
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
+                 [:quote [:km "cursor: friendik."]] ; part of swift.
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: zig."]] ; includes ghostty & bun
@@ -1391,6 +1391,7 @@
                  [:slash [:km "cursor: rust."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:1 [:km "cursor: elysia."]]
                  ;[:b [:km "cursor: bun."]]
                  ;[:comma [:km "cursor: editor."]] ; vscode / zed
                  ;[:b [:km "cursor: blade."]] ; with jazz (& elements of convex)
@@ -1547,14 +1548,24 @@
         ; TODO: move to 1f sessions (with ghostty embedded)
         {:des "tilkey (agents)"
          :rules [:tilde-mode
-                  ;[:w [:km "warp: flow-py"]] ; TODO: setup
-                  [:d [:km "warp: gpton"]]
-                  [:j [:km "warp: flow-ts"]]
-                  [:k [:km "warp: nikiv"]] ; TODO: use it more
+                  [:w [:km "warp: py"]]
+                  [:e [:km "warp: go"]]
+                  [:i [:km "warp: gitedit"]]
+                  [:o [:km "warp: sb"]]
+                  [:p [:km "warp: cpp"]]
+                  [:f [:km "warp: tools"]]
+                  [:g [:km "warp: gpton"]]
+                  [:j [:km "warp: ts"]]
+                  [:k [:km "warp: nikiv"]]
                   [:l [:km "warp: la"]]
                   [:semicolon [:km "warp: 1f"]]
+                  [:v [:km "warp: zig"]]
+                  [:b [:km "warp: mbt"]]
                   [:n [:km "warp: new"]]
-                  [:spacebar [:km "warp: flow"]]
+                  [:m [:km "warp: mojo"]]
+                  [:period [:km "warp: swift"]]
+                  [:slash [:km "warp: rust"]]
+                  [:spacebar [:km "warp: tmp"]]
                  ]}
                  ;[:semicolon [:km "ghostty: home"]] ; TODO: make work. or move to another key
                  ; TODO: move run .. to separate key

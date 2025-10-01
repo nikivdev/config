@@ -50,6 +50,7 @@
     "*.bike": true,
     ".env": true,
     ".gitignore": true,
+    ".npm-cache": true,
     "scripts/past.ts": true,
     ".ronin": true,
     "bun.lock": true,

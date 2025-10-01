@@ -1368,9 +1368,10 @@
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
+                 [:p [:km "cursor: cpp."]] ; mostly useful for electron
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: raycast."]] ; includes alfred too
+                 [:s [:km "cursor: search."]] ; includes raycast/alfred + mirror searches to s.nikiv.dev
                  [:d [:km "cursor: deps."]] ; effect, blade, jazz/garden, convex, ai sdk
                  [:f [:km "cursor: tools."]] ; includes ui. (tailwind/panda) + wip stuff (extract as tool or lib etc.)
                  [:g [:km "cursor: gpton."]] ; includes game dev
@@ -1379,6 +1380,7 @@
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
+                 [:quote [:km "cursor: friendik."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: zig."]] ; includes ghostty & bun

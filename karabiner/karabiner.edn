@@ -1364,16 +1364,16 @@
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: raycast."]] ; includes alfred too
+                 [:r [:km "cursor: editor."]] ; vscode/zed (includes ext.)
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: gpton."]] ; includes game dev
+                 [:s [:km "cursor: raycast."]] ; includes alfred too
                  [:d [:km "cursor: deps."]] ; effect, blade, jazz/garden, convex, ai sdk
                  [:f [:km "cursor: tools."]] ; includes ui. (tailwind/panda) + wip stuff (extract as tool or lib etc.)
-                 [:g [:km "cursor: editor."]] ; vscode/zed (includes ext.)
+                 [:g [:km "cursor: gpton."]] ; includes game dev
                  [:h [:km "cursor: opencode."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.

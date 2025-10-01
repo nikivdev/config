@@ -1369,27 +1369,28 @@
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:s [:km "cursor: gleam."]] ; + elixir
-                 [:d [:km "cursor: gpton."]]
-                 [:f [:km "cursor: wip."]]
-                 [:g [:km "cursor: zig."]]
-                 [:h [:km "cursor: deps."]] ; effect, blade, jazz/garden, convex
+                 [:a [:km "cursor: gleam."]] ; + elixir
+                 [:s [:km "cursor: gpton."]] ; includes game dev
+                 [:d [:km "cursor: deps."]] ; effect, blade, jazz/garden, convex
+                 [:f [:km "cursor: tools."]] ; includes ui. (tailwind/panda) + wip stuff (extract as tool or lib etc.)
+                 [:g [:km "cursor: vscode."]]
+                 [:h [:km "cursor: opencode."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: opencode."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: tools."]] ; includes ui. (tailwind/panda)
-                 [:b [:km "cursor: mbt."]]
+                 [:v [:km "cursor: zig."]] ; includes ghostty & bun
+                 [:b [:km "cursor: mbt."]] ; TODO: mby move
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
-                 [:comma [:km "cursor: editor."]] ; vscode / zed
                  [:period [:km "cursor: swift."]] ; includes friendik
                  [:slash [:km "cursor: rust."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:b [:km "cursor: bun."]]
+                 ;[:comma [:km "cursor: editor."]] ; vscode / zed
                  ;[:b [:km "cursor: blade."]] ; with jazz (& elements of convex)
                  ;[:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)
                  ;[:left_command [:km "cursor: ui."]]

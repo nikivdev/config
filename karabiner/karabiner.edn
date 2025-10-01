@@ -1365,15 +1365,15 @@
                  [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: friendik."]] ; is also part of swift. (start with own version of KM light)
+                 [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: mbt."]]
                  [:d [:km "cursor: gpton."]]
-                 [:f [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too) 1f-ios for now
+                 [:f [:km "cursor: wip."]]
                  [:g [:km "cursor: zig."]]
-                 [:h [:km "cursor: effect."]]
+                 [:h [:km "cursor: deps."]] ; effect, blade, jazz/garden, convex
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
@@ -1382,6 +1382,7 @@
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: tools."]] ; includes ui. (tailwind/panda)
+                 [:b [:km "cursor: mbt."]]
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
                  [:comma [:km "cursor: editor."]] ; vscode / zed
@@ -1389,10 +1390,10 @@
                  [:slash [:km "cursor: rust."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:b [:km "cursor: blade."]] ; with jazz (& elements of convex)
                  ;[:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)
                  ;[:left_command [:km "cursor: ui."]]
                  ;[:1 [:km "cursor: elysia."]]
-                 ;[:s [:km "cursor: kus."]]
                  ;[:s [:km "cursor: docs."]]
                  ;[:t [:km "cursor: ext."]] ; ext, client, AS dash (move it into 1F/SB later)
                  ;[:m [:km "cursor: 1f-ios."]] ; TODO: briefly. then move to just 1f. (& bring mojo. here)

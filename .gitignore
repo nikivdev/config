@@ -13,7 +13,6 @@ node_modules
 package-lock.json
 yarn.lock
 .vercel
-*.bike
 *.db
 .repo_ignore
 i.*
@@ -26,3 +25,4 @@ past/
 *.log
 private
 .blade
+.npm-cache

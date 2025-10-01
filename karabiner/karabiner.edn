@@ -1364,12 +1364,12 @@
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: friendik."]]
+                 [:r [:km "cursor: friendik."]] ; is also part of swift. (start with own version of KM light)
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: rust."]]
+                 [:s [:km "cursor: mbt."]]
                  [:d [:km "cursor: gpton."]]
                  [:f [:km "cursor: core."]] ; garden + reatom + convex (switching) (acts like deps. or wip. at times) (docs. too) 1f-ios for now
                  [:g [:km "cursor: zig."]]
@@ -1381,19 +1381,19 @@
                  [:quote [:km "cursor: opencode."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: swift."]]
+                 [:v [:km "cursor: tools."]] ; includes ui. (tailwind/panda)
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
                  [:comma [:km "cursor: editor."]] ; vscode / zed
-                 [:period [:km "cursor: mbt."]]
-                 [:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)
-                 [:left_command [:km "cursor: ui."]]
+                 [:period [:km "cursor: swift."]] ; includes friendik
+                 [:slash [:km "cursor: rust."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)
+                 ;[:left_command [:km "cursor: ui."]]
                  ;[:1 [:km "cursor: elysia."]]
                  ;[:s [:km "cursor: kus."]]
                  ;[:s [:km "cursor: docs."]]
-                 ;[:a [:km "cursor: ui."]] ; TODO: moved to flow. too
                  ;[:t [:km "cursor: ext."]] ; ext, client, AS dash (move it into 1F/SB later)
                  ;[:m [:km "cursor: 1f-ios."]] ; TODO: briefly. then move to just 1f. (& bring mojo. here)
                  ;[:comma [:km "cursor: zig."]]
@@ -1546,7 +1546,8 @@
                   ;[:w [:km "warp: flow-py"]] ; TODO: setup
                   [:d [:km "warp: gpton"]]
                   [:j [:km "warp: flow-ts"]]
-                  [:l [:km "warp: gpton"]]
+                  [:k [:km "warp: nikiv"]] ; TODO: use it more
+                  [:l [:km "warp: la"]]
                   [:semicolon [:km "warp: 1f"]]
                   [:n [:km "warp: new"]]
                   [:spacebar [:km "warp: flow"]]

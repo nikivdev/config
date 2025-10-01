@@ -663,10 +663,6 @@ end
 #     end
 # end
 
-function k
-    bunx $argv
-end
-
 function :ts
     bun --watch ~/src/ts/lib/ts-utils/scripts/run.ts
 end
@@ -1322,10 +1318,30 @@ function ve
 end
 
 function .
-    f deploy
+    if test (count $argv) -eq 0
+        f deploy
+    else
+        bunx $argv
+    end
 end
 
+# TODO: fzf list all commands
+# `k <thing> create thing in Taskfile & exec it instantly`
 function j
+    if test (count $argv) -eq 0
+        task
+    else
+        task $argv
+    end
+end
+
+function jf
+   task flow -- $argv
+end
+
+
+# TODO: improve, snapshot, allow to pass command to do `j <command>`
+function k
     f commitPush
 end
 
@@ -1333,6 +1349,6 @@ function ma
     git checkout main
 end
 
-function m
-    git checkout -
-end
+# function m
+#     git checkout -
+# end

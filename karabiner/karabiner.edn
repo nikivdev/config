@@ -1383,8 +1383,8 @@
                  [:quote [:km "cursor: friendik."]] ; part of swift.
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: zig."]] ; includes ghostty & bun
-                 [:b [:km "cursor: mbt."]] ; TODO: mby move
+                 [:v [:km "cursor: mbt."]]
+                 [:b [:km "cursor: zig."]] ; includes ghostty & bun
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
                  [:period [:km "cursor: swift."]] ; includes friendik

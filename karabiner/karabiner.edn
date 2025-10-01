@@ -1242,7 +1242,7 @@
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  [:k [:km "New Linear task"]]
-                 [:l [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
+                 [:l [:alfred "search bookmarks" "net.deanishe.alfred.safari"]] ; TODO: make custom, not just safari bookmarks but context dependant things
                  [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  [:quote [:km "new Reddit post (in Arc)"]]
                  [:u [:km "clear active todo"]]
@@ -1584,25 +1584,25 @@
                  [:e [:km "open: Telegram"]]
                  [:f [:km "open: Spark"]]
                  [:u [:km "open: Zulip"]]
-                 [:i :!CO7] ; open Tuple menu bar
+                 ;[:i :!CO7] ; open Tuple menu bar
                  [:o [:km "open: Loops"]]
-                 [:g [:alfred "search contacts" "nikivi.search.content"]]
+                 ;[:h :!COTS6] ; Tuple hang up
                  [:j [:km "Search Discord"]]
-                 ;[:k [:km "Search Monologue messages"]]
-                 [:k [:km "open: Telegram"]] ; TODO: should be replaced as its on space + l too
+                 [:k [:km "open: Zoom"]]
                  [:l [:km "Search Telegram"]]
                  [:semicolon [:km "open: Slack"]]
-                 [:h :!COTS6] ; Tuple hang up
                  [:u [:km "Create new contact"]]
                  [:c [:km "open: WhatsApp"]]
-                 [:v [:km "open: Resend"]]
                  [:b [:km "open: Cal"]]
                  [:n [:km "New Spark email"]] ; TODO: add back when old habits die off
-                 [:m [:km "open: Zoom"]]
-                 [:comma [:km "open: Signal"]]
-                 [:period [:km "open: Google Meet"]]
+                 [:m [:km "open: Resend"]]
+                 [:period [:alfred "search contacts" "nikivi.search.content"]]
+                 [:slash [:km "open: Google Meet"]]
                  [:spacebar [:km "open: Contacts"]] ; TODO: replace with LA
                  ]}
+                 ;[:comma [:km "open: Signal"]]
+                 ;[:k [:km "Search Monologue messages"]]
+                 ;[:k [:km "open: Telegram"]] ; TODO: should be replaced as its on space + l too
                  ;[:k [:km "new X post (in Arc)"]]
                  ;[:n [:km "new Reddit post (in Arc)"]]
                  ;[:m [:km "open: Element"]]

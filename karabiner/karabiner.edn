@@ -636,9 +636,10 @@
                  [:m [:km "open: Notion"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:slash [:km "open: Safari Technology Preview"]]
-                 [:left_command [:km "open: Reader"]]
                  [:spacebar [:km "open: Warp"]]
                  ]}
+                 ;[:left_command [:km "open: Remnote"]]
+                 ;[:left_command [:km "open: Reader"]]
                  ;[:slash [:km "open: GitButler"]]
                  ;[:b [:km "open: Colab"]]
                  ;[:v [:km "open: VSCode Insiders"]]
@@ -1364,7 +1365,8 @@
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: py."]] ; includes training/evals
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: editor."]] ; vscode + ext.
+                 [:r [:km "cursor: vscode."]] ; vscode + ext.
+                 [:t [:km "cursor: eventsline."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
@@ -1373,24 +1375,24 @@
                  [:a [:km "cursor: gleam."]] ; + elixir
                  [:s [:km "cursor: search."]] ; includes raycast/alfred + mirror searches to s.nikiv.dev
                  [:d [:km "cursor: deps."]] ; effect, blade, jazz/garden, convex, ai sdk
-                 [:f [:km "cursor: tools."]] ; includes ui. (tailwind/panda) + wip stuff (extract as tool or lib etc.)
+                 [:f [:km "cursor: f."]] ; friendik
                  [:g [:km "cursor: gpton."]] ; includes game dev
                  [:h [:km "cursor: opencode."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: friendik."]] ; part of swift.
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: mbt."]]
                  [:b [:km "cursor: zig."]] ; includes ghostty & bun
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
-                 [:period [:km "cursor: swift."]] ; includes friendik
+                 [:period [:km "cursor: swift."]]
                  [:slash [:km "cursor: rust."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
+                 ;[:f [:km "cursor: tools."]] ; includes ui. (tailwind/panda) + wip stuff (extract as tool or lib etc.)
                  ;[:1 [:km "cursor: elysia."]]
                  ;[:b [:km "cursor: bun."]]
                  ;[:comma [:km "cursor: editor."]] ; vscode / zed
@@ -1588,14 +1590,15 @@
                  [:o [:km "open: Loops"]]
                  ;[:h :!COTS6] ; Tuple hang up
                  [:j [:km "Search Discord"]]
-                 [:k [:km "open: Zoom"]]
+                 [:k [:km "open: Comet"]]
                  [:l [:km "Search Telegram"]]
                  [:semicolon [:km "open: Slack"]]
                  [:u [:km "Create new contact"]]
                  [:c [:km "open: WhatsApp"]]
+                 [:v [:km "open: Resend"]]
                  [:b [:km "open: Cal"]]
                  [:n [:km "New Spark email"]] ; TODO: add back when old habits die off
-                 [:m [:km "open: Resend"]]
+                 [:m [:km "open: Zoom"]]
                  [:period [:alfred "search contacts" "nikivi.search.content"]]
                  [:slash [:km "open: Google Meet"]]
                  [:spacebar [:km "open: Contacts"]] ; TODO: replace with LA

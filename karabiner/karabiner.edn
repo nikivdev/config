@@ -1363,7 +1363,7 @@
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: mastra-gh"]]
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
-                 [:w [:km "cursor: py."]] ; includes training/evals
+                 [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: vscode."]] ; vscode + ext.
                  [:t [:km "cursor: eventsline."]]
@@ -1384,12 +1384,12 @@
                  [:semicolon [:km "cursor: 1f."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: mbt."]]
+                 [:v [:km "cursor: py."]] ; includes training/evals
                  [:b [:km "cursor: zig."]] ; includes ghostty & bun
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
                  [:period [:km "cursor: swift."]]
-                 [:slash [:km "cursor: rust."]]
+                 [:slash [:km "cursor: mbt."]]
                  [:spacebar [:km "cursor: other"]]
                  ]}
                  ;[:f [:km "cursor: tools."]] ; includes ui. (tailwind/panda) + wip stuff (extract as tool or lib etc.)

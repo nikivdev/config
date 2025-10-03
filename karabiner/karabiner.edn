@@ -1590,15 +1590,14 @@
                  [:o [:km "open: Loops"]]
                  ;[:h :!COTS6] ; Tuple hang up
                  [:j [:km "Search Discord"]]
-                 [:k [:km "open: Comet"]]
+                 [:k [:km "open: Zoom"]]
                  [:l [:km "Search Telegram"]]
                  [:semicolon [:km "open: Slack"]]
                  [:u [:km "Create new contact"]]
                  [:c [:km "open: WhatsApp"]]
-                 [:v [:km "open: Resend"]]
                  [:b [:km "open: Cal"]]
                  [:n [:km "New Spark email"]] ; TODO: add back when old habits die off
-                 [:m [:km "open: Zoom"]]
+                 [:m [:km "open: Resend"]]
                  [:period [:alfred "search contacts" "nikivi.search.content"]]
                  [:slash [:km "open: Google Meet"]]
                  [:spacebar [:km "open: Contacts"]] ; TODO: replace with LA
@@ -2118,8 +2117,8 @@
                  [:j [:km "open: Discord"]]
                  [:k [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
                  [:l [:km "open: Telegram"]]
-                 [:semicolon [:km "open: Dia"]]
-                 [:quote [:km "open: Safari Technology Preview"]]
+                 [:semicolon [:km "open: Comet"]]
+                 [:quote [:km "open: Dia"]] ; TODO: move to other key prob
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
                  [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind
                  [:b [:km "new safari tab"]]
@@ -2128,6 +2127,7 @@
                  [:period :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)
                  [:slash [:km "open: Discord (in Arc)"]]
                  ]}
+                 ;[:quote [:km "open: Safari Technology Preview"]]
                  ;[:p [:km "web: SuperCut workspace"]]
                  ;[:a [:km "open: X Pro (search or post)"]]
                  ;[:n [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks

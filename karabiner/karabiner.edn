@@ -1365,15 +1365,15 @@
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: vscode."]] ; vscode + ext.
-                 [:t [:km "cursor: eventsline."]]
+                 [:r [:km "cursor: effect."]]
+                 [:t [:km "cursor: vscode."]] ; vscode + ext.
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: cpp."]] ; mostly useful for electron
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: search."]] ; includes raycast/alfred + mirror searches to s.nikiv.dev
+                 [:s [:km "cursor: search."]] ; includes raycast/alfred + mirror searches to s.nikiv.dev (+ ingest)
                  [:d [:km "cursor: deps."]] ; effect, blade, jazz/garden, convex, ai sdk
                  [:f [:km "cursor: f."]] ; friendik
                  [:g [:km "cursor: gpton."]] ; includes game dev
@@ -1384,17 +1384,18 @@
                  [:semicolon [:km "cursor: 1f."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: py."]] ; includes training/evals
-                 [:b [:km "cursor: zig."]] ; includes ghostty & bun
+                 [:v [:km "cursor: other"]]
+                 [:b [:km "cursor: bun."]]
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
                  [:period [:km "cursor: swift."]]
                  [:slash [:km "cursor: mbt."]]
-                 [:spacebar [:km "cursor: other"]]
+                 [:left_command [:km "cursor: zig."]] ; includes ghostty & bun
+                 [:spacebar [:km "cursor: py."]] ; includes training/evals
                  ]}
+                 ;[:t [:km "cursor: eventsline."]]
                  ;[:f [:km "cursor: tools."]] ; includes ui. (tailwind/panda) + wip stuff (extract as tool or lib etc.)
                  ;[:1 [:km "cursor: elysia."]]
-                 ;[:b [:km "cursor: bun."]]
                  ;[:comma [:km "cursor: editor."]] ; vscode / zed
                  ;[:b [:km "cursor: blade."]] ; with jazz (& elements of convex)
                  ;[:slash [:km "cursor: genx."]] ; ai train, evals, models (global dash)

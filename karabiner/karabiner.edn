@@ -166,7 +166,8 @@
                  [:a :!Cc] ; Copy
                  [:d :delete_or_backspace]
                  [:f :return_or_enter]
-                 [:g :!Ctab]
+                 ;[:g :!Ctab] ; for some reason breaking now, it does not disable the switch
+                 [:g [:!Ctab :return_or_enter]] ; so now forced to return key after..
                  ; TODO: fix up
                  ;[:period [:km "Select word & move to Claude"]]
                  ;[:comma [:km "Select word & move to Claude (and run instantly)"]]

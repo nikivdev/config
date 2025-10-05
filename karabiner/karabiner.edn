@@ -396,14 +396,14 @@
                  [:i [:km "cursor: tailwind-gh"]]
                  [:o [:km "cursor: zod-gh"]]
                  [:p [:km "cursor: temporal-gh"]]
-                 [:g [:km "cursor: trigger-gh"]]
                  [:f [:km "cursor: chef."]]
+                 [:g [:km "cursor: trigger-gh"]]
                  [:h [:km "cursor: hono."]]
                  [:k [:km "cursor: ax-gh"]]
                  [:l [:km "cursor: polar-gh"]]
+                 [:semicolon [:km "cursor: reatom."]]
                  [:b [:km "cursor: bluesky-gh"]]
                  [:n [:km "cursor: panda-gh"]] ; includes ark
-                 [:comma [:km "cursor: reatom."]]
                  [:spacebar [:km "cursor: jax-gh"]]
                  ]}
                  ;[:comma [:km "cursor: kotlin-gh"]]

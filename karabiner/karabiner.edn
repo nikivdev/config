@@ -640,13 +640,14 @@
                  [:quote [:km "open: n8n"]]
                  [:c [:km "open: Spotify"]]
                  [:v [:km "open: Reader"]]
-                 [:n [:km "open: Conar"]] ; replace with own tool (friendik?)
-                 [:m [:km "open: Notion"]]
+                 [:n [:km "open: Notion"]]
+                 [:m [:km "open: Convex"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:slash [:km "open: Modal Notebooks"]]
                  [:left_command [:km "open: Remnote"]]
                  [:spacebar [:km "open: Warp"]]
                  ]}
+                 ;[:n [:km "open: Conar"]] ; replace with own tool (friendik?)
                  ;[:left_command [:km "open: Remnote"]]
                  ;[:left_command [:km "open: Reader"]]
                  ;[:slash [:km "open: GitButler"]]
@@ -1000,11 +1001,10 @@
                  [:w [:km "open: Cloudflare"]]
                  [:e [:km "open: Vercel"]]
                  [:r [:km "open: Railway"]]
-                 [:t [:km "open: Stripe"]]
                  [:i [:km "open: Axiom"]]
                  [:escape [:km "open: Google Cloud"]]
                  [:a [:km "open: Grok"]]
-                 [:s [:km "open: Convex"]]
+                 [:s [:km "open: Stripe"]]
                  [:d [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard (move this to friendik)
                  [:f [:km "open: Claude"]]
                  [:g [:km "open: AWS"]]

@@ -266,7 +266,6 @@
                  ;[:period [:km "cursor: task-gh"]]
         {:des "1key (gh workspaces)" ; TODO: change below as its moved to p now (as its closer)
          :rules [:1-mode ; TODO: needs change prob
-                 [:e [:km "cursor: encore."]]
                  [:r [:km "cursor: gorealeaser-gh"]]
                  [:t [:km "cursor: tvix-gh"]]
                  [:y [:km "cursor: yaak-gh"]]
@@ -276,13 +275,11 @@
                  [:p [:km "cursor: pydantic-ai-gh"]]
                  [:d [:km "cursor: codanna-gh"]]
                  [:h [:km "cursor: ghostty-gh"]]
-                 [:f [:km "cursor: mbt-gh"]]
                  [:g [:km "cursor: gensx-gh"]]
                  [:h [:km "cursor: helix-db-gh"]]
                  [:j [:km "cursor: deno-std-gh"]]
                  [:k [:km "cursor: dspy-gh"]]
                  [:l [:km "cursor: gel-gh"]]
-                 [:semicolon [:km "cursor: mlx-gh"]]
                  [:quote [:km "cursor: meilisearch-gh"]]
                  [:c [:km "cursor: connar-gh"]]
                  [:v [:km "cursor: n8n-gh"]]
@@ -375,14 +372,9 @@
         {:des "2key (move + scripts + refactor + gh workspaces)"
          :rules [:2-mode
                  [:3 [:km "cursor: optique-gh"]] ; https://github.com/dahlia/optique
-                 [:e [:km "cursor: rust-gh"]]
                  [:r [:km "cursor: arktype-gh"]]
                  [:t [:km "cursor: react-gh"]] ; includes rn
                  [:u [:km "cursor: pulumi-gh"]]
-                 [:i [:km "cursor: swift-gh"]]
-                 [:o [:km "cursor: alchemy-gh"]]
-                 [:f [:km "cursor: cpython-gh"]]
-                 [:g [:km "cursor: zig-gh"]]
                  [:h :!Cleft_arrow]
                  [:j :!Cdown_arrow]
                  [:k :!Cup_arrow]
@@ -391,8 +383,6 @@
                  [:quote :!Odown_arrow]
                  [:v [:km "cursor: livestore-gh"]]
                  [:b [:km "cursor: biome-gh"]]
-                 [:n [:km "cursor: alchemy-gh"]]
-                 [:m [:km "cursor: mbt-gh"]]
                  [:period [:km "cursor: pytorch-gh"]]
                  [:slash [:km "cursor: tinygrad-gh"]]
                  [:spacebar [:km "cursor: codex-gh"]]
@@ -400,7 +390,6 @@
                  ;[:left_command [:km "cursor: mojo-gh"]]
         {:des "3key (gh workspaces)"
          :rules [:3-mode
-                 [:2 [:km "cursor: opentui-gh"]]
                  [:r [:km "cursor: restate-gh"]]
                  [:t [:km "cursor: better-auth-gh"]]
                  [:u [:km "cursor: unsloth-gh"]]
@@ -410,15 +399,11 @@
                  [:g [:km "cursor: trigger-gh"]]
                  [:f [:km "cursor: chef."]]
                  [:h [:km "cursor: hono."]]
-                 [:j [:km "cursor: go-ts-gh"]]
                  [:k [:km "cursor: ax-gh"]]
                  [:l [:km "cursor: polar-gh"]]
-                 [:semicolon [:km "cursor: ai-sdk-gh"]]
                  [:b [:km "cursor: bluesky-gh"]]
                  [:n [:km "cursor: panda-gh"]] ; includes ark
                  [:comma [:km "cursor: reatom."]]
-                 [:period [:km "cursor: tauri."]]
-                 [:slash [:km "cursor: convex."]]
                  [:spacebar [:km "cursor: jax-gh"]]
                  ]}
                  ;[:comma [:km "cursor: kotlin-gh"]]
@@ -543,21 +528,25 @@
                  ]}
         {:des "tabkey (gh workspaces for main deps)"
          :rules [:tab-mode
-                 [:q [:km "cursor: ai-sdk-gh"]]
                  [:w [:km "cursor: rust-gh"]]
                  [:e [:km "cursor: go-gh"]]
+                 [:r [:km "cursor: encore."]]
+                 [:t [:km "cursor: tiptap-gh"]]
+                 [:u [:km "cursor: opentui-gh"]]
                  [:i [:km "cursor: tauri-gh"]]
                  [:o [:km "cursor: solana-gh"]]
                  [:p [:km "cursor: electron-gh"]]
-                 [:a [:km "cursor: gleam-gh"]]
                  [:f [:km "cursor: convex-gh"]]
                  [:g [:km "cursor: zig-gh"]]
-                 [:h [:km "cursor: opentui-gh"]]
+                 [:h [:km "cursor: alchemy-gh"]]
                  [:j [:km "cursor: ts-gh"]]
-                 [:k [:km "cursor: blade-gh"]]
-                 [:l [:km "cursor: tiptap-gh"]]
+                 [:k [:km "cursor: ai-sdk-gh"]]
+                 [:l [:km "cursor: effect-gh"]]
                  [:semicolon [:km "cursor: jazz-gh"]]
+                 [:quote [:km "cursor: gleam-gh"]]
                  [:c [:km "cursor: nix-gh"]]
+                 [:n [:km "cursor: bun."]]
+                 [:m [:km "cursor: mlx-gh"]]
                  [:period [:km "cursor: swift-gh"]]
                  [:slash [:km "cursor: mbt-gh"]]
                  [:spacebar [:km "cursor: py-gh"]]
@@ -1445,15 +1434,14 @@
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
                  ; TODO: mby useful to have core. with just effect there
-                 [:r [:km "cursor: vscode."]] ; vscode + ext.
+                 [:r [:km "cursor: raycast."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: cpp."]] ; mostly useful for electron
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: gpton."]] ; games, rl
-                 [:d [:km "cursor: deps."]] ; effect, blade, jazz/garden, convex, ai sdk
+                 [:s [:km "cursor: vscode."]] ; vscode + ext.
+                 [:d [:km "cursor: gpton."]] ; games, rl
                  [:f [:km "cursor: f."]] ; friendik
                  [:g [:km "cursor: zig."]] ; includes ghostty & bun
                  [:h [:km "cursor: opencode."]]
@@ -1461,10 +1449,11 @@
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
+                 [:quote [:km "cursor: gleam."]] ; + elixir
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: other"]]
-                 [:b [:km "cursor: bun."]]
+                 [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: gen."]]
                  [:m [:km "cursor: mojo."]]
                  [:period [:km "cursor: swift."]]

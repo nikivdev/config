@@ -1858,7 +1858,7 @@
                  [:h [:km "edit: GitHub Bio"]]
                  [:j [:km "cursor: config:fish/i/fish/i.fish"]]
                  [:k [:km "cursor: config:fish/config.fish"]]
-                 [:l [:km "Test"]       ]
+                 [:l [:km "Test"]]
                  [:semicolon [:km "Go to test macro"]]
                  [:spacebar [:km "New KM global macro"]]
                  ]}

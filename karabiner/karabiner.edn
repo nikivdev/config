@@ -1434,8 +1434,7 @@
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
                  ; TODO: mby useful to have core. with just effect there
-                 [:r [:km "cursor: raycast."]]
-                 [:u [:km "cursor: kus."]]
+                 [:r [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: cpp."]] ; mostly useful for electron
@@ -1458,6 +1457,7 @@
                  [:m [:km "cursor: mojo."]]
                  [:period [:km "cursor: swift."]]
                  [:slash [:km "cursor: mbt."]]
+                 [:left_command [:km "cursor: raycast."]]
                  [:spacebar [:km "cursor: py."]] ; includes training/evals
                  ]}
                  ;[:s [:km "cursor: search."]] ; includes raycast/alfred + mirror searches to s.nikiv.dev (+ ingest) (moved to search & f.)

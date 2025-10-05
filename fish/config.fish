@@ -61,3 +61,5 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 # pnpm end
 fish_add_path /Users/nikiv/.pixi/bin
+# Added by zv setup
+source "/Users/nikiv/.zv/env.fish"

@@ -132,27 +132,27 @@
                  ;[:escape [:km "get last error from ~/log/cmd.log + current file as context"]]
                  ;[:escape [:km "get last error from ~/log/cmd.log + current file as context and paste into claude to fix"]]
                  ;[:escape [:km "get last error from ~/log/cmd.log + current file as context and paste into chatgpt to fix"]]
-        {:des "quotekey (gh workspaces)"
+        {:des "quotekey (?)"
          :rules [:quote-mode
-                 [:w [:km "cursor: nativewind-gh"]]
-                 [:e [:km "cursor: reanimated-gh"]]
-                 [:r [:km "cursor: nitro-gh"]]
-                 [:t [:km "cursor: mistral-rs-gh"]]
-                 [:u [:km "cursor: automerge-gh"]]
-                 [:o [:km "cursor: loco-gh"]]
-                 [:a [:km "cursor: openai-gh"]]
-                 [:s [:km "cursor: unistyles-gh"]]
-                 [:d [:km "cursor: deepseek-gh"]]
-                 [:g [:km "cursor: gemini-gh"]]
-                 [:k [:km "cursor: rn-mmkv-gh"]]
-                 [:g [:km "cursor: tamagui-gh"]]
-                 [:x [:km "cursor: mdx-gh"]]
-                 [:c [:km "cursor: anthropic-gh"]]
-                 [:v [:km "cursor: rn-vision-camera-gh"]]
-                 [:b [:km "cursor: rn-bottom-sheet-gh"]]
-                 [:m [:km "cursor: prisma-gh"]]
-                 [:spacebar [:km "cursor: k23-gh"]]
                  ]}
+                 ;[:w [:km "cursor: nativewind-gh"]]
+                 ;[:e [:km "cursor: reanimated-gh"]]
+                 ;[:r [:km "cursor: nitro-gh"]]
+                 ;[:t [:km "cursor: mistral-rs-gh"]]
+                 ;[:u [:km "cursor: automerge-gh"]]
+                 ;[:o [:km "cursor: loco-gh"]]
+                 ;[:a [:km "cursor: openai-gh"]]
+                 ;[:s [:km "cursor: unistyles-gh"]]
+                 ;[:d [:km "cursor: deepseek-gh"]]
+                 ;[:g [:km "cursor: gemini-gh"]]
+                 ;[:k [:km "cursor: rn-mmkv-gh"]]
+                 ;[:g [:km "cursor: tamagui-gh"]]
+                 ;[:x [:km "cursor: mdx-gh"]]
+                 ;[:c [:km "cursor: anthropic-gh"]]
+                 ;[:v [:km "cursor: rn-vision-camera-gh"]]
+                 ;[:b [:km "cursor: rn-bottom-sheet-gh"]]
+                 ;[:m [:km "cursor: prisma-gh"]]
+                 ;[:spacebar [:km "cursor: k23-gh"]]
         {:des "skey (essential)"
          :rules [:s-mode
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
@@ -263,11 +263,10 @@
                  ;[:semicolon [:km "cursor: wails-gh"]]
                  ;[:comma [:km "cursor: node-gh"]]
                  ;[:period [:km "cursor: task-gh"]]
-        {:des "1key (gh workspaces)"
-         :rules [:1-mode
-                 [:e [:km "cursor: rust-gh"]]
-                 [:e [:km "cursor: gorealeaser-gh"]]
-                 [:r [:km "cursor: jsr-gh"]]
+        {:des "1key (gh workspaces)" ; TODO: change below as its moved to p now (as its closer)
+         :rules [:1-mode ; TODO: needs change prob
+                 [:e [:km "cursor: encore."]]
+                 [:r [:km "cursor: gorealeaser-gh"]]
                  [:t [:km "cursor: tvix-gh"]]
                  [:y [:km "cursor: yaak-gh"]]
                  [:u [:km "cursor: supabase-gh"]]
@@ -289,12 +288,11 @@
                  [:b [:km "cursor: grafbase-gh"]]
                  [:n [:km "cursor: inngest-gh"]]
                  [:m [:km "cursor: victoria-metrics-gh"]]
-                 [:comma [:km "cursor: unison-gh"]]
-                 [:period [:km "cursor: go-gh"]]
                  [:slash [:km "cursor: deno-gh"]]
-                 [:spacebar [:km "cursor: swift-gh"]]
+                 [:period [:km "cursor: ts-pattern-gh"]] ; with github.com/aidenybai/pattycake TODO: move this prob
+                 [:spacebar [:km "cursor: jsr-gh"]]
                  ]}
-                 ;[:1 [:km "cursor: encore."]]
+                 ;[:comma [:km "cursor: unison-gh"]]
                  ;[:4 [:km "cursor: hono."]] ; + openapi gen
                  ;[:semicolon [:km "cursor: qdrant-gh"]]
                 ;;  [:w [:km "cursor: serwist-gh"]]
@@ -313,7 +311,6 @@
                  ;[:f [:km "cursor: urvafe-cli-gh"]]
                  ;[:c [:km "cursor: farcaster-gh"]]
                  ;[:b [:km "cursor: cobra-gh"]]
-                 ;[:n [:km "cursor: ts-pattern-gh"]] ; with github.com/aidenybai/pattycake
                  ;[:m [:km "cursor: million-gh"]]
                  ;[:comma [:km "cursor: a2a-gh"]] ; with github.com/google/adk-python
                  ;[:period [:km "cursor: agents-gh"]]
@@ -543,17 +540,28 @@
                  [:b [:km "cursor: browser-bee-gh"]]
                  [:spacebar [:km "cursor: n8n-gh"]]
                  ]}
-        {:des "tabkey (actions + files)"
+        {:des "tabkey (gh workspaces for main deps)"
          :rules [:tab-mode
-                 [:e [:km "Go to test macro"]]
-                 [:i [:km "cursor: config:fish/private.fish"]]
-                 [:o [:km "cursor: ~/src/config/fish/fn.fish"]] ; TODO: bind to run.swift, move fish alias to something nice too
-                 [:f [:km "Test"]       ]
-                 [:h [:km "edit: GitHub Bio"]]
-                 [:j [:km "cursor: ~/i/ts/scripts/i.ts"]]
-                 [:k [:km "cursor: config:fish/config.fish"]]
-                 [:spacebar [:km "New KM global macro"]]
+                 [:q [:km "cursor: ai-sdk-gh"]]
+                 [:w [:km "cursor: rust-gh"]]
+                 [:e [:km "cursor: go-gh"]]
+                 [:i [:km "cursor: tauri-gh"]]
+                 [:o [:km "cursor: solana-gh"]]
+                 [:p [:km "cursor: electron-gh"]]
+                 [:a [:km "cursor: gleam-gh"]]
+                 [:f [:km "cursor: convex-gh"]]
+                 [:g [:km "cursor: zig-gh"]]
+                 [:h [:km "cursor: opentui-gh"]]
+                 [:j [:km "cursor: ts-gh"]]
+                 [:k [:km "cursor: blade-gh"]]
+                 [:l [:km "cursor: tiptap-gh"]]
+                 [:semicolon [:km "cursor: jazz-gh"]]
+                 [:c [:km "cursor: nix-gh"]]
+                 [:period [:km "cursor: swift-gh"]]
+                 [:slash [:km "cursor: mbt-gh"]]
+                 [:spacebar [:km "cursor: py-gh"]]
                  ]}
+                 ;[:i [:km "cursor: gitea-gh"]]
                  ;[:f [:km "Get time in SF"]]
                  ;[:d [:km "Open Dash and search docsets"]]
                  ;[:hyphen [:km "cursor: vscode."]]
@@ -808,9 +816,49 @@
                  ;[:i [:km "open: NetNewsWire"]]
                  ;[:escape [:km "open: Preview"]]
                  ;[:spacebar [:km "Copied image into ChatGPT"]]]}
-        {:des "tkey (gh workspaces)"
+        {:des "tkey (sites)"
          :rules [:t-mode
+                 ; TODO: needs heavy update
+                 [:9 [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
+                 [:0 [:km "w: HN (show new)"]]
+                 [:q [:km "w: KM forum"]]
+                 [:w [:km "w: Swift forum"]]
+                 [:e [:km "w: Behance"]]
+                 [:n [:km "w: genx"]]
+                 [:r [:km "w: Medium (network)"]]
+                 [:u [:km "w: Product Hunt"]]
+                 [:i [:km "w: Dribble"]]
+                 [:o [:km "w: Pinboard"]]
+                 [:p [:km "w: Indie Hackers"]]
+                 [:open_bracket [:km "w: Reddit Saved"]]
+                 [:close_bracket [:km "w: Twitter Bookmarks"]]
+                 [:a [:km "w: HN"]]
+                 [:f [:km "w: Reddit (all)"]]
+                 [:g [:km "w: Alfred Forum"]]
+                 [:h [:km "w: HckrNews"]]
+                 [:j [:km "w: HN (new)"]]
+                 [:k [:km "w: GitHub (dashboard)"]]
+                 [:l [:km "w: Lobsters (new)"]]
+                 [:semicolon [:km "w: Reddit"]]
+                 [:quote [:km "w: YouTube"]]
+                 [:m [:km "open: Elk"]]
+                 [:comma [:km "w: GitHub (trending)"]]
+                 [:period [:km "Get break"]]
+                 [:slash [:km "w: GitHub (explore)"]]
+                 [:spacebar :!TOSs] ; Selection -> DuckDuckGo
                  ]}
+                 ;[:j [:km "cursor: ~/i/ts/scripts/i.ts"]] TODO: not sure whats that about
+                 ;[:h [:km "w: Product Hunt (new)"]]
+                 ;[:j [:km "w: Reddit (new)"]]
+                 ;[:j [:km "w: Reddit (in Safari Tech Preview)"]]
+                 ;[:k [:km "w: GitHub (front page)"]]
+                 ;[:l [:km "w: Lobsters"]]
+                 ;[:z [:km "w: HN (comments)"]]
+                 ;[:x [:km "w: Lobsters (comments)"]]
+                 ;[:n [:km "w: Inoreader"]]
+                 ;[:m [:km "w: Mastodon"]]
+                 ;[:period [:km "w: YouTube (subs)"]]
+                 ;[:t [:km "w: Medium (bookmarks)"]]
                  ;[:w [:km "cursor: langflow-gh"]]
                  ;[:e [:km "cursor: pavex-gh"]]
                  ;[:u [:km "cursor: unreal-gh"]]
@@ -946,32 +994,34 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
-                 [:non_us_backslash [:km "open: AWS"]]
+                 [:tab [:km "open: Yandex Cloud"]]
                  [:q [:km "open: Expo"]]
                  [:w [:km "open: Cloudflare"]]
                  [:e [:km "open: Vercel"]]
-                 [:u [:km "open: Azure"]]
+                 [:r [:km "open: Stripe"]]
+                 [:t [:km "open: PostHog"]]
                  [:i [:km "open: Axiom"]]
-                 [:j [:km "open: ChatGPT"]]
-                 [:k [:km "open: Sentry"]]
-                 [:semicolon [:km "open: Supabase"]]
+                 [:escape [:km "open: Google Cloud"]]
                  [:a [:km "open: Grok"]]
                  [:s [:km "open: Convex"]]
                  [:d [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard
                  [:f [:km "open: Claude"]]
-                 [:g [:km "open: Google Cloud"]]
-                 [:h [:km "open: PostHog"]]
+                 [:g [:km "open: AWS"]]
+                 [:j [:km "open: ChatGPT"]]
+                 [:k [:km "open: Sentry"]]
+                 [:semicolon [:km "open: Railway"]]
                  [:grave_accent_and_tilde [:km "open: AI Studio"]]
                  [:z [:km "open: DeepSeek"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
-                 [:v [:km "open: Railway"]]
-                 [:b [:km "open: Lovable"]]
+                 ; TODO: mby move this to a key. with fast switch thats not caps + v. should be faster
+                 [:v :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)
+                 [:b [:km "open: Supabase"]]
                  [:n [:km "open: Ronin"]] ; TODO: when its out again
                  [:m [:km "open: Modal"]]
                  [:left_command [:km "open: Vultr"]]
                  [:spacebar [:km "open: Conductor"]]
                  ]}
-                 ;[:y [:km "open: Yandex Cloud"]]
+                 ;[:u [:km "open: Azure"]]
                  ;[:tab [:km "open: ClaudeWeb"]]
                  ;[:s [:km "open: AlexSideBar"]] ; TODO: moved to codex, test it
                  ;[:x [:km "open: Mistral Chat"]]
@@ -1048,9 +1098,37 @@
                  ;[:e [:km "open: ChatGPT GPTs"]]
                  ;[:q [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  ;[:spacebar [:km "open: Ask"]]]}
-        {:des "pkey ()"
+        {:des "pkey (gh workspces prob)" ; TODO:
          :rules [:p-mode
                  ]}
+                 ;[:e [:km "cursor: gorealeaser-gh"]]
+                 ;[:r [:km "cursor: jsr-gh"]]
+                 ;[:t [:km "cursor: tvix-gh"]]
+                 ;[:y [:km "cursor: yaak-gh"]]
+                 ;[:u [:km "cursor: supabase-gh"]]
+                 ;[:i [:km "cursor: nixpkgs-gh"]]
+                 ;[:o [:km "cursor: flox-gh"]]
+                 ;[:p [:km "cursor: pydantic-ai-gh"]]
+                 ;[:d [:km "cursor: codanna-gh"]]
+                 ;[:h [:km "cursor: ghostty-gh"]]
+                 ;[:f [:km "cursor: mbt-gh"]]
+                 ;[:g [:km "cursor: gensx-gh"]]
+                 ;[:h [:km "cursor: helix-db-gh"]]
+                 ;[:j [:km "cursor: deno-std-gh"]]
+                 ;[:k [:km "cursor: dspy-gh"]]
+                 ;[:l [:km "cursor: gel-gh"]]
+                 ;[:semicolon [:km "cursor: mlx-gh"]]
+                 ;[:quote [:km "cursor: meilisearch-gh"]]
+                 ;[:c [:km "cursor: connar-gh"]]
+                 ;[:v [:km "cursor: n8n-gh"]]
+                 ;[:b [:km "cursor: grafbase-gh"]]
+                 ;[:n [:km "cursor: inngest-gh"]]
+                 ;[:m [:km "cursor: victoria-metrics-gh"]]
+                 ;[:comma [:km "cursor: unison-gh"]]
+                 ;[:period [:km "cursor: go-gh"]]
+                 ;[:slash [:km "cursor: deno-gh"]]
+                 ;[:spacebar [:km "cursor: swift-gh"]]
+
                  ;[:e [:km "cursor: r-gh"]]
                  ;[:1 [:km "cursor: r-gh"]]
                  ;[:2 [:km "cursor: l-gh"]]
@@ -1365,18 +1443,18 @@
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: effect."]]
-                 [:t [:km "cursor: vscode."]] ; vscode + ext.
+                 ; TODO: mby useful to have core. with just effect there
+                 [:r [:km "cursor: vscode."]] ; vscode + ext.
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: cpp."]] ; mostly useful for electron
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: search."]] ; includes raycast/alfred + mirror searches to s.nikiv.dev (+ ingest)
+                 [:s [:km "cursor: gpton."]] ; games, rl
                  [:d [:km "cursor: deps."]] ; effect, blade, jazz/garden, convex, ai sdk
                  [:f [:km "cursor: f."]] ; friendik
-                 [:g [:km "cursor: gpton."]] ; includes game dev
+                 [:g [:km "cursor: zig."]] ; includes ghostty & bun
                  [:h [:km "cursor: opencode."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
@@ -1390,9 +1468,9 @@
                  [:m [:km "cursor: mojo."]]
                  [:period [:km "cursor: swift."]]
                  [:slash [:km "cursor: mbt."]]
-                 [:left_command [:km "cursor: zig."]] ; includes ghostty & bun
                  [:spacebar [:km "cursor: py."]] ; includes training/evals
                  ]}
+                 ;[:s [:km "cursor: search."]] ; includes raycast/alfred + mirror searches to s.nikiv.dev (+ ingest) (moved to search & f.)
                  ;[:t [:km "cursor: eventsline."]]
                  ;[:f [:km "cursor: tools."]] ; includes ui. (tailwind/panda) + wip stuff (extract as tool or lib etc.)
                  ;[:1 [:km "cursor: elysia."]]
@@ -1551,25 +1629,37 @@
         ; TODO: move to 1f sessions (with ghostty embedded)
         {:des "tilkey (agents)"
          :rules [:tilde-mode
-                  [:w [:km "warp: py"]]
+                  ; TODO: can use ghostty too. in future all should be in 1f
+                  [:q [:km "warp: flow"]]
+                  [:w [:km "warp: rust"]]
                   [:e [:km "warp: go"]]
+                  [:r [:km "warp: vscode"]]
+                  [:u [:km "warp: kus"]]
                   [:i [:km "warp: gitedit"]]
                   [:o [:km "warp: sb"]]
                   [:p [:km "warp: cpp"]]
-                  [:f [:km "warp: tools"]]
-                  [:g [:km "warp: gpton"]]
+                  [:open_bracket [:km "warp: gridchess"]]
+                  [:a [:km "warp: gleam"]]
+                  [:s [:km "warp: gpton"]]
+                  ;[:d [:km "warp: deps"]] ; TODO: deps?
+                  [:f [:km "warp: f"]]
+                  [:g [:km "warp: zig"]]
+                  [:h [:km "warp: opencode"]]
                   [:j [:km "warp: ts"]]
                   [:k [:km "warp: nikiv"]]
                   [:l [:km "warp: la"]]
                   [:semicolon [:km "warp: 1f"]]
-                  [:v [:km "warp: zig"]]
-                  [:b [:km "warp: mbt"]]
+                  [:x [:km "warp: x"]]
+                  [:c [:km "warp: config"]]
+                  ;[:v [:km "warp: other"]]
+                  ;[:b [:km "warp: bun"]]
                   [:n [:km "warp: new"]]
                   [:m [:km "warp: mojo"]]
                   [:period [:km "warp: swift"]]
-                  [:slash [:km "warp: rust"]]
-                  [:spacebar [:km "warp: tmp"]]
+                  [:slash [:km "warp: mbt"]]
+                  [:spacebar [:km "warp: py"]]
                  ]}
+                  ;[:spacebar [:km "warp: tmp"]]
                  ;[:semicolon [:km "ghostty: home"]] ; TODO: make work. or move to another key
                  ; TODO: move run .. to separate key
                   ;[:l [:km "open: EdgeDB Cloud"]]
@@ -1761,47 +1851,16 @@
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4iORPRB30LonHaKwkctjyE"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:52o0rOFFGNEekY4o0xV0AK"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:493uQXwZsTDHAkjWXImR7K"]] ; Focus song (slow)
-        {:des "bkey (sites)"
+        {:des "bkey (actions)"
          :rules [:b-mode
-                 [:9 [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
-                 [:0 [:km "w: HN (show new)"]]
-                 [:q [:km "w: KM forum"]]
-                 [:w [:km "w: Swift forum"]]
-                 [:e [:km "w: Behance"]]
-                 [:n [:km "w: genx"]]
-                 [:r [:km "w: Medium (network)"]]
-                 [:t [:km "w: Medium (bookmarks)"]]
-                 [:u [:km "w: Product Hunt"]]
-                 [:i [:km "w: Dribble"]]
-                 [:o [:km "w: Pinboard"]]
-                 [:p [:km "w: Indie Hackers"]]
-                 [:open_bracket [:km "w: Reddit Saved"]]
-                 [:close_bracket [:km "w: Twitter Bookmarks"]]
-                 [:a [:km "w: HN"]]
-                 [:f [:km "w: Reddit (all)"]]
-                 [:g [:km "w: Alfred Forum"]]
-                 [:h [:km "w: HckrNews"]]
-                 [:j [:km "w: HN (new)"]]
-                 [:k [:km "w: GitHub (dashboard)"]]
-                 [:l [:km "w: Lobsters (new)"]]
-                 [:semicolon [:km "w: Reddit"]]
-                 [:quote [:km "w: YouTube"]]
-                 [:m [:km "open: Elk"]]
-                 [:comma [:km "w: GitHub (trending)"]]
-                 [:period [:km "Get break"]]
-                 [:slash [:km "w: GitHub (explore)"]]
-                 [:spacebar :!TOSs] ; Selection -> DuckDuckGo
+                 [:o [:km "cursor: ~/src/config/fish/fn.fish"]] ; TODO: bind to run.swift, move fish alias to something nice too
+                 [:h [:km "edit: GitHub Bio"]]
+                 [:j [:km "cursor: config:fish/i/fish/i.fish"]]
+                 [:k [:km "cursor: config:fish/config.fish"]]
+                 [:l [:km "Test"]       ]
+                 [:semicolon [:km "Go to test macro"]]
+                 [:spacebar [:km "New KM global macro"]]
                  ]}
-                 ;[:h [:km "w: Product Hunt (new)"]]
-                 ;[:j [:km "w: Reddit (new)"]]
-                 ;[:j [:km "w: Reddit (in Safari Tech Preview)"]]
-                 ;[:k [:km "w: GitHub (front page)"]]
-                 ;[:l [:km "w: Lobsters"]]
-                 ;[:z [:km "w: HN (comments)"]]
-                 ;[:x [:km "w: Lobsters (comments)"]]
-                 ;[:n [:km "w: Inoreader"]]
-                 ;[:m [:km "w: Mastodon"]]
-                 ;[:period [:km "w: YouTube (subs)"]]
         ; TODO: deeplink open certain chats/spaces/projects in 1f
         {:des "nkey (pages)"
          :rules [:n-mode
@@ -1812,7 +1871,7 @@
                  [:4 :!O4]
                  [:5 :!O5]
                  [:6 :!O6]
-                 [:tab [:km "reflect: Events"]]
+                 ;[:s [:km "reflect: Use"]]
                  [:q [:km "reflect: Meet"]]
                  [:w [:km "reflect: Now"]]
                  [:e [:km "reflect: Learn"]]
@@ -1821,7 +1880,7 @@
                  [:o [:km "reflect: Books"]]
                  [:escape [:km "reflect: Health"]]
                  [:a [:km "reflect: Flow"]]
-                 [:s [:km "reflect: Use"]]
+                 [:s [:km "reflect: Events"]]
                  [:d [:km "reflect: Spend"]]
                  [:f [:km "Search Reflect"]]
                  [:g [:km "reflect: Funding"]]
@@ -1872,7 +1931,6 @@
                  [:w [:km "open: RustRover"]]
                  [:e [:km "open: GoLand"]]
                  [:r [:km "open: Encore (local)"]]
-                 [:t [:km "open: Stripe"]]
                  [:tab [:km "open: NotePlus"]]
                  [:escape [:km "open: Leap"]]
                  [:a [:km "open: Rive"]]
@@ -1880,10 +1938,12 @@
                  [:d [:km "open: Bolt"]]
                  [:f [:km "open: v0"]]
                  [:g [:km "open: Google Maps"]]
+                 [:l [:km "open: Gel"]] ; TODO: move prob (this is for LA)
+                 [:z [:km "open: Zed"]] ; TODO: move
                  [:c [:km "open: Conar"]]
-                 [:v [:km "open: PyCharm"]]
+                 [:v [:km "open: Lovable"]]
                  [:grave_accent_and_tilde [:km "open: Transmit"]]
-                 [:spacebar [:km "open: Zed"]]
+                 [:spacebar [:km "open: PyCharm"]]
                  [:left_command [:km "open: TablePlus"]]
                  ]}
                  ;[:escape [:km "open: T3 Chat"]]
@@ -1949,11 +2009,11 @@
                  ;[:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]] ; -> nikitavoloboev
         {:des "slashkey (run files)"
          :rules [:slash-mode
-                 [:w [:km "edit: run.py"]]
+                 [:w [:km "edit: run.rs"]]
                  [:e [:km "edit: run.go"]]
-                 [:s [:km "edit: run.swift"]]
+                 [:f [:km "edit: run.swift"]]
                  [:g [:km "edit: run.zig"]]
-                 [:spacebar [:km "edit: run.rs"]]
+                 [:spacebar [:km "edit: run.py"]]
                  ]}
                  ;[:slash [:km "edit: run.odin"]]
                  ;[:1 [:km "cursor: 1password-gh"]]
@@ -2125,9 +2185,10 @@
                  [:b [:km "new safari tab"]]
                  [:n [:km "open: X Messages (in Arc)"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
-                 [:period :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)
+                 [:period [:km "open: Dia"]]
                  [:slash [:km "open: Discord (in Arc)"]]
                  ]}
+                 ;[:period :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)
                  ;[:quote [:km "open: Safari Technology Preview"]]
                  ;[:p [:km "web: SuperCut workspace"]]
                  ;[:a [:km "open: X Pro (search or post)"]]

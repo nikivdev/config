@@ -637,17 +637,16 @@
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
                  [:semicolon [:km "open: Xcode Beta"]]
+                 [:quote [:km "open: n8n"]]
                  [:c [:km "open: Spotify"]]
                  [:v [:km "open: Reader"]]
-                 [:b [:km "open: n8n"]]
-                 [:n [:km "open: Modal Notebooks"]]
+                 [:n [:km "open: Conar"]] ; replace with own tool (friendik?)
                  [:m [:km "open: Notion"]]
                  [:period [:km "open: Sublime Merge"]]
-                 [:slash [:km "open: Safari Technology Preview"]]
+                 [:slash [:km "open: Modal Notebooks"]]
+                 [:left_command [:km "open: Remnote"]]
                  [:spacebar [:km "open: Warp"]]
                  ]}
-                 ;[:quote [:km "open: Conar"]]
-                 ;[:v [:km "open: Remnote"]]
                  ;[:left_command [:km "open: Remnote"]]
                  ;[:left_command [:km "open: Reader"]]
                  ;[:slash [:km "open: GitButler"]]
@@ -1934,7 +1933,7 @@
                  [:e [:km "open: GoLand"]]
                  [:r [:km "open: Encore (local)"]]
                  [:tab [:km "open: NotePlus"]]
-                 [:escape [:km "open: Leap"]]
+                 [:escape [:km "open: Rivet"]]
                  [:a [:km "open: Rive"]]
                  [:s [:km "open: Lottie"]]
                  [:d [:km "open: Bolt"]]
@@ -1942,7 +1941,7 @@
                  [:g [:km "open: Google Maps"]]
                  [:l [:km "open: Gel"]] ; TODO: move prob (this is for LA)
                  [:z [:km "open: Zed"]] ; TODO: move
-                 [:c [:km "open: Conar"]]
+                 [:c [:km "open: Leap"]]
                  [:v [:km "open: Lovable"]]
                  [:grave_accent_and_tilde [:km "open: Transmit"]]
                  [:spacebar [:km "open: PyCharm"]]
@@ -1952,7 +1951,6 @@
                  ;[:z [:km "open: T3 Chat"]]
                  ;[:a [:km "open: Windsurf"]]
                  ;[:w [:km "open: Google Docs"]]
-                 ;[:w [:km "open: Rivet"]]
                  ;[:left_command [:km "open: SQLiteFlow"]]
                  ;[:a [:km "open: Lovable"]]
                  ;[:f [:km "open: Drive"]]
@@ -2187,7 +2185,7 @@
                  [:b [:km "new safari tab"]]
                  [:n [:km "open: X Messages (in Arc)"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
-                 [:period [:km "open: Dia"]]
+                 [:period [:km "open: Safari Technology Preview"]]
                  [:slash [:km "open: Discord (in Arc)"]]
                  ]}
                  ;[:period :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)

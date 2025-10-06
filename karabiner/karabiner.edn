@@ -530,7 +530,7 @@
          :rules [:tab-mode
                  [:w [:km "cursor: rust-gh"]]
                  [:e [:km "cursor: go-gh"]]
-                 [:r [:km "cursor: encore."]]
+                 [:r [:km "cursor: mastra-gh"]]
                  [:t [:km "cursor: tiptap-gh"]]
                  [:u [:km "cursor: opentui-gh"]]
                  [:i [:km "cursor: tauri-gh"]]
@@ -993,7 +993,8 @@
                  [:i [:km "open: Axiom"]]
                  [:escape [:km "open: Google Cloud"]]
                  [:a [:km "open: Grok"]]
-                 [:s [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard (move this to friendik)
+                 [:s [:km "open: Planetscale"]]
+                 ;[:s [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard (move this to friendik)
                  [:d [:km "open: Railway"]]
                  [:f [:km "open: Claude"]]
                  [:g [:km "open: AWS"]]
@@ -1427,28 +1428,31 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (workspaces)"
          :rules [:escape-mode
-                 [:1 [:km "cursor: hono."]] ; + cap & web, openapi
+                 [:1 [:km "cursor: hono."]]
                  [:2 [:km "cursor: expo."]]
-                 [:3 [:km "cursor: mastra-gh"]]
+                 [:3 [:km "cursor: encore."]]
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
                  ; TODO: mby useful to have core. with just effect there
-                 [:r [:km "cursor: kus."]]
+                 [:r [:km "cursor: infra."]]
+                 [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: cpp."]] ; mostly useful for electron
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:s [:km "cursor: vscode."]] ; vscode + ext.
-                 [:d [:km "cursor: gpton."]] ; games, rl
+                 [:a [:km "cursor: gleam."]] ; + elixir
+                 [:s [:km "cursor: gpton."]] ; games, rl
+                 [:d [:km "cursor: raycast."]]
                  [:f [:km "cursor: f."]] ; friendik
                  [:g [:km "cursor: zig."]] ; includes ghostty & bun
                  [:h [:km "cursor: opencode."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
-                 [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: gleam."]] ; + elixir
+                 [:semicolon [:km "cursor: 1f-ios."]] ; TODO: make it 1f. after (web & expo)
+                 [:quote [:km "cursor: 1f."]]
+                 ;[:quote [:km "cursor: vscode."]] ; vscode + ext.
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: other"]]
@@ -1457,9 +1461,11 @@
                  [:m [:km "cursor: mojo."]]
                  [:period [:km "cursor: swift."]]
                  [:slash [:km "cursor: mbt."]]
-                 [:left_command [:km "cursor: raycast."]]
+                 [:left_command [:km "cursor: ui."]] ; expo, web, swift (ui toolkit) (imported via shadcn registry)
                  [:spacebar [:km "cursor: py."]] ; includes training/evals
                  ]}
+                 ;[:1 [:km "cursor: hono."]] ; + cap & web, openapi
+                 ;[:1 [:km "cursor: elysia."]]
                  ;[:s [:km "cursor: search."]] ; includes raycast/alfred + mirror searches to s.nikiv.dev (+ ingest) (moved to search & f.)
                  ;[:t [:km "cursor: eventsline."]]
                  ;[:f [:km "cursor: tools."]] ; includes ui. (tailwind/panda) + wip stuff (extract as tool or lib etc.)

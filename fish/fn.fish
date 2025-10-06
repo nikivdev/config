@@ -1372,3 +1372,16 @@ function gitOverwrite
     gitSetSshOrigin
     git push --force
 end
+
+function gcb
+    if not set -q argv[1]
+        echo "Usage: gcb <github-url>"
+        return 1
+    end
+
+    # Extract repo path from the URL (strip https://github.com/)
+    set repo_path (string replace -r 'https://github.com/' '' $argv[1])
+
+    # Clone as a bare repository using SSH URL format
+    git clone --bare "git@github.com:$repo_path.git"
+end

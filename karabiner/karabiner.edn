@@ -1435,29 +1435,30 @@
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: infra."]]
+                 [:r [:km "cursor: fr."]] ; friendik (full swift)
                  [:u [:km "cursor: kus."]]
-                 [:i [:km "cursor: gitedit."]]
+                 [:i [:km "cursor: gitedit."]] ; make it reactive with jazz + local first
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: cpp."]] ; mostly useful for electron
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
                  [:s [:km "cursor: gpton."]] ; games, rl
                  [:d [:km "cursor: raycast."]]
-                 [:f [:km "cursor: f."]] ; friendik
-                 [:g [:km "cursor: zig."]] ; includes ghostty & bun
-                 [:h [:km "cursor: opencode."]]
+                 [:f [:km "cursor: flow."]]
+                 [:g [:km "cursor: gen."]] ; includes opencode/codex
+                 [:h [:km "cursor: infra."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
-                 [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: 1f-ios."]]
+                 [:semicolon [:km "cursor: 1f."]] ; includes ios (for now mostly ios)
+                 [:quote [:km "cursor: 1f-sdk."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: other"]]
                  [:b [:km "cursor: blade."]]
-                 [:n [:km "cursor: gen."]]
+                 [:n [:km "cursor: new."]]
                  [:m [:km "cursor: mojo."]]
+                 [:comma [:km "cursor: zig."]] ; includes ghostty & bun
                  [:period [:km "cursor: swift."]]
                  [:slash [:km "cursor: mbt."]]
                  [:left_command [:km "cursor: ui."]] ; expo, web, swift (ui toolkit) (imported via shadcn registry)

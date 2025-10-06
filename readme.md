@@ -4,7 +4,7 @@ See [this](https://nikiv.dev/config) for details.
 
 ## Setup
 
-Install [task](https://taskfile.dev/docs/installation). Then run `task setup` & follow instructions until it says `✔️ you are setup`. The task will clone [nikitavoloboev/sh](https://github.com/nikitavoloboev/sh) into `./sh` on first run and reuse it on subsequent runs.
+Install [task](https://taskfile.dev/docs/installation). Then run `task setup` & follow instructions until it says `✔️ you are setup`.
 
 ## Commands
 

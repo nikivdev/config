@@ -631,9 +631,8 @@
                  [:c [:km "open: Spotify"]]
                  [:v [:km "open: Reader"]]
                  [:n [:km "open: Notion"]]
-                 [:m [:km "open: Convex"]]
+                 [:m [:km "open: Modal Notebooks"]]
                  [:period [:km "open: Sublime Merge"]]
-                 [:slash [:km "open: Modal Notebooks"]]
                  [:left_command [:km "open: Remnote"]]
                  [:spacebar [:km "open: Warp"]]
                  ]}
@@ -995,7 +994,8 @@
                  [:escape [:km "open: Google Cloud"]]
                  [:a [:km "open: Grok"]]
                  [:s [:km "open: Railway"]]
-                 [:d [:km "open: Planetscale"]]
+                 [:d [:km "open: Convex"]]
+                 ;[:d [:km "open: Planetscale"]]
                  ;[:s [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard (move this to friendik)
                  [:f [:km "open: Claude"]]
                  [:g [:km "open: AWS"]]

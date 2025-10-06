@@ -633,6 +633,7 @@
                  [:n [:km "open: Notion"]]
                  [:m [:km "open: Modal Notebooks"]]
                  [:period [:km "open: Sublime Merge"]]
+                 [:slash [:km "open: Safari Technology Preview"]]
                  [:left_command [:km "open: Remnote"]]
                  [:spacebar [:km "open: Warp"]]
                  ]}
@@ -2175,13 +2176,12 @@
                  [:k [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
                  [:l [:km "open: Telegram"]]
                  [:semicolon [:km "open: Comet"]]
-                 [:quote [:km "open: Dia"]] ; TODO: move to other key prob
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
                  [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind
                  [:b [:km "new safari tab"]]
                  [:n [:km "open: X Messages (in Arc)"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
-                 [:period [:km "open: Safari Technology Preview"]]
+                 [:period [:km "open: Dia"]] ; TODO: move to other key prob
                  [:slash [:km "open: Discord (in Arc)"]]
                  ]}
                  ;[:period :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)

@@ -1439,18 +1439,19 @@
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]] ; make it reactive with jazz + local first
                  [:o [:km "cursor: sb."]]
-                 [:p [:km "cursor: cpp."]] ; mostly useful for electron
-                 [:open_bracket [:km "cursor: gridchess."]]
+                 [:p [:km "cursor: gpton."]] ; games, rl
+                 [:open_bracket [:km "cursor: cpp."]] ; mostly useful for electron
+                 [:close_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: gpton."]] ; games, rl
-                 [:d [:km "cursor: raycast."]]
+                 [:s [:km "cursor: raycast."]]
+                 [:d [:km "cursor: gen."]] ; includes opencode/codex
                  [:f [:km "cursor: flow."]]
-                 [:g [:km "cursor: gen."]] ; includes opencode/codex
+                 [:g [:km "cursor: zig."]] ; includes ghostty & bun
                  [:h [:km "cursor: infra."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
-                 [:semicolon [:km "cursor: 1f."]] ; includes ios (for now mostly ios)
+                 [:semicolon [:km "cursor: 1f."]]
                  [:quote [:km "cursor: 1f-sdk."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
@@ -1458,7 +1459,6 @@
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: new."]]
                  [:m [:km "cursor: mojo."]]
-                 [:comma [:km "cursor: zig."]] ; includes ghostty & bun
                  [:period [:km "cursor: swift."]]
                  [:slash [:km "cursor: mbt."]]
                  [:left_command [:km "cursor: ui."]] ; expo, web, swift (ui toolkit) (imported via shadcn registry)

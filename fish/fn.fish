@@ -1385,3 +1385,40 @@ function gcb
     # Clone as a bare repository using SSH URL format
     git clone --bare "git@github.com:$repo_path.git"
 end
+
+
+function org
+    if test (count $argv) -lt 1
+        echo "Usage: org <organization-name-or-url> [destination-directory]"
+        return 1
+    end
+
+    set -l input $argv[1]
+    set -l org_name
+
+    # Check if input is a URL and extract org name, otherwise use input as-is
+    if string match -r '^https://github\.com/[^/]+$' $input >/dev/null
+        # Extract the org name from the URL (e.g., "Effect-TS" from "https://github.com/Effect-TS")
+        set org_name (string replace -r '^https://github\.com/' '' $input)
+    else
+        set org_name $input
+    end
+
+    set -l dest_dir ~/deps/$org_name
+    if test (count $argv) -gt 1
+        set dest_dir $argv[2]
+    end
+
+    set -l github_token $GITHUB_TOKEN_PERSONAL
+    if test -z "$github_token"
+        echo "Error: GITHUB_TOKEN environment variable not set"
+        return 1
+    end
+
+    rm -rf $dest_dir
+    clone-org -t $github_token -o $org_name -d $dest_dir --no-tui
+    if test $status -ne 0
+        echo "Failed to clone repositories for $org_name"
+        return 1
+    end
+end

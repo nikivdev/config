@@ -95,3 +95,5 @@ if test -d $HOME/config/sh
 end
 # Added by zv setup
 source "/Users/nikiv/.zv/env.fish"
+
+fish_add_path /opt/homebrew/opt/ruby/bin

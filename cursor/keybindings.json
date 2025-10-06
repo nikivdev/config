@@ -33,7 +33,7 @@
 		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
 	},
 	{
-		"key": "ctrl+l",
+		"key": "ctrl+m",
 		"command": "editor.action.showHover",
 		"when": "editorTextFocus"
 	},

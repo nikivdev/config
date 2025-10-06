@@ -1,0 +1,1 @@
+- when starting with `sh`, create shell script in sh/ folder

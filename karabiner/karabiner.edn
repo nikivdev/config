@@ -167,6 +167,7 @@
                  [:d :delete_or_backspace]
                  [:f :return_or_enter]
                  ;[:g :!Ctab] ; for some reason breaking now, it does not disable the switch
+                 ; TODO: quite annoying as return key goes through to apps now..
                  [:g [:!Ctab :return_or_enter]] ; so now forced to return key after..
                  ; TODO: fix up
                  ;[:period [:km "Select word & move to Claude"]]
@@ -993,9 +994,9 @@
                  [:i [:km "open: Axiom"]]
                  [:escape [:km "open: Google Cloud"]]
                  [:a [:km "open: Grok"]]
-                 [:s [:km "open: Planetscale"]]
+                 [:s [:km "open: Railway"]]
+                 [:d [:km "open: Planetscale"]]
                  ;[:s [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard (move this to friendik)
-                 [:d [:km "open: Railway"]]
                  [:f [:km "open: Claude"]]
                  [:g [:km "open: AWS"]]
                  [:j [:km "open: ChatGPT"]]

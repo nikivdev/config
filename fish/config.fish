@@ -1,5 +1,5 @@
-source ~/src/config/fish/fn.fish
-source ~/src/config/i/fish/i.fish
+source ~/config/fish/fn.fish
+source ~/config/i/fish/i.fish
 
 source ~/.local/state/nix/profiles/profile/etc/profile.d/nix.fish # use latest version of nix
 set -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt # needed for flox/nix (some ssl bug or something) TODO: still needed?
@@ -90,8 +90,8 @@ end
 if test -d /Users/nikiv/.pixi/bin
     fish_add_path --global --prepend /Users/nikiv/.pixi/bin
 end
-if test -d $HOME/src/config/sh
-    fish_add_path --global --prepend $HOME/src/config/sh
+if test -d $HOME/config/sh
+    fish_add_path --global --prepend $HOME/config/sh
 end
 # Added by zv setup
 source "/Users/nikiv/.zv/env.fish"

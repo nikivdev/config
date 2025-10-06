@@ -1435,7 +1435,6 @@
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
-                 ; TODO: mby useful to have core. with just effect there
                  [:r [:km "cursor: infra."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]]
@@ -1451,9 +1450,8 @@
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
-                 [:semicolon [:km "cursor: 1f-ios."]] ; TODO: make it 1f. after (web & expo)
-                 [:quote [:km "cursor: 1f."]]
-                 ;[:quote [:km "cursor: vscode."]] ; vscode + ext.
+                 [:semicolon [:km "cursor: 1f."]]
+                 [:quote [:km "cursor: 1f-ios."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: other"]]
@@ -1465,6 +1463,7 @@
                  [:left_command [:km "cursor: ui."]] ; expo, web, swift (ui toolkit) (imported via shadcn registry)
                  [:spacebar [:km "cursor: py."]] ; includes training/evals
                  ]}
+                 ; TODO: mby useful to have core. with just effect there
                  ;[:1 [:km "cursor: hono."]] ; + cap & web, openapi
                  ;[:1 [:km "cursor: elysia."]]
                  ;[:s [:km "cursor: search."]] ; includes raycast/alfred + mirror searches to s.nikiv.dev (+ ingest) (moved to search & f.)
@@ -1850,7 +1849,7 @@
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:493uQXwZsTDHAkjWXImR7K"]] ; Focus song (slow)
         {:des "bkey (actions)"
          :rules [:b-mode
-                 [:o [:km "cursor: ~/src/config/fish/fn.fish"]] ; TODO: bind to run.swift, move fish alias to something nice too
+                 [:o [:km "cursor: ~/config/fish/fn.fish"]] ; TODO: bind to run.swift, move fish alias to something nice too
                  [:h [:km "edit: GitHub Bio"]]
                  [:j [:km "cursor: config:fish/i/fish/i.fish"]]
                  [:k [:km "cursor: config:fish/config.fish"]]

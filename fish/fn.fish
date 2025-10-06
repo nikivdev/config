@@ -1422,3 +1422,7 @@ function org
         return 1
     end
 end
+
+function find.git
+    find . -type d -name ".git"
+end

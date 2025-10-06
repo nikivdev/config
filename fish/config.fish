@@ -83,8 +83,8 @@ source ~/.orbstack/shell/init2.fish 2>/dev/null || true
 
 # pnpm
 set -gx PNPM_HOME "/Users/nikiv/Library/pnpm"
-if test -d $PNPM_HOME
-    fish_add_path --global --prepend $PNPM_HOME
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
 if test -d /Users/nikiv/.pixi/bin

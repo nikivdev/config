@@ -221,7 +221,7 @@
                  [[:k :l] :!COS9] ; Raycast
                  [[:j :semicolon] [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [[:l :m] [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]] ; TODO: improve. use my own ver.
-                 [[:k :m] [:km "open YouTube search"]]
+                 [[:k :m] [:km "open YouTube search (in comet)"]]
                  ]}
                  ;[[:k :n] [:km "open: Dash (with search)"]]
                  ;[:m [:km "open: Safari Technology Preview"]]

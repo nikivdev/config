@@ -2173,9 +2173,9 @@
                  [:p [:km "open: X profile (in Arc)"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
                  [:j [:km "open: Discord"]]
-                 [:k [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
+                 [:k [:km "open: Comet"]]
                  [:l [:km "open: Telegram"]]
-                 [:semicolon [:km "open: Comet"]]
+                 [:semicolon [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
                  [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind
                  [:b [:km "new safari tab"]]

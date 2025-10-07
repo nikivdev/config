@@ -169,6 +169,8 @@
                  ;[:g :!Ctab] ; for some reason breaking now, it does not disable the switch
                  ; TODO: quite annoying as return key goes through to apps now..
                  [:g [:!Ctab :return_or_enter]] ; so now forced to return key after..
+                 ; TODO: there is delay with this but `[:g :!Ctab]` sadly started to stop working..
+                 ;[:g [:km "active last app"]]
                  ; TODO: fix up
                  ;[:period [:km "Select word & move to Claude"]]
                  ;[:comma [:km "Select word & move to Claude (and run instantly)"]]
@@ -1439,7 +1441,7 @@
                  [:r [:km "cursor: raycast."]]
                  [:t [:km "cursor: gridchess."]]
                  [:u [:km "cursor: kus."]]
-                 [:i [:km "cursor: gitedit."]] ; make it reactive with jazz + local first
+                 [:i [:km "cursor: ui."]] ; expo, web, swift (ui toolkit) (imported via shadcn registry)
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; games, rl
                  [:open_bracket [:km "cursor: cpp."]] ; mostly useful for electron
@@ -1453,16 +1455,16 @@
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: fr."]] ; friendik (full swift)
+                 [:quote [:km "cursor: gitedit."]] ; make it reactive with jazz + local first
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: other"]]
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: new."]]
                  [:m [:km "cursor: mojo."]]
-                 [:period [:km "cursor: swift."]]
-                 [:slash [:km "cursor: mbt."]]
-                 [:left_command [:km "cursor: ui."]] ; expo, web, swift (ui toolkit) (imported via shadcn registry)
+                 [:period [:km "cursor: fr."]] ; friendik (full swift)
+                 [:slash [:km "cursor: swift."]]
+                 [:left_command [:km "cursor: mbt."]]
                  [:spacebar [:km "cursor: py."]] ; includes training/evals
                  ]}
                  ; TODO: mby useful to have core. with just effect there

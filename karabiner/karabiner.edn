@@ -1437,12 +1437,12 @@
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: raycast."]]
+                 [:t [:km "cursor: gridchess."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]] ; make it reactive with jazz + local first
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; games, rl
                  [:open_bracket [:km "cursor: cpp."]] ; mostly useful for electron
-                 [:close_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
                  [:s [:km "cursor: 1f-sdk."]]
                  [:d [:km "cursor: gen."]] ; includes opencode/codex

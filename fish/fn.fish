@@ -1382,8 +1382,8 @@ function gcb
     # Extract repo path from the URL (strip https://github.com/)
     set repo_path (string replace -r 'https://github.com/' '' $argv[1])
 
-    # Clone as a bare repository using SSH URL format
-    git clone --bare "git@github.com:$repo_path.git"
+    # Clone with shallow history using SSH URL format
+    git clone --depth=1 "git@github.com:$repo_path.git"
 end
 
 

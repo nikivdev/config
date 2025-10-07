@@ -1436,7 +1436,7 @@
                  [:q [:km "cursor: flow."]] ; TODO: include ui too
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: fr."]] ; friendik (full swift)
+                 [:r [:km "cursor: raycast."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: gitedit."]] ; make it reactive with jazz + local first
                  [:o [:km "cursor: sb."]]
@@ -1444,7 +1444,7 @@
                  [:open_bracket [:km "cursor: cpp."]] ; mostly useful for electron
                  [:close_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: gleam."]] ; + elixir
-                 [:s [:km "cursor: raycast."]]
+                 [:s [:km "cursor: 1f-sdk."]]
                  [:d [:km "cursor: gen."]] ; includes opencode/codex
                  [:f [:km "cursor: flow."]]
                  [:g [:km "cursor: zig."]] ; includes ghostty & bun
@@ -1453,7 +1453,7 @@
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: 1f-sdk."]]
+                 [:quote [:km "cursor: fr."]] ; friendik (full swift)
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: other"]]

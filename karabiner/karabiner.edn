@@ -168,7 +168,8 @@
                  [:f :return_or_enter]
                  ;[:g :!Ctab] ; for some reason breaking now, it does not disable the switch
                  ; TODO: quite annoying as return key goes through to apps now..
-                 [:g [:!Ctab :return_or_enter]] ; so now forced to return key after..
+                 ;[:g [:!Ctab :return_or_enter]] ; so now forced to return key after..
+                 [:g [:!Ctab :vk_none]]
                  ; TODO: there is delay with this but `[:g :!Ctab]` sadly started to stop working..
                  ;[:g [:km "active last app"]]
                  ; TODO: fix up
@@ -537,14 +538,16 @@
                  [:t [:km "cursor: tiptap-gh"]]
                  [:u [:km "cursor: opentui-gh"]]
                  [:i [:km "cursor: tauri-gh"]]
-                 [:o [:km "cursor: solana-gh"]]
+                 [:o [:km "cursor: hono."]]
                  [:p [:km "cursor: electron-gh"]]
                  [:f [:km "cursor: convex-gh"]]
                  [:g [:km "cursor: zig-gh"]]
                  [:h [:km "cursor: alchemy-gh"]]
+                 [:s [:km "cursor: solana-gh"]]
                  [:j [:km "cursor: ts-gh"]]
                  [:k [:km "cursor: ai-sdk-gh"]]
                  [:l [:km "cursor: effect-gh"]]
+                 [:s [:km "cursor: hono."]]
                  [:semicolon [:km "cursor: jazz-gh"]]
                  [:quote [:km "cursor: gleam-gh"]]
                  [:c [:km "cursor: nix-gh"]]
@@ -1432,7 +1435,7 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (workspaces)"
          :rules [:escape-mode
-                 [:1 [:km "cursor: hono."]]
+                 [:1 [:km "cursor: elysia."]]
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: encore."]]
                  [:q [:km "cursor: flow."]] ; TODO: include ui too

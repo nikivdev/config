@@ -1000,13 +1000,13 @@
                  [:escape [:km "open: Google Cloud"]]
                  [:a [:km "open: Grok"]]
                  [:s [:km "open: Railway"]]
-                 [:d [:km "open: Convex"]]
+                 [:d [:km "open: Sentry"]] ; TODO: move this to better key
+                 ;[:d [:km "open: Convex"]]
                  ;[:d [:km "open: Planetscale"]]
                  ;[:s [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard (move this to friendik)
                  [:f [:km "open: Claude"]]
                  [:g [:km "open: AWS"]]
                  [:j [:km "open: ChatGPT"]]
-                 [:k [:km "open: Sentry"]] ; TODO: move this to better key
                  [:semicolon [:km "open: PostHog"]]
                  [:grave_accent_and_tilde [:km "open: AI Studio"]]
                  [:z [:km "open: DeepSeek"]]

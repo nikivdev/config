@@ -1438,11 +1438,10 @@
                  [:1 [:km "cursor: elysia."]]
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: encore."]]
-                 [:q [:km "cursor: flow."]] ; TODO: include ui too
+                 [:q [:km "cursor: myflow."]]
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: raycast."]]
-                 [:t [:km "cursor: gridchess."]]
+                 [:r [:km "cursor: gridchess."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: ui."]] ; expo, web, swift (ui toolkit) (imported via shadcn registry)
                  [:o [:km "cursor: sb."]]
@@ -1450,8 +1449,8 @@
                  [:open_bracket [:km "cursor: cpp."]] ; mostly useful for electron
                  [:a [:km "cursor: gleam."]] ; + elixir
                  [:s [:km "cursor: 1f-sdk."]]
-                 [:d [:km "cursor: gen."]] ; includes opencode/codex
-                 [:f [:km "cursor: flow."]]
+                 [:d [:km "cursor: mbt."]]
+                 [:f [:km "cursor: f."]] ; flow + 1f-cli (includes opencode/codex)
                  [:g [:km "cursor: zig."]] ; includes ghostty & bun
                  [:h [:km "cursor: infra."]]
                  [:j [:km "cursor: ts."]]
@@ -1465,9 +1464,9 @@
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: new."]]
                  [:m [:km "cursor: mojo."]]
-                 [:period [:km "cursor: fr."]] ; friendik (full swift)
+                 [:period [:km "cursor: fr."]] ; friendik (swift + blade)
                  [:slash [:km "cursor: swift."]]
-                 [:left_command [:km "cursor: mbt."]]
+                 [:left_command [:km "cursor: raycast."]]
                  [:spacebar [:km "cursor: py."]] ; includes training/evals
                  ]}
                  ; TODO: mby useful to have core. with just effect there
@@ -1874,30 +1873,33 @@
                  [:4 :!O4]
                  [:5 :!O5]
                  [:6 :!O6]
-                 ;[:s [:km "reflect: Use"]]
-                 [:q [:km "reflect: Meet"]]
+                 [:q [:km "reflect: Raise"]]
                  [:w [:km "reflect: Now"]]
                  [:e [:km "reflect: Learn"]]
                  [:r [:km "reflect: Hire"]]
-                 [:t [:km "reflect: Visit"]]
+                 [:t [:km "reflect: Photos"]]
                  [:o [:km "reflect: Books"]]
                  [:escape [:km "reflect: Health"]]
-                 [:a [:km "reflect: Flow"]]
-                 [:s [:km "reflect: Events"]]
+                 [:a [:km "reflect: Plan"]]
+                 [:s [:km "reflect: Habits"]]
                  [:d [:km "reflect: Spend"]]
                  [:f [:km "Search Reflect"]]
-                 [:g [:km "reflect: Funding"]]
-                 [:h [:km "reflect: Photos"]]
-                 [:l [:km "reflect: Style"]]
-                 [:semicolon [:km "reflect: Family"]]
-                 [:z [:km "reflect: Music"]]
-                 [:c [:km "reflect: Focus"]] ; TODO: move to la & hove each bullet have live top data from each of the pages there
-                 [:v [:km "reflect: Videos"]]
+                 [:g [:km "reflect: Love"]]
+                 [:k [:km "reflect: Music"]]
+                 [:l [:km "reflect: Look"]]
+                 [:semicolon [:km "reflect: Focus"]] ; TODO: move to la & hove each bullet have live top data from each of the pages there
+                 [:grave_accent_and_tilde [:km "reflect: Visit"]]
+                 [:z [:km "reflect: Meet"]]
+                 [:c [:km "reflect: Budget"]]
+                 [:v [:km "reflect: Events"]]
                  [:b [:km "reflect: Buy"]]
-                 [:grave_accent_and_tilde [:km "reflect: Ideas"]]
-                 [:left_command [:km "reflect: Invest"]]
+                 [:left_command [:km "reflect: Flow"]]
                  [:spacebar [:km "reflect: Journal"]]
                  ]}
+                 ;[:semicolon [:km "reflect: Family"]]
+                 ;[:grave_accent_and_tilde [:km "reflect: Ideas"]]
+                 ;[:s [:km "reflect: Use"]]
+                 ;[:v [:km "reflect: Videos"]]
                  ;[:s [:km "reflect: Posts"]]
                  ;[:semicolon [:km "reflect: Move"]]
                  ;[:spacebar [:km "reflect: Changes"]]

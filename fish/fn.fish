@@ -702,14 +702,6 @@ function gitChangeRemote
     echo "Remote origin set to: $ssh_url"
 end
 
-function :
-    if not set -q argv[1]
-        just run
-    else
-        just $argv
-    end
-end
-
 function co
     if not set -q argv[1]
         cody --help
@@ -1353,7 +1345,7 @@ end
 
 
 # TODO: improve, snapshot, allow to pass command to do `j <command>`
-function j
+function :
     f commitPush
 end
 

@@ -2188,7 +2188,7 @@
                  [:semicolon [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
                  [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind
-                 [:b [:km "new safari tab"]]
+                 [:b [:km "open: IG Messages (in Arc)"]]
                  [:n [:km "open: X Messages (in Arc)"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:period [:km "open: Dia"]] ; TODO: move to other key prob

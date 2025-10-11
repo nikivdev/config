@@ -1441,7 +1441,8 @@
                  [:q [:km "cursor: myflow."]]
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: gridchess."]]
+                 [:r [:km "cursor: mbt."]]
+                 [:t [:km "cursor: gridchess."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: ui."]] ; expo, web, swift (ui toolkit) (imported via shadcn registry)
                  [:o [:km "cursor: sb."]]
@@ -1449,8 +1450,8 @@
                  [:open_bracket [:km "cursor: cpp."]] ; mostly useful for electron
                  [:a [:km "cursor: gleam."]] ; + elixir
                  [:s [:km "cursor: 1f-sdk."]]
-                 [:d [:km "cursor: mbt."]]
-                 [:f [:km "cursor: f."]] ; flow + 1f-cli (includes opencode/codex)
+                 [:d [:km "cursor: 1f-cli."]] ; (includes opencode/codex)
+                 [:f [:km "cursor: f."]] ; flow
                  [:g [:km "cursor: zig."]] ; includes ghostty & bun
                  [:h [:km "cursor: infra."]]
                  [:j [:km "cursor: ts."]]

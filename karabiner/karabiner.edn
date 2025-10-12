@@ -187,6 +187,7 @@
                  [:##b :!Cleft_arrow]
                  [:n :!Cv] ; Paste
                  [:##m :!Cright_arrow]
+                 [:spacebar [:km "Selection -> Current TODO (with AI do)"]]
                  ]}
                  ;[:t :!OS1] ; ChatGPT selected text
                  ;[:semicolon [:km "Selected text to Claude"]]

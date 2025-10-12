@@ -360,7 +360,7 @@
 		"when": "editorFocus"
 	},
 	{
-		"key": "ctrl+r",
+		"key": "cmd+shift+w",
 		"command": "workbench.action.toggleSidebarVisibility"
 	},
 	{
@@ -498,7 +498,7 @@
 		"when": "editorTextFocus && !textCompareEditorActive"
 	},
 	{
-		"key": "shift+cmd+8",
+		"key": "ctrl+r",
 		"command": "workbench.explorer.fileView.focus"
 	},
 	{
@@ -549,5 +549,9 @@
 	{
 		"key": "cmd+h",
 		"command": "composerMode.agent"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "chatgpt.openSidebar"
 	}
 ]

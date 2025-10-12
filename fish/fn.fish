@@ -1418,3 +1418,7 @@ end
 function find.git
     find . -type d -name ".git"
 end
+
+function ts.
+    bunx tsc --noEmit
+end

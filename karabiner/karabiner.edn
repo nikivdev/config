@@ -1441,30 +1441,31 @@
                  [:q [:km "cursor: myflow."]]
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: mbt."]]
-                 [:t [:km "cursor: gridchess."]]
+                 [:r [:km "cursor: swift."]]
                  [:u [:km "cursor: kus."]]
-                 [:i [:km "cursor: ui."]] ; expo, web, swift (ui toolkit) (imported via shadcn registry)
+                 [:i [:km "cursor: ui."]] ; expo, web (imported via shadcn registry)
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; games, rl
-                 [:open_bracket [:km "cursor: cpp."]] ; mostly useful for electron
-                 [:a [:km "cursor: gitedit."]] ; make it reactive with jazz + local first
+                 [:open_bracket [:km "cursor: gridchess."]]
+                 [:close_bracket [:km "cursor: cpp."]] ; mostly useful for electron
+                 [:a [:km "cursor: mbt."]]
                  [:s [:km "cursor: 1f-sdk."]]
                  [:d [:km "cursor: 1f-cli."]] ; (includes opencode/codex)
                  [:f [:km "cursor: f."]] ; flow
-                 [:g [:km "cursor: zig."]] ; includes ghostty & bun
+                 [:g [:km "cursor: 1f-glide."]]
                  [:h [:km "cursor: infra."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: swift."]]
+                 [:quote [:km "cursor: gitedit."]] ; make it reactive with jazz + local first
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: other"]]
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: new."]]
                  [:m [:km "cursor: mojo."]]
+                 [:comma [:km "cursor: zig."]] ; includes ghostty & bun
                  [:period [:km "cursor: fr."]] ; friendik (swift + blade)
                  [:slash [:km "cursor: linsa."]]
                  [:left_command [:km "cursor: raycast."]]

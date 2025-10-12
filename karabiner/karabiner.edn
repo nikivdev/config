@@ -187,6 +187,7 @@
                  [:##b :!Cleft_arrow]
                  [:n :!Cv] ; Paste
                  [:##m :!Cright_arrow]
+                 [:period [:km "Selected line -> Current TODO (with AI do)"]]
                  [:spacebar [:km "Selection -> Current TODO (with AI do)"]]
                  ]}
                  ;[:t :!OS1] ; ChatGPT selected text

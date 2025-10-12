@@ -1881,7 +1881,7 @@
                  [:w [:km "reflect: Now"]]
                  [:e [:km "reflect: Learn"]]
                  [:r [:km "reflect: Hire"]]
-                 [:t [:km "reflect: Photos"]]
+                 [:t [:km "reflect: Nutrition"]]
                  [:o [:km "reflect: Books"]]
                  [:escape [:km "reflect: Invest"]]
                  [:a [:km "reflect: Plan"]]
@@ -1889,6 +1889,7 @@
                  [:d [:km "reflect: Projects"]]
                  [:f [:km "Search Reflect"]]
                  [:g [:km "reflect: Health"]]
+                 [:h [:km "reflect: Photos"]]
                  [:k [:km "reflect: Music"]]
                  [:l [:km "reflect: Style"]]
                  [:semicolon [:km "reflect: Love"]]
@@ -1897,11 +1898,11 @@
                  [:c [:km "reflect: Events"]]
                  [:v [:km "reflect: Budget"]] ; TODO: move to sb, combine with token profits
                  [:b [:km "reflect: Buy"]]
-                 [:period [:km "reflect: Focus"]] ; TODO: move to la & hove each bullet have live top data from each of the pages there
+                 [:period [:km "reflect: Family"]]
                  [:left_command [:km "reflect: Flow"]]
                  [:spacebar [:km "reflect: Journal"]]
                  ]}
-                 ;[:semicolon [:km "reflect: Family"]]
+                 ;[:period [:km "reflect: Focus"]] ; TODO: move to la & hove each bullet have live top data from each of the pages there
                  ;[:grave_accent_and_tilde [:km "reflect: Ideas"]]
                  ;[:s [:km "reflect: Use"]]
                  ;[:v [:km "reflect: Videos"]]

@@ -1321,7 +1321,7 @@
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  [:k [:km "New Linear task"]]
-                 [:l [:alfred "search bookmarks" "net.deanishe.alfred.safari"]] ; TODO: make custom, not just safari bookmarks but context dependant things
+                 [:l :!Creturn_or_enter]
                  [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  [:quote [:km "new Reddit post (in Arc)"]]
                  [:u [:km "clear active todo"]]
@@ -1335,10 +1335,11 @@
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!TOCbackslash] ; Switch language (Russian <-> English)
                  [:b [:km "Things: Quick Entry (into Someday)"]]
-                 [:n [:km "Things: Quick Entry (with context) (into Someday)"]]
+                 [:n [:alfred "search bookmarks" "net.deanishe.alfred.safari"]] ; TODO: make custom, not just safari bookmarks but context dependant things
                  [:m [:km "Things: new top task (Someday)"]] ; TODO: make sure to switch to window with `Today`
                  [:spacebar [:km "open: Eagle"]]
                  ]}
+                 ;[:n [:km "Things: Quick Entry (with context) (into Someday)"]] ; replaced with just f+m & then with keybind add item to bottom
                  ;[:o [:km "Things: new top task (Today)"]] ; TODO: make sure to switch to window with `Today`
                  ;[:p [:km "Things: new 2nd from top task"]]
                  ;[:m [:km "open: Tauri Web"]]
@@ -1354,7 +1355,6 @@
                  ;[:i [:km "open: bolt"]]
                  ;[:open_bracket :!CT5] ; Turn display on/off
                  ;[:m [:km "open: Midjourney"]]
-                 ;[:l :!Creturn_or_enter] ; TODO: move it to nicer place
                  ;[:n [:km "open: Play"]] ; TODO: use
                  ; TODO: use lottie
                  ;[:n [:km "open: Simulator"]]

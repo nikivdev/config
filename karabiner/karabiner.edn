@@ -998,16 +998,13 @@
                  [:r [:km "open: Stripe"]]
                  [:i [:km "open: Axiom"]]
                  [:escape [:km "open: Google Cloud"]]
-                 [:a [:km "open: Grok"]]
-                 [:s [:km "open: Railway"]]
-                 [:d [:km "open: Sentry"]] ; TODO: move this to better key
-                 ;[:d [:km "open: Convex"]]
-                 ;[:d [:km "open: Planetscale"]]
-                 ;[:s [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard (move this to friendik)
+                 [:a [:km "open: Codex"]]
+                 [:s [:km "open: Grok"]]
+                 [:d [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard (move this to flow) (combine with blade)
                  [:f [:km "open: Claude"]]
                  [:g [:km "open: AWS"]]
                  [:j [:km "open: ChatGPT"]]
-                 [:semicolon [:km "open: PostHog"]]
+                 [:k [:km "open: Sentry"]] ; TODO: move this to better key
                  [:grave_accent_and_tilde [:km "open: AI Studio"]]
                  [:z [:km "open: DeepSeek"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
@@ -1016,9 +1013,12 @@
                  [:b [:km "open: Supabase"]]
                  [:n [:km "open: Ronin"]] ; TODO: when its out again
                  [:m [:km "open: Modal"]]
-                 [:left_command [:km "open: Vultr"]]
+                 [:left_command [:km "open: Railway"]]
                  [:spacebar [:km "open: Conductor"]]
                  ]}
+                 ;[:semicolon [:km "open: PostHog"]]
+                 ;[:d [:km "open: Convex"]]
+                 ;[:left_command [:km "open: Vultr"]]
                  ;[:u [:km "open: Azure"]]
                  ;[:tab [:km "open: ClaudeWeb"]]
                  ;[:s [:km "open: AlexSideBar"]] ; TODO: moved to codex, test it
@@ -1334,7 +1334,7 @@
                  [:z :!TOCbackslash] ; Switch language (Russian <-> English)
                  [:b [:km "Things: Quick Entry (into Someday)"]]
                  [:n [:km "Things: Quick Entry (with context) (into Someday)"]]
-                 [:m [:km "Things: new top task (Today)"]] ; TODO: make sure to switch to window with `Today`
+                 [:m [:km "Things: new top task (Someday)"]] ; TODO: make sure to switch to window with `Today`
                  [:spacebar [:km "open: Eagle"]]
                  ]}
                  ;[:o [:km "Things: new top task (Today)"]] ; TODO: make sure to switch to window with `Today`
@@ -1876,25 +1876,26 @@
                  [:4 :!O4]
                  [:5 :!O5]
                  [:6 :!O6]
-                 [:tab [:km "reflect: Raise"]]
-                 [:q [:km "reflect: Routines"]]
+                 [:tab [:km "reflect: Routines"]] ; should be part of friendik (macOS always on check app too, cluely style)
+                 [:q [:km "reflect: Raise"]]
                  [:w [:km "reflect: Now"]]
                  [:e [:km "reflect: Learn"]]
                  [:r [:km "reflect: Hire"]]
+                 [:t [:km "reflect: Photos"]]
                  [:o [:km "reflect: Books"]]
-                 [:escape [:km "reflect: Health"]]
+                 [:escape [:km "reflect: Invest"]]
                  [:a [:km "reflect: Plan"]]
                  [:s [:km "reflect: Habits"]]
                  [:d [:km "reflect: Projects"]]
                  [:f [:km "Search Reflect"]]
-                 [:g [:km "reflect: Photos"]]
+                 [:g [:km "reflect: Health"]]
                  [:k [:km "reflect: Music"]]
-                 [:l [:km "reflect: Look"]]
+                 [:l [:km "reflect: Style"]]
                  [:semicolon [:km "reflect: Love"]]
                  [:grave_accent_and_tilde [:km "reflect: Visit"]]
                  [:z [:km "reflect: Meet"]]
                  [:c [:km "reflect: Events"]]
-                 [:v [:km "reflect: Budget"]]
+                 [:v [:km "reflect: Budget"]] ; TODO: move to sb, combine with token profits
                  [:b [:km "reflect: Buy"]]
                  [:period [:km "reflect: Focus"]] ; TODO: move to la & hove each bullet have live top data from each of the pages there
                  [:left_command [:km "reflect: Flow"]]

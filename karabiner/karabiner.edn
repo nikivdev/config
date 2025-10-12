@@ -1444,6 +1444,8 @@
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: swift."]]
+                 [:t [:km "cursor: riplay."]]
+                 [:y [:km "cursor: anysynth."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: ui."]] ; expo, web (imported via shadcn registry)
                  [:o [:km "cursor: sb."]]

@@ -787,9 +787,9 @@ function replace
     end
 end
 
-function :a
-    bun run deploy
-end
+# function :a
+#     bun run deploy
+# end
 
 function :c
     find . -type d -name node_modules -prune -print | xargs rm -rf
@@ -1331,6 +1331,10 @@ function jd
    task dev
 end
 
+function jb
+   task build
+end
+
 function je
    task deploy
 end
@@ -1421,4 +1425,8 @@ end
 
 function ts.
     bunx tsc --noEmit
+end
+
+function k --description "Run repomix and copy the output"
+    repomix --copy $argv
 end

@@ -638,11 +638,12 @@
                  [:c [:km "open: Spotify"]]
                  [:v [:km "open: Reader"]]
                  [:n [:km "open: Notion"]]
+                 [:b [:km "open: Remnote"]]
                  [:m [:km "open: Modal Notebooks"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:slash [:km "open: Safari Technology Preview"]]
-                 [:left_command [:km "open: Remnote"]]
-                 [:spacebar [:km "open: Warp"]]
+                 [:left_command [:km "open: Warp"]]
+                 [:spacebar [:km "open: SQLiteFlow"]]
                  ]}
                  ;[:n [:km "open: Conar"]] ; replace with own tool (friendik?)
                  ;[:left_command [:km "open: Remnote"]]
@@ -999,12 +1000,12 @@
                  [:e [:km "open: Vercel"]]
                  [:r [:km "open: Stripe"]]
                  [:i [:km "open: Axiom"]]
-                 [:escape [:km "open: Google Cloud"]]
+                 [:escape [:km "open: AWS"]]
                  [:a [:km "open: Codex"]]
                  [:s [:km "open: Grok"]]
                  [:d [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard (move this to flow) (combine with blade)
                  [:f [:km "open: Claude"]]
-                 [:g [:km "open: AWS"]]
+                 [:g [:km "open: Google Cloud"]]
                  [:j [:km "open: ChatGPT"]]
                  [:k [:km "open: Sentry"]] ; TODO: move this to better key
                  [:grave_accent_and_tilde [:km "open: AI Studio"]]
@@ -1323,7 +1324,7 @@
                  [:k [:km "New Linear task"]]
                  [:l :!Creturn_or_enter]
                  [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
-                 [:quote [:km "new Reddit post (in Arc)"]]
+                 ;[:quote [:km "new Reddit post (in Arc)"]]
                  [:u [:km "clear active todo"]]
                  [:i [:alfred "active todo" "nikiv"]] ; TODO: add somewhere
                  [:o [:km "new X post (in Arc)"]]
@@ -1332,6 +1333,7 @@
                  [:quote :!CT5] ; Sleep display
                  [:comma [:km "cursor: .flox:env/manifest.toml"]]
                  [:period [:km "edit: Karabiner"]]
+                 ;[:slash [:km "edit: Karabiner.ts"]] ; bring back alfred file/text action after moving to karabiner.ts
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!TOCbackslash] ; Switch language (Russian <-> English)
                  [:b [:km "Things: Quick Entry (into Someday)"]]
@@ -1444,10 +1446,10 @@
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: swift."]]
-                 [:t [:km "cursor: riplay."]]
+                 [:t [:km "cursor: gitedit."]] ; make it reactive with jazz + local first
                  [:y [:km "cursor: anysynth."]]
                  [:u [:km "cursor: kus."]]
-                 [:i [:km "cursor: ui."]] ; expo, web (imported via shadcn registry)
+                 [:i [:km "cursor: zig."]] ; includes ghostty & bun
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; games, rl
                  [:open_bracket [:km "cursor: gridchess."]]
@@ -1462,14 +1464,14 @@
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: gitedit."]] ; make it reactive with jazz + local first
+                 [:quote [:km "cursor: ui."]] ; expo, web (imported via shadcn registry)
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: other"]]
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: new."]]
                  [:m [:km "cursor: mojo."]]
-                 [:comma [:km "cursor: zig."]] ; includes ghostty & bun
+                 [:comma [:km "cursor: riplay."]]
                  [:period [:km "cursor: fr."]] ; friendik (swift + blade)
                  [:slash [:km "cursor: linsa."]]
                  [:left_command [:km "cursor: raycast."]]
@@ -1964,7 +1966,6 @@
                  ;[:z [:km "open: T3 Chat"]]
                  ;[:a [:km "open: Windsurf"]]
                  ;[:w [:km "open: Google Docs"]]
-                 ;[:left_command [:km "open: SQLiteFlow"]]
                  ;[:a [:km "open: Lovable"]]
                  ;[:f [:km "open: Drive"]]
                  ;[:r [:km "open: Trieve"]]

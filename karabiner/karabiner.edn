@@ -270,31 +270,9 @@
                  ;[:semicolon [:km "cursor: wails-gh"]]
                  ;[:comma [:km "cursor: node-gh"]]
                  ;[:period [:km "cursor: task-gh"]]
-        {:des "1key (gh workspaces)" ; TODO: change below as its moved to p now (as its closer)
-         :rules [:1-mode ; TODO: needs change prob
-                 [:r [:km "cursor: gorealeaser-gh"]]
-                 [:t [:km "cursor: tvix-gh"]]
-                 [:y [:km "cursor: yaak-gh"]]
-                 [:u [:km "cursor: supabase-gh"]]
-                 [:i [:km "cursor: nixpkgs-gh"]]
-                 [:o [:km "cursor: flox-gh"]]
-                 [:p [:km "cursor: pydantic-ai-gh"]]
-                 [:d [:km "cursor: codanna-gh"]]
-                 [:h [:km "cursor: ghostty-gh"]]
-                 [:g [:km "cursor: gensx-gh"]]
-                 [:h [:km "cursor: helix-db-gh"]]
-                 [:j [:km "cursor: deno-std-gh"]]
-                 [:k [:km "cursor: dspy-gh"]]
-                 [:l [:km "cursor: gel-gh"]]
-                 [:quote [:km "cursor: meilisearch-gh"]]
-                 [:c [:km "cursor: connar-gh"]]
-                 [:v [:km "cursor: n8n-gh"]]
-                 [:b [:km "cursor: grafbase-gh"]]
-                 [:n [:km "cursor: inngest-gh"]]
-                 [:m [:km "cursor: victoria-metrics-gh"]]
-                 [:slash [:km "cursor: deno-gh"]]
-                 [:period [:km "cursor: ts-pattern-gh"]] ; with github.com/aidenybai/pattycake TODO: move this prob
-                 [:spacebar [:km "cursor: jsr-gh"]]
+        {:des "1key (run files)"
+         :rules [:1-mode
+                 [:semicolon [:km "reflect: 1focus.ai"]]
                  ]}
                  ;[:comma [:km "cursor: unison-gh"]]
                  ;[:4 [:km "cursor: hono."]] ; + openapi gen
@@ -375,7 +353,7 @@
                  ;[:m [:km "cursor: mcp-spec-gh"]]
                  ;[:comma [:km "cursor: skip-gh"]]
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
-        {:des "2key (move + scripts + refactor + gh workspaces)"
+        {:des "2key (move, workspaces)"
          :rules [:2-mode
                  [:3 [:km "cursor: optique-gh"]] ; https://github.com/dahlia/optique
                  [:r [:km "cursor: arktype-gh"]]
@@ -907,8 +885,13 @@
                  ;[:comma [:km "w: Google Drive"]]
                  ;[:period [:km "w: IFTTT"]]
                  ;[:spacebar :!COSr]]} ; Selection -> Google Translate
-        {:des "ukey (gh workspaces)"
+        {:des "ukey (run files)"
          :rules [:u-mode
+                 [:w [:km "edit: run.rs"]]
+                 [:e [:km "edit: run.go"]]
+                 [:r [:km "edit: run.swift"]]
+                 [:i [:km "edit: run.zig"]]
+                 [:spacebar [:km "edit: run.py"]]
                  ]}
                  ;[:w [:km "cursor: wasmcloud-gh"]]
                  ;[:e [:km "cursor: remix-gh"]]
@@ -1638,7 +1621,7 @@
                  ;[:g [:km "w: Grafbase LA logs"]]
                  ;[:spacebar :!COSn]]} ; Selection -> GitHub ; TODO: move it to another key (on s?)
         ; TODO: move to 1f sessions (with ghostty embedded)
-        {:des "tilkey (agents)"
+        {:des "tilkey (agents)" ; should be 1f window with deeplink, for now ghostty mby?
          :rules [:tilde-mode
                   ; TODO: can use ghostty too. in future all should be in 1f
                   [:q [:km "warp: flow"]]
@@ -2021,13 +2004,31 @@
                  ;[:spacebar [:km "cursor: alien-signals-gh"]]
                  ;[:w [:n :i :k :i :v]] ; -> nikiv
                  ;[:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]] ; -> nikitavoloboev
-        {:des "slashkey (run files)"
+        {:des "slashkey (workspaces)"
          :rules [:slash-mode
-                 [:w [:km "edit: run.rs"]]
-                 [:e [:km "edit: run.go"]]
-                 [:f [:km "edit: run.swift"]]
-                 [:g [:km "edit: run.zig"]]
-                 [:spacebar [:km "edit: run.py"]]
+                 [:r [:km "cursor: gorealeaser-gh"]]
+                 [:t [:km "cursor: tvix-gh"]]
+                 [:y [:km "cursor: yaak-gh"]]
+                 [:u [:km "cursor: supabase-gh"]]
+                 [:i [:km "cursor: nixpkgs-gh"]]
+                 [:o [:km "cursor: flox-gh"]]
+                 [:p [:km "cursor: pydantic-ai-gh"]]
+                 [:d [:km "cursor: codanna-gh"]]
+                 [:h [:km "cursor: ghostty-gh"]]
+                 [:g [:km "cursor: gensx-gh"]]
+                 [:h [:km "cursor: helix-db-gh"]]
+                 [:j [:km "cursor: deno-std-gh"]]
+                 [:k [:km "cursor: dspy-gh"]]
+                 [:l [:km "cursor: gel-gh"]]
+                 [:quote [:km "cursor: meilisearch-gh"]]
+                 [:c [:km "cursor: connar-gh"]]
+                 [:v [:km "cursor: n8n-gh"]]
+                 [:b [:km "cursor: grafbase-gh"]]
+                 [:n [:km "cursor: inngest-gh"]]
+                 [:m [:km "cursor: victoria-metrics-gh"]]
+                 [:slash [:km "cursor: deno-gh"]]
+                 [:period [:km "cursor: ts-pattern-gh"]] ; with github.com/aidenybai/pattycake TODO: move this prob
+                 [:spacebar [:km "cursor: jsr-gh"]]
                  ]}
                  ;[:slash [:km "edit: run.odin"]]
                  ;[:1 [:km "cursor: 1password-gh"]]

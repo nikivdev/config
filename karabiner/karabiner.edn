@@ -1459,6 +1459,7 @@
                  [:slash [:km "cursor: linsa."]]
                  [:left_command [:km "cursor: rust."]]
                  [:spacebar [:km "cursor: py."]] ; includes training/evals
+                 [:right_command [:km "cursor: kotlin."]]
                  ]}
                  ;[:a [:km "cursor: gleam."]] ; + elixir
                  ; TODO: mby useful to have core. with just effect there
@@ -1485,7 +1486,6 @@
                  ;[:d [:km "cursor: docs."]]
                  ;[:u [:km "cursor: odin."]]
                  ;[:u [:km "cursor: elixir."]]
-                 ;[:t [:km "cursor: kotlin."]]
                  ;[:v [:km "cursor: vscode."]]
                  ;[:v [:km "cursor: convex."]]
                  ;[:v [:km "cursor: reatom."]]

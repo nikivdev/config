@@ -1425,18 +1425,18 @@
                  [:1 [:km "cursor: elysia."]]
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: encore."]]
+                 [:9 [:km "cursor: cpp."]] ; mostly useful for electron
+                 [:0 [:km "cursor: zig."]] ; includes ghostty & bun
                  [:q [:km "cursor: myflow."]]
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: gitedit."]] ; blade it too
-                 [:t [:km "cursor: zig."]] ; includes ghostty & bun
-                 [:y [:km "cursor: anysynth."]]
+                 [:t [:km "cursor: anysynth."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: ui."]] ; expo, web (imported via shadcn registry)
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; games, rl
                  [:open_bracket [:km "cursor: gridchess."]]
-                 [:close_bracket [:km "cursor: cpp."]] ; mostly useful for electron
                  [:a [:km "cursor: mbt."]]
                  [:s [:km "cursor: 1f-sdk."]]
                  [:d [:km "cursor: 1f-cli."]] ; (includes opencode/codex)

@@ -1428,10 +1428,10 @@
                  [:9 [:km "cursor: cpp."]] ; mostly useful for electron
                  [:0 [:km "cursor: zig."]] ; includes ghostty & bun
                  [:q [:km "cursor: myflow."]]
-                 [:w [:km "cursor: rust."]]
+                 [:w [:km "cursor: swift."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: gitedit."]] ; blade it too
-                 [:t [:km "cursor: anysynth."]]
+                 [:r [:km "cursor: raycast."]]
+                 [:y [:km "cursor: anysynth."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: ui."]] ; expo, web (imported via shadcn registry)
                  [:o [:km "cursor: sb."]]
@@ -1447,7 +1447,7 @@
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: swift."]]
+                 [:quote [:km "cursor: gitedit."]] ; blade it too
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: other"]]
@@ -1457,7 +1457,7 @@
                  [:comma [:km "cursor: riplay."]]
                  [:period [:km "cursor: fr."]] ; friendik (swift + blade)
                  [:slash [:km "cursor: linsa."]]
-                 [:left_command [:km "cursor: raycast."]]
+                 [:left_command [:km "cursor: rust."]]
                  [:spacebar [:km "cursor: py."]] ; includes training/evals
                  ]}
                  ;[:a [:km "cursor: gleam."]] ; + elixir

@@ -1428,11 +1428,11 @@
                  [:q [:km "cursor: myflow."]]
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: swift."]]
-                 [:t [:km "cursor: gitedit."]] ; make it reactive with jazz + local first
+                 [:r [:km "cursor: gitedit."]] ; blade it too
+                 [:t [:km "cursor: zig."]] ; includes ghostty & bun
                  [:y [:km "cursor: anysynth."]]
                  [:u [:km "cursor: kus."]]
-                 [:i [:km "cursor: zig."]] ; includes ghostty & bun
+                 [:i [:km "cursor: ui."]] ; expo, web (imported via shadcn registry)
                  [:o [:km "cursor: sb."]]
                  [:p [:km "cursor: gpton."]] ; games, rl
                  [:open_bracket [:km "cursor: gridchess."]]
@@ -1447,7 +1447,7 @@
                  [:k [:km "cursor: nikiv."]] ; + wiki. & i.
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: ui."]] ; expo, web (imported via shadcn registry)
+                 [:quote [:km "cursor: swift."]]
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: other"]]

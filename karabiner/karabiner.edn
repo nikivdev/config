@@ -1747,6 +1747,7 @@
                   [:q [:km "paste: Telegram (personal)️"]]
                   [:w [:km "paste: personal nikita.vo@ email"]]
                   [:e [:km "paste: personal nikita@ email"]]
+                  [:u [:km "paste: update"]]
                   [:o [:km "paste: 🙏"]]
                   [:p [:km "paste: ✨"]]
                   [:a [:km "paste: 😺"]]
@@ -1756,11 +1757,11 @@
                   [:j [:km "enter: thx"]]
                   [:k [:km "paste: nikiv"]]
                   [:l [:km "paste: Cal.com (15 min)️"]]
+                  [:n [:km "paste: nikivdev"]]
                   [:semicolon [:km "paste: 🖤"]]
-                  [:n [:km "paste: nikitavoloboev"]]
-                  [:u [:km "paste: update"]]
                  ]}
                  ;[:spacebar :!CSOp] ; Selection -> Reddit
+                 ;[:n [:km "paste: nikitavoloboev"]]
                  ;[:period [:km "paste: pls "]]
                  ;[:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ;[:k [:km "cursor: ui"]]

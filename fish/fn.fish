@@ -1335,7 +1335,7 @@ function jb
    task build
 end
 
-function je
+function ja
    task deploy
 end
 

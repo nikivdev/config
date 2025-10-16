@@ -553,5 +553,9 @@
 	{
 		"key": "ctrl+;",
 		"command": "chatgpt.openSidebar"
-	}
+	},
+	{
+		"key": "cmd+q",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
 ]

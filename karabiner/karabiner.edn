@@ -1433,27 +1433,29 @@
                  [:1 [:km "cursor: encore."]]
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: effect-gh"]]
-                 [:9 [:km "cursor: cpp."]] ; mostly useful for electron
-                 [:0 [:km "cursor: zig."]] ; includes ghostty & bun
+                 [:4 [:km "cursor: elixir."]]
+                 [:9 [:km "cursor: odin."]]
+                 [:0 [:km "cursor: zig."]]
                  [:q [:km "cursor: myflow."]]
                  [:w [:km "cursor: swift."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: raycast."]]
-                 [:t [:km "cursor: gitedit."]] ; blade it too
+                 [:t [:km "cursor: gitedit."]]
                  [:y [:km "cursor: anysynth."]]
                  [:u [:km "cursor: kus."]]
-                 [:i [:km "cursor: ui."]] ; expo, web (imported via shadcn registry)
+                 [:i [:km "cursor: ui."]]
                  [:o [:km "cursor: sb."]]
-                 [:p [:km "cursor: gpton."]] ; games, rl
-                 [:open_bracket [:km "cursor: gridchess."]]
+                 [:p [:km "cursor: cpp."]]
+                 [:open_bracket [:km "cursor: games."]]
+                 [:close_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: mbt."]]
                  [:s [:km "cursor: 1f-sdk."]]
                  [:d [:km "cursor: 1f-cli."]]
-                 [:f [:km "cursor: f."]] ; flow
+                 [:f [:km "cursor: f."]]
                  [:g [:km "cursor: 1f-glide."]]
                  [:h [:km "cursor: infra."]]
                  [:j [:km "cursor: ts."]]
-                 [:k [:km "cursor: nikiv."]] ; + wiki. & i.
+                 [:k [:km "cursor: nikiv."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
                  [:quote [:km "cursor: genx."]] ; train, eval, etc.
@@ -1467,7 +1469,7 @@
                  [:period [:km "cursor: fr."]] ; friendik (swift + blade)
                  [:slash [:km "cursor: linsa."]]
                  [:left_command [:km "cursor: rust."]]
-                 [:spacebar [:km "cursor: py."]] ; includes training/evals
+                 [:spacebar [:km "cursor: py."]]
                  [:right_command [:km "cursor: kotlin."]]
                  ]}
                  ;[:a [:km "cursor: gleam."]] ; + elixir

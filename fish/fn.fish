@@ -361,7 +361,7 @@ function ne
     watchexec --no-vcs-ignore --restart --exts nix --clear --project-origin . "tput reset && nix-instantiate --eval --strict --json $file | jq"
 end
 
-# unstable, but does work for https://github.com/nikitavoloboev/cpp
+# unstable, but does work for https://github.com/nikivdev/cpp
 function cpp
     watchexec --no-vcs-ignore --restart --exts cpp --clear --project-origin . "tput reset && make -C build && src/main"
 end
@@ -580,7 +580,7 @@ function changeRemoteToFork
     set -l repo_name (string split '/' $repo_url | tail -n 1)
 
     # Set the GitHub username directly in the function
-    set -l github_username "nikitavoloboev"
+    set -l github_username "nikivdev"
 
     # Construct the new URL
     set -l new_url "https://github.com/$github_username/$repo_name"
@@ -837,7 +837,7 @@ function gs
     if string match -rq '(.+)--(.+)' $current_folder
         set -l original_author (string match -r '(.+)--(.+)' $current_folder)[2]
         set -l repo_name (string match -r '(.+)--(.+)' $current_folder)[3]
-        gh repo sync "nikitavoloboev/$repo_name" --source "git@github.com:$original_author/$repo_name"
+        gh repo sync "nikivdev/$repo_name" --source "git@github.com:$original_author/$repo_name"
         git pull
     else
         echo "Error: Could not parse repository info from directory name"

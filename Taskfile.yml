@@ -17,7 +17,7 @@ tasks:
     silent: true
 
   ensure-sh:
-    desc: Ensure nikitavoloboev/sh repo is present
+    desc: Ensure nikivdev/sh repo is present
     cmds:
       - |
         set -eu
@@ -31,7 +31,7 @@ tasks:
           echo "[x] sh directory exists but is not a git repo. Remove or rename it, then rerun task setup." >&2
           exit 1
         else
-          echo "[info] cloning https://github.com/nikitavoloboev/sh.git into ./sh"
-          git clone https://github.com/nikitavoloboev/sh.git sh
+          echo "[info] cloning https://github.com/nikivdev/sh.git into ./sh"
+          git clone https://github.com/nikivdev/sh.git sh
         fi
     silent: true

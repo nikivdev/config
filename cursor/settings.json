@@ -290,7 +290,6 @@
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.launch.expressions": "native",
   "lldb.suppressUpdateNotifications": true,
-  "zig.path": "zig",
   "zig.zls.path": "zls",
   "editor.inlineSuggest.suppressSuggestions": false,
   "cursor.cmdk.useThemedDiffBackground": true,

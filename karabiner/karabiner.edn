@@ -289,7 +289,6 @@
                  [:m [:km "cursor: connar-gh"]]
                  [:period [:km "cursor: deno-gh"]]
                  [:slash [:km "cursor: yaak-gh"]]
-                 [:spacebar [:km "cursor: bun-gh"]]
                  ;[:e [:km "cursor: gorealeaser-gh"]]
                  ;[:i [:km "cursor: nixpkgs-gh"]]
                  ;[:f [:km "cursor: mbt-gh"]]
@@ -446,7 +445,8 @@
                  [:t [:km "cursor: temporal-gh"]]
                  [:u [:km "cursor: unsloth-gh"]]
                  [:i [:km "cursor: opencode-gh"]]
-                 [:o [:km "cursor: polar-gh"]]
+                 [:o [:km "cursor: agno-gh"]]
+                 [:p [:km "cursor: polar-gh"]]
                  [:d [:km "cursor: tailwind-gh"]]
                  [:h [:km "cursor: hono."]]
                  [:j [:km "cursor: ai-sdk-gh"]]
@@ -454,7 +454,7 @@
                  [:l [:km "cursor: codex-gh"]]
                  [:semicolon [:km "cursor: mastra-gh"]]
                  [:b [:km "cursor: bluesky-gh"]]
-                 [:n [:km "cursor: agno-gh"]]
+                 [:n [:km "cursor: bun-gh"]]
                  [:m [:km "cursor: alchemy-gh"]]
                  [:period [:km "cursor: jazz-gh"]]
                  [:slash [:km "cursor: trigger-gh"]]
@@ -1457,7 +1457,7 @@
                  [:k [:km "cursor: nikiv."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: 1f."]]
-                 [:quote [:km "cursor: genx."]] ; train, eval, etc.
+                 [:quote [:km "cursor: genx."]] ; train, eval, etc. (nanochat, ..)
                  [:x [:km "cursor: x."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: other"]]
@@ -1488,7 +1488,6 @@
                  ;[:t [:km "cursor: ext."]] ; ext, client, AS dash (move it into 1F/SB later)
                  ;[:m [:km "cursor: 1f-ios."]] ; TODO: briefly. then move to just 1f. (& bring mojo. here)
                  ;[:comma [:km "cursor: zig."]]
-                 ;[:u [:km "cursor: bun."]] ; TODO: move to nice key
                  ;[:s [:km "cursor: search."]]
                  ;[:left_command [:km "cursor: as."]] ; TODO: will be moved
                  ;[:k [:km "cursor: as."]] ; includes api

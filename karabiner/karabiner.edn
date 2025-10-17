@@ -1429,12 +1429,14 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (workspaces)"
          :rules [:escape-mode
-                 [:1 [:km "cursor: encore."]]
-                 [:2 [:km "cursor: expo."]]
-                 [:3 [:km "cursor: effect-gh"]]
-                 [:4 [:km "cursor: elixir."]]
-                 [:9 [:km "cursor: odin."]]
+                 [:1 [:km "cursor: expo."]]
+                 [:2 [:km "cursor: f-side."]]
+                 [:3 [:km "cursor: effect."]]
+                 [:4 [:km "cursor: encore."]]
+                 [:8 [:km "cursor: odin."]]
+                 [:9 [:km "cursor: mbt."]]
                  [:0 [:km "cursor: cpp."]]
+                 [:hyphen [:km "cursor: elixir."]]
                  [:q [:km "cursor: myflow."]]
                  [:w [:km "cursor: swift."]]
                  [:e [:km "cursor: go."]]
@@ -1447,7 +1449,7 @@
                  [:p [:km "cursor: zig."]]
                  [:open_bracket [:km "cursor: gpton."]]
                  [:close_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: mbt."]]
+                 [:a [:km "cursor: 1f-vscode."]]
                  [:s [:km "cursor: 1f-sdk."]]
                  [:d [:km "cursor: 1f-cli."]]
                  [:f [:km "cursor: f."]]

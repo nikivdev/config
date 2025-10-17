@@ -270,7 +270,7 @@ function fi
 end
 
 
-function fs
+function fse
     if not set -q argv[1]
         # flox TODO:
     else
@@ -531,9 +531,9 @@ function re
     end
 end
 
-function fa
-    flox activate -s
-end
+# function fs
+#     flox activate -s
+# end
 
 function :u
     bun update --latest

@@ -1053,11 +1053,11 @@
                  [:escape [:km "open: AWS"]]
                  [:a [:km "open: Codex"]]
                  [:s [:km "open: Grok"]]
-                 [:d [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard (move this to flow) (combine with blade)
+                 [:d [:km "open: Sentry"]] ; TODO: move this to better key
                  [:f [:km "open: Claude"]]
                  [:g [:km "open: Google Cloud"]]
                  [:j [:km "open: ChatGPT"]]
-                 [:k [:km "open: Sentry"]] ; TODO: move this to better key
+                 [:k [:km "open: Jazz Inspector"]] ; TODO: should be part of dashboard (move this to flow) (combine with blade)
                  [:grave_accent_and_tilde [:km "open: AI Studio"]]
                  [:z [:km "open: DeepSeek"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]

@@ -1319,7 +1319,7 @@
                  [:semicolon [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  ;[:quote [:km "new Reddit post (in Arc)"]]
                  [:u [:km "clear active todo"]]
-                 [:i [:alfred "active todo" "nikiv"]] ; TODO: add somewhere
+                 [:i [:alfred "active todo" "nikiv"]] ; TODO: add somewhere. also move active task to next one in line in things
                  [:o [:km "new X post (in Arc)"]]
                  [:p [:km "Things: new task at bottom (Today)"]] ; TODO: make sure to switch to window with `Today`
                  [:left_command [:km "open: Photos"]]
@@ -1681,6 +1681,7 @@
                   ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
+                 [:w [:km "telegram: saved"]]
                  [:e [:km "open: Telegram"]]
                  [:f [:km "open: Spark"]]
                  [:u [:km "open: Zulip"]]
@@ -1688,18 +1689,19 @@
                  [:o [:km "open: Loops"]]
                  ;[:h :!COTS6] ; Tuple hang up
                  [:j [:km "Search Discord"]]
-                 [:k [:km "open: Zoom"]]
+                 [:k [:km "telegram: nikivdev"]]
                  [:l [:km "Search Telegram"]]
                  [:semicolon [:km "open: Slack"]]
-                 [:u [:km "Create new contact"]]
                  [:c [:km "open: WhatsApp"]]
+                 [:v [:km "Create new contact"]]
                  [:b [:km "open: Cal"]]
                  [:n [:km "New Spark email"]] ; TODO: add back when old habits die off
                  [:m [:km "open: Resend"]]
-                 [:period [:alfred "search contacts" "nikivi.search.content"]]
+                 [:period [:km "open: Zoom"]]
                  [:slash [:km "open: Google Meet"]]
                  [:spacebar [:km "open: Contacts"]] ; TODO: replace with LA
                  ]}
+                 ;[:period [:alfred "search contacts" "nikivi.search.content"]] ; move this as part of z+space
                  ;[:comma [:km "open: Signal"]]
                  ;[:k [:km "Search Monologue messages"]]
                  ;[:k [:km "open: Telegram"]] ; TODO: should be replaced as its on space + l too

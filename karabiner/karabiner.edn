@@ -687,10 +687,10 @@
                  [:m [:km "open: Modal Notebooks"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:slash [:km "open: Safari Technology Preview"]]
-                 ;[:left_command [:km "open: Warp"]]
-                 [:left_command [:km "open: TablePlus"]]
+                 [:spacebar [:km "open: Bike"]]
                  [:spacebar [:km "open: SQLiteFlow"]]
                  ]}
+                 ;[:left_command [:km "open: Warp"]]
                  ;[:n [:km "open: Conar"]] ; replace with own tool (friendik?)
                  ;[:left_command [:km "open: Remnote"]]
                  ;[:left_command [:km "open: Reader"]]
@@ -1047,8 +1047,9 @@
                  [:tab [:km "open: Yandex Cloud"]]
                  [:q [:km "open: Expo"]]
                  [:w [:km "open: Cloudflare"]]
-                 [:e [:km "open: Vercel"]]
-                 [:r [:km "open: Stripe"]]
+                 [:e [:km "open: Conductor"]]
+                 [:r [:km "open: Vercel"]]
+                 [:t [:km "open: Stripe"]]
                  [:i [:km "open: Axiom"]]
                  [:escape [:km "open: AWS"]]
                  [:a [:km "open: Codex"]]
@@ -1067,8 +1068,9 @@
                  [:n [:km "open: Ronin"]] ; TODO: when its out again
                  [:m [:km "open: Modal"]]
                  [:left_command [:km "open: Railway"]]
-                 [:spacebar [:km "open: Conductor"]]
+                 [:spacebar [:km "open: SQLiteFlow"]]
                  ]}
+                 ;[:left_command [:km "open: TablePlus"]]
                  ;[:semicolon [:km "open: PostHog"]]
                  ;[:d [:km "open: Convex"]]
                  ;[:left_command [:km "open: Vultr"]]

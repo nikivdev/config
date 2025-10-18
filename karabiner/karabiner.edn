@@ -1446,7 +1446,7 @@
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: ui."]]
                  [:o [:km "cursor: sb."]]
-                 [:p [:km "cursor: zig."]]
+                 [:p [:km "cursor: rust."]]
                  [:open_bracket [:km "cursor: gpton."]]
                  [:close_bracket [:km "cursor: gridchess."]]
                  [:a [:km "cursor: f-native."]]
@@ -1469,7 +1469,7 @@
                  [:comma [:km "cursor: riplay."]]
                  [:period [:km "cursor: fr."]] ; friendik (swift + blade)
                  [:slash [:km "cursor: linsa."]]
-                 [:left_command [:km "cursor: rust."]]
+                 [:left_command [:km "cursor: zig."]]
                  [:spacebar [:km "cursor: py."]]
                  [:right_command [:km "cursor: kotlin."]]
                  ]}
@@ -2208,13 +2208,13 @@
                  [:k [:km "open: Comet"]]
                  [:l [:km "open: Telegram"]]
                  [:semicolon [:!TOe :!TOe]] ; monologue (TODO: move to own solution)
+                 [:quote [:km "open: GitHub (in Arc)"]]
                  [:c [:km "Clone/open repo in ~/gh/"]] ; TODO: no point as it should be under safari/chrome bind
                  [:v [:km "Clone/open repo in ~/gh/ with Cursor"]] ; TODO: no point as it should be under safari/chrome bind
                  [:b [:km "open: IG Messages (in Arc)"]]
                  [:n [:km "open: X Messages (in Arc)"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
-                 [:comma [:km "open: Dia"]] ; TODO: move to other key prob
-                 [:period [:km "open: GitHub (in Arc)"]]
+                 [:period [:km "open: Dia"]] ; TODO: move to other key prob
                  [:slash [:km "open: Discord (in Arc)"]]
                  ]}
                  ;[:period :!TOCclose_bracket] ; contexts window search (only cursor for now) TODO: make generic, good (custom app, friendik) (TODO: modify it so I can search repos to open too)

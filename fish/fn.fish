@@ -1430,3 +1430,22 @@ end
 function k --description "Run repomix and copy the output"
     repomix --copy $argv
 end
+
+function changeRemoteToSsh
+    if test (count $argv) -ne 1
+        echo "Usage: change-remote-to-ssh <git-ssh-url>"
+        return 1
+    end
+    set -l remote_url $argv[1]
+    set -l current_remote (git remote)
+    if test -z "$current_remote"
+        set current_remote origin
+    end
+    git remote set-url $current_remote $remote_url
+    if test $status -eq 0
+        echo "Remote '$current_remote' URL changed to $remote_url"
+    else
+        echo "Failed to change remote URL"
+        return 1
+    end
+end

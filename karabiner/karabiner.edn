@@ -687,7 +687,8 @@
                  [:m [:km "open: Modal Notebooks"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:slash [:km "open: Safari Technology Preview"]]
-                 [:left_command [:km "open: Warp"]]
+                 ;[:left_command [:km "open: Warp"]]
+                 [:left_command [:km "open: TablePlus"]]
                  [:spacebar [:km "open: SQLiteFlow"]]
                  ]}
                  ;[:n [:km "open: Conar"]] ; replace with own tool (friendik?)

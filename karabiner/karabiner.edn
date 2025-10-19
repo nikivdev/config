@@ -1437,14 +1437,15 @@
                  [:2 [:km "cursor: expo."]]
                  [:3 [:km "cursor: effect."]]
                  [:4 [:km "cursor: encore."]]
+                 [:8 [:km "cursor: f-native."]]
                  [:9 [:km "cursor: cpp."]]
                  [:0 [:km "cursor: zig."]]
                  [:hyphen [:km "cursor: elixir."]]
-                 [:q [:km "cursor: myflow."]]
+                 [:q [:km "cursor: swift."]]
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
-                 [:r [:km "cursor: raycast."]]
-                 [:t [:km "cursor: gitedit."]]
+                 [:r [:km "cursor: gitedit."]]
+                 [:t [:km "cursor: riplay."]]
                  [:y [:km "cursor: anysynth."]]
                  [:u [:km "cursor: kus."]]
                  [:i [:km "cursor: ui."]]
@@ -1452,7 +1453,7 @@
                  [:p [:km "cursor: mbt."]]
                  [:open_bracket [:km "cursor: gpton."]]
                  [:close_bracket [:km "cursor: gridchess."]]
-                 [:a [:km "cursor: f-native."]]
+                 [:a [:km "cursor: train."]] ; train, eval, etc. (nanochat, ..)
                  [:s [:km "cursor: 1f-sdk."]]
                  [:d [:km "cursor: 1f-cli."]]
                  [:f [:km "cursor: f."]]
@@ -1469,10 +1470,10 @@
                  [:b [:km "cursor: blade."]]
                  [:n [:km "cursor: new."]]
                  [:m [:km "cursor: mojo."]]
-                 [:comma [:km "cursor: riplay."]]
-                 [:period [:km "cursor: genx."]] ; train, eval, etc. (nanochat, ..)
+                 [:comma [:km "cursor: myflow."]]
+                 [:period [:km "cursor: genx."]]
                  [:slash [:km "cursor: fr."]] ; friendik (swift + blade)
-                 [:left_command [:km "cursor: swift."]]
+                 [:left_command [:km "cursor: search."]] ; raycast/alfred
                  [:spacebar [:km "cursor: py."]]
                  [:right_command [:km "cursor: kotlin."]]
                  ]}
@@ -1832,6 +1833,7 @@
                  [:semicolon [:km "Search Spotify"]]
                  [:n :volume_decrement]
                  [:m :volume_increment]
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7zz9W3JMe64DCqkM9pnSD3"]] ; lock in song TODO: does not work, custom write
                  ]}
                  ;[:escape [:km "open: Endel"]]
                  ; TODO: bind nice for ' (play `One` or `Past One's`)
@@ -1885,7 +1887,7 @@
                  [:6 :!O6]
                  [:tab [:km "reflect: Routines"]] ; should be part of friendik (macOS always on check app too, cluely style)
                  [:q [:km "reflect: Raise"]]
-                 [:w [:km "reflect: Now"]]
+                 [:w [:km "reflect: Flow"]]
                  [:e [:km "reflect: Learn"]]
                  [:r [:km "reflect: Hire"]]
                  [:t [:km "reflect: Nutrition"]]
@@ -1906,9 +1908,10 @@
                  [:v [:km "reflect: Budget"]] ; TODO: move to sb, combine with token profits
                  [:b [:km "reflect: Buy"]]
                  [:period [:km "reflect: Family"]]
-                 [:left_command [:km "reflect: Flow"]]
-                 [:spacebar [:km "reflect: Journal"]]
+                 [:left_command [:km "reflect: Journal"]]
+                 [:spacebar [:km "cursor: Journal"]]
                  ]}
+                 ;[:w [:km "reflect: Now"]]
                  ;[:period [:km "reflect: Focus"]] ; TODO: move to la & hove each bullet have live top data from each of the pages there
                  ;[:grave_accent_and_tilde [:km "reflect: Ideas"]]
                  ;[:s [:km "reflect: Use"]]

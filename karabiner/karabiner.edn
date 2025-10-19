@@ -278,18 +278,24 @@
                  ;[:period [:km "cursor: task-gh"]]
         {:des "1key (gh workspaces)"
          :rules [:1-mode
+                 [:2 [:km "cursor: optique-gh"]] ; https://github.com/dahlia/optique
+                 [:e [:km "cursor: gorealeaser-gh"]]
+                 [:r [:km "cursor: jsr-gh"]]
                  [:i [:km "cursor: tvix-gh"]] ; TODO: & vincent's go nix implementation
-                 [:o [:km "cursor: codanna-gh"]]
-                 [:j [:km "cursor: jsr-gh"]]
-                 [:k [:km "cursor: gorealeaser-gh"]]
-                 [:l [:km "cursor: flox-gh"]]
+                 [:o [:km "cursor: flox-gh"]]
+                 [:d [:km "cursor: codanna-gh"]]
+                 [:j [:km "cursor: swift-composable-arch-gh"]]
+                 [:k [:km "cursor: sqlite-data-gh"]]
+                 [:l [:km "cursor: swift-navigation-gh"]]
                  [:semicolon [:km "cursor: ghostty-gh"]]
+                 [:quote [:km "cursor: swift-sharing-gh"]]
                  [:b [:km "cursor: supabase-gh"]]
                  [:n [:km "cursor: pydantic-ai-gh"]]
                  [:m [:km "cursor: connar-gh"]]
-                 [:period [:km "cursor: optique-gh"]] ; https://github.com/dahlia/optique
-                 [:slash [:km "cursor: clap-gh"]]
+                 [:period [:km "cursor: swift-dependencies-gh"]]
+                 [:slash [:km "cursor: swift-snapshot-testing-gh"]]
                  [:spacebar [:km "cursor: motion-gh"]]
+                 ;[:slash [:km "cursor: clap-gh"]]
                  ;[:m [:km "cursor: midday-gh"]]
                  ;[:i [:km "cursor: nixpkgs-gh"]]
                  ;[:f [:km "cursor: mbt-gh"]]
@@ -588,6 +594,7 @@
                  ]}
         {:des "tabkey (agents)" ; TODO: should be 1f agents with deep links
          :rules [:tab-mode
+                 [:semicolon [:km "cursor: jsr-gh"]]
                  ;[:q [:km "warp: flow"]]
                  ;[:w [:km "warp: rust"]]
                  ;[:e [:km "warp: go"]]
@@ -1332,8 +1339,7 @@
                  [:tab [:km "open: tldraw"]]
                  [:escape [:km "open: Excalidraw"]]
                  [:a [:km "open: Chrome Canary"]]
-                 [:s [:km "open: Grep (in safari tech preview)"]]
-                 [:d [:km "open: Simulator"]]
+                 [:s [:km "open: Simulator"]]
                  ;[:d [:km "open: Electron"]] ; TODO: replace with tauri web or wails (if its better, settle on one)
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
@@ -1461,7 +1467,7 @@
                  [:9 [:km "cursor: cpp."]]
                  [:0 [:km "cursor: zig."]]
                  [:equal_sign [:km "cursor: kus."]] ; focus on foods, real physical places ala rekki
-                 [:q [:km "cursor: swift."]]
+                 [:q [:km "cursor: mojo."]]
                  [:w [:km "cursor: rust."]]
                  [:e [:km "cursor: go."]]
                  [:r [:km "cursor: gitedit."]]
@@ -1489,7 +1495,7 @@
                  [:v [:km "cursor: other"]]
                  [:b [:km "cursor: mbt."]]
                  [:n [:km "cursor: new."]]
-                 [:m [:km "cursor: mojo."]]
+                 [:m [:km "cursor: swift."]]
                  [:comma [:km "cursor: myflow."]]
                  [:period [:km "cursor: genx."]]
                  [:slash [:km "cursor: fr."]] ; friendik (swift + blade)
@@ -1660,7 +1666,7 @@
         ; TODO: can use ghostty too. in future all should be in 1f
         {:des "tilkey (workspaces)" ; all are forks
          :rules [:tilde-mode
-                 [:q [:km "cursor: swift-gh"]]
+                 [:q [:km "cursor: mojo-gh"]]
                  [:w [:km "cursor: rust-gh"]]
                  [:e [:km "cursor: go-gh"]]
                  [:r [:km "cursor: victoria-metrics-gh"]]
@@ -1668,7 +1674,8 @@
                  [:i [:km "cursor: codex-gh"]]
                  [:o [:km "cursor: opencode-gh"]]
                  [:p [:km "cursor: polar-gh"]]
-                 [:d [:km "cursor: dspy-gh"]]
+                 [:s [:km "cursor: dspy-gh"]]
+                 [:d [:km "cursor: ax-gh"]]
                  [:f [:km "cursor: tauri-gh"]]
                  [:g [:km "cursor: isograph-gh"]]
                  [:h [:km "cursor: hono."]]
@@ -1678,9 +1685,10 @@
                  [:semicolon [:km "cursor: expo."]]
                  [:quote [:km "cursor: nanochat-gh"]]
                  [:c [:km "cursor: alchemy-gh"]]
-                 [:v [:km "cursor: ax-gh"]]
+                 [:v [:km "cursor: vscode-gh"]]
+                 [:b [:km "cursor: mbt-gh"]]
                  [:n [:km "cursor: agno-gh"]]
-                 [:m [:km "cursor: mojo-gh"]]
+                 [:m [:km "cursor: swift-gh"]]
                  [:comma [:km "cursor: grafbase-gh"]]
                  [:period [:km "cursor: encore."]]
                  [:slash [:km "cursor: jazz-gh"]]
@@ -1688,8 +1696,8 @@
                  [:spacebar [:km "cursor: py-gh"]]
                  ]}
                   ;[:spacebar [:km "warp: tmp"]]
-                 ;[:semicolon [:km "ghostty: home"]] ; TODO: make work. or move to another key
-                 ; TODO: move run .. to separate key
+                  ;[:semicolon [:km "ghostty: home"]] ; TODO: make work. or move to another key
+                  ; TODO: move run .. to separate key
                   ;[:l [:km "open: EdgeDB Cloud"]]
                   ;[:k [:km "paste: That worked 🖤"]]
                   ;[:m [:km "paste: Cal.com (30 min)️"]]

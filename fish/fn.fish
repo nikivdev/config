@@ -1449,3 +1449,7 @@ function changeRemoteToSsh
         return 1
     end
 end
+
+function r
+    bun run $argv
+end

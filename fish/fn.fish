@@ -1336,7 +1336,7 @@ function jb
 end
 
 function ja
-   task deploy
+   task publish
 end
 
 function js
@@ -1453,3 +1453,7 @@ end
 function r
     bun run $argv
 end
+
+# function f
+#     bunx @1focus/1f@latest
+# end

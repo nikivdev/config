@@ -1,5 +1,4 @@
 {
-  "workbench.activityBar.orientation": "vertical",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "workbench.colorCustomizations": {
     "[GitHub Light]": {
@@ -528,9 +527,10 @@
     }
   ],
   "workbench.statusBar.visible": false,
-  "workbench.layoutControl.enabled": false,
   "cursorpyright.analysis.autoImportCompletions": true,
   "cursorpyright.analysis.typeCheckingMode": "basic",
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.activityBar.location": "hidden"
+  "workbench.layoutControl.enabled": false,
+  "gitlens.mode.active": "zen",
+  "workbench.editor.editorActionsLocation": "hidden"
 }

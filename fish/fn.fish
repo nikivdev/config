@@ -1427,7 +1427,7 @@ function ts.
     bunx tsc --noEmit
 end
 
-function k --description "Run repomix and copy the output"
+function m --description "Run repomix and copy the output"
     repomix --copy $argv
 end
 
@@ -1457,3 +1457,16 @@ end
 # function f
 #     bunx @1focus/1f@latest
 # end
+
+# TODO: temp thing
+function k
+    bun dev
+end
+
+function pd
+    pnpm dev
+end
+
+function blade
+    bunx blade
+end

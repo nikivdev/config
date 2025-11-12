@@ -19,7 +19,8 @@ alias oo="codex"
 alias do="cd ~/doing && eza"
 alias dn="cd ~/src/py && eza"
 alias dm="cd ~/src/go && eza"
-alias dl="cd ~/src/org/la/la && eza"
+# alias dl="cd ~/src/org/la/la && eza"
+alias dl="cd ~/r && eza"
 alias dL="cd ~/src/org/la/x && eza"
 alias dz="cd ~/try && eza"
 alias dZ="cd ~/try/z && eza"
@@ -109,12 +110,16 @@ function i
 end
 
 function p
-    if not set -q argv[1]
-        pnpm i
-    else
-        pnpm add $argv
-    end
+    realpath $argv | pbcopy
 end
+
+# function p
+#     if not set -q argv[1]
+#         pnpm i
+#     else
+#         pnpm add $argv
+#     end
+# end
 
 function pd
     if not set -q argv[1]
@@ -1331,6 +1336,10 @@ function jd
    task dev
 end
 
+function je
+   task deploy
+end
+
 function jb
    task build
 end
@@ -1469,4 +1478,16 @@ end
 
 function blade
     bunx blade
+end
+
+function e
+    task dev
+end
+
+function ee
+  tree -a -I node_modules | pbcopy
+end
+
+function sqliteDump
+   sqlite3 $argv[1] '.dump'
 end

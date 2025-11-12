@@ -558,4 +558,5 @@
 		"key": "cmd+q",
 		"command": "workbench.action.toggleSidebarVisibility"
 	},
+	{ "key": "ctrl+s", "command": "1focus.commitPush" }
 ]

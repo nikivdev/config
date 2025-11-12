@@ -258,8 +258,10 @@
   },
   "window.title": "${activeEditorShort}${separator}${rootNameShort}${separator}${profileName}",
   "errorLens.enabled": true,
-  "errorLens.enabledDiagnosticLevels": ["error", "info"],
-  "terminal.integrated.tabs.enabled": false,
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "info"
+  ],
   "gitlens.hovers.currentLine.over": "line",
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"

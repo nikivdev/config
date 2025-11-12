@@ -97,3 +97,6 @@ end
 source "/Users/nikiv/.zv/env.fish"
 
 fish_add_path /opt/homebrew/opt/ruby/bin
+
+# opencode
+fish_add_path /Users/nikiv/.opencode/bin

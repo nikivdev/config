@@ -995,31 +995,32 @@ function sf
     echo "Saved to $filename (content copied to clipboard)"
 end
 
-function s
-    if test -z "$argv[1]"
-        echo "Usage: sf <url>"
-        return 1
-    end
+# TODO: add back
+# function s
+#     if test -z "$argv[1]"
+#         echo "Usage: sf <url>"
+#         return 1
+#     end
 
-    # Extract domain and path from URL
-    set url (echo $argv[1] | sed -E 's|^https?://||')
-    set domain (echo $url | cut -d'/' -f1)
-    set path (echo $url | grep -o '/.*$' || echo '/')
+#     # Extract domain and path from URL
+#     set url (echo $argv[1] | sed -E 's|^https?://||')
+#     set domain (echo $url | cut -d'/' -f1)
+#     set path (echo $url | grep -o '/.*$' || echo '/')
 
-    # Create filename from domain
-    set filename "$HOME/sites/$domain.txt"
+#     # Create filename from domain
+#     set filename "$HOME/sites/$domain.txt"
 
-    # Build the sitefetch command with exact path matching
-    if string match -q 'http*://*' $argv[1]
-        sitefetch "$argv[1]" -o $filename -m "$path"
-    else
-        sitefetch "https://$argv[1]" -o $filename -m "$path"
-    end
+#     # Build the sitefetch command with exact path matching
+#     if string match -q 'http*://*' $argv[1]
+#         sitefetch "$argv[1]" -o $filename -m "$path"
+#     else
+#         sitefetch "https://$argv[1]" -o $filename -m "$path"
+#     end
 
-    # Copy content to clipboard
-    cat $filename | pbcopy
-    echo "Saved to $filename (content copied to clipboard)"
-end
+#     # Copy content to clipboard
+#     cat $filename | pbcopy
+#     echo "Saved to $filename (content copied to clipboard)"
+# end
 
 
 function killPort

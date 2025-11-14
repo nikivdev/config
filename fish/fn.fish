@@ -1492,3 +1492,20 @@ end
 function sqliteDump
    sqlite3 $argv[1] '.dump'
 end
+
+function fe
+    f run dev
+end
+
+
+function fc
+    f commit
+end
+
+function fd
+    f deploy
+end
+
+function fr
+    f run $argv
+end

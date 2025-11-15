@@ -1,0 +1,16 @@
+version = 1
+
+[[watchers]]
+name = "karabiner"
+path = "~/config/i/karabiner"
+match = "karabiner.edn"
+command = "~/bin/goku"
+debounce_ms = 150
+run_on_start = true
+
+[[server]]
+path = "~/src/org/1f/1f"
+command = "blade --port 4000"
+
+[options]
+autofixErrors = true

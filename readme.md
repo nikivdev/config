@@ -2,6 +2,8 @@
 
 See [this](https://nikiv.dev/config) for details.
 
+Goal is to fully drive config from [flow](flow) but not yet there.
+
 I keep my [karabiner](https://nikiv.dev/karabiner) config private but do occasional [snapshot](https://github.com/nikivdev/snaps/blob/main/config/karabiner/karabiner.edn). Can [reach out](https://x.com/nikivdev) if you have questions or want to see latest version of the config.
 
 My goal is for anyone to be able to have full replication of my mac setup on fresh mac but not yet there.

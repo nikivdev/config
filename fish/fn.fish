@@ -1360,7 +1360,7 @@ end
 
 # TODO: improve, snapshot, allow to pass command to do `j <command>`
 function :
-    f commitPush
+    f commit
 end
 
 function ma
@@ -1494,18 +1494,9 @@ function sqliteDump
 end
 
 function fe
-    f run dev
+    f dev
 end
 
-
-function fc
-    f commit
-end
-
-function fd
+function fw
     f deploy
-end
-
-function fr
-    f run $argv
 end

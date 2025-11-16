@@ -100,3 +100,13 @@ fish_add_path /opt/homebrew/opt/ruby/bin
 
 # opencode
 fish_add_path /Users/nikiv/.opencode/bin
+
+set -gx PATH "/var/folders/69/jnm2pqrx12103z_f8hh3_d1w0000gn/T/frum_80955_1763308433288/bin" $PATH;
+set -gx FRUM_MULTISHELL_PATH "/var/folders/69/jnm2pqrx12103z_f8hh3_d1w0000gn/T/frum_80955_1763308433288";
+set -gx FRUM_DIR "/Users/nikiv/.frum";
+set -gx FRUM_LOGLEVEL "info";
+set -gx FRUM_RUBY_BUILD_MIRROR "https://cache.ruby-lang.org/pub/ruby";
+function _frum_autoload_hook --on-variable PWD --description 'Change Ruby version on directory change'
+    status --is-command-substitution; and return
+    frum --log-level quiet local
+end

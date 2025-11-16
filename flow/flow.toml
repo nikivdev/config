@@ -9,8 +9,28 @@ debounce_ms = 150
 run_on_start = true
 
 [[server]]
+name = "1f"
 path = "~/src/org/1f/1f"
 command = "blade --port 4000"
+autostart = true
+[server.env]
+FORCE_COLOR = "1"
 
-[options]
-autofixErrors = true
+[[server]]
+name = "gen"
+path = "~/src/org/gen/new"
+command = "blade --port 4001"
+autostart = true
+[server.env]
+FORCE_COLOR = "1"
+
+[[server]]
+name = "linsa"
+path = "~/src/org/linsa/linsa"
+command = "blade --port 4002"
+autostart = true
+[server.env]
+FORCE_COLOR = "1"
+
+# [options]
+# autofixErrors = true

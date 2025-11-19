@@ -383,7 +383,7 @@
 		"command": "editor.action.codeAction"
 	},
 	{
-		"key": "alt+cmd+c",
+		"key": "ctrl+d",
 		"command": "copyFilePath"
 	},
 	{
@@ -392,7 +392,7 @@
 		"when": "!editorFocus"
 	},
 	{
-		"key": "ctrl+d",
+		"key": "shift+cmd+d",
 		"command": "copyRelativeFilePath"
 	},
 	{

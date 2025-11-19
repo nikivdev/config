@@ -1,3 +1,8 @@
+alias o="fts"
+alias n="frs"
+alias m="fgo"
+alias fs="f s"
+
 alias cwd="pwd | pbcopy"
 alias pi="pnpm i"
 # alias js="just s" # TODO: do with watch like bun --watch
@@ -35,7 +40,7 @@ alias dd="cd ~/try/tmp/day && eza"
 # alias dD="cd ~/data/private && eza"
 alias dk="cd ~/src/org/solbond/solbond && eza"
 alias dt="cd ~/desktop && eza"
-alias df="cd ~/src/org && eza"
+alias df="cd ~/org && eza"
 # alias dv="cd ~/src/nikiv.dev && eza"
 alias di="cd ~/i && eza"
 alias aa="eza -la" # list files (with hidden)
@@ -569,14 +574,14 @@ end
 #     end
 # end
 
-function l
-    if test (count $argv) -eq 0
-        pwd | pbcopy
-    else
-        bat --paging=never -- $argv
-        cat -- $argv | pbcopy
-    end
-end
+# function l
+#     if test (count $argv) -eq 0
+#         pwd | pbcopy
+#     else
+#         bat --paging=never -- $argv
+#         cat -- $argv | pbcopy
+#     end
+# end
 
 function changeRemoteToFork
     set -l repo_url $argv[1]
@@ -1325,37 +1330,37 @@ end
 
 # TODO: fzf list all commands
 # `k <thing> create thing in Taskfile & exec it instantly`
-function j
-    if test (count $argv) -eq 0
-        task
-    else
-        task $argv
-    end
-end
+# function j
+#     if test (count $argv) -eq 0
+#         task
+#     else
+#         task $argv
+#     end
+# end
 
-function jd
-   task dev
-end
+# function jd
+#    task dev
+# end
 
-function je
-   task deploy
-end
+# function je
+#    task deploy
+# end
 
-function jb
-   task build
-end
+# function jb
+#    task build
+# end
 
-function ja
-   task publish
-end
+# function ja
+#    task publish
+# end
 
-function js
-   task setup
-end
+# function js
+#    task setup
+# end
 
-function jf
-   task flow -- $argv
-end
+# function jf
+#    task flow -- $argv
+# end
 
 
 # TODO: improve, snapshot, allow to pass command to do `j <command>`
@@ -1437,9 +1442,9 @@ function ts.
     bunx tsc --noEmit
 end
 
-function m --description "Run repomix and copy the output"
-    repomix --copy $argv
-end
+# function m --description "Run repomix and copy the output"
+#     repomix --copy $argv
+# end
 
 function changeRemoteToSsh
     if test (count $argv) -ne 1
@@ -1469,9 +1474,9 @@ end
 # end
 
 # TODO: temp thing
-function k
-    bun dev
-end
+# function k
+#     bun dev
+# end
 
 function pd
     pnpm dev
@@ -1479,10 +1484,6 @@ end
 
 function blade
     bunx blade
-end
-
-function e
-    task dev
 end
 
 function ee
@@ -1494,9 +1495,14 @@ function sqliteDump
 end
 
 function fe
-    f dev
+    f deploy
 end
 
-function fw
-    f deploy
+function fs
+    f setup
+end
+
+
+function e
+    f dev
 end

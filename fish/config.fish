@@ -110,3 +110,6 @@ function _frum_autoload_hook --on-variable PWD --description 'Change Ruby versio
     status --is-command-substitution; and return
     frum --log-level quiet local
 end
+
+# Added by Antigravity
+fish_add_path /Users/nikiv/.antigravity/antigravity/bin

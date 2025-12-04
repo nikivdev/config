@@ -62,7 +62,8 @@ end
 
 atuin init fish  --disable-up-arrow | source
 
-jumpy completions fish | source
+# TODO: get bug here with google sdk when this line is on
+# jumpy completions fish | source
 
 # for pg_dump
 if test -d /opt/homebrew/opt/libpq/bin
@@ -73,11 +74,11 @@ if test -d /Users/nikiv/.modular/bin
     fish_add_path --global --prepend /Users/nikiv/.modular/bin
 end
 
-if test -e "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk"
-    fish_add_path --global --prepend "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
-    test -f "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc" && source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
-    test -f "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.fish.inc" && source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.fish.inc"
-end
+# if test -e "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk"
+#     fish_add_path --global --prepend "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
+#     test -f "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc" && source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+#     test -f "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.fish.inc" && source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.fish.inc"
+# end
 
 source ~/.orbstack/shell/init2.fish 2>/dev/null || true
 
@@ -113,3 +114,17 @@ end
 
 # Added by Antigravity
 fish_add_path /Users/nikiv/.antigravity/antigravity/bin
+
+# set -l _mise_bin "$HOME/.local/bin/mise"
+# if test -x $_mise_bin
+#     $_mise_bin activate fish | source
+# end
+
+
+# Ensure /Users/nikiv/.local/bin takes precedence over Python 3.14 system framework bin in PATH
+if string match -q "/Library/Frameworks/Python.framework/Versions/3.14/bin*" $PATH
+    set PATH (string match -rv "/Users/nikiv/.local/bin*" $PATH)
+    set PATH /Users/nikiv/.local/bin $PATH
+else
+    fish_add_path --global --prepend /Users/nikiv/.local/bin
+end

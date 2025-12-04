@@ -3,7 +3,6 @@ alias n="frs"
 alias m="fgo"
 alias fs="f s"
 
-alias cwd="pwd | pbcopy"
 alias pi="pnpm i"
 # alias js="just s" # TODO: do with watch like bun --watch
 alias a="eza -I 'license'" # list files (without license)
@@ -106,17 +105,21 @@ end
 #     end
 # end
 
-function i
-    if not set -q argv[1]
-        bun i
-    else
-        bun i $argv
-    end
-end
+# function i
+#     if not set -q argv[1]
+#         bun i
+#     else
+#         bun i $argv
+#     end
+# end
 
 function p
-    realpath $argv | pbcopy
+    amp
 end
+
+# function p
+#     realpath $argv | pbcopy
+# end
 
 # function p
 #     if not set -q argv[1]
@@ -261,23 +264,23 @@ function f.
     end
 end
 
-function fg
-    if not set -q argv[1]
-        # cd ~/
-        # flox list
-    else
-        # cd ~/
-        # flox install $argv
-    end
-end
+# function fg
+#     if not set -q argv[1]
+#         # cd ~/
+#         # flox list
+#     else
+#         # cd ~/
+#         # flox install $argv
+#     end
+# end
 
-function fi
-    if not set -q argv[1]
-        # flox init TODO:
-    else
-        flox install $argv
-    end
-end
+# function fi
+#     if not set -q argv[1]
+#         # flox init TODO:
+#     else
+#         flox install $argv
+#     end
+# end
 
 
 function fse
@@ -321,11 +324,19 @@ function nw
     watchexec --no-vcs-ignore --restart --exts py --clear --project-origin . "tput reset && uv run -m scripts.$argv"
 end
 
-function n
+function c
     if not set -q argv[1]
         open .
     else
         open $argv
+    end
+end
+
+function z
+    if not set -q argv[1]
+        zed .
+    else
+        zed $argv
     end
 end
 
@@ -977,7 +988,9 @@ function triggerBuildWithNoCommit
 end
 
 
-function sf
+# TODO: move to sf key
+# TODO: use chrome driver. get around cloudflare. index proper
+function sfOld
     if test -z "$argv[1]"
         echo "Usage: sf <url>"
         return 1
@@ -1253,7 +1266,24 @@ function C
     end
 end
 
-function c
+function s
+    if test -z "$argv[1]"
+        pwd | pbcopy
+    else
+        glide index-single-url $argv
+    end
+end
+
+function sf
+    if test -z "$argv[1]"
+        # TODO: change
+        pwd | pbcopy
+    else
+        glide index-full $argv
+    end
+end
+
+function k
     if test -z "$argv[1]"
         claude --dangerously-skip-permissions
     else
@@ -1313,20 +1343,20 @@ end
 
 # from https://x.com/_xjdr/status/1970694098454798338
 function o
-    codex --search --model=gpt-5-codex -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
+    codex --search --model=gpt-5.1-codex-max -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
 end
 
 function ve
     bunx convex $argv
 end
 
-function .
-    if test (count $argv) -eq 0
-        f deploy
-    else
-        bunx $argv
-    end
-end
+# function .
+#     if test (count $argv) -eq 0
+#         f deploy
+#     else
+#         bunx $argv
+#     end
+# end
 
 # TODO: fzf list all commands
 # `k <thing> create thing in Taskfile & exec it instantly`
@@ -1465,8 +1495,12 @@ function changeRemoteToSsh
     end
 end
 
-function r
-    bun run $argv
+function j
+    if test (count $argv) -eq 0
+        bun --watch run.ts
+    else
+        bun run $argv
+    end
 end
 
 # function f
@@ -1502,7 +1536,27 @@ function fs
     f setup
 end
 
+function fi
+    f scripts
+end
+
+function f:
+    f r
+end
+
 
 function e
     f dev
+end
+
+# function c
+#     lin last-cmd
+# end
+
+function fw
+    f s
+end
+
+function j
+    bun ~/org/1f/ai/cli/src/index.ts $argv
 end

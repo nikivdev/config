@@ -363,11 +363,11 @@
 		"key": "cmd+shift+w",
 		"command": "workbench.action.toggleSidebarVisibility"
 	},
-	{
-		"key": "ctrl+o",
-		"command": "editor.action.triggerSuggest",
-		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-	},
+	// {
+	// 	"key": "ctrl+o",
+	// 	"command": "editor.action.triggerSuggest",
+	// 	"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	// },
 	{
 		"key": "alt+escape",
 		"command": "-editor.action.triggerSuggest",
@@ -451,7 +451,7 @@
 		"when": "(arbitrary function)"
 	},
 	{
-		"key": "shift+cmd+e",
+		"key": "ctrl+s",
 		"command": "composer.fixerrormessage"
 	},
 	{
@@ -535,7 +535,7 @@
 		"command": "composerMode.agent"
 	},
 	{
-		"key": "cmd+.",
+		"key": "ctrl+p",
 		"command": "amp.sidebarView.focus"
 	},
 	{
@@ -558,5 +558,14 @@
 		"key": "cmd+q",
 		"command": "workbench.action.toggleSidebarVisibility"
 	},
-	{ "key": "ctrl+s", "command": "1focus.commitPush" }
+	{ "key": "ctrl+h", "command": "1focus.commitPush" },
+	{
+		"key": "ctrl+l",
+		"command": "1focus.flowTasks",
+		"when": "editorTextFocus || editorFocus || terminalFocus"
+	},
+	{
+		"key": "ctrl+o",
+		"command": "claudeVSCodeSidebar.focus"
+	}
 ]

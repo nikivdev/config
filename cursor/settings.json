@@ -534,5 +534,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.layoutControl.enabled": false,
   "gitlens.mode.active": "zen",
-  "workbench.editor.editorActionsLocation": "hidden"
+  "workbench.editor.editorActionsLocation": "hidden",
+  "amp.tryOpus": true
 }

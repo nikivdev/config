@@ -1,8 +1,6 @@
 alias o="fts"
 alias n="frs"
-alias m="fgo"
 alias fs="f s"
-
 alias pi="pnpm i"
 # alias js="just s" # TODO: do with watch like bun --watch
 alias a="eza -I 'license'" # list files (without license)
@@ -1495,13 +1493,13 @@ function changeRemoteToSsh
     end
 end
 
-function j
-    if test (count $argv) -eq 0
-        bun --watch run.ts
-    else
-        bun run $argv
-    end
-end
+# function j
+#     if test (count $argv) -eq 0
+#         bun --watch run.ts
+#     else
+#         bun run $argv
+#     end
+# end
 
 # function f
 #     bunx @1focus/1f@latest
@@ -1545,7 +1543,7 @@ function f:
 end
 
 
-function e
+function .
     f dev
 end
 
@@ -1558,5 +1556,42 @@ function fw
 end
 
 function j
-    bun ~/org/1f/ai/cli/src/index.ts $argv
+    if test -z "$argv[1]"
+        # TODO: make own custom ai like claude code / codex at some point, for now using as rerun of tasks
+        f rerun
+    else
+        # TODO: move to native rust allow to pass in tasks arbitrary through lin
+        bun ~/org/1f/ai/cli/src/index.ts $argv
+    end
+end
+
+function cs
+    claude-sdk $argv
+end
+
+function e
+    if test -z "$argv[1]"
+        f rerun
+    else
+        f $argv
+    end
+end
+
+
+function j
+    if test -z "$argv[1]"
+        fgo
+    else
+        # TODO: move to native rust allow to pass in tasks arbitrary through lin
+        # if its a tool call, do the tool call.
+        bun ~/org/1f/ai/cli/src/index.ts $argv
+    end
+end
+
+function f
+    if test -z "$argv[1]"
+        /Users/nikiv/bin/f
+    else
+        /Users/nikiv/bin/f match $argv
+    end
 end

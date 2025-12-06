@@ -560,12 +560,12 @@
 	},
 	{ "key": "ctrl+h", "command": "1focus.commitPush" },
 	{
-		"key": "ctrl+l",
+		"key": "ctrl+/",
 		"command": "1focus.flowTasks",
 		"when": "editorTextFocus || editorFocus || terminalFocus"
 	},
 	{
-		"key": "ctrl+o",
+		"key": "ctrl+l",
 		"command": "claudeVSCodeSidebar.focus"
 	}
 ]

@@ -1,4 +1,5 @@
 alias o="fts"
+alias npx="bunx"
 alias n="frs"
 alias fs="f s"
 alias pi="pnpm i"
@@ -165,7 +166,7 @@ function u
     end
 end
 
-function w
+function W
     if not set -q argv[1]
         open -a /Applications/Cursor.app .
     else
@@ -191,6 +192,35 @@ function w
         end
 
         open -a /Applications/Cursor.app $argv
+    end
+end
+
+function w
+    if not set -q argv[1]
+        open -a /Applications/Zed.app .
+    else
+        # Check if any of the arguments are files that don't exist
+        set -l missing_files
+        for arg in $argv
+            # Skip if it's a directory or a flag/option (starts with -)
+            if not string match -q -- "-*" $arg; and not test -d $arg; and not test -e $arg
+                set -a missing_files $arg
+            end
+        end
+
+        if test (count $missing_files) -gt 0
+            echo "Creating missing files: $missing_files"
+            for file in $missing_files
+                # Create parent directories if they don't exist
+                set -l dir (dirname $file)
+                if test "$dir" != "."
+                    mkdir -p $dir
+                end
+                touch $file
+            end
+        end
+
+        open -a /Applications/Zed.app $argv
     end
 end
 
@@ -330,11 +360,28 @@ function c
     end
 end
 
+# function z
+#     if not set -q argv[1]
+#         zed .
+#     else
+#         zed $argv
+#     end
+# end
+
 function z
     if not set -q argv[1]
-        zed .
+        ctx .
     else
-        zed $argv
+        set -l flags --optimized
+        set -l task_parts
+        for arg in $argv
+            if string match -q -- '--*' $arg
+                set -a flags $arg
+            else
+                set -a task_parts $arg
+            end
+        end
+        ctx gather . $flags (string join " " $task_parts)
     end
 end
 
@@ -701,6 +748,10 @@ end
 
 function gitRemoteOpen
     git remote get-url origin | sed -e 's/git@github.com:/https:\/\/github.com\//' | xargs open
+end
+
+function gitPrOpen
+    gh pr view --web
 end
 
 function gitChangeRemote
@@ -1340,8 +1391,9 @@ function gRebaseMain \
 end
 
 # from https://x.com/_xjdr/status/1970694098454798338
-function o
-    codex --search --model=gpt-5.1-codex-max -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
+function l
+    # codex --search --model=gpt-5.1-codex-max -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
+    codex
 end
 
 function ve
@@ -1557,11 +1609,9 @@ end
 
 function j
     if test -z "$argv[1]"
-        # TODO: make own custom ai like claude code / codex at some point, for now using as rerun of tasks
-        f rerun
+        fgo
     else
-        # TODO: move to native rust allow to pass in tasks arbitrary through lin
-        bun ~/org/1f/ai/cli/src/index.ts $argv
+        claude-rs run -b (string join " " $argv)
     end
 end
 
@@ -1578,16 +1628,6 @@ function e
 end
 
 
-function j
-    if test -z "$argv[1]"
-        fgo
-    else
-        # TODO: move to native rust allow to pass in tasks arbitrary through lin
-        # if its a tool call, do the tool call.
-        bun ~/org/1f/ai/cli/src/index.ts $argv
-    end
-end
-
 function f
     if test -z "$argv[1]"
         /Users/nikiv/bin/f
@@ -1595,3 +1635,8 @@ function f
         /Users/nikiv/bin/f match $argv
     end
 end
+
+
+# TODO: turn this into a fn
+# TODO: move to native rust allow to pass in tasks arbitrary through lin
+# bun ~/org/1f/ai/cli/src/index.ts $argv

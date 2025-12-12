@@ -526,12 +526,12 @@
 		"command": "workbench.action.pinEditor",
 		"when": "!activeEditorIsPinned"
 	},
+	// {
+	// 	"key": "ctrl+;",
+	// 	"command": "aichat.insertselectionintochat"
+	// },
 	{
 		"key": "ctrl+;",
-		"command": "aichat.insertselectionintochat"
-	},
-	{
-		"key": "ctrl+.",
 		"command": "composerMode.agent"
 	},
 	{
@@ -551,7 +551,7 @@
 		"command": "composerMode.agent"
 	},
 	{
-		"key": "ctrl+;",
+		"key": "ctrl+.",
 		"command": "chatgpt.openSidebar"
 	},
 	{

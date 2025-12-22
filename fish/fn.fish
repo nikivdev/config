@@ -1,5 +1,7 @@
 alias o="fts"
+alias ww="w ~/workspaces/main/..code-workspace"
 alias npx="bunx"
+# TODO: should not be there. just have it under `unite` which is j. but keeping for now
 alias n="frs"
 alias fs="f s"
 alias pi="pnpm i"
@@ -146,25 +148,25 @@ function idev
     end
 end
 
-function ::
-    if not set -q argv[1]
-        deno repl # TODO: change
-    else
-        deno $argv
-    end
-end
+# function ::
+#     if not set -q argv[1]
+#         deno repl # TODO: change
+#     else
+#         deno $argv
+#     end
+# end
 
 function :se
     bun seed $argv
 end
 
-function u
-    if not set -q argv[1]
-        cursor .
-    else
-        cursor $argv
-    end
-end
+# function ,
+#     if not set -q argv[1]
+#         cursor .
+#     else
+#         cursor $argv
+#     end
+# end
 
 function W
     if not set -q argv[1]
@@ -218,6 +220,23 @@ function w
                 end
                 touch $file
             end
+        end
+
+        set -l should_stop_live 0
+        for arg in $argv
+            if string match -q -- "-*" $arg
+                continue
+            end
+            set -l base (basename -- $arg)
+            if string match -q -- ".env*" $base
+                set should_stop_live 1
+                break
+            end
+        end
+
+        if test $should_stop_live -eq 1
+            open -g "lin://stream?stop=true"
+            sleep 0.2
         end
 
         open -a /Applications/Zed.app $argv
@@ -406,14 +425,22 @@ function :g
 end
 
 # set env vars in current shell
+# function x
+#     if test (count $argv) -eq 1
+#         set -x $argv[1]
+#     else if test (count $argv) -ge 2
+#         set -x $argv[1] $argv[2..-1]
+#     else
+#         echo "Usage: x VARIABLE [VALUE]"
+#         return 1
+#     end
+# end
+
 function x
-    if test (count $argv) -eq 1
-        set -x $argv[1]
-    else if test (count $argv) -ge 2
-        set -x $argv[1] $argv[2..-1]
+    if not set -q argv[1]
+        ctx -O .
     else
-        echo "Usage: x VARIABLE [VALUE]"
-        return 1
+        ctx -O $argv
     end
 end
 
@@ -1000,13 +1027,14 @@ function gsyncMain
 end
 
 
+# TODO: does it work
 # used as catch all for fast scripts
-function ,
-    for dir in *=*
-        set newdir (string replace --all "=" "__" "$dir")
-        mv "$dir" "$newdir"
-    end
-end
+# function ,
+#     for dir in *=*
+#         set newdir (string replace --all "=" "__" "$dir")
+#         mv "$dir" "$newdir"
+#     end
+# end
 
 
 function triggerBuildWithNoCommit
@@ -1442,10 +1470,14 @@ end
 #    task flow -- $argv
 # end
 
+# TODO: pass context from the session so this is more accurate
+function :
+    /Users/nikiv/bin/f commitWithCheck
+end
 
 # TODO: improve, snapshot, allow to pass command to do `j <command>`
-function :
-    f commit
+function ,
+    /Users/nikiv/bin/f commit
 end
 
 function ma
@@ -1595,9 +1627,9 @@ function f:
 end
 
 
-function .
-    f dev
-end
+# function .
+#     f dev
+# end
 
 # function c
 #     lin last-cmd
@@ -1619,14 +1651,33 @@ function cs
     claude-sdk $argv
 end
 
+# TODO: not sure how useful
+# function e
+#     if test -z "$argv[1]"
+#         /Users/nikiv/bin/f rerun
+#     else
+#         /Users/nikiv/bin/f $argv
+#     end
+# end
+
+# sync up
+# running the env by name will do the sync up
+# no args env will just go to base env and sync up
 function e
     if test -z "$argv[1]"
-        f rerun
+        /Users/nikiv/bin/f sessions
     else
-        f $argv
+        /Users/nikiv/bin/f $argv
     end
 end
 
+function .
+    if test -z "$argv[1]"
+        /Users/nikiv/bin/f env
+    else
+        /Users/nikiv/bin/f env $argv
+    end
+end
 
 function f
     if test -z "$argv[1]"
@@ -1640,3 +1691,25 @@ end
 # TODO: turn this into a fn
 # TODO: move to native rust allow to pass in tasks arbitrary through lin
 # bun ~/org/1f/ai/cli/src/index.ts $argv
+
+
+function flow
+    /Users/nikiv/bin/f $argv
+end
+
+function i
+    if test -z "$argv[1]"
+        # TODO: not sure yet
+        infra deploy
+    else
+        infra $argv
+    end
+end
+
+function r
+    /Users/nikiv/bin/f ai
+end
+
+function gg
+    osascript -e 'quit app "Lin"'
+end

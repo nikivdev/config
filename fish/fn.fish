@@ -1,4 +1,4 @@
-alias o="fts"
+# alias o="fts"
 alias ww="w ~/workspaces/main/..code-workspace"
 alias npx="bunx"
 # TODO: should not be there. just have it under `unite` which is j. but keeping for now
@@ -1471,8 +1471,34 @@ end
 # end
 
 # TODO: pass context from the session so this is more accurate
-function :
-    /Users/nikiv/bin/f commitWithCheck
+# function :
+#     if test (count $argv) -gt 0
+#         /Users/nikiv/bin/f commitWithCheck --claude --no-hub -m "$argv"
+#     else
+#         # /Users/nikiv/bin/f commitWithCheck --claude (when its reliable, for now testing below)
+#         /Users/nikiv/bin/f commitWithCheck --claude --no-hub
+#     end
+# end
+
+#  function :
+#     if test (count $argv) -gt 0
+#         # TODO: move to codex when richer
+#         # /Users/nikiv/bin/f commitWithCheck (codex is usully default for reviews)
+#         # /Users/nikiv/bin/f commitWithCheck --claude -t 1000 -m "$argv"
+#         /Users/nikiv/bin/f commitWithCheck --claude --no-context -m "$argv"
+#     else
+#         # /Users/nikiv/bin/f commitWithCheck --claude --no-hub -t 1000
+#         # /Users/nikiv/bin/f commitWithCheck --claude -t 1000
+#         /Users/nikiv/bin/f commitWithCheck --claude --no-context -t 1000
+#     end
+# end
+
+ function :
+    if test (count $argv) -gt 0
+        /Users/nikiv/bin/f commit -m "$argv"
+    else
+        /Users/nikiv/bin/f commit
+    end
 end
 
 # TODO: improve, snapshot, allow to pass command to do `j <command>`
@@ -1712,4 +1738,12 @@ end
 
 function gg
     osascript -e 'quit app "Lin"'
+end
+
+function o
+    if test -z "$argv[1]"
+        localcode
+    else
+        localcode $argv
+    end
 end

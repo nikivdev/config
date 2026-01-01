@@ -128,3 +128,6 @@ if string match -q "/Library/Frameworks/Python.framework/Versions/3.14/bin*" $PA
 else
     fish_add_path --global --prepend /Users/nikiv/.local/bin
 end
+
+# Amp CLI
+export PATH="/Users/nikiv/.amp/bin:$PATH"

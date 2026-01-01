@@ -1,11 +1,6 @@
 # flow
 
 [[tasks]]
-name = "setup"
-command = ""
-description = "Project setup (fill me)"
-
-[[tasks]]
-name = "dev"
-command = ""
-description = "Start dev server (fill me)"
+name = "build-sync"
+command = "bun build sync/src/main.ts --compile --outfile ~/.local/bin/sync"
+description = "Build sync CLI binary"

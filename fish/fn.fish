@@ -409,11 +409,7 @@ function md
 end
 
 function :i
-    if not set -q argv[1]
-        bun i
-    else
-        bun i $argv
-    end
+    bun i $argv
 end
 
 function :id
@@ -1336,11 +1332,7 @@ function fn --description "Find directories matching a pattern and exclude node_
 end
 
 function C
-    if test -z "$argv[1]"
-        claude
-    else
-        claude $argv
-    end
+    claude $argv
 end
 
 function s
@@ -1361,11 +1353,7 @@ function sf
 end
 
 function k
-    if test -z "$argv[1]"
-        claude --dangerously-skip-permissions
-    else
-        claude --dangerously-skip-permissions $argv
-    end
+    claude --dangerously-skip-permissions $argv
 end
 
 function gb --description "create git branch"
@@ -1418,11 +1406,12 @@ function gRebaseMain \
     echo "     git push --force-with-lease origin $branch"
 end
 
-# from https://x.com/_xjdr/status/1970694098454798338
 function l
-    # codex --search --model=gpt-5.1-codex-max -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
-    codex
+    codex --yolo --sandbox danger-full-access
 end
+
+# from https://x.com/_xjdr/status/1970694098454798338 (outdated)
+# codex --search --model=gpt-5.1-codex-max -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
 
 function ve
     bunx convex $argv
@@ -1641,7 +1630,7 @@ function fe
 end
 
 function fs
-    f setup
+    f setup $argv
 end
 
 function fi
@@ -1698,18 +1687,19 @@ function e
 end
 
 function .
-    if test -z "$argv[1]"
-        /Users/nikiv/bin/f env
-    else
-        /Users/nikiv/bin/f env $argv
-    end
+    /Users/nikiv/bin/f env $argv
 end
 
 function f
     if test -z "$argv[1]"
         /Users/nikiv/bin/f
     else
-        /Users/nikiv/bin/f match $argv
+        set -l subcmds (/Users/nikiv/bin/f --help | awk 'BEGIN{inside=0} /^Commands:/ {inside=1; next} inside && NF==0 {exit} inside {print $1}')
+        if contains -- $argv[1] $subcmds
+            /Users/nikiv/bin/f $argv
+        else
+            /Users/nikiv/bin/f match $argv
+        end
     end
 end
 
@@ -1741,9 +1731,5 @@ function gg
 end
 
 function o
-    if test -z "$argv[1]"
-        localcode
-    else
-        localcode $argv
-    end
+    localcode $argv
 end

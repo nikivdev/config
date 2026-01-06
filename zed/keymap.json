@@ -1,0 +1,74 @@
+[
+  {
+    "bindings": {
+      "cmd-q": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-q": "workspace::ToggleLeftDock",
+      "ctrl-r": "workspace::ToggleLeftDock",
+      "ctrl-;": "workspace::ActivateNextPane",
+      "ctrl-'": "workspace::ToggleBottomDock",
+      "ctrl-d": "workspace::CopyPath",
+      "ctrl-j": "pane::ActivatePreviousItem",
+      "ctrl-k": "pane::ActivateNextItem",
+      "cmd-1": ["pane::ActivateItem", 0],
+      "cmd-2": ["pane::ActivateItem", 1],
+      "cmd-3": ["pane::ActivateItem", 2],
+      "cmd-4": ["pane::ActivateItem", 3],
+      "cmd-5": ["pane::ActivateItem", 4],
+      "cmd-shift-m": [
+        "workspace::SendKeystrokes",
+        "cmd-shift-f ctrl-` cmd-\\ ctrl-`"
+      ]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-r": "workspace::ToggleLeftDock",
+      "ctrl-d": "workspace::CopyPath",
+      "ctrl-j": "pane::ActivatePreviousItem",
+      "ctrl-k": "pane::ActivateNextItem",
+      "cmd-;": ["editor::ToggleComments", { "advance_downwards": false }],
+      "cmd-1": ["pane::ActivateItem", 0],
+      "cmd-2": ["pane::ActivateItem", 1],
+      "cmd-3": ["pane::ActivateItem", 2],
+      "cmd-4": ["pane::ActivateItem", 3],
+      "cmd-5": ["pane::ActivateItem", 4]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-d": "workspace::CopyPath",
+      "ctrl-j": "pane::ActivatePreviousItem",
+      "ctrl-k": "pane::ActivateNextItem"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "ctrl-d": "workspace::CopyPath",
+      "ctrl-j": "pane::ActivatePreviousItem",
+      "ctrl-k": "pane::ActivateNextItem"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-q": "workspace::ToggleLeftDock",
+      "ctrl-'": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "BufferSearchBar",
+    "bindings": {
+      "enter": "search::SelectNextMatch",
+      "shift-enter": "search::SelectPreviousMatch",
+      "escape": "buffer_search::Dismiss"
+    }
+  }
+]

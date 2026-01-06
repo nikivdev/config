@@ -1,0 +1,58 @@
+{
+  "project_panel": {
+    "hide_hidden": true,
+  },
+  "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-latest",
+    },
+  },
+  "features": {
+    "edit_prediction_provider": "zed",
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 150,
+      "padding": 4,
+      "min_column": 0,
+      "max_severity": null,
+    },
+  },
+  "terminal": {
+    "dock": "right",
+  },
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Github Dark",
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 20.0,
+  "cursor_blink": false,
+  "gutter": {
+    "line_numbers": false,
+  },
+  "status_bar": {
+    "experimental.show": false,
+  },
+  "title_bar": {
+    "show_user_picture": false,
+    "show_sign_in": false,
+  },
+  "file_scan_exclusions": [
+    "license",
+    "target",
+    "**/.idea",
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+  ],
+}

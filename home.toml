@@ -1,0 +1,5 @@
+# Home config for f home
+# Defines where to pull the internal config repo (~/config/i)
+
+[home]
+internal_repo = "git@github.com:nikivdev/config-i.git"

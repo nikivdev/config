@@ -1360,8 +1360,12 @@ function k
     /Users/nikiv/bin/f ai claude
 end
 
+function kk
+    /Users/nikiv/bin/f ai copy-claude
+end
+
 function K
-    /Users/nikiv/bin/f ai claude
+    /Users/nikiv/bin/f ai claude new
 end
 
 function gb --description "create git branch"
@@ -1420,6 +1424,10 @@ end
 
 function l
     /Users/nikiv/bin/f codex
+end
+
+function ll
+    /Users/nikiv/bin/f copy-codex
 end
 
 function L

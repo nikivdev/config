@@ -1352,8 +1352,16 @@ function sf
     end
 end
 
+# function k
+#     claude --dangerously-skip-permissions $argv
+# end
+
 function k
-    claude --dangerously-skip-permissions $argv
+    /Users/nikiv/bin/f ai claude
+end
+
+function K
+    /Users/nikiv/bin/f ai claude
 end
 
 function gb --description "create git branch"
@@ -1406,8 +1414,16 @@ function gRebaseMain \
     echo "     git push --force-with-lease origin $branch"
 end
 
+# function l
+#     codex --yolo --sandbox danger-full-access
+# end
+
 function l
-    codex --yolo --sandbox danger-full-access
+    /Users/nikiv/bin/f codex
+end
+
+function L
+    /Users/nikiv/bin/f codex new
 end
 
 # from https://x.com/_xjdr/status/1970694098454798338 (outdated)

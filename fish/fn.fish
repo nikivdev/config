@@ -1423,15 +1423,15 @@ end
 # end
 
 function l
-    /Users/nikiv/bin/f codex
+    /Users/nikiv/bin/f ai codex
 end
 
 function ll
-    /Users/nikiv/bin/f copy-codex
+    /Users/nikiv/bin/f ai copy-codex
 end
 
 function L
-    /Users/nikiv/bin/f codex new
+    /Users/nikiv/bin/f ai codex new
 end
 
 # from https://x.com/_xjdr/status/1970694098454798338 (outdated)

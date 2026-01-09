@@ -38,3 +38,4 @@ zed/conversations/
 zed/embeddings/
 zed/prompts/
 *_backup.json
+.ai/internal/

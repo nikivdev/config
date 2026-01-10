@@ -51,6 +51,10 @@ alias dc="cd ~/config && eza"
 alias pr="gh pr checkout"
 alias nb="nix-build"
 
+function e
+    /Users/nikiv/bin/f agents $argv
+end
+
 function run_ts_script
     set script_name $argv[1]
     set script_path ~/src/ts/scripts/$script_name.ts
@@ -890,7 +894,7 @@ function :c
 end
 
 # clone using SSH URL format
-function gc
+function gcRaw
     if not set -q argv[1]
         echo "Usage: gc <github-url>"
         return 1
@@ -899,6 +903,14 @@ function gc
     set repo_path (string replace -r 'https://github.com/' '' $argv[1])
     # clone using SSH URL format
     git clone "git@github.com:$repo_path.git"
+end
+
+function .
+    if not set -q argv[1]
+        /Users/nikiv/bin/f repos
+    else
+        /Users/nikiv/bin/f repos clone $argv[1]
+    end
 end
 
 function repoCleanup
@@ -1653,6 +1665,10 @@ function fe
     f deploy
 end
 
+function fes
+    /Users/nikiv/bin/f deploy-with-hub-reload
+end
+
 function fs
     f setup $argv
 end
@@ -1702,15 +1718,16 @@ end
 # sync up
 # running the env by name will do the sync up
 # no args env will just go to base env and sync up
-function e
-    if test -z "$argv[1]"
-        /Users/nikiv/bin/f sessions
-    else
-        /Users/nikiv/bin/f $argv
-    end
-end
+# function e
+#     if test -z "$argv[1]"
+#         /Users/nikiv/bin/f sessions
+#     else
+#         /Users/nikiv/bin/f $argv
+#     end
+# end
 
-function .
+
+function v
     /Users/nikiv/bin/f env $argv
 end
 

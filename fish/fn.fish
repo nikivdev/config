@@ -52,7 +52,7 @@ alias pr="gh pr checkout"
 alias nb="nix-build"
 
 function e
-    /Users/nikiv/bin/f agents $argv
+    ~/bin/f agents $argv
 end
 
 function run_ts_script
@@ -907,9 +907,9 @@ end
 
 function .
     if not set -q argv[1]
-        /Users/nikiv/bin/f repos
+        ~/bin/f repos
     else
-        /Users/nikiv/bin/f repos clone $argv[1]
+        ~/bin/f repos clone $argv[1]
     end
 end
 
@@ -1369,15 +1369,15 @@ end
 # end
 
 function k
-    /Users/nikiv/bin/f ai claude
+    ~/bin/f ai claude
 end
 
 function kk
-    /Users/nikiv/bin/f ai copy-claude
+    ~/bin/f ai copy-claude
 end
 
 function K
-    /Users/nikiv/bin/f ai claude new
+    ~/bin/f ai claude new
 end
 
 function gb --description "create git branch"
@@ -1435,15 +1435,15 @@ end
 # end
 
 function l
-    /Users/nikiv/bin/f ai codex
+    ~/bin/f ai codex
 end
 
 function ll
-    /Users/nikiv/bin/f ai copy-codex
+    ~/bin/f ai copy-codex
 end
 
 function L
-    /Users/nikiv/bin/f ai codex new
+    ~/bin/f ai codex new
 end
 
 # from https://x.com/_xjdr/status/1970694098454798338 (outdated)
@@ -1498,37 +1498,37 @@ end
 # TODO: pass context from the session so this is more accurate
 # function :
 #     if test (count $argv) -gt 0
-#         /Users/nikiv/bin/f commitWithCheck --claude --no-hub -m "$argv"
+#         ~/bin/f commitWithCheck --claude --no-hub -m "$argv"
 #     else
-#         # /Users/nikiv/bin/f commitWithCheck --claude (when its reliable, for now testing below)
-#         /Users/nikiv/bin/f commitWithCheck --claude --no-hub
+#         # ~/bin/f commitWithCheck --claude (when its reliable, for now testing below)
+#         ~/bin/f commitWithCheck --claude --no-hub
 #     end
 # end
 
 #  function :
 #     if test (count $argv) -gt 0
 #         # TODO: move to codex when richer
-#         # /Users/nikiv/bin/f commitWithCheck (codex is usully default for reviews)
-#         # /Users/nikiv/bin/f commitWithCheck --claude -t 1000 -m "$argv"
-#         /Users/nikiv/bin/f commitWithCheck --claude --no-context -m "$argv"
+#         # ~/bin/f commitWithCheck (codex is usully default for reviews)
+#         # ~/bin/f commitWithCheck --claude -t 1000 -m "$argv"
+#         ~/bin/f commitWithCheck --claude --no-context -m "$argv"
 #     else
-#         # /Users/nikiv/bin/f commitWithCheck --claude --no-hub -t 1000
-#         # /Users/nikiv/bin/f commitWithCheck --claude -t 1000
-#         /Users/nikiv/bin/f commitWithCheck --claude --no-context -t 1000
+#         # ~/bin/f commitWithCheck --claude --no-hub -t 1000
+#         # ~/bin/f commitWithCheck --claude -t 1000
+#         ~/bin/f commitWithCheck --claude --no-context -t 1000
 #     end
 # end
 
  function :
     if test (count $argv) -gt 0
-        /Users/nikiv/bin/f commit -m "$argv"
+        ~/bin/f commit -m "$argv"
     else
-        /Users/nikiv/bin/f commit
+        ~/bin/f commit
     end
 end
 
 # TODO: improve, snapshot, allow to pass command to do `j <command>`
 function ,
-    /Users/nikiv/bin/f commit
+    ~/bin/f commit
 end
 
 function ma
@@ -1666,7 +1666,7 @@ function fe
 end
 
 function fes
-    /Users/nikiv/bin/f deploy-with-hub-reload
+    ~/bin/f deploy-with-hub-reload
 end
 
 function fs
@@ -1709,9 +1709,9 @@ end
 # TODO: not sure how useful
 # function e
 #     if test -z "$argv[1]"
-#         /Users/nikiv/bin/f rerun
+#         ~/bin/f rerun
 #     else
-#         /Users/nikiv/bin/f $argv
+#         ~/bin/f $argv
 #     end
 # end
 
@@ -1720,26 +1720,26 @@ end
 # no args env will just go to base env and sync up
 # function e
 #     if test -z "$argv[1]"
-#         /Users/nikiv/bin/f sessions
+#         ~/bin/f sessions
 #     else
-#         /Users/nikiv/bin/f $argv
+#         ~/bin/f $argv
 #     end
 # end
 
 
 function v
-    /Users/nikiv/bin/f env $argv
+    ~/bin/f env $argv
 end
 
 function f
     if test -z "$argv[1]"
-        /Users/nikiv/bin/f
+        ~/bin/f
     else
-        set -l subcmds (/Users/nikiv/bin/f --help | awk 'BEGIN{inside=0} /^Commands:/ {inside=1; next} inside && NF==0 {exit} inside {print $1}')
+        set -l subcmds (~/bin/f --help | awk 'BEGIN{inside=0} /^Commands:/ {inside=1; next} inside && NF==0 {exit} inside {print $1}')
         if contains -- $argv[1] $subcmds
-            /Users/nikiv/bin/f $argv
+            ~/bin/f $argv
         else
-            /Users/nikiv/bin/f match $argv
+            ~/bin/f match $argv
         end
     end
 end
@@ -1751,7 +1751,7 @@ end
 
 
 function flow
-    /Users/nikiv/bin/f $argv
+    ~/bin/f $argv
 end
 
 function i
@@ -1764,7 +1764,7 @@ function i
 end
 
 function r
-    /Users/nikiv/bin/f ai
+    ~/bin/f ai
 end
 
 function gg

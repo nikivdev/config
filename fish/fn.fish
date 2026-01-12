@@ -1726,6 +1726,9 @@ end
 #     end
 # end
 
+function mig
+    /Users/nikiv/bin/f code migrate . $argv
+end
 
 function v
     ~/bin/f env $argv

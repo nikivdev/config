@@ -1357,6 +1357,10 @@ function s
     end
 end
 
+function fa
+    ~/bin/f deploy-and-run
+end
+
 # todo: wrap with fn
 # glide index-single-url $argv
 

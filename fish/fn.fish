@@ -1153,7 +1153,7 @@ end
 
 # TODO: find how to do smth like `tree-layout | tee /dev/tty | pbcopy` but preserve colors
 # print folder/file layout deeply + copy to clipboard
-function t
+function tr
     tree-layout
     tree-layout | pbcopy
 end
@@ -1349,11 +1349,16 @@ end
 
 function s
     if test -z "$argv[1]"
-        pwd | pbcopy
+        set -l path (string replace -r "^$HOME" "~" (pwd))
+        echo -n $path | pbcopy
     else
-        glide index-single-url $argv
+        set -l path (string replace -r "^$HOME" "~" (realpath $argv[1]))
+        echo -n $path | pbcopy
     end
 end
+
+# todo: wrap with fn
+# glide index-single-url $argv
 
 function sf
     if test -z "$argv[1]"
@@ -1738,12 +1743,7 @@ function f
     if test -z "$argv[1]"
         ~/bin/f
     else
-        set -l subcmds (~/bin/f --help | awk 'BEGIN{inside=0} /^Commands:/ {inside=1; next} inside && NF==0 {exit} inside {print $1}')
-        if contains -- $argv[1] $subcmds
-            ~/bin/f $argv
-        else
-            ~/bin/f match $argv
-        end
+        ~/bin/f match $argv
     end
 end
 
@@ -1776,4 +1776,11 @@ end
 
 function o
     localcode $argv
+end
+
+function t
+    set -l path (~/bin/t $argv)
+    if test -n "$path" -a -d "$path"
+        cd $path
+    end
 end

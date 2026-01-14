@@ -131,13 +131,3 @@ end
 
 # Amp CLI
 export PATH="/Users/nikiv/.amp/bin:$PATH"
-
-# flow:start
-function f
-    if test (count $argv) -eq 0
-        ~/bin/f
-    else
-        ~/bin/f match $argv
-    end
-end
-# flow:end

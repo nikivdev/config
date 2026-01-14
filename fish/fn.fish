@@ -1703,7 +1703,8 @@ function fw
     f s
 end
 
-function j
+# todo: improve this
+function o
     if test -z "$argv[1]"
         fgo
     else
@@ -1778,7 +1779,8 @@ function gg
     osascript -e 'quit app "Lin"'
 end
 
-function o
+# todo: remap
+function oo
     localcode $argv
 end
 
@@ -1787,4 +1789,8 @@ function t
     if test -n "$path" -a -d "$path"
         cd $path
     end
+end
+
+function j
+    ai new
 end

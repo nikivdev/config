@@ -28,6 +28,8 @@
   {
     "context": "Editor",
     "bindings": {
+      "ctrl-f": "editor::GoToDefinition",
+      "ctrl-e": "pane::GoBack",
       "ctrl-r": "workspace::ToggleLeftDock",
       "ctrl-d": "workspace::CopyPath",
       "ctrl-j": "pane::ActivatePreviousItem",
@@ -69,6 +71,12 @@
       "enter": "search::SelectNextMatch",
       "shift-enter": "search::SelectPreviousMatch",
       "escape": "buffer_search::Dismiss"
+    }
+  },
+  {
+    "context": "ProjectSearchView",
+    "bindings": {
+      "enter": "editor::OpenExcerpts"
     }
   }
 ]

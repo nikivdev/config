@@ -133,3 +133,22 @@ end
 export PATH="/Users/nikiv/.amp/bin:$PATH"
 
 set -g fish_greeting
+# flow:start
+function f
+    set -l bin ""
+    if test -x ~/.local/bin/f
+        set bin ~/.local/bin/f
+    else if test -x ~/bin/f
+        set bin ~/bin/f
+    else
+        set bin (command -v f)
+    end
+
+    if test -z "$argv[1]"
+        $bin
+    else
+        $bin match $argv
+    end
+end
+# flow:end
+

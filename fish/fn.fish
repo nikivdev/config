@@ -1385,7 +1385,7 @@ function k
     if test (count $argv) -eq 0
         ~/bin/f ai claude
     else
-        ~/bin/db $argv
+        ~/.local/bin/hive db $argv
     end
 end
 
@@ -1452,10 +1452,10 @@ end
 # end
 
 function l
-    if test (count $argv) -eq 0
-        ~/bin/f ai codex
+    if test (count $argv) -gt 0
+        ~/.local/bin/hive guess $argv
     else
-        ~/bin/f install $argv
+        ~/bin/f ai codex
     end
 end
 
@@ -1468,8 +1468,12 @@ function L
 end
 
 function o
-    opencode $argv
-end
+      if test (count $argv) -eq 0
+          opencode $argv
+      end
+      set -l query (string join " " $argv)
+      ~/.local/bin/hive explore "$query"
+  end
 
 # from https://x.com/_xjdr/status/1970694098454798338 (outdated)
 # codex --search --model=gpt-5.1-codex-max -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
@@ -1765,11 +1769,6 @@ function mc
     /Users/nikiv/bin/f migrate code $argv
 end
 
-function f --wraps=flow --description 'flow'
-    ~/bin/f $argv
-end
-
-
 # TODO: turn this into a fn
 # TODO: move to native rust allow to pass in tasks arbitrary through lin
 # bun ~/org/1f/ai/cli/src/index.ts $argv
@@ -1825,8 +1824,16 @@ function r
     end
 end
 
+function rr
+    ~/bin/trash $argv
+end
+
 function n
-    ~/bin/f env $argv
+    if test -z "$argv[1]"
+        hive --paste env
+    else
+        hive env $argv
+    end
 end
 
 function b
@@ -1835,8 +1842,17 @@ end
 
 function j
     if test (count $argv) -eq 0
-        ~/bin/f todo
+        ~/bin/f install $argv
     else
         hive note $argv
     end
+end
+
+function ar
+    if test (count $argv) -eq 0
+        echo "Usage: ar <message>"
+        return 1
+    end
+    set -l msg (string join " " $argv)
+    ~/bin/f archive "$msg"
 end

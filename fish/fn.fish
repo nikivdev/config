@@ -13,7 +13,7 @@ alias gl="git pull"
 alias wr="cursor readme.md"
 alias da="cd ~/src && eza"
 # alias dj="cd ~/src/ts && eza"
-alias rr="rm -rf"
+# alias rr="rm -rf"
 alias dj="cd ~/try && eza"
 alias dw="cd ~/try/wip && eza"
 alias dv="cd ~/try/src && eza"
@@ -1382,7 +1382,11 @@ end
 # end
 
 function k
-    ~/bin/f ai claude
+    if test (count $argv) -eq 0
+        ~/bin/f ai claude
+    else
+        ~/bin/db $argv
+    end
 end
 
 function kk
@@ -1448,7 +1452,11 @@ end
 # end
 
 function l
-    ~/bin/f ai codex
+    if test (count $argv) -eq 0
+        ~/bin/f ai codex
+    else
+        ~/bin/f install $argv
+    end
 end
 
 function ll
@@ -1821,10 +1829,14 @@ function n
     ~/bin/f env $argv
 end
 
-function v
+function b
     db $argv
 end
 
 function j
-    hive note $argv
+    if test (count $argv) -eq 0
+        ~/bin/f todo
+    else
+        hive note $argv
+    end
 end

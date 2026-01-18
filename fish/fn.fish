@@ -2,7 +2,7 @@
 alias ww="w ~/workspaces/main/..code-workspace"
 alias npx="bunx"
 # TODO: should not be there. just have it under `unite` which is j. but keeping for now
-alias n="frs"
+# alias n="frs"
 alias fs="f s"
 alias pi="pnpm i"
 # alias js="just s" # TODO: do with watch like bun --watch
@@ -10,10 +10,10 @@ alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
 alias dF="cd ~/src/pause && eza"
 alias gl="git pull"
-alias rr="rm -rf"
 alias wr="cursor readme.md"
 alias da="cd ~/src && eza"
 # alias dj="cd ~/src/ts && eza"
+alias rr="rm -rf"
 alias dj="cd ~/try && eza"
 alias dw="cd ~/try/wip && eza"
 alias dv="cd ~/try/src && eza"
@@ -30,7 +30,7 @@ alias dL="cd ~/src/org/la/x && eza"
 alias dz="cd ~/try && eza"
 alias dZ="cd ~/try/z && eza"
 alias de="cd ~/new && eza"
-alias db="cd ~/src/base && eza"
+# alias db="cd ~/src/base && eza"
 alias dq="cd ~/Documents && eza"
 alias dp="cd ~/past && eza"
 alias dg="cd ~/src/other && eza"
@@ -51,7 +51,7 @@ alias dc="cd ~/config && eza"
 alias pr="gh pr checkout"
 alias nb="nix-build"
 
-function e
+function ee
     ~/bin/f agents $argv
 end
 
@@ -905,12 +905,16 @@ function gcRaw
     git clone "git@github.com:$repo_path.git"
 end
 
-function .
+function h
     if not set -q argv[1]
         ~/bin/f repos
     else
         ~/bin/f repos clone $argv[1]
     end
+end
+
+function .
+    ~/bin/f rerun
 end
 
 function repoCleanup
@@ -1292,47 +1296,47 @@ end
 #     end
 # end
 
-function mc --description "go build and install a binary"
-    set -l binary_name
+# function mc --description "go build and install a binary"
+#     set -l binary_name
 
-    # Check if an argument is provided
-    if test (count $argv) -eq 0
-        # No argument provided, check for directories in cmd/
-        set -l cmd_dirs (path filter -d cmd/*)
-        set -l num_dirs (count $cmd_dirs)
+#     # Check if an argument is provided
+#     if test (count $argv) -eq 0
+#         # No argument provided, check for directories in cmd/
+#         set -l cmd_dirs (path filter -d cmd/*)
+#         set -l num_dirs (count $cmd_dirs)
 
-        if test $num_dirs -eq 1
-            # Exactly one directory found, use it as the binary name
-            set binary_name (basename $cmd_dirs[1])
-        else
-            # Zero or multiple directories found, prompt for binary name
-            echo "Error: Please specify the binary name. Found $num_dirs directories in cmd/."
-            return 1
-        end
-    else
-        # Use the provided argument as the binary name
-        set binary_name $argv[1]
-    end
+#         if test $num_dirs -eq 1
+#             # Exactly one directory found, use it as the binary name
+#             set binary_name (basename $cmd_dirs[1])
+#         else
+#             # Zero or multiple directories found, prompt for binary name
+#             echo "Error: Please specify the binary name. Found $num_dirs directories in cmd/."
+#             return 1
+#         end
+#     else
+#         # Use the provided argument as the binary name
+#         set binary_name $argv[1]
+#     end
 
-    set -l gopath (go env GOPATH)
+#     set -l gopath (go env GOPATH)
 
-    # Build the binary locally
-    # echo "Building $binary_name locally..."
-    go build -o $binary_name ./cmd/$binary_name
-    if test $status -ne 0
-        echo "Build failed"
-        return 1
-    end
+#     # Build the binary locally
+#     # echo "Building $binary_name locally..."
+#     go build -o $binary_name ./cmd/$binary_name
+#     if test $status -ne 0
+#         echo "Build failed"
+#         return 1
+#     end
 
-    # Install the binary to $GOPATH/bin
-    # echo "Installing $binary_name..."
-    go install ./cmd/$binary_name
-    if test $status -ne 0
-        echo "Failed to install $binary_name"
-        return 1
-    end
-    echo "✔ $binary_name installed"
-end
+#     # Install the binary to $GOPATH/bin
+#     # echo "Installing $binary_name..."
+#     go install ./cmd/$binary_name
+#     if test $status -ne 0
+#         echo "Failed to install $binary_name"
+#         return 1
+#     end
+#     echo "✔ $binary_name installed"
+# end
 
 
 function fn --description "Find directories matching a pattern and exclude node_modules"
@@ -1453,6 +1457,10 @@ end
 
 function L
     ~/bin/f ai codex new
+end
+
+function o
+    opencode $argv
 end
 
 # from https://x.com/_xjdr/status/1970694098454798338 (outdated)
@@ -1700,17 +1708,22 @@ end
 # end
 
 function fw
-    f s
+    f dev
 end
 
+# function fw
+#     f s
+# end
+
 # todo: improve this
-function o
-    if test -z "$argv[1]"
-        fgo
-    else
-        claude-rs run -b (string join " " $argv)
-    end
-end
+# todo: move
+# function b
+#     if test -z "$argv[1]"
+#         fgo
+#     else
+#         claude-rs run -b (string join " " $argv)
+#     end
+# end
 
 function cs
     claude-sdk $argv
@@ -1736,20 +1749,16 @@ end
 #     end
 # end
 
-function mig
-    /Users/nikiv/bin/f code migrate . $argv
+function m
+    /Users/nikiv/bin/f migrate $argv
 end
 
-function v
-    ~/bin/f env $argv
+function mc
+    /Users/nikiv/bin/f migrate code $argv
 end
 
-function f
-    if test -z "$argv[1]"
-        ~/bin/f
-    else
-        ~/bin/f match $argv
-    end
+function f --wraps=flow --description 'flow'
+    ~/bin/f $argv
 end
 
 
@@ -1771,9 +1780,9 @@ function i
     end
 end
 
-function r
-    ~/bin/f ai
-end
+# function r
+#     ~/bin/f ai
+# end
 
 function gg
     osascript -e 'quit app "Lin"'
@@ -1791,6 +1800,31 @@ function t
     end
 end
 
+function ts
+    t ts
+end
+
+function web
+    t web
+end
+
+function r
+    if test -z "$argv[1]"
+        t clear
+    else
+        # rm -rf $argv
+        ~/bin/trash $argv
+    end
+end
+
+function n
+    ~/bin/f env $argv
+end
+
+function v
+    db $argv
+end
+
 function j
-    ai new
+    hive note $argv
 end

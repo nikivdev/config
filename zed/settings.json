@@ -1,6 +1,6 @@
 {
   "session": {
-    "trust_all_worktrees": true
+    "trust_all_worktrees": true,
   },
   "project_panel": {
     "hide_hidden": true,

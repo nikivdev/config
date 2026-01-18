@@ -131,3 +131,5 @@ end
 
 # Amp CLI
 export PATH="/Users/nikiv/.amp/bin:$PATH"
+
+set -g fish_greeting

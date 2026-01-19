@@ -201,51 +201,51 @@ function W
     end
 end
 
-function w
-    if not set -q argv[1]
-        open -a /Applications/Zed.app .
-    else
-        # Check if any of the arguments are files that don't exist
-        set -l missing_files
-        for arg in $argv
-            # Skip if it's a directory or a flag/option (starts with -)
-            if not string match -q -- "-*" $arg; and not test -d $arg; and not test -e $arg
-                set -a missing_files $arg
-            end
-        end
+# function w
+#     if not set -q argv[1]
+#         open -a /Applications/Zed.app .
+#     else
+#         # Check if any of the arguments are files that don't exist
+#         set -l missing_files
+#         for arg in $argv
+#             # Skip if it's a directory or a flag/option (starts with -)
+#             if not string match -q -- "-*" $arg; and not test -d $arg; and not test -e $arg
+#                 set -a missing_files $arg
+#             end
+#         end
 
-        if test (count $missing_files) -gt 0
-            echo "Creating missing files: $missing_files"
-            for file in $missing_files
-                # Create parent directories if they don't exist
-                set -l dir (dirname $file)
-                if test "$dir" != "."
-                    mkdir -p $dir
-                end
-                touch $file
-            end
-        end
+#         if test (count $missing_files) -gt 0
+#             echo "Creating missing files: $missing_files"
+#             for file in $missing_files
+#                 # Create parent directories if they don't exist
+#                 set -l dir (dirname $file)
+#                 if test "$dir" != "."
+#                     mkdir -p $dir
+#                 end
+#                 touch $file
+#             end
+#         end
 
-        set -l should_stop_live 0
-        for arg in $argv
-            if string match -q -- "-*" $arg
-                continue
-            end
-            set -l base (basename -- $arg)
-            if string match -q -- ".env*" $base
-                set should_stop_live 1
-                break
-            end
-        end
+#         set -l should_stop_live 0
+#         for arg in $argv
+#             if string match -q -- "-*" $arg
+#                 continue
+#             end
+#             set -l base (basename -- $arg)
+#             if string match -q -- ".env*" $base
+#                 set should_stop_live 1
+#                 break
+#             end
+#         end
 
-        if test $should_stop_live -eq 1
-            open -g "lin://stream?stop=true"
-            sleep 0.2
-        end
+#         if test $should_stop_live -eq 1
+#             open -g "lin://stream?stop=true"
+#             sleep 0.2
+#         end
 
-        open -a /Applications/Zed.app $argv
-    end
-end
+#         open -a /Applications/Zed.app $argv
+#     end
+# end
 
 # tunnels local telegram mini app (usually on port 5173 with the `tma.internal` domain)
 function ngTelegram

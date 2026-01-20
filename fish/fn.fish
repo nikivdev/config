@@ -1361,9 +1361,9 @@ function s
     end
 end
 
-function fa
-    ~/bin/f deploy-and-run
-end
+# function fa
+#     ~/bin/f deploy-and-run
+# end
 
 # todo: wrap with fn
 # glide index-single-url $argv
@@ -1385,7 +1385,9 @@ function k
     if test (count $argv) -eq 0
         ~/bin/f ai claude
     else
-        ~/.local/bin/hive db $argv
+        # todo: mby add
+        # ~/.local/bin/hive db $argv
+        ~/.local/bin/hive agent skim $argv
     end
 end
 
@@ -1856,3 +1858,28 @@ function ar
     set -l msg (string join " " $argv)
     ~/bin/f archive "$msg"
 end
+
+function fa --wraps=fishy --description "fishy - fish wrapper helper"
+     fishy $argv
+     and source /Users/nikiv/config/fish/fn.fish
+ end
+ complete -c fa -w fishy
+complete -c w -w zed-open
+complete -c we -w zed-open
+function fishy --wraps=fishy --description "fishy - fish wrapper helper"
+    if test (count $argv) -ge 1; and test "$argv[1]" = "reload"
+        source /Users/nikiv/config/fish/fn.fish
+        return
+    end
+    command fishy $argv
+end
+complete -c fishy -w fishy
+function we --wraps=zed-open --description "zed-open - smart Zed opener"
+    zed-open code $argv
+end
+complete -c we -w zed-open
+complete -c w -w zed-open
+function sk --wraps=hive --description "Hive - Natural language command generation & knowledge base"
+    hive agent skim $argv
+end
+complete -c sk -w hive

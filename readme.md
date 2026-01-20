@@ -2,20 +2,16 @@
 
 See [this](https://nikiv.dev/config) for details.
 
-Goal is to fully drive config from [flow](flow) but not yet there.
+I write lots of code and I describe my workflow [here](https://nikiv.dev/how-i-code).
 
-I keep my [karabiner](https://nikiv.dev/karabiner) config private but do occasional [snapshot](https://github.com/nikivdev/snaps/blob/main/config/kar/config.ts). Can [reach out](https://x.com/nikivdev) if you have questions or want to see latest version of the config.
+I keep my [Karabiner](https://nikiv.dev/karabiner) config private but I built tool to manage the config nicely called [kar](https://github.com/nikivdev/kar).
 
-My goal is for anyone to be able to have full replication of my mac setup on fresh mac but not yet there.
+This holds the public config I am sharing, internal stuff is in `i/` folder in here git ignored. 
 
-## Tasks
-
-Using [flow](flow), run `f` to see available tasks.
+I use [flow](https://github.com/nikivdev/flow) to manage everything.
 
 ## Contributing
 
-Make issues with bugs/features or PRs. Unfinished work will be merged too if the idea is good. Software or docs can always be better. Thank you. Can see [this](https://nikiv.dev/how-i-code) for how to code fast with AI.
-
-### 🖤
+[Use AI](https://nikiv.dev/how-i-code) & [flow](https://github.com/nikivdev/flow). All meaningful issues and PRs will be merged in. Thank you.
 
 [![Discord](https://go.nikiv.dev/badge-discord)](https://go.nikiv.dev/discord) [![X](https://go.nikiv.dev/badge-x)](https://x.com/nikivdev) [![nikiv.dev](https://go.nikiv.dev/badge-nikiv)](https://nikiv.dev)

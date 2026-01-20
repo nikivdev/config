@@ -1,6 +1,11 @@
 source ~/config/fish/fn.fish
 source ~/config/i/fish/i.fish
 
+# Avoid fish terminal query warning in incompatible terminals.
+if not contains -- no-query-term $fish_features
+    set -Ua fish_features no-query-term
+end
+
 source ~/.local/state/nix/profiles/profile/etc/profile.d/nix.fish # use latest version of nix
 set -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt # needed for flox/nix (some ssl bug or something) TODO: still needed?
 # TODO: how to use latest version of nix daemon too with flox?
@@ -151,4 +156,3 @@ function f
     end
 end
 # flow:end
-

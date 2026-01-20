@@ -1864,6 +1864,12 @@ function fa --wraps=fishy --description "fishy - fish wrapper helper"
      and source /Users/nikiv/config/fish/fn.fish
  end
  complete -c fa -w fishy
+function hf --description "hive fish agent helper"
+    hive agent fish $argv
+    and source /Users/nikiv/config/fish/fn.fish
+    and source /Users/nikiv/config/fish/config.fish
+end
+complete -c hf -w hive
 complete -c w -w zed-open
 complete -c we -w zed-open
 function fishy --wraps=fishy --description "fishy - fish wrapper helper"

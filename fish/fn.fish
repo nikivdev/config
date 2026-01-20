@@ -1872,14 +1872,6 @@ end
 complete -c hf -w hive
 complete -c w -w zed-open
 complete -c we -w zed-open
-function fishy --wraps=fishy --description "fishy - fish wrapper helper"
-    if test (count $argv) -ge 1; and test "$argv[1]" = "reload"
-        source /Users/nikiv/config/fish/fn.fish
-        return
-    end
-    command fishy $argv
-end
-complete -c fishy -w fishy
 function we --wraps=zed-open --description "zed-open - smart Zed opener"
     zed-open code $argv
 end

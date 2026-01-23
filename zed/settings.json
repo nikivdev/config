@@ -46,7 +46,8 @@
     "show_sign_in": false,
   },
   "file_scan_exclusions": [
-    "license",
+    "**/LICENSE",
+    "**/LICENSE.*",
     "target",
     "**/.idea",
     "**/.git",

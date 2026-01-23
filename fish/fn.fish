@@ -1557,6 +1557,14 @@ end
     end
 end
 
+function ::
+    if test (count $argv) -gt 0
+        ~/bin/f commitSimple -m "$argv"
+    else
+        ~/bin/f commitSimple
+    end
+end
+
 # TODO: improve, snapshot, allow to pass command to do `j <command>`
 function ,
     ~/bin/f commit

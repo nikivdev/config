@@ -4,7 +4,7 @@ See [this](https://nikiv.dev/config) for details.
 
 I write lots of code and I describe my workflow [here](https://nikiv.dev/how-i-code).
 
-My entire workflow is based around Karabiner and generator I wrote for it called [kar](https://github.com/nikivdev/kar). I share snapshots of my config [here](https://github.com/nikivdev/snaps/blob/main/kar/config.ts). Can see [this PR to Karabiner](https://github.com/pqrs-org/Karabiner-Elements/pull/4396) for more context.
+My entire workflow is based around [Karabiner](https://github.com/pqrs-org/Karabiner-Elements) and generator I wrote for it called [kar](https://github.com/nikivdev/kar). I share snapshots of my config [here](https://github.com/nikivdev/snaps/blob/main/kar/config.ts). Can see [this PR to Karabiner](https://github.com/pqrs-org/Karabiner-Elements/pull/4396) for more context.
 
 This repo holds public config I am sharing, internal stuff is in `i/` folder in here git ignored. 
 

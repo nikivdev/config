@@ -39,3 +39,11 @@ zed/embeddings/
 zed/prompts/
 *_backup.json
 .ai/internal/
+
+# flow
+.ai/internal/
+.ai/web/
+.ai/skills/
+.claude/
+.codex/
+.flox/

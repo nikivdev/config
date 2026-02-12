@@ -29,7 +29,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Github Dark",
+    "dark": "GitHub Dark",
   },
   "vim_mode": true,
   "ui_font_size": 16,
@@ -52,6 +52,10 @@
     "**/LICENSE",
     "**/LICENSE.*",
     "target",
+    "**/node_modules",
+    "**/.jazz2",
+    "**/typesense",
+    "**/assistant-traces",
     "**/.idea",
     "**/.git",
     "**/.svn",
@@ -62,4 +66,13 @@
     "**/.classpath",
     "**/.settings",
   ],
+  "languages": {
+    "TypeScript": {
+      "formatter": [],
+      "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
+  },
 }

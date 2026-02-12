@@ -1,6 +1,10 @@
 source ~/config/fish/fn.fish
 source ~/config/i/fish/i.fish
 
+# Default editor (Zed Preview)
+set -gx EDITOR "zed"
+set -gx VISUAL "zed"
+
 # Avoid fish terminal query warning in incompatible terminals.
 if not contains -- no-query-term $fish_features
     set -Ua fish_features no-query-term

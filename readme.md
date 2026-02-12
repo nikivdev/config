@@ -4,9 +4,9 @@ See [this](https://nikiv.dev/config) for details.
 
 I write lots of code and I describe my workflow [here](https://nikiv.dev/how-i-code).
 
-I keep my [Karabiner](https://nikiv.dev/karabiner) config private but I built tool to manage the config nicely called [kar](https://github.com/nikivdev/kar).
+My entire workflow is based around Karabiner and generator I wrote for it called [kar](https://github.com/nikivdev/kar). I share snapshots of my config [here](https://github.com/nikivdev/snaps/blob/main/kar/config.ts). Can see [this PR to Karabiner](https://github.com/pqrs-org/Karabiner-Elements/pull/4396) for more context.
 
-This holds the public config I am sharing, internal stuff is in `i/` folder in here git ignored. 
+This repo holds public config I am sharing, internal stuff is in `i/` folder in here git ignored. 
 
 I use [flow](https://github.com/nikivdev/flow) to manage everything.
 

@@ -913,9 +913,9 @@ function h
     end
 end
 
-function .
-    ~/bin/f rerun
-end
+# function .
+#     ~/bin/f rerun
+# end
 
 function repoCleanup
     find . -type f -name "README.md" -not -path "*/node_modules/*" -exec sh -c '
@@ -1827,7 +1827,9 @@ end
 
 function r
     if test -z "$argv[1]"
-        t clear
+        if test (pwd) = "$HOME/t"
+            t clear
+        end
     else
         # rm -rf $argv
         ~/bin/trash $argv
@@ -1850,13 +1852,13 @@ function b
     db $argv
 end
 
-function j
-    if test (count $argv) -eq 0
-        ~/bin/f install $argv
-    else
-        hive note $argv
-    end
-end
+# function j
+#     if test (count $argv) -eq 0
+#         ~/bin/f install $argv
+#     else
+#         hive note $argv
+#     end
+# end
 
 function ar
     if test (count $argv) -eq 0
@@ -1889,3 +1891,13 @@ function sk --wraps=hive --description "Hive - Natural language command generati
     hive agent skim $argv
 end
 complete -c sk -w hive
+
+# unpush but keep changes
+function unpush
+    set branch (git rev-parse --abbrev-ref HEAD)
+    git reset HEAD^
+    git push --force-with-lease origin $branch
+end
+
+# . -> dot (AI TUI)
+abbr -a -g . dot

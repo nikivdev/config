@@ -537,6 +537,7 @@
       "action": "allow"
     }
   ],
+  "workbench.sideBar.location": "left",
   "workbench.statusBar.visible": false,
   "cursorpyright.analysis.autoImportCompletions": true,
   "cursorpyright.analysis.typeCheckingMode": "basic",

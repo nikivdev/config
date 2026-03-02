@@ -2,6 +2,7 @@
   "edit_predictions": {
     "provider": "zed"
   },
+  "restore_on_startup": "none",
   "session": {
     "trust_all_worktrees": true,
   },

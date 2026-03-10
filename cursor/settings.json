@@ -121,6 +121,7 @@
   },
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontSize": 15,
+  "terminal.integrated.cursorBlinking": false,
   "terminal.integrated.inheritEnv": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,

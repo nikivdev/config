@@ -1,4 +1,7 @@
 {
+  "edit_predictions": {
+    "provider": "zed"
+  },
   "session": {
     "trust_all_worktrees": true,
   },
@@ -11,9 +14,6 @@
       "model": "claude-sonnet-4-latest",
     },
   },
-  "features": {
-    "edit_prediction_provider": "zed",
-  },
   "diagnostics": {
     "inline": {
       "enabled": true,
@@ -25,6 +25,12 @@
   },
   "terminal": {
     "dock": "right",
+    "shell": {
+      "with_arguments": {
+        "program": "/usr/local/bin/fish",
+        "args": ["-l"],
+      },
+    },
   },
   "theme": {
     "mode": "system",

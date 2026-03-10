@@ -692,7 +692,7 @@ end
 
 function d
     if not set -q argv[1]
-        cd
+        /Users/nikitavoloboev/.cargo/bin/dev
     else
         if cd $argv 2>/dev/null
             eza
@@ -812,8 +812,12 @@ function d:
 end
 
 function d.
-    cd ~/rust && eza
+    cd
 end
+
+# function d.
+#     cd ~/rust && eza
+# end
 
 # TODO: moved to :
 # function k
@@ -1382,13 +1386,7 @@ end
 # end
 
 function k
-    if test (count $argv) -eq 0
-        ~/bin/f ai claude
-    else
-        # todo: mby add
-        # ~/.local/bin/hive db $argv
-        ~/.local/bin/hive agent skim $argv
-    end
+    ~/bin/f ai claude $argv
 end
 
 function kk
@@ -1453,12 +1451,407 @@ end
 #     codex --yolo --sandbox danger-full-access
 # end
 
-function l
-    if test (count $argv) -gt 0
-        ~/.local/bin/hive guess $argv
-    else
-        ~/bin/f ai codex
+function __prom_codex_is_leaf_branch
+    set -l value $argv[1]
+    string match -rq -- '^(codex|review)/' "$value"
+end
+
+function __prom_codex_supports_leaf_sessions
+    set -l cwd (pwd -P)
+    if string match -q -- "$HOME/code/prom*" "$cwd"
+        return 0
     end
+    if string match -q -- "$HOME/.jj/workspaces/prom*" "$cwd"
+        return 0
+    end
+    return 1
+end
+
+function __prom_codex_prompt_text
+    string lower -- (string join " " $argv)
+end
+
+function __codex_flow_bin
+    if test -x "$HOME/bin/flow"
+        echo "$HOME/bin/flow"
+        return 0
+    end
+
+    echo "flow"
+end
+
+function __codex_prompt_targets_recovery
+    set -l prompt (__prom_codex_prompt_text $argv)
+    if test -z "$prompt"
+        return 1
+    end
+
+    if string match -rq -- '(see this (convo|session) in|what was i doing( here| in)?|recover recent context|recover context|recover .* session|continue the .* work|resume the .* work|what happened in pr #[0-9]+|continue .*pr #[0-9]+|resume .*pr #[0-9]+)' "$prompt"
+        return 0
+    end
+
+    return 1
+end
+
+function __codex_recover_target_path
+    set -l prompt (__prom_codex_prompt_text $argv)
+
+    for token in $argv
+        set -l cleaned (string trim -c "'\"`()[]{}.,:;" -- $token)
+        if string match -rq -- '^~/' "$cleaned"
+            set -l expanded (string replace -r '^~' "$HOME" -- $cleaned)
+            if test -f "$expanded"
+                dirname "$expanded"
+            else
+                echo "$expanded"
+            end
+            return 0
+        end
+        if string match -rq -- '^/Users/|^/users/' "$cleaned"
+            if test -f "$cleaned"
+                dirname "$cleaned"
+            else
+                echo "$cleaned"
+            end
+            return 0
+        end
+    end
+
+    if __prom_codex_prompt_targets_prom $argv
+        if __prom_codex_prompt_targets_designer_integration $argv
+            echo "$HOME/code/prom/ide/designer"
+            return 0
+        end
+        if __prom_codex_prompt_targets_designer_deps $argv
+            echo "$HOME/code/prom/x/nikiv/reactron-rs"
+            return 0
+        end
+        if string match -rq -- '(ide/rev|x/nikiv/rev|move rev|rev dashboard|review-ui)' "$prompt"
+            echo "$HOME/code/prom/x/nikiv/rev"
+            return 0
+        end
+        echo "$HOME/code/prom"
+        return 0
+    end
+
+    if string match -rq -- '(~/repos/openai/codex|/users/nikitavoloboev/repos/openai/codex|codex repo|session-recovery|history.jsonl|thread/list|thread/read)' "$prompt"
+        echo "$HOME/repos/openai/codex"
+        return 0
+    end
+
+    pwd -P
+end
+
+function __codex_build_recovery_prompt
+    set -l prompt (string join " " $argv)
+    if not __codex_prompt_targets_recovery $argv
+        echo "$prompt"
+        return 0
+    end
+
+    set -l target_path (__codex_recover_target_path $argv)
+    set -l flow_bin (__codex_flow_bin)
+    set -l summary_lines ($flow_bin ai codex recover --summary-only --path "$target_path" $argv 2>/dev/null)
+
+    if test $status -ne 0
+        or test (count $summary_lines) -eq 0
+        echo "$prompt"
+        return 0
+    end
+
+    set -l summary (printf "%s\n" $summary_lines | string collect)
+
+    printf "Recovered recent context:\n%s\n\nCurrent task:\n%s\n" "$summary" "$prompt"
+end
+
+function __codex_open_recovery_session
+    set -l prompt (__codex_build_recovery_prompt $argv)
+
+    if __prom_codex_prompt_targets_prom $argv
+        set -lx PROM_CODEX_PROMPT_OVERRIDE "$prompt"
+        __prom_codex_open_dispatched_session new $argv
+        return $status
+    end
+
+    set -l target_path (__codex_recover_target_path $argv)
+    env CODEX_RECOVER_TARGET="$target_path" CODEX_RECOVER_PROMPT="$prompt" \
+        bash -lc 'cd "$CODEX_RECOVER_TARGET" && exec codex --yolo --sandbox danger-full-access "$CODEX_RECOVER_PROMPT"'
+end
+
+function __prom_codex_prompt_targets_prom
+    set -l prompt (__prom_codex_prompt_text $argv)
+    if test -z "$prompt"
+        return 1
+    end
+
+    if __prom_codex_prompt_mentions_sync_action $argv
+        and string match -rq -- '(~/code/prom|/users/nikitavoloboev/code/prom|origin/main|main@origin|review/nikiv|ide/designer|ide/rev|x/nikiv/reactron-rs|x/nikiv/rev|reactron-rs|reactron rs|reactron/|nikiv)' "$prompt"
+        return 0
+    end
+
+    if string match -rq -- '(^|[^[:alnum:]_])(~/code/prom|/users/nikitavoloboev/code/prom|review/nikiv|designer-stack|designer-stack-seal|designer-pr-open|designer-session|designer-deps-session|designer-restack|designer-sync-home-deps|prom-codex-sessions|ide/designer|ide/rev|x/nikiv/reactron-rs|x/nikiv/rev|reactron-rs|reactron rs|pr #2572)([^[:alnum:]_]|$)' "$prompt"
+        return 0
+    end
+
+    if string match -rq -- '(^|[^[:alnum:]_])nikiv([^[:alnum:]_]|$)' "$prompt"
+        and string match -rq -- '(origin/main|review/|ide/designer|ide/rev|designer|reactron-rs|reactron rs|x/nikiv/rev|home branch|workspace|designer-stack|designer-pr-open|designer-session|designer-deps-session|prom-codex-sessions)' "$prompt"
+        return 0
+    end
+
+    return 1
+end
+
+function __prom_codex_prompt_mentions_sync_action
+    set -l prompt (__prom_codex_prompt_text $argv)
+    if test -z "$prompt"
+        return 1
+    end
+
+    if string match -rq -- '(pull|sync|update|get latest|up to date|rebase|restack|bring .* into|port .* into|bring in)' "$prompt"
+        return 0
+    end
+
+    return 1
+end
+
+function __prom_codex_prompt_targets_designer_deps
+    set -l prompt (__prom_codex_prompt_text $argv)
+    if test -z "$prompt"
+        return 1
+    end
+
+    if __prom_codex_prompt_mentions_sync_action $argv
+        and string match -rq -- '(reactron-rs|reactron rs|x/nikiv/reactron-rs)' "$prompt"
+        and string match -rq -- '(reactron/|reactron|origin/main|main@origin|nikiv)' "$prompt"
+        return 0
+    end
+
+    if string match -rq -- 'review/nikiv-reactron-rs-designer-support|designer-deps-session|shared reactron|shared reactron-rs|dependency branch|designer deps|x/nikiv/reactron-rs' "$prompt"
+        return 0
+    end
+
+    if string match -rq -- '(designer|ide/designer)' "$prompt"
+        and string match -rq -- '(reactron-rs|reactron rs|reactron/)' "$prompt"
+        and string match -rq -- '(deps|dependency|shared|support|base branch|base pr)' "$prompt"
+        return 0
+    end
+
+    return 1
+end
+
+function __prom_codex_prompt_targets_designer_integration
+    set -l prompt (__prom_codex_prompt_text $argv)
+    if test -z "$prompt"
+        return 1
+    end
+
+    if string match -rq -- 'review/nikiv-designer-dev-deploy|designer-session|designer-pr-open|designer-stack|bootstrap designer dev with reactron-rs|pr #2572' "$prompt"
+        return 0
+    end
+
+    if string match -rq -- '(designer|ide/designer)' "$prompt"
+        and string match -rq -- '(reactron-rs|reactron rs|npm run dev|f deploy|bootstrap|setup|release|deploy|review|pr)' "$prompt"
+        return 0
+    end
+
+    return 1
+end
+
+function __prom_codex_invocation_targets_prom
+    if __prom_codex_supports_leaf_sessions
+        return 0
+    end
+
+    if test (count $argv) -eq 0
+        return 1
+    end
+
+    switch $argv[1]
+        case continue
+            if test (count $argv) -ge 2
+                if __prom_codex_is_leaf_branch $argv[2]
+                    return 0
+                end
+                if __prom_codex_prompt_targets_prom $argv[2..-1]
+                    return 0
+                end
+            end
+        case new
+            if test (count $argv) -ge 2
+                if __prom_codex_is_leaf_branch $argv[2]
+                    return 0
+                end
+                if __prom_codex_prompt_targets_prom $argv[2..-1]
+                    return 0
+                end
+            end
+        case branch attach
+            if test (count $argv) -ge 2
+                if __prom_codex_is_leaf_branch $argv[2]
+                    return 0
+                end
+            end
+        case '-*' list ls sessions sess resume copy context save notes remove import init copy-codex copy-claude cx cc
+            return 1
+        case '*'
+            if __prom_codex_is_leaf_branch $argv[1]
+                return 0
+            end
+            if __prom_codex_prompt_targets_prom $argv
+                return 0
+            end
+    end
+
+    return 1
+end
+
+function __prom_codex_open_dispatched_session
+    set -l action $argv[1]
+    set -e argv[1]
+    set -l prompt_override $PROM_CODEX_PROMPT_OVERRIDE
+    set -l prompt
+    if test -n "$prompt_override"
+        set prompt $prompt_override
+    else
+        set prompt (string join " " $argv)
+    end
+
+    if test (count $argv) -ge 1
+        switch $argv[1]
+            case review/nikiv-reactron-rs-designer-support
+                if test "$action" = continue
+                    env START_CWD=(pwd -P) "$HOME/code/prom/x/nikiv/forge/scripts/designer-deps-session.sh" --continue
+                else
+                    env START_CWD=(pwd -P) "$HOME/code/prom/x/nikiv/forge/scripts/designer-deps-session.sh"
+                end
+                return $status
+            case review/nikiv-designer-dev-deploy
+                if test "$action" = continue
+                    env START_CWD=(pwd -P) "$HOME/code/prom/x/nikiv/forge/scripts/designer-dev-deploy-session.sh" --continue
+                else
+                    env START_CWD=(pwd -P) "$HOME/code/prom/x/nikiv/forge/scripts/designer-dev-deploy-session.sh"
+                end
+                return $status
+        end
+    end
+
+    if test "$action" = continue
+        if test (count $argv) -ge 1
+            if __prom_codex_is_leaf_branch $argv[1]
+                __prom_codex_open_leaf_session --continue --exact $argv[1]
+                return $status
+            end
+        end
+    end
+
+    if test (count $argv) -ge 1
+        if __prom_codex_is_leaf_branch $argv[1]
+            __prom_codex_open_leaf_session --exact $argv[1]
+            return $status
+        end
+    end
+
+    if __prom_codex_prompt_targets_designer_deps $argv
+        if test "$action" = continue
+            env START_CWD=(pwd -P) "$HOME/code/prom/x/nikiv/forge/scripts/designer-deps-session.sh" --continue
+        else
+            env START_CWD=(pwd -P) "$HOME/code/prom/x/nikiv/forge/scripts/designer-deps-session.sh" --prompt "$prompt"
+        end
+        return $status
+    end
+
+    if __prom_codex_prompt_targets_designer_integration $argv
+        if test "$action" = continue
+            env START_CWD=(pwd -P) "$HOME/code/prom/x/nikiv/forge/scripts/designer-dev-deploy-session.sh" --continue
+        else
+            env START_CWD=(pwd -P) "$HOME/code/prom/x/nikiv/forge/scripts/designer-dev-deploy-session.sh" --prompt "$prompt"
+        end
+        return $status
+    end
+
+    switch $action
+        case new
+            __prom_codex_open_leaf_session --new $argv
+        case continue
+            __prom_codex_open_leaf_session --continue $argv
+        case '*'
+            __prom_codex_open_leaf_session $argv
+    end
+end
+
+function __prom_codex_open_leaf_session
+    set -l start_cwd (pwd -P)
+    env START_CWD="$start_cwd" "$HOME/run/i/prom/scripts/open-prom-codex-leaf-session.sh" $argv
+end
+
+function l
+    if test (count $argv) -eq 0
+        ~/bin/f ai codex
+        return $status
+    end
+
+    if __codex_prompt_targets_recovery $argv
+        __codex_open_recovery_session $argv
+        return $status
+    end
+
+    if __prom_codex_invocation_targets_prom $argv
+        switch $argv[1]
+            case --base
+                if test (count $argv) -lt 3
+                    echo "usage: l --base <branch> <topic-or-branch>"
+                    return 1
+                end
+                __prom_codex_open_leaf_session --base $argv[2] $argv[3..-1]
+                return $status
+            case '-*'
+                ~/bin/f ai codex $argv
+                return $status
+            case list ls sessions sess resume copy context save notes remove import init copy-codex copy-claude cx cc
+                ~/bin/f ai codex $argv
+                return $status
+            case continue
+                if test (count $argv) -ge 2
+                    if __prom_codex_is_leaf_branch $argv[2]
+                        __prom_codex_open_dispatched_session continue $argv[2]
+                        return $status
+                    end
+                    if __prom_codex_prompt_targets_prom $argv[2..-1]
+                        __prom_codex_open_dispatched_session continue $argv[2..-1]
+                        return $status
+                    end
+                end
+                ~/bin/f ai codex $argv
+                return $status
+            case new
+                if test (count $argv) -ge 2
+                    if __prom_codex_is_leaf_branch $argv[2]
+                        __prom_codex_open_dispatched_session new $argv[2]
+                    else
+                        __prom_codex_open_dispatched_session new $argv[2..-1]
+                    end
+                    return $status
+                end
+                ~/bin/f ai codex $argv
+                return $status
+            case branch attach
+                if test (count $argv) -lt 2
+                    echo "usage: l branch <codex/...|review/...>"
+                    return 1
+                end
+                __prom_codex_open_dispatched_session new $argv[2]
+                return $status
+            case '*'
+                if __prom_codex_is_leaf_branch $argv[1]
+                    __prom_codex_open_dispatched_session new $argv[1]
+                    return $status
+                end
+                __prom_codex_open_dispatched_session new $argv
+                return $status
+        end
+    end
+
+    ~/bin/f ai codex $argv
 end
 
 function ll
@@ -1466,7 +1859,22 @@ function ll
 end
 
 function L
-    ~/bin/f ai codex new
+    if test (count $argv) -eq 0
+        f ai codex new
+        return $status
+    end
+
+    if __codex_prompt_targets_recovery $argv
+        __codex_open_recovery_session $argv
+        return $status
+    end
+
+    if __prom_codex_prompt_targets_prom $argv
+        __prom_codex_open_dispatched_session new $argv
+        return $status
+    end
+
+    bun $HOME/config/fish/scripts/codex-openai-session.ts $argv
 end
 
 function o

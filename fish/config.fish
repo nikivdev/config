@@ -1,5 +1,17 @@
 source ~/config/fish/fn.fish
-source ~/config/i/fish/i.fish
+if test -f ~/config/i/fish/i.fish
+    source ~/config/i/fish/i.fish
+end
+
+# Pure prompt (enforced from local repo checkout)
+set -l _pure_root "$HOME/repos/pure-fish/pure"
+if test -f "$_pure_root/conf.d/pure.fish"
+    set -g fish_function_path "$_pure_root/functions" $fish_function_path
+    source "$_pure_root/conf.d/pure.fish"
+    set -g pure_symbol_prompt ">"
+    set -g pure_symbol_reverse_prompt "<"
+    source ~/config/fish/prompt_parallel_workspaces.fish
+end
 
 # Default editor (Zed Preview)
 set -gx EDITOR "zed"
@@ -10,7 +22,9 @@ if not contains -- no-query-term $fish_features
     set -Ua fish_features no-query-term
 end
 
-source ~/.local/state/nix/profiles/profile/etc/profile.d/nix.fish # use latest version of nix
+if test -f ~/.local/state/nix/profiles/profile/etc/profile.d/nix.fish
+    source ~/.local/state/nix/profiles/profile/etc/profile.d/nix.fish # use latest version of nix
+end
 set -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt # needed for flox/nix (some ssl bug or something) TODO: still needed?
 # TODO: how to use latest version of nix daemon too with flox?
 
@@ -32,6 +46,9 @@ end
 if test -d "$HOME/.cargo/bin"
     fish_add_path --global --prepend $HOME/.cargo/bin
 end
+if test -d "$HOME/bin"
+    fish_add_path --global --prepend $HOME/bin
+end
 
 # solana https://solana.com/docs/intro/installation
 if test -d /Users/nikiv/.local/share/solana/install/active_release/bin
@@ -49,19 +66,15 @@ if test -d /Users/nikiv/.cache/lm-studio/bin
 end
 
 # fnm
-# TODO: looks ugly and seems wrong to commit this in config.fish, fix it
-set -gx FNM_MULTISHELL_PATH "/Users/nikiv/.local/state/fnm_multishells/6982_1733503676213"
-set -gx FNM_VERSION_FILE_STRATEGY "local"
-set -gx FNM_DIR "/Users/nikiv/Library/Application Support/fnm"
-set -gx FNM_LOGLEVEL "info"
-set -gx FNM_NODE_DIST_MIRROR "https://nodejs.org/dist"
-set -gx FNM_COREPACK_ENABLED "false"
-set -gx FNM_RESOLVE_ENGINES "true"
-set -gx FNM_ARCH "arm64"
-
-set -l _fnm_bin "$FNM_MULTISHELL_PATH/bin"
-if test -d $_fnm_bin
-    fish_add_path --global --prepend $_fnm_bin
+if command -sq fnm
+    set -gx FNM_VERSION_FILE_STRATEGY "local"
+    set -gx FNM_DIR "$HOME/.local/share/fnm"
+    set -gx FNM_LOGLEVEL "info"
+    set -gx FNM_NODE_DIST_MIRROR "https://nodejs.org/dist"
+    set -gx FNM_COREPACK_ENABLED "false"
+    set -gx FNM_RESOLVE_ENGINES "true"
+    set -gx FNM_ARCH "arm64"
+    fnm env --use-on-cd --shell fish | source
 end
 
 # moonbit
@@ -69,7 +82,9 @@ if test -d "$HOME/.moon/bin"
     fish_add_path --global --prepend $HOME/.moon/bin
 end
 
-atuin init fish  --disable-up-arrow | source
+if command -sq atuin
+    atuin init fish --disable-up-arrow | source
+end
 
 # TODO: get bug here with google sdk when this line is on
 # jumpy completions fish | source
@@ -92,7 +107,7 @@ end
 source ~/.orbstack/shell/init2.fish 2>/dev/null || true
 
 # pnpm
-set -gx PNPM_HOME "/Users/nikiv/Library/pnpm"
+set -gx PNPM_HOME "$HOME/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
@@ -104,21 +119,31 @@ if test -d $HOME/config/sh
     fish_add_path --global --prepend $HOME/config/sh
 end
 # Added by zv setup
-source "/Users/nikiv/.zv/env.fish"
+if test -f "$HOME/.zv/env.fish"
+    source "$HOME/.zv/env.fish"
+end
 
 fish_add_path /opt/homebrew/opt/ruby/bin
 
 # opencode
 fish_add_path /Users/nikiv/.opencode/bin
 
-set -gx PATH "/var/folders/69/jnm2pqrx12103z_f8hh3_d1w0000gn/T/frum_80955_1763308433288/bin" $PATH;
-set -gx FRUM_MULTISHELL_PATH "/var/folders/69/jnm2pqrx12103z_f8hh3_d1w0000gn/T/frum_80955_1763308433288";
-set -gx FRUM_DIR "/Users/nikiv/.frum";
-set -gx FRUM_LOGLEVEL "info";
-set -gx FRUM_RUBY_BUILD_MIRROR "https://cache.ruby-lang.org/pub/ruby";
-function _frum_autoload_hook --on-variable PWD --description 'Change Ruby version on directory change'
-    status --is-command-substitution; and return
-    frum --log-level quiet local
+if command -sq frum
+    set -gx PATH "/var/folders/69/jnm2pqrx12103z_f8hh3_d1w0000gn/T/frum_80955_1763308433288/bin" $PATH
+    set -gx FRUM_MULTISHELL_PATH "/var/folders/69/jnm2pqrx12103z_f8hh3_d1w0000gn/T/frum_80955_1763308433288"
+    set -gx FRUM_DIR "$HOME/.frum"
+    set -gx FRUM_LOGLEVEL "info"
+    set -gx FRUM_RUBY_BUILD_MIRROR "https://cache.ruby-lang.org/pub/ruby"
+    if test -d "$FRUM_DIR"
+        function _frum_autoload_hook --on-variable PWD --description 'Change Ruby version on directory change'
+            status --is-command-substitution; and return
+            frum --log-level quiet local >/dev/null 2>&1
+        end
+    else if functions -q _frum_autoload_hook
+        functions -e _frum_autoload_hook
+    end
+else if functions -q _frum_autoload_hook
+    functions -e _frum_autoload_hook
 end
 
 # Added by Antigravity
@@ -145,10 +170,10 @@ set -g fish_greeting
 # flow:start
 function f
     set -l bin ""
-    if test -x ~/.local/bin/f
-        set bin ~/.local/bin/f
-    else if test -x ~/bin/f
+    if test -x ~/bin/f
         set bin ~/bin/f
+    else if test -x ~/.local/bin/f
+        set bin ~/.local/bin/f
     else
         set bin (command -v f)
     end

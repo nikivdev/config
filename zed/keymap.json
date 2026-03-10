@@ -1,8 +1,8 @@
 [
   {
     "bindings": {
-      "cmd-q": null
-    }
+      "cmd-q": null,
+    },
   },
   {
     "context": "Workspace",
@@ -21,9 +21,9 @@
       "cmd-5": ["pane::ActivateItem", 4],
       "cmd-shift-m": [
         "workspace::SendKeystrokes",
-        "cmd-shift-f ctrl-` cmd-\\ ctrl-`"
-      ]
-    }
+        "cmd-shift-f ctrl-` cmd-\\ ctrl-`",
+      ],
+    },
   },
   {
     "context": "Editor",
@@ -39,44 +39,44 @@
       "cmd-2": ["pane::ActivateItem", 1],
       "cmd-3": ["pane::ActivateItem", 2],
       "cmd-4": ["pane::ActivateItem", 3],
-      "cmd-5": ["pane::ActivateItem", 4]
-    }
+      "cmd-5": ["pane::ActivateItem", 4],
+    },
   },
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "ctrl-d": "workspace::CopyPath",
       "ctrl-j": "pane::ActivatePreviousItem",
-      "ctrl-k": "pane::ActivateNextItem"
-    }
+      "ctrl-k": "pane::ActivateNextItem",
+    },
   },
   {
     "context": "Editor && vim_mode == visual",
     "bindings": {
       "ctrl-d": "workspace::CopyPath",
       "ctrl-j": "pane::ActivatePreviousItem",
-      "ctrl-k": "pane::ActivateNextItem"
-    }
+      "ctrl-k": "pane::ActivateNextItem",
+    },
   },
   {
     "context": "Terminal",
     "bindings": {
       "cmd-q": "workspace::ToggleLeftDock",
-      "ctrl-'": "workspace::ToggleBottomDock"
-    }
+      "ctrl-'": "workspace::ToggleBottomDock",
+    },
   },
   {
     "context": "BufferSearchBar",
     "bindings": {
       "enter": "search::SelectNextMatch",
       "shift-enter": "search::SelectPreviousMatch",
-      "escape": "buffer_search::Dismiss"
-    }
+      "escape": "buffer_search::Dismiss",
+    },
   },
   {
     "context": "ProjectSearchView",
     "bindings": {
-      "enter": "editor::OpenExcerpts"
-    }
-  }
+      "enter": "editor::OpenExcerpts",
+    },
+  },
 ]

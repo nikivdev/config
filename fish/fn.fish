@@ -354,6 +354,66 @@ function w.
     cursor .env
 end
 
+function e
+    set -l real_e /Users/nikitavoloboev/.cargo/bin/e
+
+    if not set -q argv[1]
+        command $real_e
+        return $status
+    end
+
+    set -l first $argv[1]
+    switch $first
+        case status st jj sync switch ws workspace flow run discover list help work work-pick stack-which stack-workspace stack-session prom-codex-sessions 'designer-*' 'home-*' prom-pr-open 'reactron-*' 'rev-*' setup deploy up down push info git-repair
+            command $real_e $argv
+            return $status
+        case '-*'
+            command $real_e $argv
+            return $status
+    end
+
+    set -l passthrough_args
+    set -l prompt_parts
+    set -l i 1
+    set -l argc (count $argv)
+
+    while test $i -le $argc
+        set -l arg $argv[$i]
+        switch $arg
+            case --branch --cwd
+                if test (math "$i + 1") -gt $argc
+                    echo "e: missing value for $arg" >&2
+                    return 1
+                end
+                set -a passthrough_args $arg $argv[(math "$i + 1")]
+                set i (math "$i + 2")
+                continue
+            case --continue --allow-overlap --dry-run --help -h
+                set -a passthrough_args $arg
+                set i (math "$i + 1")
+                continue
+            case --
+                set i (math "$i + 1")
+                while test $i -le $argc
+                    set -a prompt_parts $argv[$i]
+                    set i (math "$i + 1")
+                end
+                break
+            case '*'
+                set -a prompt_parts $arg
+                set i (math "$i + 1")
+        end
+    end
+
+    if test (count $prompt_parts) -eq 0
+        command $real_e $passthrough_args
+        return $status
+    end
+
+    set -l prompt_text (string join ' ' -- $prompt_parts)
+    command $real_e $passthrough_args "$prompt_text"
+end
+
 function e.
     bat .env
 end

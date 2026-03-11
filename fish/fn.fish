@@ -1860,8 +1860,17 @@ end
 
 function L
     if test (count $argv) -eq 0
-        f ai codex new
-        return $status
+        set -l codex_repo ~/repos/openai/codex
+        if not test -d $codex_repo
+            echo "missing repo: $codex_repo" >&2
+            return 1
+        end
+
+        pushd $codex_repo >/dev/null
+        ~/bin/f ai codex new
+        set -l status_code $status
+        popd >/dev/null
+        return $status_code
     end
 
     if __codex_prompt_targets_recovery $argv
@@ -2299,6 +2308,60 @@ function sk --wraps=hive --description "Hive - Natural language command generati
     hive agent skim $argv
 end
 complete -c sk -w hive
+
+function killStaleElectron --description "Kill Prom-owned Designer/rev Electron dev processes"
+    set -l patterns \
+        '/Users/nikitavoloboev/\.jj/workspaces/prom/.*/ide/designer/' \
+        '/Users/nikitavoloboev/code/prom/ide/designer/' \
+        '/Users/nikitavoloboev/Library/Caches/reactron-rs/electron-dist-overrides/rev-dev/dist/rev-dev\.app/' \
+        'run-reactron-rs\.sh dev /Users/nikitavoloboev/code/prom/ide/rev([[:space:]]|$)' \
+        'reactron/dist/cli/index\.js dev /Users/nikitavoloboev/code/prom/ide/rev([[:space:]]|$)' \
+        'reactron dev /Users/nikitavoloboev/code/prom/ide/rev([[:space:]]|$)' \
+        '/Users/nikitavoloboev/code/prom/ide/rev/node_modules/\.bin/electron ' \
+        '/Users/nikitavoloboev/code/prom/ide/rev/\.reactron/'
+
+    set -l pids (begin
+        for pattern in $patterns
+            pgrep -f -- "$pattern"
+        end
+    end | sort -u)
+    if test (count $pids) -eq 0
+        echo "No Prom-owned Electron processes found."
+        return 0
+    end
+
+    echo "Killing Prom-owned Electron processes:"
+    ps -o pid=,ppid=,command= -p $pids
+
+    command kill -TERM $pids 2>/dev/null
+    sleep 0.5
+
+    set -l survivors
+    for pid in $pids
+        if kill -0 $pid 2>/dev/null
+            set -a survivors $pid
+        end
+    end
+
+    if test (count $survivors) -gt 0
+        echo "Force-killing remaining processes: $survivors"
+        command kill -KILL $survivors 2>/dev/null
+        sleep 0.2
+    end
+
+    set -l remaining (begin
+        for pattern in $patterns
+            pgrep -f -- "$pattern"
+        end
+    end | sort -u)
+    if test (count $remaining) -gt 0
+        echo "Some Prom-owned Electron processes are still alive: $remaining"
+        ps -o pid=,ppid=,command= -p $remaining
+        return 1
+    end
+
+    echo "Prom-owned Electron processes cleared."
+end
 
 # unpush but keep changes
 function unpush

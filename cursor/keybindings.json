@@ -196,7 +196,7 @@
 	},
 	{
 		"key": "ctrl+;",
-		"command": "workbench.action.focusFirstEditorGroup",
+		"command": "-workbench.action.focusFirstEditorGroup",
 		"when": "terminalFocus"
 	},
 	{
@@ -452,7 +452,7 @@
 	},
 	{
 		"key": "ctrl+s",
-		"command": "composer.fixerrormessage"
+		"command": "flow.openSelection"
 	},
 	{
 		"key": "cmd+y",
@@ -532,7 +532,12 @@
 	// },
 	{
 		"key": "ctrl+;",
-		"command": "composerMode.agent"
+		"command": "-composerMode.agent"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "flow.focusClaudeWithBridgeSync",
+		"when": "editorTextFocus || filesExplorerFocus || terminalFocus"
 	},
 	{
 		"key": "ctrl+p",
@@ -564,8 +569,13 @@
 		"command": "1focus.flowTasks",
 		"when": "editorTextFocus || editorFocus || terminalFocus"
 	},
+	// {
+	// 	"key": "ctrl+l",
+	// 	"command": "claudeVSCodeSidebar.focus"
+	// }
 	{
 		"key": "ctrl+l",
-		"command": "claudeVSCodeSidebar.focus"
+		"command": "flow.reviewPushCurrent",
+		"when": "editorTextFocus || filesExplorerFocus || terminalFocus"
 	}
 ]

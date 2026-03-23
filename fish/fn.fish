@@ -21,7 +21,7 @@ alias ds="cd ~/test && eza"
 alias pip="pip3"
 alias oo="codex"
 # alias dv="cd ~/src/nikiv.dev && eza"
-alias do="cd ~/doing && eza"
+alias doing="cd ~/doing && eza"
 alias dn="cd ~/src/py && eza"
 alias dm="cd ~/src/go && eza"
 # alias dl="cd ~/src/org/la/la && eza"
@@ -51,8 +51,109 @@ alias dc="cd ~/config && eza"
 alias pr="gh pr checkout"
 alias nb="nix-build"
 
+function __flow_bin
+    for candidate in "$HOME/bin/f-bin" "$HOME/.flow/bin/f" "$HOME/bin/f" "$HOME/.local/bin/f"
+        if test -x "$candidate"
+            echo "$candidate"
+            return 0
+        end
+    end
+
+    set -l resolved (type -p f-bin 2>/dev/null)
+    if test -n "$resolved"
+        echo "$resolved"
+        return 0
+    end
+
+    set resolved (type -p f 2>/dev/null)
+    if test -n "$resolved"
+        echo "$resolved"
+        return 0
+    end
+
+    echo "flow binary not found" >&2
+    return 1
+end
+
+function __flow_cli
+    set -l bin (__flow_bin)
+    or return 1
+    $bin $argv
+end
+
+function __flow_codex
+    __flow_cli codex $argv
+end
+
+function __kit_bin
+    if test -x "$HOME/repos/mark3labs/kit/output/kit"
+        echo "$HOME/repos/mark3labs/kit/output/kit"
+        return 0
+    end
+
+    set -l resolved (type -p kit 2>/dev/null)
+    if test -n "$resolved"
+        echo "$resolved"
+        return 0
+    end
+
+    echo "kit binary not found" >&2
+    return 1
+end
+
+function __codex_is_explicit_subcommand
+    if test (count $argv) -eq 0
+        return 1
+    end
+
+    switch $argv[1]
+        case '-*' list ls latest latest-id sessions sess continue new resume connect home open resolve doctor enable-global daemon memory skill-eval skill-source runtime find findAndCopy copy context show recover help save notes remove import init copy-codex copy-claude cx cc
+            return 0
+    end
+
+    return 1
+end
+
+function __codex_is_passthrough_l_subcommand
+    if test (count $argv) -eq 0
+        return 1
+    end
+
+    switch $argv[1]
+        case '-*' list ls latest latest-id sessions sess resume connect home open resolve doctor enable-global daemon memory skill-eval skill-source runtime find findAndCopy copy context show recover help save notes remove import init copy-codex copy-claude cx cc
+            return 0
+    end
+
+    return 1
+end
+
+function __codex_arg_looks_like_session_id
+    if test (count $argv) -ne 1
+        return 1
+    end
+
+    set -l token (string lower -- "$argv[1]")
+
+    # Keep this conservative so normal `k <query>` behavior does not regress.
+    # Accept canonical UUIDs and obvious hyphenated prefixes first.
+    if string match -qr '^[0-9a-f]{8}-[0-9a-f-]{1,28}$' -- "$token"
+        return 0
+    end
+
+    # Also allow longer hex-only prefixes, but avoid short accidental matches.
+    if string match -qr '^[0-9a-f]{16,36}$' -- "$token"
+        return 0
+    end
+
+    return 1
+end
+
 function ee
-    ~/bin/f agents $argv
+    __flow_cli agents $argv
+end
+
+function er
+    forge review --dev-cmd "npm run dev" $argv
 end
 
 function run_ts_script
@@ -88,14 +189,21 @@ end
 #     end
 # end
 
-# TODO: move to another key
-# function j
-#     if not set -q argv[1]
-#         just dev
-#     else
-#         just $argv
-#     end
-# end
+function j
+    if __codex_is_explicit_subcommand $argv
+        __flow_codex $argv
+        return $status
+    end
+
+    set -l cwd (pwd -P)
+    if test (count $argv) -eq 0
+        __flow_codex open --path "$cwd" --exact-cwd
+        return $status
+    end
+
+    set -l query (string join " " $argv)
+    __flow_codex open --path "$cwd" --exact-cwd "$query"
+end
 
 function :p
     bun dev --port $argv
@@ -199,6 +307,25 @@ function W
 
         open -a /Applications/Cursor.app $argv
     end
+end
+
+function q
+    if test (count $argv) -eq 0
+        W (pwd -P)
+        return $status
+    end
+
+    set -l resolved
+    for arg in $argv
+        switch $arg
+            case .
+                set -a resolved (pwd -P)
+            case '*'
+                set -a resolved $arg
+        end
+    end
+
+    W $resolved
 end
 
 # function w
@@ -911,9 +1038,9 @@ end
 
 function h
     if not set -q argv[1]
-        ~/bin/f repos
+        __flow_cli repos
     else
-        ~/bin/f repos clone $argv[1]
+        __flow_cli repos clone $argv[1]
     end
 end
 
@@ -1381,20 +1508,32 @@ function sf
     end
 end
 
-# function k
-#     claude --dangerously-skip-permissions $argv
-# end
-
 function k
-    ~/bin/f ai claude $argv
+    if __codex_is_passthrough_l_subcommand $argv
+        __flow_codex $argv
+        return $status
+    end
+
+    set -l cwd (pwd -P)
+    if __codex_arg_looks_like_session_id $argv
+        __flow_codex continue --path "$cwd" $argv[1]
+        return $status
+    end
+
+    __flow_codex connect --path "$cwd" --exact-cwd $argv
 end
 
-function kk
-    ~/bin/f ai copy-claude
+function ks
+    set -l cwd (pwd -P)
+    __flow_codex sessions --path "$cwd" $argv
+end
+
+function jj
+    __flow_cli ai copy-codex $argv
 end
 
 function K
-    ~/bin/f ai claude new
+    __flow_cli ai claude new
 end
 
 function gb --description "create git branch"
@@ -1472,12 +1611,74 @@ function __prom_codex_prompt_text
 end
 
 function __codex_flow_bin
-    if test -x "$HOME/bin/flow"
-        echo "$HOME/bin/flow"
+    for candidate in "$HOME/bin/flow-bin" "$HOME/.flow/bin/flow" "$HOME/bin/flow" "$HOME/.local/bin/flow"
+        if test -x "$candidate"
+            echo "$candidate"
+            return 0
+        end
+    end
+
+    set -l resolved (type -p flow-bin 2>/dev/null)
+    if test -n "$resolved"
+        echo "$resolved"
         return 0
     end
 
     echo "flow"
+end
+
+function __codex_fast_bin
+    set -l resolved (type -p codex 2>/dev/null)
+    if test -n "$resolved"
+        echo "$resolved"
+        return 0
+    end
+
+    echo "codex"
+end
+
+function __codex_fast_trust_config
+    set -l cwd (pwd -P)
+    set -l paths "$cwd"
+    set -l git_root (command git -C "$cwd" rev-parse --show-toplevel 2>/dev/null)
+    if test -n "$git_root"
+        if not contains -- "$git_root" $paths
+            set paths $paths "$git_root"
+        end
+    end
+
+    set -l entries
+    for path in $paths
+        set -l escaped (string replace -a '\\' '\\\\' -- "$path")
+        set escaped (string replace -a '"' '\\"' -- "$escaped")
+        set -a entries "\"$escaped\"={ trust_level=\"trusted\" }"
+    end
+
+    if test (count $entries) -eq 0
+        return 1
+    end
+
+    echo "projects={ "(string join ", " $entries)" }"
+end
+
+function __codex_fast_touch_launch
+    set -l mode $argv[1]
+    set -l flow_bin (__flow_bin)
+    set -l cwd (pwd -P)
+    "$flow_bin" codex touch-launch --mode "$mode" --cwd "$cwd" >/dev/null 2>&1 &
+end
+
+function __codex_fast_launch
+    set -l mode $argv[1]
+    set -e argv[1]
+    __codex_fast_touch_launch "$mode"
+    set -l codex_bin (__codex_fast_bin)
+    set -l trust_config (__codex_fast_trust_config)
+    if test -n "$trust_config"
+        "$codex_bin" --config "$trust_config" $argv
+    else
+        "$codex_bin" $argv
+    end
 end
 
 function __codex_prompt_targets_recovery
@@ -1785,114 +1986,29 @@ function __prom_codex_open_leaf_session
 end
 
 function l
+    set -l kit_dir "$HOME/repos/mark3labs/kit"
+    set -l kit_bin (__kit_bin)
+    or return 1
+
     if test (count $argv) -eq 0
-        ~/bin/f ai codex
+        env KIT_DIR="$kit_dir" KIT_BIN="$kit_bin" \
+            bash -lc 'cd "$KIT_DIR" && exec "$KIT_BIN" --continue'
         return $status
     end
 
-    if __codex_prompt_targets_recovery $argv
-        __codex_open_recovery_session $argv
-        return $status
-    end
-
-    if __prom_codex_invocation_targets_prom $argv
-        switch $argv[1]
-            case --base
-                if test (count $argv) -lt 3
-                    echo "usage: l --base <branch> <topic-or-branch>"
-                    return 1
-                end
-                __prom_codex_open_leaf_session --base $argv[2] $argv[3..-1]
-                return $status
-            case '-*'
-                ~/bin/f ai codex $argv
-                return $status
-            case list ls sessions sess resume copy context save notes remove import init copy-codex copy-claude cx cc
-                ~/bin/f ai codex $argv
-                return $status
-            case continue
-                if test (count $argv) -ge 2
-                    if __prom_codex_is_leaf_branch $argv[2]
-                        __prom_codex_open_dispatched_session continue $argv[2]
-                        return $status
-                    end
-                    if __prom_codex_prompt_targets_prom $argv[2..-1]
-                        __prom_codex_open_dispatched_session continue $argv[2..-1]
-                        return $status
-                    end
-                end
-                ~/bin/f ai codex $argv
-                return $status
-            case new
-                if test (count $argv) -ge 2
-                    if __prom_codex_is_leaf_branch $argv[2]
-                        __prom_codex_open_dispatched_session new $argv[2]
-                    else
-                        __prom_codex_open_dispatched_session new $argv[2..-1]
-                    end
-                    return $status
-                end
-                ~/bin/f ai codex $argv
-                return $status
-            case branch attach
-                if test (count $argv) -lt 2
-                    echo "usage: l branch <codex/...|review/...>"
-                    return 1
-                end
-                __prom_codex_open_dispatched_session new $argv[2]
-                return $status
-            case '*'
-                if __prom_codex_is_leaf_branch $argv[1]
-                    __prom_codex_open_dispatched_session new $argv[1]
-                    return $status
-                end
-                __prom_codex_open_dispatched_session new $argv
-                return $status
-        end
-    end
-
-    ~/bin/f ai codex $argv
+    set -l query (string join " " $argv)
+    env KIT_DIR="$kit_dir" KIT_BIN="$kit_bin" KIT_PROMPT="$query" \
+        bash -lc 'cd "$KIT_DIR" && exec "$KIT_BIN" --continue --no-exit "$KIT_PROMPT"'
 end
 
 function ll
-    ~/bin/f ai copy-codex
-end
-
-function L
-    if test (count $argv) -eq 0
-        set -l codex_repo ~/repos/openai/codex
-        if not test -d $codex_repo
-            echo "missing repo: $codex_repo" >&2
-            return 1
-        end
-
-        pushd $codex_repo >/dev/null
-        ~/bin/f ai codex new
-        set -l status_code $status
-        popd >/dev/null
-        return $status_code
-    end
-
-    if __codex_prompt_targets_recovery $argv
-        __codex_open_recovery_session $argv
-        return $status
-    end
-
-    if __prom_codex_prompt_targets_prom $argv
-        __prom_codex_open_dispatched_session new $argv
-        return $status
-    end
-
-    bun $HOME/config/fish/scripts/codex-openai-session.ts $argv
+    echo "ll retired"
+    return 1
 end
 
 function o
-      if test (count $argv) -eq 0
-          opencode $argv
-      end
-      set -l query (string join " " $argv)
-      ~/.local/bin/hive explore "$query"
-  end
+    __flow_cli ai copy-claude $argv
+end
 
 # from https://x.com/_xjdr/status/1970694098454798338 (outdated)
 # codex --search --model=gpt-5.1-codex-max -c model_reasoning_effort="high" --sandbox workspace-write -c sandbox_workspace_write.network_access=true
@@ -1966,25 +2082,25 @@ end
 #     end
 # end
 
- function :
-    if test (count $argv) -gt 0
-        ~/bin/f commit -m "$argv"
-    else
-        ~/bin/f commit
-    end
-end
+#  function :
+#     if test (count $argv) -gt 0
+#         __flow_cli commit -m "$argv"
+#     else
+#         __flow_cli commit
+#     end
+# end
 
 function ::
     if test (count $argv) -gt 0
-        ~/bin/f commitSimple -m "$argv"
+        __flow_cli commitSimple -m "$argv"
     else
-        ~/bin/f commitSimple
+        __flow_cli commitSimple
     end
 end
 
 # TODO: improve, snapshot, allow to pass command to do `j <command>`
 function ,
-    ~/bin/f commit
+    __flow_cli commit
 end
 
 function ma
@@ -2122,7 +2238,7 @@ function fe
 end
 
 function fes
-    ~/bin/f deploy-with-hub-reload
+    __flow_cli deploy-with-hub-reload
 end
 
 function fs
@@ -2189,11 +2305,17 @@ end
 # end
 
 function m
-    /Users/nikiv/bin/f migrate $argv
+    if test (count $argv) -eq 0
+        opencode $argv
+        return $status
+    end
+
+    set -l query (string join " " $argv)
+    ~/.local/bin/hive explore "$query"
 end
 
 function mc
-    /Users/nikiv/bin/f migrate code $argv
+    __flow_cli migrate code $argv
 end
 
 # TODO: turn this into a fn
@@ -2202,7 +2324,7 @@ end
 
 
 function flow
-    ~/bin/f $argv
+    __flow_cli $argv
 end
 
 function i
@@ -2244,9 +2366,7 @@ end
 
 function r
     if test -z "$argv[1]"
-        if test (pwd) = "$HOME/t"
-            t clear
-        end
+        forge review
     else
         # rm -rf $argv
         ~/bin/trash $argv
@@ -2283,7 +2403,7 @@ function ar
         return 1
     end
     set -l msg (string join " " $argv)
-    ~/bin/f archive "$msg"
+    __flow_cli archive "$msg"
 end
 
 function fa --wraps=fishy --description "fishy - fish wrapper helper"
@@ -2309,28 +2429,48 @@ function sk --wraps=hive --description "Hive - Natural language command generati
 end
 complete -c sk -w hive
 
-function killStaleElectron --description "Kill Prom-owned Designer/rev Electron dev processes"
-    set -l patterns \
-        '/Users/nikitavoloboev/\.jj/workspaces/prom/.*/ide/designer/' \
-        '/Users/nikitavoloboev/code/prom/ide/designer/' \
-        '/Users/nikitavoloboev/Library/Caches/reactron-rs/electron-dist-overrides/rev-dev/dist/rev-dev\.app/' \
-        'run-reactron-rs\.sh dev /Users/nikitavoloboev/code/prom/ide/rev([[:space:]]|$)' \
-        'reactron/dist/cli/index\.js dev /Users/nikitavoloboev/code/prom/ide/rev([[:space:]]|$)' \
-        'reactron dev /Users/nikitavoloboev/code/prom/ide/rev([[:space:]]|$)' \
-        '/Users/nikitavoloboev/code/prom/ide/rev/node_modules/\.bin/electron ' \
-        '/Users/nikitavoloboev/code/prom/ide/rev/\.reactron/'
+function __electron_descendant_pids --description "Expand PID roots to include child processes"
+    if test (count $argv) -eq 0
+        return 0
+    end
 
-    set -l pids (begin
+    set -l pending $argv
+    set -l all $argv
+
+    while test (count $pending) -gt 0
+        set -l next
+        for pid in $pending
+            set -l children (pgrep -P $pid 2>/dev/null)
+            for child in $children
+                if not contains -- $child $all
+                    set -a all $child
+                    set -a next $child
+                end
+            end
+        end
+        set pending $next
+    end
+
+    printf '%s\n' $all | sort -u
+end
+
+function __kill_matching_processes --description "Kill matching processes and their descendants"
+    set -l label $argv[1]
+    set -l patterns $argv[2..-1]
+    set -l root_pids (begin
         for pattern in $patterns
             pgrep -f -- "$pattern"
         end
     end | sort -u)
-    if test (count $pids) -eq 0
-        echo "No Prom-owned Electron processes found."
+
+    if test (count $root_pids) -eq 0
+        echo "No $label processes found."
         return 0
     end
 
-    echo "Killing Prom-owned Electron processes:"
+    set -l pids (__electron_descendant_pids $root_pids)
+
+    echo "Killing $label processes:"
     ps -o pid=,ppid=,command= -p $pids
 
     command kill -TERM $pids 2>/dev/null
@@ -2349,18 +2489,50 @@ function killStaleElectron --description "Kill Prom-owned Designer/rev Electron 
         sleep 0.2
     end
 
-    set -l remaining (begin
-        for pattern in $patterns
-            pgrep -f -- "$pattern"
+    set -l remaining
+    for pid in $pids
+        if kill -0 $pid 2>/dev/null
+            set -a remaining $pid
         end
-    end | sort -u)
+    end
+
     if test (count $remaining) -gt 0
-        echo "Some Prom-owned Electron processes are still alive: $remaining"
+        echo "Some $label processes are still alive: $remaining"
         ps -o pid=,ppid=,command= -p $remaining
         return 1
     end
 
-    echo "Prom-owned Electron processes cleared."
+    echo "$label processes cleared."
+end
+
+function killStaleElectron --description "Kill Prom-owned Designer/rev Electron dev processes"
+    set -l patterns \
+        '/Users/nikitavoloboev/\.jj/workspaces/prom/.*/ide/designer/' \
+        '/Users/nikitavoloboev/code/prom/ide/designer/' \
+        '/Users/nikitavoloboev/Library/Caches/reactron-rs/electron-dist-overrides/rev-dev/dist/rev-dev\.app/' \
+        'run-reactron-rs\.sh dev /Users/nikitavoloboev/code/prom/ide/rev([[:space:]]|$)' \
+        'reactron/dist/cli/index\.js dev /Users/nikitavoloboev/code/prom/ide/rev([[:space:]]|$)' \
+        'reactron dev /Users/nikitavoloboev/code/prom/ide/rev([[:space:]]|$)' \
+        '/Users/nikitavoloboev/code/prom/ide/rev/node_modules/\.bin/electron ' \
+        '/Users/nikitavoloboev/code/prom/ide/rev/\.reactron/'
+
+    __kill_matching_processes "Prom-owned Electron" $patterns
+end
+
+function cleanElectron --description "Kill local Electron dev processes and helpers"
+    set -l patterns \
+        '/Users/nikitavoloboev/\.jj/workspaces/.*/ide/(designer|rev)/' \
+        '/Users/nikitavoloboev/code/.*/ide/(designer|rev)/' \
+        '/Users/nikitavoloboev/code/.*/node_modules/\.bin/electron([[:space:]]|$)' \
+        '/Users/nikitavoloboev/repos/.*/node_modules/\.bin/electron([[:space:]]|$)' \
+        '/Users/nikitavoloboev/Library/Caches/reactron-rs/electron-dist-overrides/.*/dist/.*\.app/' \
+        'run-reactron-rs\.sh dev ' \
+        'reactron/dist/cli/index\.js dev ' \
+        'reactron dev .*(ide/designer|ide/rev|/Users/nikitavoloboev/(code|repos)/)' \
+        '/Users/nikitavoloboev/(code|repos)/.*/\.reactron([/[:space:]]|$)' \
+        'electronmon([[:space:]]|$)'
+
+    __kill_matching_processes "Electron dev" $patterns
 end
 
 # unpush but keep changes

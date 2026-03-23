@@ -123,6 +123,14 @@
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.cursorBlinking": false,
   "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.sendKeybindingsToShell": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "flow.focusClaudeSidebar",
+    "flow.focusClaudeWithBridgeSync",
+    "flow.reviewPushCurrent",
+    "1focus.flowTasks",
+    "1focus.commitPush"
+  ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
@@ -536,5 +544,8 @@
   "workbench.layoutControl.enabled": false,
   "gitlens.mode.active": "zen",
   "workbench.editor.editorActionsLocation": "hidden",
-  "amp.tryOpus": true
+  "amp.tryOpus": true,
+  "remote.SSH.remotePlatform": {
+    "x-od2-mybox-0": "linux"
+  }
 }

@@ -1,0 +1,15 @@
+[
+  {
+    "label": "Copy current worktree path (~)",
+    "command": "/bin/sh",
+    "args": [
+      "-lc",
+      "path=$ZED_WORKTREE_ROOT; case \"$path\" in \"$HOME\") rel='~' ;; \"$HOME\"/*) rel=\"~${path#$HOME}\" ;; *) rel=$path ;; esac; printf '%s' \"$rel\" | pbcopy"
+    ],
+    "use_new_terminal": true,
+    "reveal": "never",
+    "hide": "always",
+    "show_summary": false,
+    "show_command": false
+  }
+]

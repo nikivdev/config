@@ -148,6 +148,11 @@
 		"command": "workbench.action.previousEditor"
 	},
 	{
+		"key": "ctrl+j",
+		"command": "-workbench.action.previousEditor",
+		"when": "terminalFocus"
+	},
+	{
 		"key": "ctrl+k",
 		"command": "workbench.action.nextEditor"
 	},
@@ -328,6 +333,11 @@
 	{
 		"key": "ctrl+v",
 		"command": "workbench.action.gotoSymbol"
+	},
+	{
+		"key": "ctrl+v",
+		"command": "-workbench.action.gotoSymbol",
+		"when": "terminalFocus"
 	},
 	{
 		"key": "shift+cmd+o",
@@ -532,12 +542,30 @@
 	// },
 	{
 		"key": "ctrl+;",
+		"command": "-aichat.insertselectionintochat"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "-aichat.insertselectionintofollowup"
+	},
+	{
+		"key": "ctrl+;",
 		"command": "-composerMode.agent"
 	},
 	{
 		"key": "ctrl+;",
+		"command": "flow.focusClaudeSidebar",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "workbench.action.terminal.focus",
+		"when": "chatInputFocus && !terminalFocus"
+	},
+	{
+		"key": "ctrl+;",
 		"command": "flow.focusClaudeWithBridgeSync",
-		"when": "editorTextFocus || filesExplorerFocus || terminalFocus"
+		"when": "editorTextFocus || filesExplorerFocus"
 	},
 	{
 		"key": "ctrl+p",
@@ -547,12 +575,48 @@
 		"key": "shift+enter",
 		"command": "workbench.action.terminal.sendSequence",
 		"args": {
-			"text": "\r\n"
+			"text": "\u000a"
+		},
+		"when": "terminalFocus"
+	},
+	{
+		"key": "shift+return",
+		"command": "workbench.action.terminal.sendSequence",
+		"args": {
+			"text": "\u000a"
+		},
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "workbench.action.terminal.sendSequence",
+		"args": {
+			"text": "\u000a"
+		},
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+v",
+		"command": "workbench.action.terminal.sendSequence",
+		"args": {
+			"text": "\u0016"
 		},
 		"when": "terminalFocus"
 	},
 	{
 		"key": "cmd+h",
+		"command": "-composerMode.agent"
+	},
+	{
+		"key": "cmd+h",
+		"command": "-workbench.action.reloadWindow"
+	},
+	{
+		"key": "cmd+h",
+		"command": "flow.reloadWindowAndOpenReviewPanel"
+	},
+	{
+		"key": "cmd+alt+h",
 		"command": "composerMode.agent"
 	},
 	{
@@ -577,5 +641,27 @@
 		"key": "ctrl+l",
 		"command": "flow.reviewPushCurrent",
 		"when": "editorTextFocus || filesExplorerFocus || terminalFocus"
+	},
+	{
+		"key": "cmd+.",
+		"command": "-editor.action.quickFix"
+	},
+	{
+		"key": "cmd+.",
+		"command": "-editor.action.quickFix",
+		"when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+.",
+		"command": "flow.openReviewPanel"
+	},
+	{
+		"key": "cmd+alt+.",
+		"command": "editor.action.quickFix",
+		"when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+shift+.",
+		"command": "flow.restartExtensions"
 	}
 ]

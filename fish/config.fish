@@ -169,17 +169,28 @@ export PATH="/Users/nikiv/.amp/bin:$PATH"
 set -g fish_greeting
 # flow:start
 function f
-    set -l bin ""
-    if test -x ~/bin/f
-        set bin ~/bin/f
-    else if test -x ~/.local/bin/f
-        set bin ~/.local/bin/f
-    else
-        set bin (command -v f)
-    end
+    set -l bin (__flow_bin)
+    or return 1
 
     if test -z "$argv[1]"
         $bin
+        return $status
+    end
+
+    set -l first $argv[1]
+    set -l passthrough \
+        ? search global hub init shell-init shell new home archive doctor health invariants \
+        tasks fast up down ai-test-new run last-cmd last-cmd-full fish-last fish-last-full \
+        fish-install rerun ps kill logs trace traces analytics projects sessions active \
+        server web match ask branches commit commit-queue reviews-todo pr gitignore recipe \
+        review commitSimple commitWithCheck undo fix fixup changes diff hash daemon supervisor \
+        ai codex cursor claude secrets otp db env auth services deps status info latest \
+        storage setup todo init-agent skills code migrate parallel docs upgrade release install \
+        registry proxy domains sync checkout switch push deploy prod publish clone repos agents \
+        hive
+
+    if string match -qr '^-' -- "$first"; or contains -- "$first" $passthrough
+        $bin $argv
     else
         $bin match $argv
     end

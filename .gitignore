@@ -44,6 +44,8 @@ zed/prompts/
 .ai/internal/
 .ai/web/
 .ai/skills/
+.ai/docs/session-changes/
+.ai/docs/session-changes-promoted/
 .claude/
 .codex/
 .flox/

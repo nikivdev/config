@@ -11,6 +11,7 @@
       "ctrl-r": "workspace::ToggleLeftDock",
       "ctrl-;": "workspace::ActivateNextPane",
       "ctrl-'": "workspace::ToggleBottomDock",
+      "cmd-l": "file_finder::Toggle",
       "ctrl-w": ["task::Spawn", { "task_name": "Copy current worktree path (~)" }],
       "ctrl-d": "workspace::CopyPath",
       "ctrl-j": "pane::ActivatePreviousItem",
@@ -32,6 +33,7 @@
       "ctrl-f": "editor::GoToDefinition",
       "ctrl-e": "pane::GoBack",
       "ctrl-r": "workspace::ToggleLeftDock",
+      "cmd-l": "file_finder::Toggle",
       "ctrl-w": ["task::Spawn", { "task_name": "Copy current worktree path (~)" }],
       "ctrl-d": "workspace::CopyPath",
       "ctrl-j": "pane::ActivatePreviousItem",
@@ -65,6 +67,7 @@
     "bindings": {
       "cmd-q": "workspace::ToggleLeftDock",
       "ctrl-'": "workspace::ToggleBottomDock",
+      "cmd-l": "file_finder::Toggle",
       "ctrl-w": ["task::Spawn", { "task_name": "Copy current worktree path (~)" }],
     },
   },

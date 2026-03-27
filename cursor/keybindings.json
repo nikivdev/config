@@ -157,10 +157,6 @@
 		"command": "workbench.action.nextEditor"
 	},
 	{
-		"key": "cmd+b",
-		"command": "-workbench.action.toggleSidebarVisibility"
-	},
-	{
 		"key": "alt+f12",
 		"command": "-editor.action.previewDeclaration",
 		"when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"

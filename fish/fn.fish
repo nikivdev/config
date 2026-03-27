@@ -1528,7 +1528,7 @@ function ks
     __flow_codex sessions --path "$cwd" $argv
 end
 
-function jj
+function jc
     __flow_cli ai copy-codex $argv
 end
 
@@ -1986,6 +1986,10 @@ function __prom_codex_open_leaf_session
 end
 
 function l
+    f hot $argv
+end
+
+function b
     set -l kit_dir "$HOME/repos/mark3labs/kit"
     set -l kit_bin (__kit_bin)
     or return 1
@@ -2341,8 +2345,16 @@ end
 # end
 
 function gg
-    osascript -e 'quit app "Lin"'
+    if test (count $argv) -eq 0
+        f run --config "$HOME/run/flow.toml" designer-dev-cleanup -- --apply --yes
+    else
+        f run --config "$HOME/run/flow.toml" designer-dev-cleanup -- $argv
+    end
 end
+
+# function gg
+#     osascript -e 'quit app "Lin"'
+# end
 
 # todo: remap
 function oo
@@ -2385,9 +2397,9 @@ function n
     end
 end
 
-function b
-    db $argv
-end
+# function b
+#     db $argv
+# end
 
 # function j
 #     if test (count $argv) -eq 0
